@@ -1,0 +1,177 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:1-31:12
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\a9b4b14145aa34e0c17b77d4a5778acd\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\16629a9d34f2751388b75790106f588e\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\366037ba69c4a95f61f41c6b39737087\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\945ea5ea27609c05af4dcd479c33d239\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\08fa3661ef432d9e4b52716384b34180\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-25.0.0.aar\ef3486b6476d90a3171b73feb6fd343a\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\2f02719bfb31a46b1108db85611c262c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.0.0.aar\f699d3c15cf3414bb83ca6b459de12fb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a630d7105a8162ab6387c04fc5bf991d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b935086a88a8e5a348ca623863b2f92c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf075401091c259cd1f391c8f25dbd2a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\f76c5b258ebb69f62935a73b9c34fea5\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\9a6c8872c4b15d33171ce2f6becee507\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:1-31:12
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:7:22-78
+application
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:9:5-29:19
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\a9b4b14145aa34e0c17b77d4a5778acd\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\a9b4b14145aa34e0c17b77d4a5778acd\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\16629a9d34f2751388b75790106f588e\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\16629a9d34f2751388b75790106f588e\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\366037ba69c4a95f61f41c6b39737087\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\366037ba69c4a95f61f41c6b39737087\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\945ea5ea27609c05af4dcd479c33d239\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\945ea5ea27609c05af4dcd479c33d239\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\08fa3661ef432d9e4b52716384b34180\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\08fa3661ef432d9e4b52716384b34180\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-25.0.0.aar\ef3486b6476d90a3171b73feb6fd343a\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:transition:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-25.0.0.aar\ef3486b6476d90a3171b73feb6fd343a\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\2f02719bfb31a46b1108db85611c262c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\2f02719bfb31a46b1108db85611c262c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a630d7105a8162ab6387c04fc5bf991d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a630d7105a8162ab6387c04fc5bf991d\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b935086a88a8e5a348ca623863b2f92c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b935086a88a8e5a348ca623863b2f92c\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf075401091c259cd1f391c8f25dbd2a\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf075401091c259cd1f391c8f25dbd2a\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\f76c5b258ebb69f62935a73b9c34fea5\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\f76c5b258ebb69f62935a73b9c34fea5\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\9a6c8872c4b15d33171ce2f6becee507\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\9a6c8872c4b15d33171ce2f6becee507\AndroidManifest.xml:29:5-20
+	android:supportsRtl
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.example.lai.smartcanteenpos.Login
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:16:9-25:20
+	android:screenOrientation
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:19:13-50
+	android:label
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:18:13-45
+	android:name
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:17:13-34
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:23:27-74
+activity#com.example.lai.smartcanteenpos.Menu_screen
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:26:9-49
+	android:name
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:26:19-46
+activity#com.example.lai.smartcanteenpos.Register
+ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:27:9-46
+	android:name
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml:27:19-43
+uses-sdk
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\a9b4b14145aa34e0c17b77d4a5778acd\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\a9b4b14145aa34e0c17b77d4a5778acd\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:design:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\16629a9d34f2751388b75790106f588e\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\16629a9d34f2751388b75790106f588e\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\366037ba69c4a95f61f41c6b39737087\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.0.0.aar\366037ba69c4a95f61f41c6b39737087\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\945ea5ea27609c05af4dcd479c33d239\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.0.0.aar\945ea5ea27609c05af4dcd479c33d239\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\08fa3661ef432d9e4b52716384b34180\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\08fa3661ef432d9e4b52716384b34180\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-25.0.0.aar\ef3486b6476d90a3171b73feb6fd343a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-25.0.0.aar\ef3486b6476d90a3171b73feb6fd343a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\2f02719bfb31a46b1108db85611c262c\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\2f02719bfb31a46b1108db85611c262c\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.0.0.aar\f699d3c15cf3414bb83ca6b459de12fb\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.0.0.aar\f699d3c15cf3414bb83ca6b459de12fb\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a630d7105a8162ab6387c04fc5bf991d\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a630d7105a8162ab6387c04fc5bf991d\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b935086a88a8e5a348ca623863b2f92c\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b935086a88a8e5a348ca623863b2f92c\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf075401091c259cd1f391c8f25dbd2a\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf075401091c259cd1f391c8f25dbd2a\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\f76c5b258ebb69f62935a73b9c34fea5\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\f76c5b258ebb69f62935a73b9c34fea5\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\9a6c8872c4b15d33171ce2f6becee507\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\9a6c8872c4b15d33171ce2f6becee507\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\16629a9d34f2751388b75790106f588e\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\AndroidStudioProjects\Smartcanteen(POS)\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\08fa3661ef432d9e4b52716384b34180\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\2f02719bfb31a46b1108db85611c262c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\2f02719bfb31a46b1108db85611c262c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a630d7105a8162ab6387c04fc5bf991d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\a630d7105a8162ab6387c04fc5bf991d\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b935086a88a8e5a348ca623863b2f92c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\b935086a88a8e5a348ca623863b2f92c\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf075401091c259cd1f391c8f25dbd2a\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\cf075401091c259cd1f391c8f25dbd2a\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\f76c5b258ebb69f62935a73b9c34fea5\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\f76c5b258ebb69f62935a73b9c34fea5\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\9a6c8872c4b15d33171ce2f6becee507\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\9a6c8872c4b15d33171ce2f6becee507\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\08fa3661ef432d9e4b52716384b34180\AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\08fa3661ef432d9e4b52716384b34180\AndroidManifest.xml:23:9-47

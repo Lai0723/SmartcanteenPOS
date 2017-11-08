@@ -1,0 +1,7 @@
+#Wed Nov 08 12:33:52 SGT 2017
+base.0=C\:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_95f48e152d16306be6d0ac0ca066097130815a3f
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1a6b556c84262f9ff92af6940badc84fe7dc9d05\\classes.dex
+base.1=C\:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_1a6b556c84262f9ff92af6940badc84fe7dc9d05
+file.0=C\:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_95f48e152d16306be6d0ac0ca066097130815a3f\\classes.dex

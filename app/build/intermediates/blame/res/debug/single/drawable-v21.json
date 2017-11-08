@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\lai\\.android\\build-cache\\37f1a693a7265737b24c9187c8b14d173cdc626a\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\lai\\.android\\build-cache\\2d44bb4bc87d38ac191a750c57193cdf824571b5\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\lai\\.android\\build-cache\\2d44bb4bc87d38ac191a750c57193cdf824571b5\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\lai\\.android\\build-cache\\2d44bb4bc87d38ac191a750c57193cdf824571b5\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\lai\\.android\\build-cache\\2d44bb4bc87d38ac191a750c57193cdf824571b5\\output\\res\\drawable-v21\\notification_action_background.xml"
+    }
+]
