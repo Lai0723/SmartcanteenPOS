@@ -1,4 +1,0 @@
-#Wed Nov 08 17:46:09 SGT 2017
-base.0=C\:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
-renamed.0=classes.dex
-file.0=C\:\\Users\\lai\\AndroidStudioProjects\\Smartcanteen(POS)\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10\\classes.dex

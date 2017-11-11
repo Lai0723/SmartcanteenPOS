@@ -41,7 +41,7 @@ public class Login extends AppCompatActivity {
         txtPass = (EditText)findViewById(R.id.txtPass);
     }
 
-    protected void ClickLogin (View v){
+    public void ClickLogin (View v){
 
         username = txtUserName.getText().toString();
         String password = txtPass.getText().toString();
