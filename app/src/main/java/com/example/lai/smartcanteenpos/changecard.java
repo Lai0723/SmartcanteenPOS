@@ -27,8 +27,9 @@ public class changecard extends AppCompatActivity {
     }
 
     public void onConfirmClick(String cardNumber, int cardExpMonth, int cardExpYear, String cardCVC){
-        //View view =  inflater.inflate(R.layout.fragment_changecard, container, false);
+
         TextView textView2 = (TextView) findViewById(R.id.textView2);
+        //View view =  inflater.inflate(R.layout.fragment_changecard, container, false);
 
         //CardInputWidget mCardInputWidget = (CardInputWidget) findViewById(R.id.card_input_widget2);
         //cardToSave = mCardInputWidget.getCard();
