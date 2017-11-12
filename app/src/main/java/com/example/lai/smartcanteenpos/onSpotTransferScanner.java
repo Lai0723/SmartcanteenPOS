@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -27,8 +28,9 @@ import java.util.Map;
 
 public class onSpotTransferScanner extends AppCompatActivity {
 
-    String ttlPurchaseAmt;
-    double balanceToCheck, balance;
+    String ttlPurchaseAmt, giverID;
+    double balanceToCheck, balance, showTtl;
+    TextView tvTransferStatus, tvTransferFrom, tvTransferTo, tvTransferAmount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,12 @@ public class onSpotTransferScanner extends AppCompatActivity {
             finish();
         }
         ttlPurchaseAmt = extras.getString("ttlPurchaseAmt");
+        showTtl = Double.parseDouble(ttlPurchaseAmt);
+
+        tvTransferStatus = (TextView)findViewById(R.id.tvTransferStatus);
+        tvTransferFrom=(TextView)findViewById(R.id.tvTransferFrom);
+        tvTransferTo=(TextView)findViewById(R.id.tvTransferTo);
+        tvTransferAmount=(TextView)findViewById(R.id.tvTransferAmount);
 
         startScan();
 
@@ -62,10 +70,11 @@ public class onSpotTransferScanner extends AppCompatActivity {
         if (result != null) {
             if (result.getContents() == null) {
                 Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show();
+                showStatusCancelled();
             } else {
                 String[] arr = result.getContents().split(",");
                 if (!arr[0].equals("orderRetrieval")) {
-                    String giverID = arr[0];
+                    giverID = arr[0];
                     String balanceToChk = arr[1];
                     String date = arr[2];
                     String receiverID = Menu_screen.Merc_WalletID;
@@ -107,8 +116,9 @@ public class onSpotTransferScanner extends AppCompatActivity {
                         if (balanceToCheck > ttlPurchaseAmount) {
                             //Double.toString(ttlPurchaseAmt);
                             try {
-                                fragmentWallet.allowRefresh = true;
+                                fragmentMerc_wallet.allowRefresh = true;
                                 insertTransfer(this, "https://martpay.000webhostapp.com/gab_insert_transfer.php", giverID, ttlPurchaseAmt, date, receiverID);
+                                showStatusSuccess();
                             } catch (Exception e) {
                                 e.printStackTrace();
                                 Toast.makeText(getApplicationContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -155,6 +165,7 @@ public class onSpotTransferScanner extends AppCompatActivity {
     }
 
 
+
     public void insertTransfer(Context context, String url, final String giverID, final String ttlPurchaseAmt, final String date, final String receiverID) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -177,7 +188,7 @@ public class onSpotTransferScanner extends AppCompatActivity {
                                     //balance += Double.parseDouble(ttlPurchaseAmt);
                                     balance += Double.parseDouble(ttlPurchaseAmt);
                                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                                    transaction.replace(R.id.frame_main, fragmentWallet.newInstance());
+                                    transaction.replace(R.id.content, fragmentMerc_wallet.newInstance());
                                     transaction.commit();
                                 } else {
                                     Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
@@ -214,5 +225,21 @@ public class onSpotTransferScanner extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void showStatusSuccess() {
+        tvTransferStatus.setText("Transfer Successful!");
+        tvTransferFrom.setText("From: "+ giverID);
+        tvTransferTo.setText("To: "+Menu_screen.Merc_WalletID);
+        tvTransferAmount.setText("Amount: RM"+ showTtl);
+        tvTransferAmount.setText("Amount: "+ String.format("RM %.2f" ,showTtl));
+
+    }
+
+    public void showStatusCancelled(){
+        tvTransferStatus.setText("Transfer Cancelled!");
+        tvTransferFrom.setText("From: NONE");
+        tvTransferTo.setText("To: NONE");
+        tvTransferAmount.setText("Amount: NONE");
     }
 }
