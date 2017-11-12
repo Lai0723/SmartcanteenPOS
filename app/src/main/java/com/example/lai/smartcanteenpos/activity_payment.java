@@ -3,9 +3,11 @@ package com.example.lai.smartcanteenpos;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,10 +17,20 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.lai.smartcanteenpos.Obejct.MAdapter;
 import com.example.lai.smartcanteenpos.Obejct.Menu;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -32,7 +44,10 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import static com.example.lai.smartcanteenpos.R.id.menulistview;
 
@@ -46,7 +61,7 @@ public class activity_payment extends Fragment {
     ListView Menulist;
     ProgressDialog progressDialog;
     public static boolean allowRefresh;
-    String MercName;
+    String MercName, totalToPass;
     static double itemInCart[] = new double[100];
     static int qtyOrdered = 0;
     Menu purchased[] = new Menu[100];
@@ -54,7 +69,8 @@ public class activity_payment extends Fragment {
     Double itemPrice;
     TextView Total;
 
-
+    String ttlPurchaseAmt;
+    double balanceToCheck, balance;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -62,14 +78,13 @@ public class activity_payment extends Fragment {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_activity_payment, container, false);
 
-        View v = inflater.inflate(R.layout.fragment_activity_payment,container,false);
+        View v = inflater.inflate(R.layout.fragment_activity_payment, container, false);
         allowRefresh = false;
 
 
-        Menulist = (ListView)v.findViewById(menulistview);
-        btnTotal = (Button)v.findViewById(R.id.btnTotal);
-        Total = (TextView)v.findViewById(R.id.TotalPrice);
-
+        Menulist = (ListView) v.findViewById(menulistview);
+        btnTotal = (Button) v.findViewById(R.id.btnTotal);
+        Total = (TextView) v.findViewById(R.id.TotalPrice);
 
 
         progressDialog = new ProgressDialog(v.getContext());
@@ -80,47 +95,52 @@ public class activity_payment extends Fragment {
             String type = "retrieveMenu";
             MercName = Login.LOGGED_IN_USER;
             activity_payment.BackgroundWorker backgroundWorker = new activity_payment.BackgroundWorker(v.getContext());
-            backgroundWorker.execute(type,  MercName);
+            backgroundWorker.execute(type, MercName);
 
         } else {
             loadListing();
         }
 
 
-
-       Menulist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        Menulist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Menu entry = (Menu) parent.getItemAtPosition(position);
-                if(qtyOrdered<99){
+                if (qtyOrdered < 99) {
 
-                    purchased[qtyOrdered]=entry;
+                    purchased[qtyOrdered] = entry;
                     qtyOrdered++;
                     Toast.makeText(getView().getContext(), "Add to cart succesful", Toast.LENGTH_LONG).show();
 
-            }
-            else{
+                } else {
                     Toast.makeText(getView().getContext(), "Only can order 99 item at once", Toast.LENGTH_LONG).show();
                 }
-        }});
-
-
+            }
+        });
 
 
         btnTotal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                int j=0;
-                double total =0;
-                while(purchased[j]!= null){
+                int j = 0;
+                double total = 0;
+                while (purchased[j] != null) {
 
                     total += purchased[j].getPrice();
                     j++;
-            }
+                }
 
-            Total.setText(Double.toString(total));
-        }});
+                Total.setText(Double.toString(total));
+                totalToPass = Total.getText().toString();
+                ttlPurchaseAmt = totalToPass;
+                Intent intent = new Intent(v.getContext(), onSpotTransferScanner.class);
+                intent.putExtra("ttlPurchaseAmt", totalToPass);
+                startActivity(intent);
+                //Menu_screen.startScan();
+
+            }
+        });
 
         return v;
     }
@@ -188,54 +208,53 @@ public class activity_payment extends Fragment {
                 }
             }
 
-                if (type == "retrievePrice") {
-                    String ProdID = params[2];
+            if (type == "retrievePrice") {
+                String ProdID = params[2];
 
-                    try {
+                try {
 
-                        //establish httpUrlConnection with POST method
-                        URL url = new URL(retrievePrice);
-                        HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-                        httpURLConnection.setRequestMethod("POST");
-                        httpURLConnection.setDoOutput(true);
-                        httpURLConnection.setDoInput(true);
+                    //establish httpUrlConnection with POST method
+                    URL url = new URL(retrievePrice);
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    httpURLConnection.setRequestMethod("POST");
+                    httpURLConnection.setDoOutput(true);
+                    httpURLConnection.setDoInput(true);
 
-                        //set output stream
-                        OutputStream outputStream = httpURLConnection.getOutputStream();
-                        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-                        String post_data = URLEncoder.encode("ProdID", "UTF-8") + "=" + URLEncoder.encode(ProdID, "UTF-8");
+                    //set output stream
+                    OutputStream outputStream = httpURLConnection.getOutputStream();
+                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                    String post_data = URLEncoder.encode("ProdID", "UTF-8") + "=" + URLEncoder.encode(ProdID, "UTF-8");
 
-                        bufferedWriter.write(post_data);
-                        bufferedWriter.flush();
-                        bufferedWriter.close();
-                        outputStream.close();
+                    bufferedWriter.write(post_data);
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    outputStream.close();
 
-                        // read the data
-                        InputStream inputStream = httpURLConnection.getInputStream();
-                        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
-                        String result = "";
-                        String line = "";
+                    // read the data
+                    InputStream inputStream = httpURLConnection.getInputStream();
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                    String result = "";
+                    String line = "";
 
-                        while ((line = bufferedReader.readLine()) != null) {
-                            result += line;
-                        }
-                        bufferedReader.close();
-                        inputStream.close();
-                        httpURLConnection.disconnect();
-                        return result;
-
-
-                    } catch (MalformedURLException e) {
-                        e.printStackTrace();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-
-
+                    while ((line = bufferedReader.readLine()) != null) {
+                        result += line;
                     }
+                    bufferedReader.close();
+                    inputStream.close();
+                    httpURLConnection.disconnect();
+                    return result;
+
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+
+
+                }
             }
             return null;
         }
-
 
 
         @Override
@@ -264,10 +283,7 @@ public class activity_payment extends Fragment {
                         Double Price = Double.parseDouble(courseResponse.getString("ProdPrice"));
 
 
-
-
-
-                        Menu listing = new Menu(ProdID, ProdName,Price);
+                        Menu listing = new Menu(ProdID, ProdName, Price);
 
 
                         Menu_screen.MList.add(listing);
@@ -277,8 +293,6 @@ public class activity_payment extends Fragment {
                         progressDialog.dismiss();
 
                     loadListing();
-
-
 
 
                 } catch (Exception e) {
@@ -299,11 +313,12 @@ public class activity_payment extends Fragment {
     }
 
 
-
     private void loadListing() {
         final MAdapter adapter = new MAdapter(getActivity(), R.layout.fragment_activity_payment, Menu_screen.MList);
         Menulist.setAdapter(adapter);
 
     }
+
+
 
 }

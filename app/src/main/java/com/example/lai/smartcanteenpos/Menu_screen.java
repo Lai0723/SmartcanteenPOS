@@ -42,6 +42,8 @@ public class Menu_screen extends AppCompatActivity {
     public static int loyaltyPoint;
     TextView tvMercBalance;
 
+
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 

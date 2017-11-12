@@ -44,8 +44,7 @@
         <activity
             android:name="com.example.lai.smartcanteenpos.Login"
             android:label="@string/app_name"
-            android:screenOrientation="landscape" >
-        </activity>
+            android:screenOrientation="landscape" />
         <activity
             android:name="com.example.lai.smartcanteenpos.Menu_screen"
             android:screenOrientation="landscape" />
@@ -66,6 +65,7 @@
         <activity android:name="com.example.lai.smartcanteenpos.changecard" />
         <activity android:name="com.example.lai.smartcanteenpos.QRPassword" />
         <activity android:name="com.example.lai.smartcanteenpos.QRTransfer" />
+        <activity android:name="com.example.lai.smartcanteenpos.onSpotTransferScanner" />
 
         <meta-data
             android:name="android.support.VERSION"

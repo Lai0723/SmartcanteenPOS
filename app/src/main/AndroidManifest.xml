@@ -16,22 +16,19 @@
         <activity
             android:name=".Login"
             android:label="@string/app_name"
-            android:screenOrientation="landscape">
-
-        </activity>
-        <activity android:name=".Menu_screen" android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".Menu_screen"
+            android:screenOrientation="landscape" />
         <activity android:name=".Register" />
 
-
-        <!--Gab part-->
+        <!-- Gab part -->
         <activity android:name=".login_type_select">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".studLogin"
@@ -39,8 +36,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".changecard" />
         <activity android:name=".QRPassword" />
-        <activity android:name=".QRTransfer"/>
-
+        <activity android:name=".QRTransfer" />
+        <activity android:name=".onSpotTransferScanner"></activity>
     </application>
 
 </manifest>
