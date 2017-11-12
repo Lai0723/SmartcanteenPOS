@@ -1036,10 +1036,10 @@ int id topPanel 0x7f070119
 int id touch_outside 0x7f07011a
 int id transition_current_scene 0x7f07011b
 int id transition_scene_layoutid_cache 0x7f07011c
-int id tvBalance 0x7f07011d
-int id tvBalanceToChk 0x7f07011e
-int id tvCardEnding 0x7f07011f
-int id tvCardType 0x7f070120
+int id tvBalanceToChk 0x7f07011d
+int id tvCardEnding 0x7f07011e
+int id tvCardType 0x7f07011f
+int id tvMercBalance 0x7f070120
 int id tvTestWalletID 0x7f070121
 int id tvTopUpValue 0x7f070122
 int id txtAddr 0x7f070123

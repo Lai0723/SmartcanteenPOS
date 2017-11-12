@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         currentCard = extras.getString("currentCard");
         currentCardType = extras.getString("currentCardType");
 
+
         //Manually displaying the first fragment - one time only
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_main, fragmentWallet.newInstance());
@@ -217,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
                                 fragmentWallet.allowRefresh = true;
                                 insertTransfer(this, "https://martpay.000webhostapp.com/gab_insert_transfer.php", giverID, ttlPurchaseAmt, date, receiverID);
 
-                                //end need change de part
+
                             } catch (Exception e) {
                                 e.printStackTrace();
                                 Toast.makeText(getApplicationContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -356,7 +357,7 @@ public class MainActivity extends AppCompatActivity {
                                     balance = jsonObject.getDouble("Balance");
                                     loyaltyPoint = jsonObject.getInt("LoyaltyPoint");
                                     //Toast.makeText(getApplicationContext(), "Balance loaded", Toast.LENGTH_LONG).show();
-                                    tvBalance = (TextView) findViewById(R.id.tvBalance);
+                                    tvBalance = (TextView) findViewById(R.id.tvMercBalance);
                                     if (tvBalance != null)
                                         tvBalance.setText(String.format("RM %.2f", MainActivity.balance));
                                 } else if (success == 2) {
@@ -428,7 +429,7 @@ public class MainActivity extends AppCompatActivity {
                                     //balance = jsonObject.getDouble("Balance");
                                     //loyaltyPoint = jsonObject.getInt("LoyaltyPoint");
                                     //Toast.makeText(getApplicationContext(), "Balance loaded", Toast.LENGTH_LONG).show();
-                                    tvBalance = (TextView) findViewById(R.id.tvBalance);
+                                    tvBalance = (TextView) findViewById(R.id.tvMercBalance);
                                     TextView tvCardType = (TextView) findViewById(R.id.tvCardType);
                                     TextView tvCardEnding = (TextView) findViewById(R.id.tvCardEnding);
                                     //if (tvBalance != null)

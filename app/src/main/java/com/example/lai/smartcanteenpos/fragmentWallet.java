@@ -31,7 +31,7 @@ public class fragmentWallet extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View inflatedView = inflater.inflate(R.layout.fragment_wallet, container, false);
-        tvBalance = (TextView) inflatedView.findViewById(R.id.tvBalance);
+        tvBalance = (TextView) inflatedView.findViewById(R.id.tvMercBalance);
         tvBalance.setText(String.format("RM %.2f" ,MainActivity.balance ));
         allowRefresh=false;
 

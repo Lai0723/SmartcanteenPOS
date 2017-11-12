@@ -3575,10 +3575,10 @@ public final class R {
     public static final int touch_outside=0x7f07011a;
     public static final int transition_current_scene=0x7f07011b;
     public static final int transition_scene_layoutid_cache=0x7f07011c;
-    public static final int tvBalance=0x7f07011d;
-    public static final int tvBalanceToChk=0x7f07011e;
-    public static final int tvCardEnding=0x7f07011f;
-    public static final int tvCardType=0x7f070120;
+    public static final int tvBalanceToChk=0x7f07011d;
+    public static final int tvCardEnding=0x7f07011e;
+    public static final int tvCardType=0x7f07011f;
+    public static final int tvMercBalance=0x7f070120;
     public static final int tvTestWalletID=0x7f070121;
     public static final int tvTopUpValue=0x7f070122;
     public static final int txtAddr=0x7f070123;

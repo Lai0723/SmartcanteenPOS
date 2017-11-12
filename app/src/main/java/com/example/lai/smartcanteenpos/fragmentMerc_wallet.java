@@ -29,8 +29,9 @@ public class fragmentMerc_wallet extends Fragment {
         // Inflate the layout for this fragment
         View inflatedView = inflater.inflate(R.layout.fragment_merc_wallet, container, false);
 
-        tvBalance = (TextView) inflatedView.findViewById(R.id.tvBalance);
+        tvBalance = (TextView) inflatedView.findViewById(R.id.tvMercBalance);
         tvTestWalletID = (TextView) inflatedView.findViewById(R.id.tvTestWalletID);
+        tvTestWalletID.setText(Menu_screen.Merc_WalletID);
         allowRefresh=false;
 
         return inflatedView;
