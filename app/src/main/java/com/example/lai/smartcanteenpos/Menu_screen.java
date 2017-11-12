@@ -3,6 +3,7 @@ package com.example.lai.smartcanteenpos;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
@@ -32,7 +33,7 @@ public class Menu_screen extends AppCompatActivity {
             switch (item.getItemId()) {
 
                 case R.id.navigation_Wallet:
-                    merc_wallet w = new merc_wallet();
+                    fragmentMerc_wallet w = new fragmentMerc_wallet();
                     getSupportFragmentManager().beginTransaction().replace(R.id.content,w).commit();
                     break;
 
@@ -68,7 +69,10 @@ public class Menu_screen extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-
+        //Manually displaying the first fragment - one time only
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.content, fragmentMerc_wallet.newInstance());
+        transaction.commit();
 
     }
 
