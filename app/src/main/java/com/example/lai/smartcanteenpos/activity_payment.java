@@ -242,7 +242,7 @@ public class activity_payment extends Fragment {
         protected void onPreExecute() {
 
             if (!progressDialog.isShowing()) ;
-            progressDialog.setMessage("Retrieving data");
+            progressDialog.setMessage("Retrieving order activities");
             progressDialog.show();
 
 

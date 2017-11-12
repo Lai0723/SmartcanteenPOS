@@ -11,11 +11,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <meta-data
-        android:name="android.support.VERSION"
-        android:value="25.3.1" />
-
     <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
     <uses-feature
         android:name="android.hardware.camera"
@@ -71,6 +66,11 @@
         <activity android:name="com.example.lai.smartcanteenpos.changecard" />
         <activity android:name="com.example.lai.smartcanteenpos.QRPassword" />
         <activity android:name="com.example.lai.smartcanteenpos.QRTransfer" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="25.4.0" />
+
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
             android:clearTaskOnLaunch="true"
@@ -78,10 +78,6 @@
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme"
             android:windowSoftInputMode="stateAlwaysHidden" />
-
-        <meta-data
-            android:name="android.support.VERSION"
-            android:value="25.4.0" />
     </application>
 
 </manifest>

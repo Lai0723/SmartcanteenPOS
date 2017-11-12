@@ -31,12 +31,12 @@ public class Menu_screen extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_Menu:
-                MenuFragment m = new MenuFragment();
+                    MenuFragment m = new MenuFragment();
                     getSupportFragmentManager().beginTransaction().replace(R.id.content,m).commit();
-                break;
+                    break;
 
                 case R.id.navigation_Order:
-                OrderFragment o = new OrderFragment();
+                    OrderFragment o = new OrderFragment();
                     getSupportFragmentManager().beginTransaction().replace(R.id.content,o).commit();
                     break;
 
@@ -46,9 +46,7 @@ public class Menu_screen extends AppCompatActivity {
                     break;
 
                 case R.id.navigation_Report:
-
-
-
+                    break;
             }
             return false;
         }
