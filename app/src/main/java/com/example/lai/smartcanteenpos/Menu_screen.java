@@ -30,6 +30,12 @@ public class Menu_screen extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
+
+                case R.id.navigation_Wallet:
+                    merc_wallet w = new merc_wallet();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.content,w).commit();
+                    break;
+
                 case R.id.navigation_Menu:
                     MenuFragment m = new MenuFragment();
                     getSupportFragmentManager().beginTransaction().replace(R.id.content,m).commit();

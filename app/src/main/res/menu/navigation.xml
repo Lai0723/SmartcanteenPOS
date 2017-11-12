@@ -2,6 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/navigation_Wallet"
+        android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+        android:title="Wallet &amp; Scanner" />
+
+    <item
         android:id="@+id/navigation_Menu"
         android:icon="@drawable/ic_restaurant_menu_black_24px"
         android:title="@string/Menu" />
