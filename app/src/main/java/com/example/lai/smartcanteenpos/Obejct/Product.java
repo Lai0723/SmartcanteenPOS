@@ -14,7 +14,7 @@ public class Product {
     private int  Quantity;
     private String ImageURL;
     private String MercName;
-    private String SupplierName;
+
 
 
 
@@ -25,12 +25,11 @@ public class Product {
 
 
 
-    public Product (String ProdID, String ProdName,String ProdCat,String ProdDesc,Double Price,String SupplierName, String ImageURL){
+    public Product (String ProdID, String ProdName,String ProdCat,String ProdDesc,Double Price, String ImageURL){
         this.setProdName(ProdName);
         this.setProdCat(ProdCat);
         this.setProdDesc(ProdDesc);
         this.setPrice(Price);
-        this.setSupplierName(SupplierName);
         this.setImageURL(ImageURL);
         this.setProdID(ProdID);
 
@@ -110,14 +109,6 @@ public class Product {
 
     public void setMercName(String mercName) {
         MercName = mercName;
-    }
-
-    public String getSupplierName() {
-        return SupplierName;
-    }
-
-    public void setSupplierName(String supplierName) {
-        SupplierName = supplierName;
     }
 
 

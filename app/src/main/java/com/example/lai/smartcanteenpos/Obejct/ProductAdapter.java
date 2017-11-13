@@ -38,7 +38,7 @@ public class ProductAdapter extends ArrayAdapter<Product>{
 
         View rowView = inflater.inflate(R.layout.listlayout, parent, false);
 
-        TextView PID,PName,PCat,PDesc,PPrice,PSupplier;
+        TextView PID,PName,PCat,PDesc,PPrice;
         ImageView ivImage;
 
 
@@ -47,7 +47,6 @@ public class ProductAdapter extends ArrayAdapter<Product>{
         PCat = (TextView) rowView.findViewById(R.id.PCat);
         PDesc = (TextView) rowView.findViewById(R.id.PDesc);
         PPrice = (TextView) rowView.findViewById(R.id.PPrice);
-        PSupplier = (TextView) rowView.findViewById(R.id.PSupplier);
         ivImage = (ImageView) rowView.findViewById(R.id.ivImage);
 
         PID.setText(PID.getText() + ":  " + list.getProdID());
@@ -55,7 +54,6 @@ public class ProductAdapter extends ArrayAdapter<Product>{
         PCat.setText(PCat.getText() + ":  " + list.getProdCat());
         PDesc.setText(PDesc.getText() + ":  " + list.getProdDesc());
         PPrice.setText(PPrice.getText() + ":  " + list.getPrice());
-        PSupplier.setText( PSupplier.getText() + ":  " + list.getSupplierName());
         getImage(list.getImageURL(), ivImage);
 
         return rowView;

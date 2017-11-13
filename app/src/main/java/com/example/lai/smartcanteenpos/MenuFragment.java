@@ -231,7 +231,7 @@ public class MenuFragment extends Fragment   {
                         String ImageURL = courseResponse.getString("url");
 
 
-                        Product listing = new Product(ProdID, ProdName, ProdCat, ProdDesc, ProdPrice,SupplierName ,ImageURL);
+                        Product listing = new Product(ProdID, ProdName, ProdCat, ProdDesc, ProdPrice,ImageURL);
                         Menu_screen.lList.add(listing);
 
                     }

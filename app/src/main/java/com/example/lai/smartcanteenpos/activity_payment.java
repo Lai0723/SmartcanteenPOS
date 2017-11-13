@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,20 +16,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.lai.smartcanteenpos.Obejct.MAdapter;
 import com.example.lai.smartcanteenpos.Obejct.Menu;
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -44,10 +33,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 import static com.example.lai.smartcanteenpos.R.id.menulistview;
 
@@ -68,6 +54,8 @@ public class activity_payment extends Fragment {
     Button btnTotal;
     Double itemPrice;
     TextView Total;
+    TextView ItemInCart;
+    static int Cart = 0;
 
     String ttlPurchaseAmt;
     double balanceToCheck, balance;
@@ -85,6 +73,7 @@ public class activity_payment extends Fragment {
         Menulist = (ListView) v.findViewById(menulistview);
         btnTotal = (Button) v.findViewById(R.id.btnTotal);
         Total = (TextView) v.findViewById(R.id.TotalPrice);
+        ItemInCart = (TextView) v.findViewById(R.id.txtCart);
 
 
         progressDialog = new ProgressDialog(v.getContext());
@@ -111,7 +100,9 @@ public class activity_payment extends Fragment {
                     purchased[qtyOrdered] = entry;
                     qtyOrdered++;
                     Toast.makeText(getView().getContext(), "Add to cart succesful", Toast.LENGTH_LONG).show();
-
+                    Cart++;
+                    ItemInCart.setText(Integer.toString(Cart));
+                    calcTotal();
                 } else {
                     Toast.makeText(getView().getContext(), "Only can order 99 item at once", Toast.LENGTH_LONG).show();
                 }
@@ -123,13 +114,8 @@ public class activity_payment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                int j = 0;
-                double total = 0;
-                while (purchased[j] != null) {
+                double total = calcTotal();
 
-                    total += purchased[j].getPrice();
-                    j++;
-                }
 
                 Total.setText(Double.toString(total));
                 totalToPass = Total.getText().toString();
@@ -143,6 +129,20 @@ public class activity_payment extends Fragment {
         });
 
         return v;
+    }
+
+    private double calcTotal(){
+
+        int j = 0;
+        double total = 0;
+        while (purchased[j] != null) {
+
+            total += purchased[j].getPrice();
+            j++;}
+
+            Total.setText("RM  " + Double.toString(total));
+        return total;
+
     }
 
 
