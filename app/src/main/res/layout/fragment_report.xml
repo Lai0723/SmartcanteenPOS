@@ -24,18 +24,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:layout_marginEnd="136dp"
-        android:text="MonthlyReport"
+        android:layout_marginEnd="120dp"
+        android:text="Monthly_Report"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnExpensesReport" />
+        app:layout_constraintEnd_toStartOf="@+id/btnYearlyReport" />
 
     <Button
-        android:id="@+id/btnExpensesReport"
+        android:id="@+id/btnYearlyReport"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="132dp"
-        android:text="ExpensesReport"
+        android:text="Yearly_Report"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
