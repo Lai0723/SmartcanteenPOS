@@ -9,18 +9,28 @@ public class Menu {
     private String ProdID;
     private String ProdName;
     private double Price;
+    private int  Quantity;
 
-    public Menu (String ProdID, String ProdName,Double Price){
+
+
+    public Menu (String ProdID, String ProdName, double Price, int  Quantity){
         this.setProdName(ProdName);
 
         this.setPrice(Price);
 
         this.setProdID(ProdID);
 
+        this.setQuantity(Quantity);
 
     }
 
+    public int getQuantity() {
+        return Quantity;
+    }
 
+    public void setQuantity(int quantity) {
+        Quantity = quantity;
+    }
 
     public String getProdID() {
         return ProdID;

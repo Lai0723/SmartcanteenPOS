@@ -102,13 +102,23 @@ public class activity_payment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Menu entry = (Menu) parent.getItemAtPosition(position);
                 if (qtyOrdered < 99) {
+                    if(entry.getQuantity()>0){
+                        //update quantity (local, not db)
+                        entry.setQuantity(entry.getQuantity()-1);
+                        TextView MQuantity;
+                        MQuantity = (TextView) view.findViewById(R.id.MQuantity);
+                        MQuantity.setText("Quantity left" + " : "+ entry.getQuantity());
 
-                    purchased[qtyOrdered] = entry;
-                    qtyOrdered++;
-                    Toast.makeText(getView().getContext(), "Add to cart succesful", Toast.LENGTH_LONG).show();
-                    Cart++;
-                    ItemInCart.setText(Integer.toString(Cart));
-                    calcTotal();
+                        purchased[qtyOrdered] = entry;
+                        qtyOrdered++;
+                        Toast.makeText(getView().getContext(), "Add to cart succesful", Toast.LENGTH_LONG).show();
+                        Cart++;
+                        ItemInCart.setText(Integer.toString(Cart));
+                        calcTotal();
+                    }else{
+                        Toast.makeText(getView().getContext(), "Item out of stock", Toast.LENGTH_LONG).show();
+                    }
+
                 } else {
                     Toast.makeText(getView().getContext(), "Only can order 99 item at once", Toast.LENGTH_LONG).show();
                 }
@@ -293,10 +303,11 @@ public class activity_payment extends Fragment {
 
                         String ProdID = courseResponse.getString("ProdID");
                         String ProdName = courseResponse.getString("ProdName");
-                        Double Price = Double.parseDouble(courseResponse.getString("ProdPrice"));
+                        double Price = Double.parseDouble(courseResponse.getString("ProdPrice"));
+                        int Quantity = Integer.parseInt(courseResponse.getString("ProdQuantity"));
 
 
-                        Menu listing = new Menu(ProdID, ProdName, Price);
+                        Menu listing = new Menu(ProdID, ProdName, Price,Quantity);
 
 
                         Menu_screen.MList.add(listing);

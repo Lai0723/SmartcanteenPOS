@@ -32,20 +32,23 @@ public class MAdapter extends ArrayAdapter<Menu> {
 
         View rowView = inflater.inflate(R.layout.menulist, parent, false);
 
-        TextView MID,MName,MPrice;
+        TextView MID,MName,MPrice,MQuantity;
 
 
 
         MID = (TextView) rowView.findViewById(R.id.MID);
         MName = (TextView) rowView.findViewById(R.id.MName);
         MPrice = (TextView) rowView.findViewById(R.id.MPrice);
+        MQuantity = (TextView) rowView.findViewById(R.id.MQuantity);
 
 
 
 
-        MID.setText( MID.getText() + " :  "+ list.getProdID());
-        MName.setText( MName.getText() + " : " + list.getProdName());
+
+        MID.setText(MID.getText() + " :  "+ list.getProdID());
+        MName.setText(MName.getText() + " : " + list.getProdName());
         MPrice.setText(MPrice.getText() + " : "+ list.getPrice());
+        MQuantity.setText("Quantity left" + " : "+ list.getQuantity());
 
 
 
