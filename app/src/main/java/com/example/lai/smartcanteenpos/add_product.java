@@ -37,7 +37,7 @@ public class add_product extends Fragment {
     private int PICK_IMAGE_REQUEST = 1;
     private Bitmap bitmap;
     private Uri filePath;
-    EditText txtProdName, txtCat, txtDesc, txtQuantity, txtPrice,txtSupplier;
+    EditText txtProdName, txtCat, txtDesc, txtQuantity, txtPrice;
     boolean picChosen;
     private Button btnUpload, btnsubmit, btncancel;
     private ImageView imageView;
@@ -58,7 +58,7 @@ public class add_product extends Fragment {
         txtDesc = (EditText) v.findViewById(R.id.txtDesc);
         txtPrice = (EditText) v.findViewById(R.id.txtPrice);
         txtQuantity = (EditText) v.findViewById(R.id.txtQuantity);
-        txtSupplier = (EditText) v.findViewById(R.id.txtSupplier);
+
         btnUpload = (Button) v.findViewById(R.id.btnUpload);
         btnsubmit = (Button) v.findViewById(R.id.btnsubmit);
         btncancel = (Button) v.findViewById(R.id.btncancel);
@@ -102,7 +102,7 @@ public class add_product extends Fragment {
         String ProdDesc = txtDesc.getText().toString();
         String ProdPrice = txtPrice.getText().toString();
         String ProdQuantity = txtQuantity.getText().toString();
-        String SupplierName = txtSupplier.getText().toString();
+
 
 
        if (TextUtils.isEmpty(ProdName)) {
@@ -125,9 +125,7 @@ public class add_product extends Fragment {
         if (TextUtils.isEmpty(ProdQuantity)) {
             txtQuantity.setError("Field cannot be empty");
         }
-        if (TextUtils.isEmpty(SupplierName)) {
-            txtSupplier.setError("Field cannot be empty");
-        }
+
         else {
           uploadImage();
             MenuFragment.allowRefresh = true;
@@ -173,7 +171,7 @@ public class add_product extends Fragment {
             String ProdDesc = txtDesc.getText().toString();
             String ProdPrice = txtPrice.getText().toString();
             String ProdQuantity = txtQuantity.getText().toString();
-            String SupplierName = txtSupplier.getText().toString();
+
 
             ProgressDialog loading;
             RequestHandler rh = new RequestHandler();
@@ -206,7 +204,7 @@ public class add_product extends Fragment {
                 data.put("ProdQuantity", ProdQuantity);
                 data.put("ProdImage", ProdImage);
                 data.put("MercName", Login.LOGGED_IN_USER);
-                data.put("SupplierName",SupplierName);
+
 
 
 

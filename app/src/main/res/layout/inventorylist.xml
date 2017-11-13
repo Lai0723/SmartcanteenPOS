@@ -13,7 +13,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textSize="36sp"
             android:textStyle="bold" />
 
         <TextView
@@ -21,8 +22,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:textSize="18sp"
+            android:textSize="36sp"
             android:textStyle="bold" />
 
         <TextView
@@ -30,16 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/PSup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textAlignment="textStart"
-            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textSize="36sp"
             android:textStyle="bold" />
 
     </LinearLayout>

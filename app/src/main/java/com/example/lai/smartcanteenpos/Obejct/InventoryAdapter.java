@@ -2,6 +2,7 @@ package com.example.lai.smartcanteenpos.Obejct;
 
 import android.app.Activity;
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,19 +31,20 @@ public class InventoryAdapter extends ArrayAdapter<Inventory> {
 
         View rowView = inflater.inflate(R.layout.inventorylist, parent, false);
 
-        TextView PID,PName,PQuantity,PSup;
+        TextView PID,PName,PQuantity;
 
 
 
         PID = (TextView) rowView.findViewById(R.id.PID);
         PName = (TextView) rowView.findViewById(R.id.PName);
         PQuantity = (TextView) rowView.findViewById(R.id.PQuantity);
-        PSup = (TextView) rowView.findViewById(R.id.PSup);
 
         PID.setText(PID.getText()  + ""+ list.getProdID());
         PName.setText(PName.getText()  + "" + list.getProdName());
         PQuantity.setText(PQuantity.getText() + ""+ list.getProdQuantity());
-        PSup.setText(PSup.getText()  + "" + list.getSupplierName());
+        if(list.getProdQuantity()<24){
+            PName.setTextColor(ContextCompat.getColor(getContext(),R.color.red));
+        }
 
 
 

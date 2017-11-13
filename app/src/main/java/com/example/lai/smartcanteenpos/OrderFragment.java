@@ -48,6 +48,7 @@ public class OrderFragment extends Fragment {
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new activity_order(),"Order");
         adapter.addFragment(new activity_payment(),"Payment");
+        viewPager.setOffscreenPageLimit(2);
         viewPager.setAdapter(adapter);
     }
 

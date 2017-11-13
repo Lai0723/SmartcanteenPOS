@@ -8,24 +8,11 @@ public class Inventory {
     private String ProdID;
     private String ProdName;
     private int ProdQuantity;
-    private String SupplierName;
-
-
-    public Inventory (String ProdID, String ProdName, int ProdQuantity,String SupplierName){
-        this.setProdID(ProdID);
-        this.setProdName(ProdName);
-        this.setProdQuantity(ProdQuantity);
-        this.setSupplierName(SupplierName);
-
-
-    }
 
     public Inventory (String ProdID, String ProdName, int ProdQuantity){
         this.setProdID(ProdID);
         this.setProdName(ProdName);
         this.setProdQuantity(ProdQuantity);
-
-
 
     }
 
@@ -54,11 +41,5 @@ public class Inventory {
         ProdQuantity = prodQuantity;
     }
 
-    public String getSupplierName() {
-        return SupplierName;
-    }
 
-    public void setSupplierName(String supplierName) {
-        SupplierName = supplierName;
-    }
 }

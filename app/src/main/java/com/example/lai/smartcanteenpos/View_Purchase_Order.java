@@ -30,9 +30,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 
 /**
@@ -187,12 +185,11 @@ public class View_Purchase_Order extends Fragment {
                         String PurchaseQuantity= courseResponse.getString("PurchaseQuantity");
                         Double Fee = Double.parseDouble(courseResponse.getString("Fee"));
 
-                        String PDate = courseResponse.getString("PurchaseDate");
-                        Date PurchaseDate = new SimpleDateFormat("dd-MM-yyyy").parse(PDate);
+                        String retrieveDate = courseResponse.getString("PurchaseDate");
 
 
 
-                        Purchase_order listing = new Purchase_order(POID,ProdID,SupplierName,PurchaseQuantity,Fee,PurchaseDate);
+                        Purchase_order listing = new Purchase_order(POID,ProdID,SupplierName,PurchaseQuantity,Fee,retrieveDate);
                         Menu_screen.OList.add(listing);
 
                     }

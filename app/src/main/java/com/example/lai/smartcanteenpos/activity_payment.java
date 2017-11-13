@@ -117,11 +117,18 @@ public class activity_payment extends Fragment {
                 double total = calcTotal();
 
 
-                Total.setText(Double.toString(total));
-                totalToPass = Total.getText().toString();
+                //Total.setText(Double.toString(total));
+                //totalToPass = Total.getText().toString();
+                totalToPass = Double.toString(total);
+
                 ttlPurchaseAmt = totalToPass;
                 Intent intent = new Intent(v.getContext(), onSpotTransferScanner.class);
                 intent.putExtra("ttlPurchaseAmt", totalToPass);
+                purchased = new Menu[100];
+                qtyOrdered = 0;
+                Cart=0;
+                ItemInCart.setText(Integer.toString(Cart));
+                Total.setText("RM 0");
                 startActivity(intent);
                 //Menu_screen.startScan();
 
@@ -140,7 +147,7 @@ public class activity_payment extends Fragment {
             total += purchased[j].getPrice();
             j++;}
 
-            Total.setText("RM  " + Double.toString(total));
+        Total.setText("RM  " + Double.toString(total));
         return total;
 
     }

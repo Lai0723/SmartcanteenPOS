@@ -15,6 +15,7 @@ public class Purchase_order {
     private double fee;
     private Date purchaseDate;
     private String MercName;
+    private String retrieveDate;
 
 public Purchase_order(){
 
@@ -32,14 +33,17 @@ public Purchase_order(){
 
     }
 
+    public Purchase_order (String POID,String ProdID, String SupplierName,String PurchaseQuantity,double fee,String retrieveDate){
+
+        this.setPOID(POID);
+        this.setProdID(ProdID);
+        this.setSupplierName(SupplierName);
+        this.setPurchaseQuantity(PurchaseQuantity);
+        this.setFee(fee);
+        this.setRetrieveDate(retrieveDate);
 
 
-
-
-
-
-
-
+    }
 
 
     public String getProdID() {
@@ -96,5 +100,13 @@ public Purchase_order(){
 
     public void setPOID(String POID) {
         this.POID = POID;
+    }
+
+    public String getRetrieveDate() {
+        return retrieveDate;
+    }
+
+    public void setRetrieveDate(String retrieveDate) {
+        this.retrieveDate = retrieveDate;
     }
 }

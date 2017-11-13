@@ -1,7 +1,5 @@
 package com.example.lai.smartcanteenpos.Obejct;
 
-import java.util.Date;
-
 /**
  * Created by lai on 19/10/2017.
  */
@@ -11,10 +9,10 @@ public class Order {
     private String OrderID;
     private String ProdName;
     private int  OrderQuantity;
-    private Date OrderDateTime;
+    private String OrderDateTime;
     private String OrderStatus;
 
-public Order(String OrderID,String ProdName,int  OrderQuantity,Date OrderDateTime,String OrderStatus){
+public Order(String OrderID,String ProdName,int  OrderQuantity,String OrderDateTime,String OrderStatus){
 
 
         this.setOrderID(OrderID);
@@ -56,11 +54,11 @@ public Order(String OrderID,String ProdName,int  OrderQuantity,Date OrderDateTim
         OrderQuantity = orderQuantity;
     }
 
-    public Date getOrderDateTime() {
+    public String getOrderDateTime() {
         return OrderDateTime;
     }
 
-    public void setOrderDateTime(Date orderDateTime) {
+    public void setOrderDateTime(String orderDateTime) {
         OrderDateTime = orderDateTime;
     }
 

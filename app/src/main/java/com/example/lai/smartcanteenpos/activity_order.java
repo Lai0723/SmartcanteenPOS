@@ -40,9 +40,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -61,6 +59,7 @@ public class activity_order extends Fragment {
     public static boolean allowRefresh;
     public static final String TAG = "com.example.user.myApp";
     String id;
+    boolean first = true;
 
     String MercName;
 
@@ -83,6 +82,16 @@ public class activity_order extends Fragment {
 
         progressDialog = new ProgressDialog(v.getContext());
 
+        OrderID.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus && first){
+                    first=false;
+                    refreshList(v);
+                }
+            }
+        });
+
 
 
         btnOrderAccept.setOnClickListener(new View.OnClickListener() {
@@ -97,13 +106,11 @@ public class activity_order extends Fragment {
 
                 } else {
                     progressDialog = new ProgressDialog(getView().getContext());
-                    String type = "Checking Stock";
 
-                    activity_order.BackgroundWorker backgroundWorker2 = new activity_order.BackgroundWorker(v.getContext());
-                    backgroundWorker2.execute(type, id);
-                    OrderFragment.allowRefresh = true;
 
-                    Menu_screen.ORDERList = null;
+                    AcceptOrder(getView().getContext(), " https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/approved%20order.php");
+
+                    refreshList(v);
                 }
             }
         });
@@ -122,9 +129,7 @@ public class activity_order extends Fragment {
                 } else {
                     progressDialog = new ProgressDialog(getView().getContext());
                     DeclineOrder(getView().getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/declined%20order.php");
-                    OrderFragment.allowRefresh = true;
-
-                    Menu_screen.ORDERList = null;
+                    refreshList(v);
                 }
             }
         });
@@ -145,6 +150,18 @@ public class activity_order extends Fragment {
             loadListing();
         }
         return v;
+    }
+
+    private void refreshList(View v){
+        activity_order.allowRefresh = true;
+        Menu_screen.ORDERList = null;
+
+        Menu_screen.ORDERList = new ArrayList<>();
+
+        String type = "retrieveOrder";
+        MercName = Login.LOGGED_IN_USER;
+        activity_order.BackgroundWorker backgroundWorker = new activity_order.BackgroundWorker(v.getContext());
+        backgroundWorker.execute(type,  MercName);
     }
 
 
@@ -235,8 +252,8 @@ public class activity_order extends Fragment {
                         String OrderID = courseResponse.getString("OrderID");
                         String ProdName = courseResponse.getString("ProdName");
                         int OrderQuantity = Integer.parseInt(courseResponse.getString("OrderQuantity"));
-                        String ODate = courseResponse.getString("OrderDateTime");
-                        Date OrderDateTime = new SimpleDateFormat("dd-MM-yyyy").parse(ODate);
+                        String OrderDateTime = courseResponse.getString("OrderDateTime");
+                        //Date OrderDateTime = new SimpleDateFormat("dd-MM-yyyy").parse(ODate);
                         String OrderStatus = courseResponse.getString("OrderStatus");
 
 
@@ -282,6 +299,72 @@ public class activity_order extends Fragment {
 
 
     public void DeclineOrder(Context context, String url) {
+        //mPostCommentResponse.requestStarted();
+        RequestQueue queue = Volley.newRequestQueue(context);
+
+        //Send data
+        try {
+
+
+            StringRequest postRequest = new StringRequest(
+                    Request.Method.POST,
+                    url,
+                    new Response.Listener<String>() {
+
+                        @Override
+                        public void onResponse(String response) {
+                            //response =string returned by server to the client
+                            JSONObject jsonObject;
+                            try {
+                                jsonObject = new JSONObject(response);
+                                int success = jsonObject.getInt("success");
+                                String message = jsonObject.getString("message");
+                                if (success == 0) {
+
+                                    Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_LONG).show();
+
+                                } else {
+
+                                    Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_LONG).show();
+
+
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    },
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(getView().getContext(), "Error. " + error.toString(), Toast.LENGTH_LONG).show();
+                        }
+                    }) {
+                @Override
+                protected Map<String, String> getParams() {
+                    Map<String, String> params = new HashMap<>();
+
+                    params.put("OrderID", OrderID.getText().toString());
+
+                    return params;
+                }
+
+                @Override
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    Map<String, String> params = new HashMap<>();
+                    params.put("Content-Type", "application/x-www-form-urlencoded");
+                    return params;
+                }
+            };
+            queue.add(postRequest);
+        } catch (Exception e) {
+            e.printStackTrace();
+
+        }
+
+    }
+
+    public void AcceptOrder(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
 

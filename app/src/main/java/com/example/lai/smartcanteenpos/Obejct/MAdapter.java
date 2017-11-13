@@ -43,9 +43,9 @@ public class MAdapter extends ArrayAdapter<Menu> {
 
 
 
-        MID.setText( MID.getText() + ""+ list.getProdID());
-        MName.setText( MName.getText() + "" + list.getProdName());
-        MPrice.setText(MPrice.getText() + ""+ list.getPrice());
+        MID.setText( MID.getText() + " :  "+ list.getProdID());
+        MName.setText( MName.getText() + " : " + list.getProdName());
+        MPrice.setText(MPrice.getText() + " : "+ list.getPrice());
 
 
 

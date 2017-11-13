@@ -227,7 +227,6 @@ public class MenuFragment extends Fragment   {
                         String ProdCat = courseResponse.getString("ProdCat");
                         String ProdDesc = courseResponse.getString("ProdDesc");
                         double ProdPrice = Double.parseDouble(courseResponse.getString("ProdPrice"));
-                        String SupplierName = courseResponse.getString("SupplierName");
                         String ImageURL = courseResponse.getString("url");
 
 

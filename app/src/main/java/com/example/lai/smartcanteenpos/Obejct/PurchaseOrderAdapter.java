@@ -46,7 +46,7 @@ public class PurchaseOrderAdapter extends ArrayAdapter<Purchase_order> {
         Supplier.setText(Supplier.getText() + ""+ list.getSupplierName());
         PurchaseQuan.setText(PurchaseQuan.getText() + "" + list.getPurchaseQuantity());
         PurchaseFee.setText(PurchaseFee.getText() + "" + list.getFee());
-        PurchaseDate.setText(PurchaseDate.getText() + "" + list.getPurchaseDate());
+        PurchaseDate.setText(PurchaseDate.getText() + "" + list.getRetrieveDate());
 
 
 

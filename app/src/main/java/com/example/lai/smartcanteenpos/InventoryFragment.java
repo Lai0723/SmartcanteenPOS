@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -44,7 +43,6 @@ public class InventoryFragment extends Fragment {
     public static final String TAG = "com.example.user.myApp";
 
     ListView InventoryList;
-    TextView txtLowStock;
     RequestQueue queue;
     String MercName;
     ProgressDialog progressDialog;
@@ -69,7 +67,7 @@ public class InventoryFragment extends Fragment {
         allowRefresh = false;
         InventoryList = (ListView)v.findViewById(R.id.InventoryList);
 
-        txtLowStock = (TextView)v.findViewById(R.id.txtLowStock);
+
         btnadd = (Button)v.findViewById(R.id.btnaddI);
         btnpurchase = (Button)v.findViewById(R.id.btnPurchase);
         btnview = (Button)v.findViewById(R.id.btnView);
@@ -219,10 +217,10 @@ public class InventoryFragment extends Fragment {
                         String ProdID = courseResponse.getString("ProdID");
                         String ProdName = courseResponse.getString("ProdName");
                         int ProdQuantity= Integer.parseInt(courseResponse.getString("ProdQuantity"));
-                        String SupplierName = courseResponse.getString("SupplierName");
 
 
-                        Inventory listing = new Inventory(ProdID,ProdName,ProdQuantity,SupplierName);
+
+                        Inventory listing = new Inventory(ProdID,ProdName,ProdQuantity);
                         Menu_screen.SList.add(listing);
 
                     }
@@ -252,72 +250,5 @@ public class InventoryFragment extends Fragment {
 
     }
 
-
-  /*public void downloadListing(Context context, String url) {
-        // Instantiate the RequestQueue
-        queue = Volley.newRequestQueue(context);
-
-        JsonArrayRequest jsonObjectRequest = new JsonArrayRequest(
-                url,
-                new Response.Listener<JSONArray>() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        try {
-
-                            for (int i = 0; i < response.length(); i++) {
-                                JSONObject courseResponse = (JSONObject) response.get(i);
-                                String ProdID = courseResponse.getString("ProdID");
-                                String ProdName = courseResponse.getString("ProdName");
-                                int ProdQuantity= Integer.parseInt(courseResponse.getString("ProdQuantity"));
-                                String SupplierName = courseResponse.getString("SupplierName");
-
-
-
-                                Inventory listing = new Inventory(ProdID,ProdName,ProdQuantity,SupplierName);
-                                Menu_screen.SList.add(listing);
-                            }
-                            loadListing();
-
-                        } catch (Exception e) {
-                            Toast.makeText(getActivity(), "Error:" + e.getMessage(), Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError volleyError) {
-                        Toast.makeText(getActivity(), "Error" + volleyError.getMessage(), Toast.LENGTH_LONG).show();
-
-                    }
-                });
-
-        // Set the tag on the request.
-        jsonObjectRequest.setTag(TAG);
-
-        // Add the request to the RequestQueue.
-        queue.add(jsonObjectRequest);
-    }
-
-
-   /* private void loadListing() {
-        final InventoryAdapter adapter = new InventoryAdapter(getActivity(), R.layout.fragment_inventory, Menu_screen.SList);
-        InventoryList.setAdapter(adapter);
-        //Toast.makeText(getActivity(), "Count :" + lList.size(), Toast.LENGTH_LONG).show();
-    }
-
-
-    public void onResume() {
-        super.onResume();
-        if (allowRefresh) {
-            allowRefresh = false;
-            if (Menu_screen.SList == null) {
-                Menu_screen.SList = new ArrayList<>();
-                downloadListing(getActivity().getApplicationContext(), GET_URL);
-            } else {
-                loadListing();
-            }
-            getFragmentManager().beginTransaction().detach(this).attach(this).commit();
-        }
-    }*/
 
 }
