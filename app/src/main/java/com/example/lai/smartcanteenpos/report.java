@@ -46,10 +46,11 @@ public class report extends Fragment {
     }
 
     DatePicker datePicker;
-    private Button btnDailyReport, btnMonthlyReport, btnExpensesReport;
+    private Button btnDailyReport, btnMonthlyReport, btnYearlyReport;
     int day,month,year;
     ProgressDialog progressDialog;
     Double total = 0.00;
+    String date;
 
 
     String MercName = Login.LOGGED_IN_USER;
@@ -83,15 +84,16 @@ public class report extends Fragment {
 
         btnDailyReport = (Button) v.findViewById(R.id.btnDailyReport);
         btnMonthlyReport = (Button) v.findViewById(R.id.btnMonthlyReport);
-        btnExpensesReport = (Button) v.findViewById(R.id.btnExpensesReport);
+        btnYearlyReport = (Button) v.findViewById(R.id.btnYearlyReport);
 
         btnDailyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                total = 0.00;
                 String dateOfRep= year+"-"+month+"-"+day;
                 String type = "Generate Daily report";
                 report.BackgroundWorker backgroundWorker = new report.BackgroundWorker(v.getContext());
                 backgroundWorker.execute(type,  MercName, dateOfRep);
+                date= year+"-"+month+"-"+day;
 
 
             }
@@ -99,14 +101,28 @@ public class report extends Fragment {
 
         btnMonthlyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                total = 0.00;
                 String MonthOfRep = month+"";
                 String YearOfRep = year+"";
                 String type = "Generate Monthly report";
                 report.BackgroundWorker backgroundWorker = new report.BackgroundWorker(v.getContext());
                 backgroundWorker.execute(type,  MercName, MonthOfRep,YearOfRep);
+
+                date= year+"-"+month;
             }
         });
+
+        btnYearlyReport.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                total = 0.00;
+                String YearOfRep = year+"";
+                String type = "Generate Yearly report";
+                report.BackgroundWorker backgroundWorker = new report.BackgroundWorker(v.getContext());
+                backgroundWorker.execute(type,  MercName, YearOfRep);
+                date= year+"";
+            }
+        });
+
 
 
 
@@ -128,6 +144,7 @@ public class report extends Fragment {
             String type = params[0];
             String retrieveURL = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/DailyReport.php";
             String retrieveURL2 = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/MonthlyReport.php";
+            String retrieveURL3 = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/Yearly_Report.php";
 
 
             if (type == "Generate Daily report") {
@@ -225,6 +242,53 @@ public class report extends Fragment {
 
                 }
             }
+
+            if (type == "Generate Yearly report") {
+                String MercName = params[1];
+                String  YearOfRep = params[2];
+
+                try {
+
+                    //establish httpUrlConnection with POST method
+                    URL url = new URL(retrieveURL3);
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    httpURLConnection.setRequestMethod("POST");
+                    httpURLConnection.setDoOutput(true);
+                    httpURLConnection.setDoInput(true);
+
+                    //set output stream
+                    OutputStream outputStream = httpURLConnection.getOutputStream();
+                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                    String post_data = URLEncoder.encode("PostData", "UTF-8") + "=" + URLEncoder.encode(MercName+";;;"+YearOfRep, "UTF-8");
+
+                    bufferedWriter.write(post_data);
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    outputStream.close();
+
+                    // read the data
+                    InputStream inputStream = httpURLConnection.getInputStream();
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                    String result = "";
+                    String line = "";
+
+                    while ((line = bufferedReader.readLine()) != null) {
+                        result += line;
+                    }
+                    bufferedReader.close();
+                    inputStream.close();
+                    httpURLConnection.disconnect();
+                    return result;
+
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+
+
+                }
+            }
             return null;
         }
 
@@ -265,7 +329,7 @@ public class report extends Fragment {
 
 
                     Intent intent = new Intent(getActivity(),reportdetails.class);
-                    String date= year+"-"+month+"-"+day;
+                    //String date= year+"-"+month+"-"+day;
                     Double profit = total;
 
                     intent.putExtra("date",date);
