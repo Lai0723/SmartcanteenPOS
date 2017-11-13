@@ -90,6 +90,12 @@ public class activity_payment extends Fragment {
             loadListing();
         }
 
+        purchased = new Menu[100];
+        qtyOrdered = 0;
+        Cart=0;
+        ItemInCart.setText(Integer.toString(Cart));
+        Total.setText("RM 0");
+
 
         Menulist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
