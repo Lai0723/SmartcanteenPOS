@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ANDROID\\FYP\\(Wchun) SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "C:\\MAD_Projects\\SmartcanteenPOS6\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.5.0.aar\\4ac2747665928c17d13828918e9e4535\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.5.0.aar\\3891f561e52a3ef98f61cc4656096fbd\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\217ee3f50f997e6d16e8ee2dbf12620c\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\c08b7f382c37faced66cf9d389393a99\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ public class QRTransfer extends AppCompatActivity {
     static String giverID;
     static double balanceToChk;
     TextView tvBalanceToChk, tvTimer;
+    SeekBar sbTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,14 +36,22 @@ public class QRTransfer extends AppCompatActivity {
 
         tvBalanceToChk = (TextView) findViewById(R.id.tvBalanceToChk);
         tvTimer = (TextView) findViewById(R.id.tvTimer);
+        sbTimer = (SeekBar) findViewById(R.id.sbTimer);
         tvBalanceToChk.setText(String.format("Balance: RM %.2f" ,QRTransfer.balanceToChk));
 
         generateQR();
 
-        new CountDownTimer(60000, 1000) {
+        int millisToChange=30000;
+        final int millisToUpdate=100;
+        sbTimer.setMax(millisToChange/millisToUpdate);
+        sbTimer.setProgress(0);
+        sbTimer.setEnabled(false);
+
+        new CountDownTimer(millisToChange, millisToUpdate) {
 
             public void onTick(long millisUntilFinished) {
                 tvTimer.setText("seconds remaining: " + millisUntilFinished / 1000);
+                sbTimer.setProgress((int)millisUntilFinished/millisToUpdate);
             }
 
             public void onFinish() {

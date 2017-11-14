@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ANDROID\\FYP\\(Wchun) SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "C:\\MAD_Projects\\SmartcanteenPOS6\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\217ee3f50f997e6d16e8ee2dbf12620c\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\c08b7f382c37faced66cf9d389393a99\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.0.0.aar\\837b175096e3ac1e18ff340888381bd8\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.0.0.aar\\5be8dc4ec5ff31a2d1d4fc791d081576\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
