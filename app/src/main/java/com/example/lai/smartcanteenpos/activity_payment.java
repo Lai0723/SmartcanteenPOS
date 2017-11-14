@@ -204,7 +204,7 @@ public class activity_payment extends Fragment {
         protected String doInBackground(String... params) {
             String type = params[0];
             String retrieveURL = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/getmenu.php";
-            String retrievePrice = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/getProductPrice.php";
+
 
 
             if (type == "retrieveMenu") {
@@ -253,51 +253,7 @@ public class activity_payment extends Fragment {
                 }
             }
 
-            if (type == "retrievePrice") {
-                String ProdID = params[2];
 
-                try {
-
-                    //establish httpUrlConnection with POST method
-                    URL url = new URL(retrievePrice);
-                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-                    httpURLConnection.setRequestMethod("POST");
-                    httpURLConnection.setDoOutput(true);
-                    httpURLConnection.setDoInput(true);
-
-                    //set output stream
-                    OutputStream outputStream = httpURLConnection.getOutputStream();
-                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-                    String post_data = URLEncoder.encode("ProdID", "UTF-8") + "=" + URLEncoder.encode(ProdID, "UTF-8");
-
-                    bufferedWriter.write(post_data);
-                    bufferedWriter.flush();
-                    bufferedWriter.close();
-                    outputStream.close();
-
-                    // read the data
-                    InputStream inputStream = httpURLConnection.getInputStream();
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
-                    String result = "";
-                    String line = "";
-
-                    while ((line = bufferedReader.readLine()) != null) {
-                        result += line;
-                    }
-                    bufferedReader.close();
-                    inputStream.close();
-                    httpURLConnection.disconnect();
-                    return result;
-
-
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-
-
-                }
-            }
             return null;
         }
 

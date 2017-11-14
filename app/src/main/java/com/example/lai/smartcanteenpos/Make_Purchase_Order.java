@@ -85,6 +85,10 @@ public class Make_Purchase_Order extends Fragment {
 
                 else {
 
+                    View_Purchase_Order.allowRefresh = true;
+
+                    Menu_screen.OList = null;
+
                     Purchase_order purchase = new Purchase_order();
 
 

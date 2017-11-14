@@ -4,6 +4,7 @@ package com.example.lai.smartcanteenpos;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -14,9 +15,13 @@ import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
@@ -33,11 +38,12 @@ public class add_product extends Fragment {
 
     public static final String UPLOAD_URL = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/newaddproduct.php";
 
+    Spinner spinnerCat;
     public static final String TAG = "MY MESSAGE";
     private int PICK_IMAGE_REQUEST = 1;
     private Bitmap bitmap;
     private Uri filePath;
-    EditText txtProdName, txtCat, txtDesc, txtQuantity, txtPrice;
+    EditText txtProdName,  txtDesc, txtQuantity, txtPrice;
     boolean picChosen;
     private Button btnUpload, btnsubmit, btncancel;
     private ImageView imageView;
@@ -54,7 +60,7 @@ public class add_product extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_add_product, container, false);
         txtProdName = (EditText) v.findViewById(R.id.txtProdName);
-        txtCat = (EditText) v.findViewById(R.id.txtCat);
+        spinnerCat = (Spinner) v.findViewById(R.id.spinnerCat);
         txtDesc = (EditText) v.findViewById(R.id.txtDesc);
         txtPrice = (EditText) v.findViewById(R.id.txtPrice);
         txtQuantity = (EditText) v.findViewById(R.id.txtQuantity);
@@ -63,6 +69,25 @@ public class add_product extends Fragment {
         btnsubmit = (Button) v.findViewById(R.id.btnsubmit);
         btncancel = (Button) v.findViewById(R.id.btncancel);
 
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
+                R.array.foodCategory, android.R.layout.simple_spinner_item);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        spinnerCat.setAdapter(adapter);
+
+        spinnerCat.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //set spinner selected item color
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         imageView = (ImageView) v.findViewById(R.id.imageView);
 
@@ -98,7 +123,6 @@ public class add_product extends Fragment {
 
     public void uploadClick() {
         String ProdName = txtProdName.getText().toString();
-        String ProdCat = txtCat.getText().toString();
         String ProdDesc = txtDesc.getText().toString();
         String ProdPrice = txtPrice.getText().toString();
         String ProdQuantity = txtQuantity.getText().toString();
@@ -109,10 +133,6 @@ public class add_product extends Fragment {
             txtProdName.setError("Field cannot be empty");
         }
 
-
-        if (TextUtils.isEmpty(ProdCat)) {
-            txtCat.setError("Field cannot be empty");
-        }
 
         if (TextUtils.isEmpty(ProdDesc)) {
             txtDesc.setError("Field cannot be empty");
@@ -167,7 +187,7 @@ public class add_product extends Fragment {
     private void uploadImage() {
         class UploadImage extends AsyncTask<Bitmap, Void, String> {
             String ProdName = txtProdName.getText().toString();
-            String ProdCat = txtCat.getText().toString();
+            String ProdCat = spinnerCat.getSelectedItem().toString();
             String ProdDesc = txtDesc.getText().toString();
             String ProdPrice = txtPrice.getText().toString();
             String ProdQuantity = txtQuantity.getText().toString();

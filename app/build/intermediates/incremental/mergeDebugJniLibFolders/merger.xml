@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\ANDROID\FYP\(Wchun) SmartcanteenPOS\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="D:\ANDROID\FYP\(Wchun) SmartcanteenPOS\app\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\lai\Desktop\SmartcanteenPOS7\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\lai\Desktop\SmartcanteenPOS7\app\src\debug\jniLibs"/></dataSet></merger>

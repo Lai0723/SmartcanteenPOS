@@ -86,7 +86,7 @@ public class add_inventory extends Fragment {
 
                 else {
 
-                    MenuFragment.allowRefresh = true;
+                    InventoryFragment.allowRefresh = true;
 
                     Menu_screen.SList = null;
 
