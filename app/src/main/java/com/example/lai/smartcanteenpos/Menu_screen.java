@@ -27,6 +27,7 @@ import com.example.lai.smartcanteenpos.Obejct.Report;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,6 +44,7 @@ public class Menu_screen extends AppCompatActivity {
     public static double balance;
     public static int loyaltyPoint;
     TextView tvMercBalance;
+    String MercName;
 
 
 
@@ -179,5 +181,8 @@ public class Menu_screen extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+
+
 
 }

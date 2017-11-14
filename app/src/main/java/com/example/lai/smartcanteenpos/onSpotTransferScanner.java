@@ -28,7 +28,8 @@ import java.util.Map;
 
 public class onSpotTransferScanner extends AppCompatActivity {
 
-    String ttlPurchaseAmt, giverID;
+    String ttlPurchaseAmt, giverID,purchasedIDGet;
+    String[] purchasedID;
     double balanceToCheck, balance, showTtl;
     TextView tvTransferStatus, tvTransferFrom, tvTransferTo, tvTransferAmount;
 
@@ -43,6 +44,9 @@ public class onSpotTransferScanner extends AppCompatActivity {
             finish();
         }
         ttlPurchaseAmt = extras.getString("ttlPurchaseAmt");
+        purchasedIDGet = extras.getString("purchasedID");
+        purchasedID= purchasedIDGet.split(";;");
+
         showTtl = Double.parseDouble(ttlPurchaseAmt);
 
         tvTransferStatus = (TextView)findViewById(R.id.tvTransferStatus);
@@ -118,7 +122,13 @@ public class onSpotTransferScanner extends AppCompatActivity {
                             try {
                                 fragmentMerc_wallet.allowRefresh = true;
                                 insertTransfer(this, "https://martpay.000webhostapp.com/gab_insert_transfer.php", giverID, ttlPurchaseAmt, date, receiverID);
+                                for (String productID: purchasedID) {
+                                    updateInventory(this, "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/payment_update_inventory.php",productID);
+                                }
                                 showStatusSuccess();
+                                InventoryFragment.allowRefresh = true;
+
+                                Menu_screen.SList = null;
                             } catch (Exception e) {
                                 e.printStackTrace();
                                 Toast.makeText(getApplicationContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -211,6 +221,61 @@ public class onSpotTransferScanner extends AppCompatActivity {
                     params.put("amount", ttlPurchaseAmt);
                     params.put("date", date);
                     params.put("receiverID", receiverID);
+                    return params;
+                }
+
+                @Override
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    Map<String, String> params = new HashMap<>();
+                    params.put("Content-Type", "application/x-www-form-urlencoded");
+                    return params;
+                }
+            };
+            queue.add(postRequest);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updateInventory(Context context, String url, final String productID) {
+        //mPostCommentResponse.requestStarted();
+        RequestQueue queue = Volley.newRequestQueue(context);
+
+        //Send data
+        try {
+            StringRequest postRequest = new StringRequest(
+                    Request.Method.POST,
+                    url,
+                    new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            JSONObject jsonObject;
+                            try {
+                                jsonObject = new JSONObject(response);
+                                int success = jsonObject.getInt("success");
+                                String message = jsonObject.getString("message");
+                                if (success == 1) {
+                                    Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                                    //balance += Double.parseDouble(ttlPurchaseAmt);
+
+                                } else {
+                                    Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    },
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(getApplicationContext(), "Error. " + error.toString(), Toast.LENGTH_LONG).show();
+                        }
+                    }) {
+                @Override
+                protected Map<String, String> getParams() {
+                    Map<String, String> params = new HashMap<>();
+                    params.put("ProdID", productID);
                     return params;
                 }
 

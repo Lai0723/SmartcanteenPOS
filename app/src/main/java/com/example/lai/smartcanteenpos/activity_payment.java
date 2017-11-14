@@ -47,7 +47,7 @@ public class activity_payment extends Fragment {
     ListView Menulist;
     ProgressDialog progressDialog;
     public static boolean allowRefresh;
-    String MercName, totalToPass;
+    String MercName, totalToPass,idToPass;
     static double itemInCart[] = new double[100];
     static int qtyOrdered = 0;
     Menu purchased[] = new Menu[100];
@@ -56,9 +56,22 @@ public class activity_payment extends Fragment {
     TextView Total;
     TextView ItemInCart;
     static int Cart = 0;
+    String purchasedID="";
 
     String ttlPurchaseAmt;
     double balanceToCheck, balance;
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Menu_screen.MList = null;
+        Menu_screen.MList = new ArrayList<>();
+        String type = "retrieveMenu";
+        MercName = Login.LOGGED_IN_USER;
+        activity_payment.BackgroundWorker backgroundWorker = new activity_payment.BackgroundWorker(getView().getContext());
+        backgroundWorker.execute(type, MercName);
+
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -77,7 +90,7 @@ public class activity_payment extends Fragment {
 
 
         progressDialog = new ProgressDialog(v.getContext());
-
+/*
         if (Menu_screen.MList == null) {
             Menu_screen.MList = new ArrayList<>();
 
@@ -88,7 +101,7 @@ public class activity_payment extends Fragment {
 
         } else {
             loadListing();
-        }
+        }*/
 
         purchased = new Menu[100];
         qtyOrdered = 0;
@@ -136,13 +149,18 @@ public class activity_payment extends Fragment {
                 //Total.setText(Double.toString(total));
                 //totalToPass = Total.getText().toString();
                 totalToPass = Double.toString(total);
+                idToPass= purchasedID;
 
                 ttlPurchaseAmt = totalToPass;
                 Intent intent = new Intent(v.getContext(), onSpotTransferScanner.class);
                 intent.putExtra("ttlPurchaseAmt", totalToPass);
+                intent.putExtra("purchasedID", purchasedID);
+
+
                 purchased = new Menu[100];
                 qtyOrdered = 0;
                 Cart=0;
+                purchasedID="";
                 ItemInCart.setText(Integer.toString(Cart));
                 Total.setText("RM 0");
                 startActivity(intent);
@@ -158,10 +176,14 @@ public class activity_payment extends Fragment {
 
         int j = 0;
         double total = 0;
+        purchasedID="";
         while (purchased[j] != null) {
 
             total += purchased[j].getPrice();
-            j++;}
+            purchasedID +=purchased[j].getProdID()+";;";
+            j++;
+        }
+        purchasedID=(purchasedID.substring(0, purchasedID.length() - 1));
 
         Total.setText("RM  " + Double.toString(total));
         return total;
@@ -169,7 +191,7 @@ public class activity_payment extends Fragment {
     }
 
 
-    private class BackgroundWorker extends AsyncTask<String, Void, String> {
+    public class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;
 
