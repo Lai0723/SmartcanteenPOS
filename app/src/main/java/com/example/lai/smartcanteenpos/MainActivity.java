@@ -1,5 +1,7 @@
 package com.example.lai.smartcanteenpos;
 
+import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -44,8 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
     double balanceToCheck, transferAmount;
     String ttlPurchaseAmt = "5.0";
-
+    public ProgressDialog pDialog;
     //Card cardToSave;
+    java.util.Date dt;
+    java.text.SimpleDateFormat sdf;
+    String topUpDateTime;
 
     TextView tvBalance;
 
@@ -106,6 +111,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void goOnlineMenu(){
+        /*Intent intent = new Intent(this, WJian.class);
+        intent.putExtra("walletID",walletID);
+        intent.putExtra("balance",balance);
+        startActivity(intent);*/
+    }
+
+    public void goRedeemCoupon(){
+        /*Intent intent = new Intent(this, BSeng.class);
+        intent.putExtra("walletID",walletID);
+        intent.putExtra("loyaltyPoint",loyaltyPoint);
+        startActivity(intent);*/
     }
 
     public void goChangeCard(View v) {
@@ -263,6 +282,86 @@ public class MainActivity extends AppCompatActivity {
         //closing of ELSE }
 
     }
+
+    /*
+
+        Add fund part
+
+    */
+    public void clickAddFund(View v) {
+
+        dt = new java.util.Date();
+        sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        topUpDateTime = sdf.format(dt);
+
+        try {
+            insertTopUp(this, "https://martpay.000webhostapp.com/gab_insert_topup.php"); //insert record to topup table in database
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(getApplicationContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void insertTopUp(Context context, String url) {
+        //mPostCommentResponse.requestStarted();
+        RequestQueue queue = Volley.newRequestQueue(context);
+
+        //Send data
+        try {
+            StringRequest postRequest = new StringRequest(
+                    Request.Method.POST,
+                    url,
+                    new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            JSONObject jsonObject;
+                            try {
+                                jsonObject = new JSONObject(response);
+                                int success = jsonObject.getInt("success");
+                                String message = jsonObject.getString("message");
+                                if (success == 1) {
+                                    Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                                    //balance += Double.parseDouble(ttlPurchaseAmt);
+                                    //balance += Double.parseDouble(ttlPurchaseAmt);
+                                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                                    transaction.replace(R.id.frame_main, fragmentWallet.newInstance());
+                                    transaction.commit();
+                                } else {
+                                    Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    },
+                    new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
+                            Toast.makeText(getApplicationContext(), "Error. " + error.toString(), Toast.LENGTH_LONG).show();
+                        }
+                    }) {
+                @Override
+                protected Map<String, String> getParams() {
+                    Map<String, String> params = new HashMap<>();
+                    params.put("WalletID", MainActivity.walletID);
+                    params.put("TopUpAmount", String.valueOf(fragmentFund.tuValue));
+                    params.put("TopUpDateTime", topUpDateTime);
+                    return params;
+                }
+
+                @Override
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    Map<String, String> params = new HashMap<>();
+                    params.put("Content-Type", "application/x-www-form-urlencoded");
+                    return params;
+                }
+            };
+            queue.add(postRequest);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     /*
 

@@ -17,7 +17,7 @@ public class fragmentFund extends Fragment {
 
     SeekBar sbTopUpValue;
     TextView tvTopUpValue;
-    int tuValue = 5;
+    public static int tuValue = 5;
 
     private ProgressDialog pDialog;
 
