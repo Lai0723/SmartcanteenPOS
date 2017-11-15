@@ -23,6 +23,7 @@ import com.example.lai.smartcanteenpos.Obejct.Order;
 import com.example.lai.smartcanteenpos.Obejct.Product;
 import com.example.lai.smartcanteenpos.Obejct.Purchase_order;
 import com.example.lai.smartcanteenpos.Obejct.Report;
+import com.example.lai.smartcanteenpos.Obejct.Report_Transaction;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,6 +39,7 @@ public class Menu_screen extends AppCompatActivity {
     public static List<Order>ORDERList = null;
     public static List<Menu> MList = null;
     public static List<Report> RList = null;
+    public static List<Report_Transaction> RTList = null;
 
     static String Merc_WalletID;
     public static double balance;
@@ -79,10 +81,13 @@ public class Menu_screen extends AppCompatActivity {
                 case R.id.navigation_Inventory:
                     InventoryFragment i = new InventoryFragment();
                     getSupportFragmentManager().beginTransaction().replace(R.id.content,i).commit();
+                    InventoryFragment.allowRefresh = true;
+
+                    Menu_screen.SList = null;
                     break;
 
                 case R.id.navigation_Report:
-                    report r = new report();
+                    choose_report r = new choose_report();
                     getSupportFragmentManager().beginTransaction().replace(R.id.content,r).commit();
 
                     break;

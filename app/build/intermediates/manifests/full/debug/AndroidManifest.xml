@@ -67,6 +67,7 @@
         <activity android:name="com.example.lai.smartcanteenpos.QRTransfer" />
         <activity android:name="com.example.lai.smartcanteenpos.onSpotTransferScanner" />
         <activity android:name="com.example.lai.smartcanteenpos.reportdetails" />
+        <activity android:name="com.example.lai.smartcanteenpos.reportdetails_transfer" />
 
         <meta-data
             android:name="android.support.VERSION"

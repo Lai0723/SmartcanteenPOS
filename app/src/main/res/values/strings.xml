@@ -77,6 +77,18 @@
     <string name="btnCancel">Cancel</string>
     <string name="LoginWalletID">WalletID</string>
     <string name="LoginPassword">Password</string>
+    <string name="chooseReport">Please choose report type</string>
+    <string name="TransactionReport">Transaction Report</string>
+    <string name="OnlineOrder">Online order report</string>
+    <string name="Monthly_Report">Monthly_Report</string>
+    <string name="Yearly_Report">Yearly_Report</string>
+    <string name="Daily_report">Daily_report</string>
+    <string name="Total">Total  :</string>
+    <string name="Time">Day/Month/Year :</string>
+    <string name="Transfer" >Transfer ID</string>
+    <string name="Giver">Giver ID</string>
+    <string name="Receiver">Receiver ID</string>
+    <string name="Amount">Amount</string>
 
     <string-array name="foodCategory">
         <item>Food</item>

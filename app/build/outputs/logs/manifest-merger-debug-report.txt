@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\a9b4b14145aa34e0c17b77d4a5778acd\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\16629a9d34f2751388b75790106f588e\AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\73488a2d37f123ff9c8e8c881ed52eb4\AndroidManifest.xml:17:1-31:12
@@ -19,20 +19,20 @@ MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\lai\.grad
 MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\42bfcef39625e47fa1b04505ae2de000\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\ef202b2fa2c66e655e59e52f9bc7db1e\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.4.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\16f9cc37bc752f4e4979397dd710bb8c\AndroidManifest.xml:17:1-31:12
-INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:2:11-69
@@ -49,7 +49,7 @@ ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:9:5-42:19
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:9:5-43:19
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\a9b4b14145aa34e0c17b77d4a5778acd\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\a9b4b14145aa34e0c17b77d4a5778acd\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-25.0.0.aar\16629a9d34f2751388b75790106f588e\AndroidManifest.xml:25:5-20
@@ -152,6 +152,10 @@ activity#com.example.lai.smartcanteenpos.reportdetails
 ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:41:9-51
 	android:name
 		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:41:19-48
+activity#com.example.lai.smartcanteenpos.reportdetails_transfer
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:42:9-69
+	android:name
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml:42:19-57
 uses-sdk
 INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS8\app\src\main\AndroidManifest.xml

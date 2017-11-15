@@ -12,8 +12,6 @@ public class Report {
     private double PayAmount;
 
 
-
-
     public Report(String OrderID,String ProdName,int  OrderQuantity,Double PayAmount){
 
 

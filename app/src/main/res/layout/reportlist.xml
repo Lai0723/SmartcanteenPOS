@@ -8,24 +8,32 @@
         android:id="@+id/ReportIName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/OrderID" />
+        android:text="@string/OrderID"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/ReportIPN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Product" />
+        android:text="@string/Product"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/ReportIOQ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/order_quantity" />
+        android:text="@string/order_quantity"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/ReportIPA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Amount" />
+        android:text="Amount"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>
