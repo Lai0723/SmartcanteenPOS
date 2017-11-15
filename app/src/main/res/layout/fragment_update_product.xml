@@ -73,12 +73,12 @@
 
     <TextView
         android:id="@+id/editCat"
-        android:layout_width="115dp"
-        android:layout_height="36dp"
+        android:layout_width="141dp"
+        android:layout_height="32dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="46dp"
         android:text="@string/Category"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editName" />

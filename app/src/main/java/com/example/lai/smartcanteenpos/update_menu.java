@@ -109,10 +109,10 @@ public class update_menu extends Fragment {
 
         ProdID = txtProdID.getText().toString();
 
-        /*if(TextUtils.isEmpty(ProdID)){
+        if(TextUtils.isEmpty(ProdID)){
             txtProdID.setError("Must field in product id first");
         }
-        else if (!TextUtils.isEmpty(ProdID)){*/
+
             btnName.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -150,7 +150,6 @@ public class update_menu extends Fragment {
                     Menu_screen.lList = null;
 
 
-
                 }
             });
 
@@ -158,7 +157,7 @@ public class update_menu extends Fragment {
                 @Override
                 public void onClick(View v) {
 
-                    final View view = (LayoutInflater.from(v.getContext()).inflate(R.layout.activity_edit_spinner, null));
+                    final View view = (LayoutInflater.from(v.getContext()).inflate(R.layout.edit_spinner, null));
                     AlertDialog.Builder alertBuilder = new AlertDialog.Builder(v.getContext());
                     alertBuilder.setView(view);
                     alertBuilder.setTitle("Edit Product Category");
@@ -183,7 +182,6 @@ public class update_menu extends Fragment {
 
                         }
                     });
-
 
 
                     alertBuilder.setCancelable(true)
@@ -296,46 +294,45 @@ public class update_menu extends Fragment {
                 }
             });
 
-        btnUpload.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            btnUpload.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
 
-                        Intent intent = new Intent();
-                        intent.setType("image/*");
-                        intent.setAction(Intent.ACTION_GET_CONTENT);
-                        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+                    Intent intent = new Intent();
+                    intent.setType("image/*");
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
 
 
+                    picChosen = false;
+                    MenuFragment.allowRefresh = true;
 
-                picChosen = false;
-                MenuFragment.allowRefresh = true;
+                    Menu_screen.lList = null;
 
-                Menu_screen.lList = null;
+                }
+            });
 
-            }
-        });
-
-        btnImage.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-              uploadImage();
-            }
-
-
-        });
+            btnImage.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    uploadImage();
+                }
 
 
-        btnSearch.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                String ProdID = txtProdID.getText().toString();
-                String type = "retrieveProductInfo";
-
-                BackgroundWorker backgroundWorker = new BackgroundWorker(v.getContext());
-                backgroundWorker.execute(type, ProdID);
-            }
+            });
 
 
-        });
+            btnSearch.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    String ProdID = txtProdID.getText().toString();
+                    String type = "retrieveProductInfo";
+
+                    BackgroundWorker backgroundWorker = new BackgroundWorker(v.getContext());
+                    backgroundWorker.execute(type, ProdID);
+                }
+
+
+            });
 
         btncancel.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
