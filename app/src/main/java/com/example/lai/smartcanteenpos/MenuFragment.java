@@ -4,14 +4,20 @@ package com.example.lai.smartcanteenpos;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -39,14 +45,18 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class MenuFragment extends Fragment   {
-    Button add, delete,update;
+    Spinner Spinner;
+    Button add, delete,update,NameSearch,CatSearch;
     public static boolean allowRefresh;
     public static final String TAG = "com.example.user.myApp";
+    EditText searchProduct;
 
     ListView menulistview;
     String MercName;
     ProgressDialog progressDialog;
     RequestQueue queue;
+
+    String ProdName,ProdCat;
 
 
 
@@ -68,10 +78,54 @@ public class MenuFragment extends Fragment   {
          add =(Button)v.findViewById(R.id.AddItem);
          delete = (Button)v.findViewById(R.id.DeleteItem);
          update = (Button)v.findViewById(R.id.UpdateItem);
+         NameSearch = (Button)v.findViewById(R.id.NameSearch);
+        CatSearch = (Button)v.findViewById(R.id.CatSearch);
+        Spinner = (Spinner)v.findViewById(R.id.SearchSpinner);
+        searchProduct = (EditText)v.findViewById(R.id.searchProduct);
 
         progressDialog = new ProgressDialog(v.getContext());
 
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
+                R.array.foodCategory, android.R.layout.simple_spinner_item);
 
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        Spinner.setAdapter(adapter);
+
+        Spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //set spinner selected item color
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        NameSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String type = "retrieveProductName";
+                MercName = Login.LOGGED_IN_USER;
+                ProdName = searchProduct.getText().toString();
+                BackgroundWorker backgroundWorker = new BackgroundWorker(v.getContext());
+                backgroundWorker.execute(type,  MercName, ProdName);
+            }
+        });
+
+        CatSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String type = "retrieveProductCat";
+                MercName = Login.LOGGED_IN_USER;
+                ProdCat = Spinner.getSelectedItem().toString();
+                BackgroundWorker backgroundWorker = new BackgroundWorker(v.getContext());
+                backgroundWorker.execute(type,  MercName, ProdCat);
+            }
+        });
 
 
         add.setOnClickListener(new View.OnClickListener() {
@@ -127,6 +181,7 @@ public class MenuFragment extends Fragment   {
 
     }
 
+
     private void loadListing() {
         final ProductAdapter adapter = new ProductAdapter(getActivity(), R.layout.fragment_menu, Menu_screen.lList);
         menulistview.setAdapter(adapter);
@@ -148,8 +203,9 @@ public class MenuFragment extends Fragment   {
         protected String doInBackground(String... params) {
             String type = params[0];
             String RetrieveURL = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/getlist.php";
+            String RetrieveURL2 ="https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/SearchByName.php";
+            String RetrieveURL3 ="https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/SearchByCategory.php";
 
-            // if the type of the task = retrieveBorrowHistory
             if (type == "retrieveProduct") {
                 String MercName = params[1];
 
@@ -195,15 +251,105 @@ public class MenuFragment extends Fragment   {
 
                 }
             }
+
+            if (type == "retrieveProductName") {
+                String MercName = params[1];
+                String  ProdName = params[2];
+
+                try {
+
+                    //establish httpUrlConnection with POST method
+                    URL url = new URL(RetrieveURL2);
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    httpURLConnection.setRequestMethod("POST");
+                    httpURLConnection.setDoOutput(true);
+                    httpURLConnection.setDoInput(true);
+
+                    //set output stream
+                    OutputStream outputStream = httpURLConnection.getOutputStream();
+                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                    String post_data = URLEncoder.encode("PostData", "UTF-8") + "=" + URLEncoder.encode(MercName+";;;"+ProdName, "UTF-8");
+
+                    bufferedWriter.write(post_data);
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    outputStream.close();
+
+                    // read the data
+                    InputStream inputStream = httpURLConnection.getInputStream();
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                    String result = "";
+                    String line = "";
+
+                    while ((line = bufferedReader.readLine()) != null) {
+                        result += line;
+                    }
+                    bufferedReader.close();
+                    inputStream.close();
+                    httpURLConnection.disconnect();
+                    return result;
+
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+
+
+                }
+            }
+
+            if (type == "retrieveProductCat") {
+                String MercName = params[1];
+                String ProdCat = params[2];
+
+                try {
+
+                    //establish httpUrlConnection with POST method
+                    URL url = new URL(RetrieveURL3);
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    httpURLConnection.setRequestMethod("POST");
+                    httpURLConnection.setDoOutput(true);
+                    httpURLConnection.setDoInput(true);
+
+                    //set output stream
+                    OutputStream outputStream = httpURLConnection.getOutputStream();
+                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                    String post_data = URLEncoder.encode("PostData", "UTF-8") + "=" + URLEncoder.encode(MercName+";;;"+ProdCat, "UTF-8");
+
+                    bufferedWriter.write(post_data);
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    outputStream.close();
+
+                    // read the data
+                    InputStream inputStream = httpURLConnection.getInputStream();
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                    String result = "";
+                    String line = "";
+
+                    while ((line = bufferedReader.readLine()) != null) {
+                        result += line;
+                    }
+                    bufferedReader.close();
+                    inputStream.close();
+                    httpURLConnection.disconnect();
+                    return result;
+
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+
+
+                }
+            }
             return null;
         }
 
         @Override
         protected void onPreExecute() {
-/*
-            if (!progressDialog.isShowing()) ;
-            progressDialog.setMessage("Retrieving Product");
-            progressDialog.show();*/
 
 
         }
@@ -235,8 +381,7 @@ public class MenuFragment extends Fragment   {
 
                     }
 
-                    /*if (progressDialog.isShowing())
-                        progressDialog.dismiss();*/
+
 
                     loadListing();
                     Toast.makeText(getView().getContext(), "", Toast.LENGTH_LONG).show();

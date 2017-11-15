@@ -9,15 +9,17 @@
 
     <ListView
         android:id="@+id/menulistview"
-        android:layout_width="967dp"
-        android:layout_height="228dp"
+        android:layout_width="935dp"
+        android:layout_height="176dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:footerDividersEnabled="false"
         android:headerDividersEnabled="false"
         android:scrollbars="horizontal"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintBottom_toTopOf="@+id/MenuSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -26,62 +28,95 @@
         android:id="@+id/btnTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="124dp"
         android:layout_marginStart="8dp"
         android:text="Total"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toEndOf="@+id/TotalPrice" />
 
     <TextView
         android:id="@+id/TotalPrice"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="188dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="32dp"
         android:text="Total price (RM)"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916" />
+        app:layout_constraintStart_toEndOf="@+id/txtCart" />
 
     <TextView
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="32dp"
         android:text="Item in cart"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.862" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtCart"
         android:layout_width="92dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="24dp"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/TotalPrice"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toEndOf="@+id/textView35"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86" />
+        app:layout_constraintStart_toEndOf="@+id/textView35" />
+
+    <Button
+        android:id="@+id/btnMenuSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="8dp"
+        android:text="Search by name"
+        app:layout_constraintBottom_toTopOf="@+id/txtCart"
+        app:layout_constraintStart_toEndOf="@+id/MenuProductName" />
+
+    <Button
+        android:id="@+id/btnMenuSearchCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Search by category"
+        app:layout_constraintBottom_toTopOf="@+id/btnTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toEndOf="@+id/MenuSpinner" />
+
+    <Spinner
+        android:id="@+id/MenuSpinner"
+        android:layout_width="202dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginStart="184dp"
+        app:layout_constraintBottom_toTopOf="@+id/TotalPrice"
+        app:layout_constraintStart_toEndOf="@+id/btnMenuSearch" />
+
+    <EditText
+        android:id="@+id/MenuProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Search by name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView35"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

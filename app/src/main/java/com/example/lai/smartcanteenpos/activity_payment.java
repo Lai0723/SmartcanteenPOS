@@ -4,6 +4,7 @@ package com.example.lai.smartcanteenpos;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,8 +12,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,7 +46,7 @@ import static com.example.lai.smartcanteenpos.R.id.menulistview;
  * A simple {@link Fragment} subclass.
  */
 public class activity_payment extends Fragment {
-
+    Spinner menuspinner;
     private static final String TAG = "PaymentActivity";
     ListView Menulist;
     ProgressDialog progressDialog;
@@ -51,15 +55,15 @@ public class activity_payment extends Fragment {
     static double itemInCart[] = new double[100];
     static int qtyOrdered = 0;
     Menu purchased[] = new Menu[100];
-    Button btnTotal;
-    Double itemPrice;
-    TextView Total;
-    TextView ItemInCart;
+    Button btnTotal,btnSearchName,btnSearchCat;
+    EditText menuProductName;
+    TextView Total,ItemInCart;
+
     static int Cart = 0;
     String purchasedID="";
 
-    String ttlPurchaseAmt;
-    double balanceToCheck, balance;
+    String ttlPurchaseAmt,menuProdName,menuProdCat;
+
 
     @Override
     public void onResume() {
@@ -87,27 +91,62 @@ public class activity_payment extends Fragment {
         btnTotal = (Button) v.findViewById(R.id.btnTotal);
         Total = (TextView) v.findViewById(R.id.TotalPrice);
         ItemInCart = (TextView) v.findViewById(R.id.txtCart);
+        btnSearchName = (Button)v.findViewById(R.id.btnMenuSearch);
+        btnSearchCat = (Button)v.findViewById(R.id.btnMenuSearchCat);
+        menuspinner = (Spinner) v.findViewById(R.id.MenuSpinner);
+        menuProductName = (EditText)v.findViewById(R.id.MenuProductName);
 
 
         progressDialog = new ProgressDialog(v.getContext());
-/*
-        if (Menu_screen.MList == null) {
-            Menu_screen.MList = new ArrayList<>();
-
-            String type = "retrieveMenu";
-            MercName = Login.LOGGED_IN_USER;
-            activity_payment.BackgroundWorker backgroundWorker = new activity_payment.BackgroundWorker(v.getContext());
-            backgroundWorker.execute(type, MercName);
-
-        } else {
-            loadListing();
-        }*/
 
         purchased = new Menu[100];
         qtyOrdered = 0;
         Cart=0;
         ItemInCart.setText(Integer.toString(Cart));
         Total.setText("RM 0");
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
+                R.array.foodCategory, android.R.layout.simple_spinner_item);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        menuspinner.setAdapter(adapter);
+
+        menuspinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                //set spinner selected item color
+                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        btnSearchName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String type = "retrieveMenuProductName";
+                MercName = Login.LOGGED_IN_USER;
+                menuProdName =  menuProductName.getText().toString();
+                BackgroundWorker backgroundWorker = new BackgroundWorker(v.getContext());
+                backgroundWorker.execute(type,  MercName, menuProdName);
+            }
+        });
+
+        btnSearchCat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String type = "retrieveMenuProductCat";
+                MercName = Login.LOGGED_IN_USER;
+                menuProdCat = menuspinner.getSelectedItem().toString();
+                BackgroundWorker backgroundWorker = new BackgroundWorker(v.getContext());
+                backgroundWorker.execute(type,  MercName, menuProdCat);
+            }
+        });
+
 
 
         Menulist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -169,6 +208,8 @@ public class activity_payment extends Fragment {
             }
         });
 
+
+
         return v;
     }
 
@@ -204,8 +245,8 @@ public class activity_payment extends Fragment {
         protected String doInBackground(String... params) {
             String type = params[0];
             String retrieveURL = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/getmenu.php";
-
-
+            String RetrieveURL2 ="https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/Menu_SearchByName.php";
+            String RetrieveURL3 ="https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/Menu_SearchByCategory.php";
 
             if (type == "retrieveMenu") {
                 String MercName = params[1];
@@ -223,6 +264,100 @@ public class activity_payment extends Fragment {
                     OutputStream outputStream = httpURLConnection.getOutputStream();
                     BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
                     String post_data = URLEncoder.encode("MercName", "UTF-8") + "=" + URLEncoder.encode(MercName, "UTF-8");
+
+                    bufferedWriter.write(post_data);
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    outputStream.close();
+
+                    // read the data
+                    InputStream inputStream = httpURLConnection.getInputStream();
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                    String result = "";
+                    String line = "";
+
+                    while ((line = bufferedReader.readLine()) != null) {
+                        result += line;
+                    }
+                    bufferedReader.close();
+                    inputStream.close();
+                    httpURLConnection.disconnect();
+                    return result;
+
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+
+
+                }
+            }
+
+            if (type == "retrieveMenuProductName") {
+                String MercName = params[1];
+                String  ProdName = params[2];
+
+                try {
+
+                    //establish httpUrlConnection with POST method
+                    URL url = new URL(RetrieveURL2);
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    httpURLConnection.setRequestMethod("POST");
+                    httpURLConnection.setDoOutput(true);
+                    httpURLConnection.setDoInput(true);
+
+                    //set output stream
+                    OutputStream outputStream = httpURLConnection.getOutputStream();
+                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                    String post_data = URLEncoder.encode("PostData", "UTF-8") + "=" + URLEncoder.encode(MercName+";;;"+ProdName, "UTF-8");
+
+                    bufferedWriter.write(post_data);
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    outputStream.close();
+
+                    // read the data
+                    InputStream inputStream = httpURLConnection.getInputStream();
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                    String result = "";
+                    String line = "";
+
+                    while ((line = bufferedReader.readLine()) != null) {
+                        result += line;
+                    }
+                    bufferedReader.close();
+                    inputStream.close();
+                    httpURLConnection.disconnect();
+                    return result;
+
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+
+
+                }
+            }
+
+            if (type == "retrieveMenuProductCat") {
+                String MercName = params[1];
+                String ProdCat = params[2];
+
+                try {
+
+                    //establish httpUrlConnection with POST method
+                    URL url = new URL(RetrieveURL3);
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    httpURLConnection.setRequestMethod("POST");
+                    httpURLConnection.setDoOutput(true);
+                    httpURLConnection.setDoInput(true);
+
+                    //set output stream
+                    OutputStream outputStream = httpURLConnection.getOutputStream();
+                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                    String post_data = URLEncoder.encode("PostData", "UTF-8") + "=" + URLEncoder.encode(MercName+";;;"+ProdCat, "UTF-8");
 
                     bufferedWriter.write(post_data);
                     bufferedWriter.flush();
@@ -275,7 +410,7 @@ public class activity_payment extends Fragment {
                 JSONArray jsonArray = new JSONArray(result);
 
                 try {
-                    Menu_screen.ORDERList.clear();
+                    Menu_screen.MList.clear();
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject courseResponse = (JSONObject) jsonArray.get(i);
 

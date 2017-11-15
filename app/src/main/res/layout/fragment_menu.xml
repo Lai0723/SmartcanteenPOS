@@ -11,31 +11,31 @@
         android:id="@+id/UpdateItem"
         android:layout_width="190dp"
         android:layout_height="57dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="144dp"
         android:text="Update Item Detail"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/AddItem"
-        android:layout_marginLeft="137dp" />
+        app:layout_constraintLeft_toRightOf="@+id/AddItem" />
 
     <Button
         android:id="@+id/DeleteItem"
         android:layout_width="160dp"
         android:layout_height="65dp"
-        android:text="Delete Item"
-        android:layout_marginRight="67dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="26dp"
-        app:layout_constraintLeft_toRightOf="@+id/UpdateItem"
+        android:layout_marginBottom="16dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintHorizontal_bias="0.886" />
+        android:layout_marginRight="67dp"
+        android:text="Delete Item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintLeft_toRightOf="@+id/UpdateItem"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/AddItem"
         android:layout_width="160dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="26dp"
-        android:layout_marginLeft="88dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="92dp"
         android:text="Add New Item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
@@ -44,18 +44,61 @@
         android:id="@+id/menulistview"
         android:layout_width="950dp"
         android:layout_height="285dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:footerDividersEnabled="false"
         android:headerDividersEnabled="false"
         android:scrollbars="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/UpdateItem"
+        app:layout_constraintBottom_toTopOf="@+id/SearchSpinner"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/SearchSpinner"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/UpdateItem"
+        app:layout_constraintStart_toEndOf="@+id/NameSearch" />
+
+    <Button
+        android:id="@+id/CatSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Search by category"
+        app:layout_constraintBottom_toTopOf="@+id/DeleteItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/SearchSpinner" />
+
+    <EditText
+        android:id="@+id/searchProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="Search by Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/AddItem"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/NameSearch"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:layout_marginStart="24dp"
+        android:text="Search by name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchProduct" />
 
 </android.support.constraint.ConstraintLayout>
