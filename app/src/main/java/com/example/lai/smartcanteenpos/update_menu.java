@@ -3,16 +3,30 @@ package com.example.lai.smartcanteenpos;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -23,11 +37,26 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
+
+import static android.app.Activity.RESULT_OK;
 
 
 /**
@@ -35,11 +64,18 @@ import java.util.Map;
  */
 public class update_menu extends Fragment {
 
-
-    Button btnName,btnCat,btnPrice,btnDesc,btncancel;
+    public static final String Image_URL = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_image.php";
+    Button btnName,btnCat,btnPrice,btnDesc,btncancel,btnSearch,btnImage,btnUpload;
     EditText txtProdID;
     String newName,newCat,newDesc,newPrice,ProdID;
-
+    private int PICK_IMAGE_REQUEST = 1;
+    private Uri filePath;
+    boolean picChosen;
+    private Bitmap bitmap;
+    ImageView imageView2,imageView3;
+    String MercName;
+    ProgressDialog progressDialog;
+    TextView editName,editPrice,editDesc,editCat;
 
 
     public update_menu() {
@@ -59,6 +95,17 @@ public class update_menu extends Fragment {
         btnDesc = (Button)v.findViewById(R.id.btnDesc);
         txtProdID = (EditText)v.findViewById(R.id.txtProductID);
         btncancel = (Button)v.findViewById(R.id.btncancel);
+        btnUpload = (Button)v.findViewById(R.id.btnUpload);
+        btnSearch = (Button)v.findViewById(R.id.btnSearch);
+        btnImage = (Button)v.findViewById(R.id.btnImage);
+       imageView2 = (ImageView)v.findViewById(R.id.imageView2);
+        editName = (TextView)v.findViewById(R.id.editName);
+        editPrice = (TextView)v.findViewById(R.id.editPrice);
+        editDesc = (TextView)v.findViewById(R.id.editDesc);
+        editCat = (TextView)v.findViewById(R.id.editCat);
+        imageView3 = (ImageView)v.findViewById(R.id.imageView3);
+
+
 
         ProdID = txtProdID.getText().toString();
 
@@ -74,14 +121,14 @@ public class update_menu extends Fragment {
                     AlertDialog.Builder alertBuilder = new AlertDialog.Builder(v.getContext());
                     alertBuilder.setView(view);
                     alertBuilder.setTitle("Edit Product Name");
-                    final EditText editTextNewName = (EditText) view.findViewById(R.id.changeText);
+                    final EditText editTextNew = (EditText) view.findViewById(R.id.changeText);
 
                     alertBuilder.setCancelable(true)
                             .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
 
-                                    newName = editTextNewName.getText().toString();
+                                    newName = editTextNew.getText().toString();
 
 
                                     //check is empty
@@ -102,6 +149,8 @@ public class update_menu extends Fragment {
 
                     Menu_screen.lList = null;
 
+
+
                 }
             });
 
@@ -109,18 +158,40 @@ public class update_menu extends Fragment {
                 @Override
                 public void onClick(View v) {
 
-                    final View view = (LayoutInflater.from(v.getContext()).inflate(R.layout.edit_text, null));
+                    final View view = (LayoutInflater.from(v.getContext()).inflate(R.layout.activity_edit_spinner, null));
                     AlertDialog.Builder alertBuilder = new AlertDialog.Builder(v.getContext());
                     alertBuilder.setView(view);
                     alertBuilder.setTitle("Edit Product Category");
-                    final EditText editTextNewName = (EditText) view.findViewById(R.id.changeText);
+                    final Spinner spinnerCat2 = (Spinner) view.findViewById(R.id.spinnerCat2);
+
+                    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
+                            R.array.foodCategory, android.R.layout.simple_spinner_item);
+
+                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+                    spinnerCat2.setAdapter(adapter);
+
+                    spinnerCat2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                        @Override
+                        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                            //set spinner selected item color
+                            ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+                        }
+
+                        @Override
+                        public void onNothingSelected(AdapterView<?> parent) {
+
+                        }
+                    });
+
+
 
                     alertBuilder.setCancelable(true)
                             .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
 
-                                    newCat = editTextNewName.getText().toString();
+                                    newCat = spinnerCat2.getSelectedItem().toString();
 
 
                                     //check is empty
@@ -141,6 +212,7 @@ public class update_menu extends Fragment {
 
                     Menu_screen.lList = null;
 
+
                 }
             });
 
@@ -152,14 +224,14 @@ public class update_menu extends Fragment {
                     AlertDialog.Builder alertBuilder = new AlertDialog.Builder(v.getContext());
                     alertBuilder.setView(view);
                     alertBuilder.setTitle("Edit Product Description");
-                    final EditText editTextNewName = (EditText) view.findViewById(R.id.changeText);
+                    final EditText editTextNew = (EditText) view.findViewById(R.id.changeText);
 
                     alertBuilder.setCancelable(true)
                             .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
 
-                                    newDesc = editTextNewName.getText().toString();
+                                    newDesc = editTextNew.getText().toString();
 
 
                                     //check is empty
@@ -180,6 +252,7 @@ public class update_menu extends Fragment {
 
                     Menu_screen.lList = null;
 
+
                 }
             });
 
@@ -191,14 +264,14 @@ public class update_menu extends Fragment {
                     AlertDialog.Builder alertBuilder = new AlertDialog.Builder(v.getContext());
                     alertBuilder.setView(view);
                     alertBuilder.setTitle("Edit Product Description");
-                    final EditText editTextNewName = (EditText) view.findViewById(R.id.changeText);
+                    final EditText editTextNew = (EditText) view.findViewById(R.id.changeText);
 
                     alertBuilder.setCancelable(true)
                             .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
 
-                                    newPrice = editTextNewName.getText().toString();
+                                    newPrice = editTextNew.getText().toString();
 
 
                                     //check is empty
@@ -219,10 +292,50 @@ public class update_menu extends Fragment {
 
                     Menu_screen.lList = null;
 
+
                 }
             });
 
+        btnUpload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+
+                        Intent intent = new Intent();
+                        intent.setType("image/*");
+                        intent.setAction(Intent.ACTION_GET_CONTENT);
+                        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+
+
+
+                picChosen = false;
+                MenuFragment.allowRefresh = true;
+
+                Menu_screen.lList = null;
+
+            }
+        });
+
+        btnImage.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+              uploadImage();
+            }
+
+
+        });
+
+
+        btnSearch.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                String ProdID = txtProdID.getText().toString();
+                String type = "retrieveProductInfo";
+
+                BackgroundWorker backgroundWorker = new BackgroundWorker(v.getContext());
+                backgroundWorker.execute(type, ProdID);
+            }
+
+
+        });
 
         btncancel.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
@@ -242,7 +355,7 @@ public class update_menu extends Fragment {
     public void updateName(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
-
+        editName.setText(newName.toString());
         //Send data
         try {
 
@@ -307,7 +420,7 @@ public class update_menu extends Fragment {
     public void updateCat(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
-
+        editCat.setText(newCat.toString());
         //Send data
         try {
 
@@ -372,7 +485,7 @@ public class update_menu extends Fragment {
     public void updateDesc(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
-
+        editDesc.setText(newDesc.toString());
         //Send data
         try {
 
@@ -416,6 +529,8 @@ public class update_menu extends Fragment {
                     params.put("ProdID", txtProdID.getText().toString());
                     params.put("ProdDesc", newDesc);
 
+
+
                     return params;
                 }
 
@@ -437,7 +552,7 @@ public class update_menu extends Fragment {
     public void updatePrice(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
-
+        editPrice.setText(newPrice.toString());
         //Send data
         try {
 
@@ -498,5 +613,245 @@ public class update_menu extends Fragment {
         }
 
     }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
+            filePath = data.getData();
+            picChosen = true;
+            try {
+                bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), filePath);
+                imageView3.setImageBitmap(bitmap);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public String getStringImage(Bitmap bmp) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+        byte[] imageBytes = baos.toByteArray();
+        String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
+        return encodedImage;
+    }
+
+    private void uploadImage() {
+        class UploadImage extends AsyncTask<Bitmap, Void, String> {
+
+
+            ProgressDialog loading;
+            RequestHandler rh = new RequestHandler();
+
+
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                loading = ProgressDialog.show(update_menu.this.getActivity(), "Uploading image", "Please wait...", true, true);
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute(s);
+                loading.dismiss();
+                Toast.makeText(getActivity().getApplicationContext(), s, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            protected String doInBackground(Bitmap... params) {
+                Bitmap bitmap = params[0];
+                String ProdImage = getStringImage(bitmap);
+
+                HashMap<String, String> data = new HashMap<>();
+
+
+                data.put("ProdID", txtProdID.getText().toString());
+                data.put("ProdImage", ProdImage);
+
+
+
+                String result = rh.sendPostRequest(Image_URL, data);
+
+                return result;
+            }
+        }
+        UploadImage ui = new UploadImage();
+        ui.execute(bitmap);
+
+    }
+
+
+    private class BackgroundWorker extends AsyncTask<String, Void, String> {
+
+        Context context;
+
+
+
+        public BackgroundWorker(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+            String type = params[0];
+            String RetrieveURL = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_get_info.php";
+
+            // if the type of the task = retrieveBorrowHistory
+            if (type == "retrieveProductInfo") {
+                String ProdID = params[1];
+
+
+                try {
+
+                    //establish httpUrlConnection with POST method
+                    URL url = new URL(RetrieveURL);
+                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+                    httpURLConnection.setRequestMethod("POST");
+                    httpURLConnection.setDoOutput(true);
+                    httpURLConnection.setDoInput(true);
+
+                    //set output stream
+                    OutputStream outputStream = httpURLConnection.getOutputStream();
+                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                    String post_data = URLEncoder.encode("ProdID", "UTF-8") + "=" + URLEncoder.encode(ProdID, "UTF-8");
+
+                    bufferedWriter.write(post_data);
+                    bufferedWriter.flush();
+                    bufferedWriter.close();
+                    outputStream.close();
+
+                    // read the data
+                    InputStream inputStream = httpURLConnection.getInputStream();
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
+                    String result = "";
+                    String line = "";
+
+                    while ((line = bufferedReader.readLine()) != null) {
+                        result += line;
+                    }
+                    bufferedReader.close();
+                    inputStream.close();
+                    httpURLConnection.disconnect();
+                    return result;
+
+
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+
+
+                }
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPreExecute() {
+/*
+            if (!progressDialog.isShowing()) ;
+            progressDialog.setMessage("Retrieving Product");
+            progressDialog.show();*/
+
+
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+            try {
+                JSONArray jsonArray = new JSONArray(result);
+
+                try {
+
+
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        JSONObject courseResponse= (JSONObject) jsonArray.get(i);
+
+
+
+
+                        String ProdName = courseResponse.getString("ProdName");
+                        String ProdCat = courseResponse.getString("ProdCat");
+                        String ProdDesc = courseResponse.getString("ProdDesc");
+                        double ProdPrice = Double.parseDouble(courseResponse.getString("ProdPrice"));
+                        String ImageURL = courseResponse.getString("url");
+
+
+
+                        editName.setText(ProdName.toString());
+                        editCat.setText(ProdCat.toString());
+                        editDesc.setText(ProdDesc.toString());
+                        editPrice.setText(Double.toString(ProdPrice));
+                        getImage(ImageURL, imageView2);
+
+
+                    }
+
+                    /*if (progressDialog.isShowing())
+                        progressDialog.dismiss();*/
+
+
+                    Toast.makeText(getView().getContext(), "", Toast.LENGTH_LONG).show();
+
+
+
+                } catch (Exception e) {
+                    Toast.makeText(getView().getContext(), "Error:" + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
+            } catch (Exception e) {
+                Toast.makeText(getView().getContext(), "Error:" + e.getMessage(), Toast.LENGTH_LONG).show();
+            }
+
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {
+            super.onProgressUpdate(values);
+        }
+
+
+    }
+
+    private void getImage(String urlToImage, final ImageView ivImage) {
+        class GetImage extends AsyncTask<String, Void, Bitmap> {
+            ProgressDialog loading;
+
+            @Override
+            protected Bitmap doInBackground(String... params) {
+                URL url = null;
+                Bitmap image = null;
+
+                String urlToImage = params[0];
+                try {
+                    url = new URL(urlToImage);
+                    image = BitmapFactory.decodeStream(url.openConnection().getInputStream());
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                return image;
+            }
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                loading = ProgressDialog.show(getContext(), "Downloading Image...", "Please wait...", true, true);
+            }
+
+            @Override
+            protected void onPostExecute(Bitmap bitmap) {
+                super.onPostExecute(bitmap);
+                loading.dismiss();
+                ivImage.setImageBitmap(bitmap);
+            }
+        }
+        GetImage gi = new GetImage();
+        gi.execute(urlToImage);
+    }
+
 
 }
