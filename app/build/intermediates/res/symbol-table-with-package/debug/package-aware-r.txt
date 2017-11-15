@@ -1215,6 +1215,7 @@ int menu btm_navigation_items 0x7f0b0000
 int menu navigation 0x7f0b0001
 int mipmap ic_launcher 0x7f0c0000
 int mipmap ic_launcher_round 0x7f0c0001
+int mipmap ic_launcher_square 0x7f0c0002
 int raw zxing_beep 0x7f0d0000
 int string Accept 0x7f0e0000
 int string AddInventory 0x7f0e0001
