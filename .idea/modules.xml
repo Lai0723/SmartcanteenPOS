@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SmartcanteenPOS2.iml" filepath="$PROJECT_DIR$/SmartcanteenPOS2.iml" />
       <module fileurl="file://C:\Users\lai\Desktop\SmartcanteenPOS8\SmartcanteenPOS6.iml" filepath="C:\Users\lai\Desktop\SmartcanteenPOS8\SmartcanteenPOS6.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SmartcanteenPOS8.iml" filepath="$PROJECT_DIR$/SmartcanteenPOS8.iml" />
+      <module fileurl="file://C:\MAD_Projects\SmartcanteenPOS2\SmartcanteenPOS8.iml" filepath="C:\MAD_Projects\SmartcanteenPOS2\SmartcanteenPOS8.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

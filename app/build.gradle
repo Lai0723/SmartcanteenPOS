@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 26
     buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.example.lai.smartcanteenpos"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion 16
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -46,6 +46,12 @@ dependencies {
     compile 'com.android.support:support-v4:26.0.1'
     compile 'com.stripe:stripe-android:5.1.0'
     */
+    compile 'com.braintreepayments.api:braintree:2.+'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.braintreepayments.api:drop-in:3.+'
+
+
+
 
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 
