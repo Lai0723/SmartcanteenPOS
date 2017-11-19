@@ -1,4 +1,0 @@
-#Sun Nov 19 23:45:19 SGT 2017
-base.0=D\:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
-renamed.0=classes.dex
-file.0=D\:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19\\classes.dex

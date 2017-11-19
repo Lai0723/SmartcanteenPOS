@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,6 +69,34 @@ public class OrderingFragment extends Fragment {
 
         buttonOrder = v.findViewById(R.id.buttonOrder);
         buttonApply = v.findViewById(R.id.buttonApplyCode);
+
+        editTextAmount.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                try{
+                    orderQty = Integer.parseInt(editTextAmount.getText().toString());
+                }
+                catch(Exception e){
+                    editTextAmount.setError("Only integer values are allowed.");
+                }
+                total = orderQty * OrderMainActivity.getProdPrice();
+                textViewTotal.setText(R.string.total);
+                textViewTotal.setText(textViewTotal.getText() + " " + total);
+                editTextDiscount.requestFocus();
+                return true;
+            }
+        });
+
+        editTextDiscount.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if(editTextDiscount.getText().toString().matches(""))
+                    buttonOrder.requestFocus();
+                else
+                    buttonApply.requestFocus();
+                return false;
+            }
+        });
 
         buttonOrder.setOnClickListener(new View.OnClickListener() {
             @Override
