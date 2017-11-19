@@ -138,4 +138,49 @@
         <string name="coupon2">Coupon Name: RM10 discount </string>
         <string name="coupon2.1">Point Used: 1000pts</string>
 
+    <!--String for WJ-->
+    <string name="register">Register</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="order">Order</string>
+    <string name="orderHistory">Order History</string>
+    <string name="canteen1">Red Bricks Cafeteria</string>
+    <string name="canteen2">Yum Yum Cafeteria</string>
+    <string name="canteen3">Nyonya Cafeteria</string>
+    <string name="canteen4">Casuarina Cafeteria</string>
+    <string name="convenienceStore">Convenience Store</string>
+    <string name="mixedRice">Mixed Rice</string>
+    <string name="noodles">Noodles</string>
+    <string name="masakanMalaysia">Masakan Malaysia</string>
+    <string name="fresh">Fresh</string>
+    <string name="indoDeli">Indo Deli</string>
+    <string name="vegetarianFood">Vegetarian Food</string>
+    <string name="monsterCafe">Monster Cafe</string>
+    <string name="productImage">Product Image</string>
+    <string name="amount">Amount: </string>
+    <string name="cancelOrder">Cancel Order</string>
+    <string name="pay">Pay</string>
+    <string name="applyCode">Apply Code</string>
+    <string name="discountCode">Discount Code</string>
+    <string name="productName">Product Name:</string>
+    <string name="price">Price (RM):</string>
+    <string name="orderDateTime">Order Date Time:</string>
+    <string name="total">Total (RM):</string>
+    <string name="status">Status: </string>
+    <string name="productDescription">Product Description:</string>
+    <string name="orderID">Order ID</string>
+    <string name="redeemOrder">Redeem My Order</string>
+    <string name="stall1">Stall 1</string>
+    <string name="stall2">Stall 2</string>
+    <string name="stall3">Stall 3</string>
+    <string name="stall4">Stall 4</string>
+    <string name="stall5">Stall 5</string>
+    <string name="stall6">Stall 6</string>
+    <string name="stall7">Stall 7</string>
+    <string name="stall8">Stall 8</string>
+    <string name="stall9">Stall 9</string>
+    <string name="mercTest">lai</string>
+
 </resources>

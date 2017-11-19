@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_order"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="@string/order" />
+
+    <item
+        android:id="@+id/navigation_orderHistory"
+        android:icon="@drawable/ic_list_black_24dp"
+        android:title="@string/orderHistory" />
+
+</menu>

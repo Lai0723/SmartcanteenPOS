@@ -121,14 +121,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void goOnlineMenu(){
-        /*Intent intent = new Intent(this, WJian.class);
+    public void goOnlineMenu(View v){
+        Intent intent = new Intent(this, OrderMainActivity.class);
         intent.putExtra("walletID",walletID);
         intent.putExtra("balance",balance);
-        startActivity(intent);*/
+        startActivity(intent);
     }
 
-    public void goRedeemCoupon(){
+    public void goRedeemCoupon(View v){
         Intent intent = new Intent(this,RedeemMainActivity.class);
         intent.putExtra("walletID",walletID);
         intent.putExtra("loyaltyPoint",loyaltyPoint);

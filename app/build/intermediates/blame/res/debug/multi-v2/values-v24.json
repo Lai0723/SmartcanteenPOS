@@ -1,50 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\MAD_Projects\\SmartcanteenPOS6\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\c08b7f382c37faced66cf9d389393a99\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,212,347,416,480,549",
-                        "endColumns": "156,134,68,63,68,69",
-                        "endOffsets": "207,342,411,475,544,614"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS8\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\73488a2d37f123ff9c8e8c881ed52eb4\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,212,347,416,480,549",
-                        "endColumns": "156,134,68,63,68,69",
-                        "endOffsets": "207,342,411,475,544,614"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\MAD_Projects\\SmartcanteenPOS2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\0b99b2cb610be960e5afb0ace4589106\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,212,347,416,480,549",
-                        "endColumns": "156,134,68,63,68,69",
-                        "endOffsets": "207,342,411,475,544,614"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\9ed8c0ca931cf9f20fc6cbfdc3eb87d6\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\6155975955f762408698fa041b0503e4\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -59,37 +19,15 @@
                         "endColumns": "65,60,65,66",
                         "endOffsets": "680,741,807,874"
                     }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\A45VD\\Desktop\\EWallet-master\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
-            "map": [
+                },
                 {
-                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\5cd5a45769aed7c1c458cd01dd9a1067\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\b580ecef27f42b65d2f642b9ecdbaf8b\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
                         "startOffsets": "55,212,347,416,480,549",
                         "endColumns": "156,134,68,63,68,69",
                         "endOffsets": "207,342,411,475,544,614"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.0.0.aar\\c726f2e1b03c0324dfafa187ab899123\\res\\values-v24\\values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,121,182,248",
-                        "endColumns": "65,60,65,66",
-                        "endOffsets": "116,177,243,310"
-                    },
-                    "to": {
-                        "startLines": "8,9,10,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "619,685,746,812",
-                        "endColumns": "65,60,65,66",
-                        "endOffsets": "680,741,807,874"
                     }
                 }
             ]

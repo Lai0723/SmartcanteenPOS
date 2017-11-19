@@ -1,55 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\MAD_Projects\\SmartcanteenPOS6\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\c08b7f382c37faced66cf9d389393a99\\res\\values-v18\\values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\MAD_Projects\\SmartcanteenPOS2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\0b99b2cb610be960e5afb0ace4589106\\res\\values-v18\\values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\A45VD\\Desktop\\EWallet-master\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\5cd5a45769aed7c1c458cd01dd9a1067\\res\\values-v18\\values-v18.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS8\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\73488a2d37f123ff9c8e8c881ed52eb4\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\b580ecef27f42b65d2f642b9ecdbaf8b\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -50,6 +50,10 @@
         <activity android:name=".onSpotTransferScanner" />
         <activity android:name=".reportdetails" />
         <activity android:name=".reportdetails_transfer"></activity>
+
+        <!-- WJ part -->
+        <activity android:name=".OrderMainActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
