@@ -120,8 +120,8 @@ public class onSpotTransferScanner extends AppCompatActivity {
                         if (balanceToCheck > ttlPurchaseAmount) {
                             //Double.toString(ttlPurchaseAmt);
                             try {
-                                fragmentMerc_wallet.allowRefresh = true;
                                 insertTransfer(this, "https://martpay.000webhostapp.com/gab_insert_transfer.php", giverID, ttlPurchaseAmt, date, receiverID);
+                                fragmentMerc_wallet.allowRefresh = true;
                                 for (String productID: purchasedID) {
                                     updateInventory(this, "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/payment_update_inventory.php",productID);
                                 }

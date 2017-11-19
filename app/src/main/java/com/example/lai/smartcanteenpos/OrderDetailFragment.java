@@ -103,7 +103,7 @@ public class OrderDetailFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 // add this, your class into the bracket of the intent initialization
-                Intent intent = new Intent();
+                Intent intent = new Intent(getContext(),QRretrieval.class);
                 intent.putExtra("OrderID", OrderMainActivity.getOrderID());
                 intent.putExtra("ProdID", OrderMainActivity.getProdID());
                 intent.putExtra("WalletID",OrderMainActivity.getwID());

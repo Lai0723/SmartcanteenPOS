@@ -346,9 +346,7 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
                                     //balance += Double.parseDouble(ttlPurchaseAmt);
                                     //balance += Double.parseDouble(ttlPurchaseAmt);
-                                    FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                                    transaction.replace(R.id.frame_main, fragmentWallet.newInstance());
-                                    transaction.commit();
+                                    fragmentWallet.allowRefresh =true;
                                 } else {
                                     Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
                                 }

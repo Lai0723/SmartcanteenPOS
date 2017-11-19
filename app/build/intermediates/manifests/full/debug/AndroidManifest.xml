@@ -86,6 +86,8 @@
         <activity
             android:name="com.example.lai.smartcanteenpos.OrderMainActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="com.example.lai.smartcanteenpos.QRretrieval" />
+        <activity android:name="com.example.lai.smartcanteenpos.onlineOrderRetrievalScanner" />
         <activity
             android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"
             android:theme="@style/bt_three_d_secure_theme" />
