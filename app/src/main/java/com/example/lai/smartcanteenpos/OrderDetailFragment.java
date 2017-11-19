@@ -65,7 +65,7 @@ public class OrderDetailFragment extends Fragment {
         textViewPayment.setText(total + " ");
         textViewOrderDateTime.setText(orderDateTime);
         textViewPaymentStatus.setText(status);
-        if (status.matches("Pending") && walletBal > total) {
+        if (status.matches("Accepted") && walletBal > total) {
             getActivity().runOnUiThread(new Runnable(){
                 @Override
                 public void run() {
