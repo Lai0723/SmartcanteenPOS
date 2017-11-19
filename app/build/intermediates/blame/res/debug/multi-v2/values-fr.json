@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
+            "outputFile": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr\\values-fr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\b2eea283e25a2691c4c8268e723a7805\\res\\values-fr\\values-fr.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,132,207,262,332,387,442,497,553,607,687,765,834,898,958,1029,1101,1166,1244,1286,1357",
-                        "endColumns": "76,74,54,69,54,54,54,55,53,79,77,68,63,59,70,71,64,77,41,70,41",
-                        "endOffsets": "127,202,257,327,382,437,492,548,602,682,760,829,893,953,1024,1096,1161,1239,1281,1352,1394"
-                    },
-                    "to": {
-                        "startLines": "24,25,26,30,31,32,33,34,35,48,49,50,51,52,53,54,55,57,58,62,72",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2250,2327,2402,2653,2723,2778,2833,2888,2944,3710,3790,3868,3937,4001,4061,4132,4204,4349,4427,4629,5445",
-                        "endColumns": "76,74,54,69,54,54,54,55,53,79,77,68,63,59,70,71,64,77,41,70,41",
-                        "endOffsets": "2322,2397,2452,2718,2773,2828,2883,2939,2993,3785,3863,3932,3996,4056,4127,4199,4264,4422,4464,4695,5482"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\ff0888225b5931e66a132f6f98934d88\\res\\values-fr\\values-fr.xml",
+                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\7093867678d03d5c020c2d20b5b37f44\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\b580ecef27f42b65d2f642b9ecdbaf8b\\res\\values-fr\\values-fr.xml",
+                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.5.0.aar\\8bd488b12a298ae5353dc518f5e23007\\res\\values-fr\\values-fr.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,327",
+                        "endColumns": "58,46,165,108",
+                        "endOffsets": "109,156,322,431"
+                    },
+                    "to": {
+                        "startLines": "75,76,77,78",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5674,5733,5780,5946",
+                        "endColumns": "58,46,165,108",
+                        "endOffsets": "5728,5775,5941,6050"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\5cd5a45769aed7c1c458cd01dd9a1067\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,20 +55,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.5.0.aar\\34709558c7bc4419387ecf914d878e8b\\res\\values-fr\\values-fr.xml",
+                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\5df46035daf331135e951e17fd6376de\\res\\values-fr\\values-fr.xml",
                     "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,114,161,327",
-                        "endColumns": "58,46,165,108",
-                        "endOffsets": "109,156,322,431"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,132,207,262,332,387,442,497,553,607,687,765,834,898,958,1029,1101,1166,1244,1286,1357",
+                        "endColumns": "76,74,54,69,54,54,54,55,53,79,77,68,63,59,70,71,64,77,41,70,41",
+                        "endOffsets": "127,202,257,327,382,437,492,548,602,682,760,829,893,953,1024,1096,1161,1239,1281,1352,1394"
                     },
                     "to": {
-                        "startLines": "75,76,77,78",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5674,5733,5780,5946",
-                        "endColumns": "58,46,165,108",
-                        "endOffsets": "5728,5775,5941,6050"
+                        "startLines": "24,25,26,30,31,32,33,34,35,48,49,50,51,52,53,54,55,57,58,62,72",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2250,2327,2402,2653,2723,2778,2833,2888,2944,3710,3790,3868,3937,4001,4061,4132,4204,4349,4427,4629,5445",
+                        "endColumns": "76,74,54,69,54,54,54,55,53,79,77,68,63,59,70,71,64,77,41,70,41",
+                        "endOffsets": "2322,2397,2452,2718,2773,2828,2883,2939,2993,3785,3863,3932,3996,4056,4127,4199,4264,4422,4464,4695,5482"
                     }
                 }
             ]

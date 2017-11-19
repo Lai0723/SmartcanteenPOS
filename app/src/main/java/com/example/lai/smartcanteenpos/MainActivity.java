@@ -130,8 +130,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void goRedeemCoupon(View v){
         Intent intent = new Intent(this,RedeemMainActivity.class);
-        intent.putExtra("walletID",walletID);
-        intent.putExtra("loyaltyPoint",loyaltyPoint);
+        intent.putExtra("WalletID",walletID);
+        intent.putExtra("LoyaltyPoint",loyaltyPoint);
         startActivity(intent);
     }
 

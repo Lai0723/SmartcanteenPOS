@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
+            "outputFile": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.5.0.aar\\34709558c7bc4419387ecf914d878e8b\\res\\values-pl\\values-pl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,114,161,325",
-                        "endColumns": "58,46,163,109",
-                        "endOffsets": "109,156,320,430"
-                    },
-                    "to": {
-                        "startLines": "75,76,77,78",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "5823,5882,5929,6093",
-                        "endColumns": "58,46,163,109",
-                        "endOffsets": "5877,5924,6088,6198"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\b580ecef27f42b65d2f642b9ecdbaf8b\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\5cd5a45769aed7c1c458cd01dd9a1067\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\b2eea283e25a2691c4c8268e723a7805\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\5df46035daf331135e951e17fd6376de\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\ff0888225b5931e66a132f6f98934d88\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\7093867678d03d5c020c2d20b5b37f44\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "2027,2079,2134,2423,2472,2544,2971,3023,3089,3145,3205,3255,3313,3377,3440,3496,3556,3635,4260,4508,4550,4592,4765,4812,4890,4967,5028,5121,5218,5417,5514",
                         "endColumns": "51,54,80,48,71,80,51,65,55,59,49,57,63,62,55,59,78,51,98,41,41,82,46,77,76,60,92,96,198,96,85",
                         "endOffsets": "2074,2129,2210,2467,2539,2620,3018,3084,3140,3200,3250,3308,3372,3435,3491,3551,3630,3682,4354,4545,4587,4670,4807,4885,4962,5023,5116,5213,5412,5509,5595"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\zxing-android-embedded-3.5.0.aar\\8bd488b12a298ae5353dc518f5e23007\\res\\values-pl\\values-pl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,325",
+                        "endColumns": "58,46,163,109",
+                        "endOffsets": "109,156,320,430"
+                    },
+                    "to": {
+                        "startLines": "75,76,77,78",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5823,5882,5929,6093",
+                        "endColumns": "58,46,163,109",
+                        "endOffsets": "5877,5924,6088,6198"
                     }
                 }
             ]
