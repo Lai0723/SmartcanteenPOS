@@ -40,6 +40,7 @@ public class fragmentFund extends Fragment {
 
         sbTopUpValue = (SeekBar) view.findViewById(R.id.sbTopUpValue);
         tvTopUpValue = (TextView) view.findViewById(R.id.tvTopUpValue);
+        tuValue = 5;
         tvTopUpValue.setText("RM " + String.valueOf(tuValue));
 
         //pDialog = new ProgressDialog(this);

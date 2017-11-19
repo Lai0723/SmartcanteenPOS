@@ -343,7 +343,7 @@ public class MainActivity extends AppCompatActivity {
                                 int success = jsonObject.getInt("success");
                                 String message = jsonObject.getString("message");
                                 if (success == 1) {
-                                    Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                                    //Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
                                     //balance += Double.parseDouble(ttlPurchaseAmt);
                                     //balance += Double.parseDouble(ttlPurchaseAmt);
                                     fragmentWallet.allowRefresh =true;

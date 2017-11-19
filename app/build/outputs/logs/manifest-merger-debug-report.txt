@@ -1,14 +1,14 @@
 -- Merging decision tree log ---
 data
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:42:17-69
+INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:43:17-69
 	android:scheme
 		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:42:23-66
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:43:23-66
 manifest
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-65:12
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-66:12
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\58cd49ca5d187f50287a7e03d7ab1911\AndroidManifest.xml:2:1-11:12
 MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\c2cfc3c9d99d70b9fd97682d0aad118a\AndroidManifest.xml:2:1-29:12
 MERGED from [com.braintreepayments:card-form:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\card-form-3.1.0.aar\3eea2586d92ca2b2498b1926a9bc5f0a\AndroidManifest.xml:2:1-12:12
@@ -32,20 +32,20 @@ MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\User\.gradl
 MERGED from [com.braintreepayments.api:core:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\core-2.7.3.aar\14087739fa4be16157e07f70706ed009\AndroidManifest.xml:2:1-11:12
 MERGED from [com.braintreepayments:browser-switch:0.1.4] C:\Users\User\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.4.aar\ac9566e07a70e5fe5e19c6fa78776c33\AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:multidex:1.0.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\9565b544eb2d4be04a9a36b24f68f09d\AndroidManifest.xml:16:1-19:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-65:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-66:12
+INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-66:12
 	package
 		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
 		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-65:12
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-66:12
 		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-65:12
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-66:12
 		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:11-69
@@ -71,8 +71,14 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
 		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.CAMERA
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:8:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\4ac2747665928c17d13828918e9e4535\AndroidManifest.xml:21:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\4ac2747665928c17d13828918e9e4535\AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:8:22-62
 application
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:9:5-63:19
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:10:5-64:19
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\58cd49ca5d187f50287a7e03d7ab1911\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\58cd49ca5d187f50287a7e03d7ab1911\AndroidManifest.xml:9:5-20
 MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\c2cfc3c9d99d70b9fd97682d0aad118a\AndroidManifest.xml:15:5-27:19
@@ -110,123 +116,123 @@ MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\User\.gradle\c
 MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\2c735665521c38ae8e878e7238307c0f\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\2c735665521c38ae8e878e7238307c0f\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:13:9-41
 	tools:ignore
 		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\c2cfc3c9d99d70b9fd97682d0aad118a\AndroidManifest.xml:17:9-39
 	android:roundIcon
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:16:9-40
 activity#com.example.lai.smartcanteenpos.Login
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:16:9-19:53
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:17:9-20:53
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:19:13-50
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:20:13-50
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:19:13-45
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:17:13-34
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:18:13-34
 activity#com.example.lai.smartcanteenpos.Menu_screen
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:20:9-22:53
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:21:9-23:53
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:22:13-50
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:23:13-50
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:21:13-40
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:22:13-40
 activity#com.example.lai.smartcanteenpos.Register
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:23:9-46
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:24:9-46
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:23:19-43
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:24:19-43
 activity#com.example.lai.smartcanteenpos.login_type_select
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:26:9-32:20
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:27:9-33:20
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:26:19-52
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:27:19-52
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:27:13-31:29
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:30:17-77
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:30:27-74
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.braintreepayments.api.BraintreeBrowserSwitchActivity
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:33:9-44:20
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:34:9-45:20
 	android:launchMode
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:35:13-44
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:34:13-84
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:35:13-84
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:36:13-43:29
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:37:13-44:29
 action#android.intent.action.VIEW
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:37:17-69
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:37:25-66
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:39:17-76
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:40:17-76
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:39:27-73
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:40:27-73
 category#android.intent.category.BROWSABLE
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:40:17-78
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:41:17-78
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:40:27-75
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:41:27-75
 activity#com.example.lai.smartcanteenpos.studLogin
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:45:9-47:52
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:46:9-48:52
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:47:13-49
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:48:13-49
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:46:13-38
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:47:13-38
 activity#com.example.lai.smartcanteenpos.MainActivity
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:48:9-50
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:49:9-50
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:48:19-47
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:49:19-47
 activity#com.example.lai.smartcanteenpos.RedeemMainActivity
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:49:9-56
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:50:9-56
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:49:19-53
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:50:19-53
 activity#com.example.lai.smartcanteenpos.changecard
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:50:9-48
-	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:50:19-45
-activity#com.example.lai.smartcanteenpos.QRPassword
 ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:51:9-48
 	android:name
 		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:51:19-45
-activity#com.example.lai.smartcanteenpos.QRTransfer
+activity#com.example.lai.smartcanteenpos.QRPassword
 ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:52:9-48
 	android:name
 		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:52:19-45
+activity#com.example.lai.smartcanteenpos.QRTransfer
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:53:9-48
+	android:name
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:53:19-45
 activity#com.example.lai.smartcanteenpos.onSpotTransferScanner
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:53:9-59
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:54:9-59
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:53:19-56
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:54:19-56
 activity#com.example.lai.smartcanteenpos.reportdetails
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:54:9-51
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:55:9-51
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:54:19-48
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:55:19-48
 activity#com.example.lai.smartcanteenpos.reportdetails_transfer
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:55:9-60
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:56:9-60
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:55:19-57
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:56:19-57
 activity#com.example.lai.smartcanteenpos.OrderMainActivity
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:58:9-60:52
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:59:9-61:52
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:60:13-49
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:61:13-49
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:59:13-46
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:60:13-46
 activity#com.example.lai.smartcanteenpos.QRretrieval
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:61:9-49
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:62:9-49
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:61:19-46
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:62:19-46
 activity#com.example.lai.smartcanteenpos.onlineOrderRetrievalScanner
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:62:9-74
+ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:63:9-74
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:62:19-62
+		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:63:19-62
 uses-sdk
 INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
@@ -339,10 +345,6 @@ MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\ca
 		ADDED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\73e9e90a16e496ec5b24aee6717e7992\AndroidManifest.xml:28:13-35
 	android:name
 		ADDED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\73e9e90a16e496ec5b24aee6717e7992\AndroidManifest.xml:27:13-51
-uses-permission#android.permission.CAMERA
-ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\4ac2747665928c17d13828918e9e4535\AndroidManifest.xml:21:5-65
-	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\4ac2747665928c17d13828918e9e4535\AndroidManifest.xml:21:22-62
 uses-feature#android.hardware.camera
 ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\4ac2747665928c17d13828918e9e4535\AndroidManifest.xml:24:5-26:36
 	android:required
