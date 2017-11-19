@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_Home"
+        android:title="@string/Home"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/action_Coupon"
+        android:title="@string/Coupon"
+        android:icon="@drawable/ic_discount_coupon" />
+
+    <item
+        android:id="@+id/action_giftCard"
+        android:title="@string/giftCard"
+        android:icon="@drawable/ic_gift_card" />
+    <item
+        android:id="@+id/action_history"
+        android:title="@string/history"
+        android:icon="@drawable/ic_history" />
+</menu>

@@ -100,4 +100,42 @@
         <item>Others</item>
     </string-array>
 
+    <!-- String from Boon part-->
+        <string name="apps_name">Smart Canteen</string>
+        <string name="walletid">WalletID</string>
+        <string name="login">Login</string>
+        <string name="pass">Password</string>
+        <string name="Home">Home</string>
+        <string name="Coupon">Coupon</string>
+        <string name="giftCard">Gift Card</string>
+        <string name="history">History</string>
+        <string name="mainTitle">Loyalty Points</string>
+        <string name="pointsTitle">Total Points Collected:</string>
+        <string name="totalPoints">0000</string>
+        <string name="pointsLabel">points</string>
+        <string name="Redeem">Redeem</string>
+        <string name="discountTitle">Discount Coupons</string>v
+        <string name="itemTitle">Items</string>
+        <string name="historyTitle">History</string>
+        <string name="redeemName">Title</string>
+        <string name="redeemPointRequire">Point Required</string>
+        <string name="redeemAvailability">Availability</string>
+        <string name="his_redeemID">RedemptionID</string>
+        <string name="his_Desc">Description</string>
+        <string name="his_CouponCode">Discount Code</string>
+        <string name="his_CreateAt">Create Date </string>
+        <string name="his_WalletID">WalletID</string>
+        <string name="his_RedeemDate">Redeem Date</string>
+        <string name="selectLabel">Selection: </string>
+        <string name="etTitle">Input Here!</string>
+        <string name="btnR">Redeem</string>
+        <string name="item1">Item Name: Reload Card RM10 </string>
+        <string name="item1.1">Point Used: 1500pts</string>
+        <string name="item2">Item Name: Gift Card RM10 </string>
+        <string name="item2.1">Point Used: 2000pts</string>
+        <string name="coupon1">Coupon Name: RM5 discount </string>
+        <string name="coupon1.1">Point Used: 500pts</string>
+        <string name="coupon2">Coupon Name: RM10 discount </string>
+        <string name="coupon2.1">Point Used: 1000pts</string>
+
 </resources>
