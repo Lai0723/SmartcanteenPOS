@@ -46,7 +46,8 @@
         <activity
             android:name=".studLogin"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".RedeemMainActivity" />
         <activity android:name=".changecard" />
         <activity android:name=".QRPassword" />

@@ -84,7 +84,7 @@ public class onlineOrderRetrievalScanner extends AppCompatActivity {
                     OrderQuantity = arr[9];
                     retrievalScannedTime = arr[10];
 
-                    updateOrderStatus(this, "https://martpay.000webhostapp.com/gab_update_order_status.php", OrderID, StatusCompleted);
+                    //updateOrderStatus(this, "https://martpay.000webhostapp.com/gab_update_order_status.php", OrderID, StatusCompleted);
 
                     showRetrievalSuccess();
                 }
@@ -94,9 +94,16 @@ public class onlineOrderRetrievalScanner extends AppCompatActivity {
         }
     }
 
-    /*public void btnRetrievalCompleteClick(View view){
+    public void btnRetrievalCompleteClick(View view){
         updateOrderStatus(this, "https://martpay.000webhostapp.com/gab_update_order_status.php", OrderID, StatusCompleted);
-    }*/
+    }
+
+
+    public void btnProcessing (View view){
+
+        finish();
+
+    }
 
     public void showRetrievalSuccess(){
         tvOrderID.setText("Order ID: "+OrderID);

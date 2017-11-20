@@ -75,7 +75,9 @@
         <activity
             android:name="com.example.lai.smartcanteenpos.studLogin"
             android:screenOrientation="portrait" />
-        <activity android:name="com.example.lai.smartcanteenpos.MainActivity" />
+        <activity
+            android:name="com.example.lai.smartcanteenpos.MainActivity"
+            android:screenOrientation="portrait" />
         <activity android:name="com.example.lai.smartcanteenpos.RedeemMainActivity" />
         <activity android:name="com.example.lai.smartcanteenpos.changecard" />
         <activity android:name="com.example.lai.smartcanteenpos.QRPassword" />
