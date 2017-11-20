@@ -29,6 +29,21 @@
                     }
                 }
             ]
+        },
+        {
+            "outputFile": "C:\\MAD_Projects\\SmartcanteenPOS7\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v13\\values-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\0b99b2cb610be960e5afb0ace4589106\\res\\values-v13\\values-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
         }
     ]
 }

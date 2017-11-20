@@ -38,7 +38,7 @@ public class QRPassword extends AppCompatActivity {
         inputQRpw = etQRpw.getText().toString();
         if (inputQRpw.equals(passedQRpw) ){
 
-            Toast.makeText(this, "Pw match", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Pw match", Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(this, QRTransfer.class);
             intent.putExtra("giverID",giverID);

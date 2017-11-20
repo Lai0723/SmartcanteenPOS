@@ -19,6 +19,7 @@ public class QRTransfer extends AppCompatActivity {
     static double balanceToChk;
     TextView tvBalanceToChk, tvTimer;
     SeekBar sbTimer;
+    com.dinuscxj.progressbar.CircleProgressBar lpTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,21 +38,26 @@ public class QRTransfer extends AppCompatActivity {
         tvBalanceToChk = (TextView) findViewById(R.id.tvBalanceToChk);
         tvTimer = (TextView) findViewById(R.id.tvTimer);
         sbTimer = (SeekBar) findViewById(R.id.sbTimer);
+        lpTimer = (com.dinuscxj.progressbar.CircleProgressBar)findViewById(R.id.lpTimer);
         tvBalanceToChk.setText(String.format("Balance: RM %.2f" ,QRTransfer.balanceToChk));
 
         generateQR();
 
         int millisToChange=30000;
-        final int millisToUpdate=100;
+        final int millisToUpdate=50;
         sbTimer.setMax(millisToChange/millisToUpdate);
         sbTimer.setProgress(0);
         sbTimer.setEnabled(false);
+        lpTimer.setMax(millisToChange/millisToUpdate);
+        lpTimer.setProgress(0);
+
 
         new CountDownTimer(millisToChange, millisToUpdate) {
 
             public void onTick(long millisUntilFinished) {
-                tvTimer.setText("seconds remaining: " + millisUntilFinished / 1000);
+                tvTimer.setText((millisUntilFinished / 1000)+ "s");
                 sbTimer.setProgress((int)millisUntilFinished/millisToUpdate);
+                lpTimer.setProgress((int)millisUntilFinished/millisToUpdate);
             }
 
             public void onFinish() {
@@ -60,6 +66,8 @@ public class QRTransfer extends AppCompatActivity {
                 generateQR();
             }
         }.start();
+
+        Toast.makeText(this, "Wallet code will renew every 30 second.", Toast.LENGTH_SHORT).show();
 
     }
 
