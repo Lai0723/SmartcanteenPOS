@@ -291,6 +291,7 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == BT_REQUEST_CODE) {
             if (resultCode == Activity.RESULT_OK) {
                 DropInResult resultBT = data.getParcelableExtra(DropInResult.EXTRA_DROP_IN_RESULT);
+                insertTopUp(this, "https://martpay.000webhostapp.com/gab_insert_topup.php"); //insert record to topup table in database
                 Toast.makeText(this, "Card Accepted.", Toast.LENGTH_SHORT).show();
                 // use the result to update your UI and send the payment method nonce to your server
             } else if (resultCode == Activity.RESULT_CANCELED) {
@@ -317,7 +318,6 @@ public class MainActivity extends AppCompatActivity {
         topUpDateTime = sdf.format(dt);
 
         try {
-            insertTopUp(this, "https://martpay.000webhostapp.com/gab_insert_topup.php"); //insert record to topup table in database
         } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(getApplicationContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();

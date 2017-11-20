@@ -124,14 +124,12 @@ public class OrderingFragment extends Fragment {
                         confirmation.setPositiveButton("Pay",new DialogInterface.OnClickListener(){
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
+                                OrderMainActivity.listOrder = null;
+                                dialog.dismiss();
                                 if(ticketApplied)
                                     updateRedeemDate(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insertRedeemDate.php", disCode);
                                 makeOrder(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insertOrder.php",
                                         walletID, prodID, orderQty+ "", total + "");
-                                OrderMainActivity.listOrder = null;
-                                dialog.dismiss();
-                                Intent intent = new Intent(getActivity(),MainActivity.class);
-                                startActivity(intent);
 
 
                             }
@@ -211,6 +209,7 @@ public class OrderingFragment extends Fragment {
                                 String message = jsonObject.getString("message");
                                 if (success == 1) {
                                     Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_LONG).show();
+
                                 } else {
                                     Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_LONG).show();
                                 }
@@ -264,6 +263,7 @@ public class OrderingFragment extends Fragment {
                                 String message = jsonObject.getString("message");
                                 if (success == 0) {
                                     Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                                    getActivity().finish();
                                 } else {
                                     Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_LONG).show();
                                 }

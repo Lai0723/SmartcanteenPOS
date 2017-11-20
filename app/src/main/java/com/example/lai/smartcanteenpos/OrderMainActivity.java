@@ -46,6 +46,8 @@ public class OrderMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        listMenu = null;
+        listOrder = null;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_main);
 

@@ -319,7 +319,7 @@ public class report_transfer extends Fragment {
 
                         Report_Transaction listing = new Report_Transaction(TransferID, GiverWalletID,TransferAmount);
                         Menu_screen.RTList.add(listing);
-                        Toast.makeText(context, "Added "+i, Toast.LENGTH_SHORT).show();
+
 
 
                         total = total + TransferAmount;

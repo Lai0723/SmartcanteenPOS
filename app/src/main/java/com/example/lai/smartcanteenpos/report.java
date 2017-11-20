@@ -321,7 +321,6 @@ public class report extends Fragment {
 
                         Report listing = new Report(OrderID, ProdName, OrderQuantity,PayAmount);
                         Menu_screen.RList.add(listing);
-                        Toast.makeText(context, "Added "+i, Toast.LENGTH_SHORT).show();
 
 
                         total = total + PayAmount;

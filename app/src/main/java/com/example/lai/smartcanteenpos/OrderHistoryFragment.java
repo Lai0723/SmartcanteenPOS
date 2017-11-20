@@ -57,6 +57,7 @@ public class OrderHistoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        OrderMainActivity.listOrder = null;
         View v =  inflater.inflate(R.layout.fragment_order_history, container, false);
         allowRefresh = false;
         listViewOrderHistory = v.findViewById(R.id.listViewOrderHistory);

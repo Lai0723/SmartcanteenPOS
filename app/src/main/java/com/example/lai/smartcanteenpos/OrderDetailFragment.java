@@ -69,8 +69,14 @@ public class OrderDetailFragment extends Fragment {
             getActivity().runOnUiThread(new Runnable(){
                 @Override
                 public void run() {
-                    buttonCancelOrder.setVisibility(View.VISIBLE);
                     buttonRedeem.setVisibility(View.VISIBLE);
+                } });
+        }
+        else if (status.matches("Pending")){
+            getActivity().runOnUiThread(new Runnable(){
+                @Override
+                public void run() {
+                    buttonCancelOrder.setVisibility(View.VISIBLE);
                 } });
         }
 
