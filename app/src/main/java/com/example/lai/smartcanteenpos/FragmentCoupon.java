@@ -170,7 +170,6 @@ public class FragmentCoupon extends Fragment implements View.OnClickListener{
                         String CouponCode = "5" + currentDateandTime + RedeemMainActivity.WalletID;
                         String Description = "RM 5 discount";
                         update(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
-                        //tvRewardBalance.setText(String.format(Integer.toString(RedeemMainActivity.LoyaltyPoint)));
                         insert(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php",CouponCode,Description);
                         Toast.makeText(getContext(), "Successfully Redeemed!", Toast.LENGTH_LONG).show();
                     } catch (Exception e) {
@@ -189,7 +188,6 @@ public class FragmentCoupon extends Fragment implements View.OnClickListener{
                         String CouponCode = "10" + currentDateandTime  + RedeemMainActivity.WalletID;
                         String Description = "RM 10 discount";
                         update(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
-                        //tvRewardBalance.setText(String.format(Integer.toString(RedeemMainActivity.LoyaltyPoint)));
                         insert(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php", CouponCode, Description);
                         Toast.makeText(getContext(), "Successfully Redeemed!", Toast.LENGTH_LONG).show();
                     } catch (Exception e) {
