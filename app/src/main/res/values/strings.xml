@@ -101,7 +101,7 @@
     </string-array>
 
     <!-- String from Boon part-->
-    <string name="apps_name">Smart Canteen</string>
+    <string name="apps_name">Redemption</string>
     <string name="walletid">WalletID</string>
     <string name="login">Login</string>
     <string name="pass">Password</string>
@@ -120,9 +120,11 @@
     <string name="redeemName">Title</string>
     <string name="redeemPointRequire">Point Required</string>
     <string name="redeemAvailability">Availability</string>
-    <string name="his_redeemID">RedemptionID</string>
+    <string name="his_redeemID">RedeemCodeID</string>
+    <string name="his_redeemItemID">RedeemItemID</string>
     <string name="his_Desc">Description</string>
     <string name="his_CouponCode">Discount Code</string>
+    <string name="his_ItemCode">Item Code</string>
     <string name="his_CreateAt">Create Date </string>
     <string name="his_WalletID">WalletID</string>
     <string name="his_RedeemDate">Redeem Date</string>

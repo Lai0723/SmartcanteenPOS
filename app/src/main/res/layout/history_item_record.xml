@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvRedeemItemID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/his_redeemItemID" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/his_Desc" />
+
+    <TextView
+        android:id="@+id/tvItemCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/his_ItemCode" />
+
+    <TextView
+        android:id="@+id/tvCreateAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/his_CreateAt" />
+
+    <TextView
+        android:id="@+id/tvWalletID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/his_WalletID" />
+
+    <TextView
+        android:id="@+id/tvRedeemDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/his_RedeemDate" />
+</LinearLayout>

@@ -2,6 +2,9 @@ package com.example.lai.smartcanteenpos;
 
 import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +14,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.android.volley.Response;
 
 import android.support.v7.app.AlertDialog;
 
@@ -29,9 +33,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.SimpleTimeZone;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TimeZone;
 
 
 public class FragmentCoupon extends Fragment implements View.OnClickListener{
@@ -147,20 +153,26 @@ public class FragmentCoupon extends Fragment implements View.OnClickListener{
         }
     }
 
-    @Override
+
     public void onClick (View v) {
         Date timenow = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyMMddHHmmss");
+        //sdf.setTimeZone(TimeZone.getDefault());
+        //String currentDateandTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+        String currentDateandTime = sdf.format(new Date());
+
 
         switch (v.getId()) {
             case R.id.btn1:
                 if (RedeemMainActivity.LoyaltyPoint >= 500){
                     RedeemMainActivity.LoyaltyPoint -= 500;
                     try {
-                        String CouponCode = "5" + timenow.getTime() + RedeemMainActivity.WalletID;
+                        String CouponCode = "5" + currentDateandTime + RedeemMainActivity.WalletID;
                         String Description = "RM 5 discount";
                         update(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
                         //tvRewardBalance.setText(String.format(Integer.toString(RedeemMainActivity.LoyaltyPoint)));
                         insert(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php",CouponCode,Description);
+                        Toast.makeText(getContext(), "Successfully Redeemed!", Toast.LENGTH_LONG).show();
                     } catch (Exception e) {
                         e.printStackTrace();
                         Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -174,11 +186,12 @@ public class FragmentCoupon extends Fragment implements View.OnClickListener{
                 if (RedeemMainActivity.LoyaltyPoint >= 1000) {
                     RedeemMainActivity.LoyaltyPoint -= 1000;
                     try {
-                        String CouponCode = "10" + timenow.getTime() + RedeemMainActivity.WalletID;
+                        String CouponCode = "10" + currentDateandTime  + RedeemMainActivity.WalletID;
                         String Description = "RM 10 discount";
                         update(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
                         //tvRewardBalance.setText(String.format(Integer.toString(RedeemMainActivity.LoyaltyPoint)));
                         insert(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php", CouponCode, Description);
+                        Toast.makeText(getContext(), "Successfully Redeemed!", Toast.LENGTH_LONG).show();
                     } catch (Exception e) {
                         e.printStackTrace();
                         Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();

@@ -48,7 +48,6 @@
             android:screenOrientation="portrait" />
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".RedeemMainActivity" />
         <activity android:name=".changecard" />
         <activity android:name=".QRPassword" />
         <activity android:name=".QRTransfer" />
@@ -62,6 +61,12 @@
             android:screenOrientation="portrait" />
         <activity android:name=".QRretrieval" />
         <activity android:name=".onlineOrderRetrievalScanner"></activity>
+
+        <!-- BS part -->
+        <activity android:name=".RedeemMainActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/apps_name" />
+
     </application>
 
 </manifest>

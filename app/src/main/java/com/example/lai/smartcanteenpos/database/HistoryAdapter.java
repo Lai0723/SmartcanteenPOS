@@ -13,9 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.example.lai.smartcanteenpos.R;
-
-
-
 import java.util.List;
 import java.io.IOException;
 import java.net.URL;
