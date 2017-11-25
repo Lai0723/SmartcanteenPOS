@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_wallet_transfer_history"
+        android:icon="@drawable/ic_transfer_within_a_station_black_24dp"
+        android:title="@string/walletTransferHistoryNavi" />
+    <item
+        android:id="@+id/action_wallet_transaction_history"
+        android:icon="@drawable/ic_transaction_black_24dp"
+        android:title="@string/walletTransactionHistoryNavi" />
+    <item
+        android:id="@+id/action_wallet_topup_history"
+        android:icon="@drawable/ic_add_box_black_24dp"
+        android:title="@string/walletTopupHistoryNavi" />
+</menu>

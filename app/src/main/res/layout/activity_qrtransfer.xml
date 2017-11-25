@@ -75,4 +75,5 @@
         app:progress_stroke_width="10dp"
         app:progress_text_color="@color/zxing_transparent"
         app:style="solid_line" />
+
 </android.support.constraint.ConstraintLayout>

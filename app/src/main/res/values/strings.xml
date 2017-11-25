@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Smart canteen (POS)</string>
+    <string name="app_name">Smart canteen</string>
     <string name="title_menu">Menu</string>
     <string name="title_order">Order</string>
     <string name="title_invent">Inventory</string>
@@ -184,5 +184,9 @@
     <string name="stall8">Stall 8</string>
     <string name="stall9">Stall 9</string>
     <string name="mercTest">lai</string>
+    <string name="btm_wallet_history">Wallet History</string>
+    <string name="walletTransferHistoryNavi">Transfer</string>
+    <string name="walletTransactionHistoryNavi">Online Transaction</string>
+    <string name="walletTopupHistoryNavi">Top Up</string>
 
 </resources>

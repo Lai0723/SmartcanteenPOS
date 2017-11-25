@@ -46,11 +46,21 @@
         <activity
             android:name=".studLogin"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
         <activity android:name=".changecard" />
-        <activity android:name=".QRPassword" />
-        <activity android:name=".QRTransfer" />
+        <activity
+            android:name=".QRPassword"
+            android:label="QR Authentication"
+            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".QRTransfer"
+            android:label="Transfer QR Code"
+            android:parentActivityName="com.example.lai.smartcanteenpos.QRPassword" />
         <activity android:name=".onSpotTransferScanner" />
         <activity android:name=".reportdetails" />
         <activity android:name=".reportdetails_transfer" />
@@ -59,14 +69,22 @@
         <activity
             android:name=".OrderMainActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".QRretrieval" />
-        <activity android:name=".onlineOrderRetrievalScanner"></activity>
+        <activity android:name=".QRretrieval"
+            android:label="Retrieval QR Code"/>
+        <activity android:name=".onlineOrderRetrievalScanner" />
 
         <!-- BS part -->
-        <activity android:name=".RedeemMainActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/apps_name" />
-
+        <activity
+            android:name=".RedeemMainActivity"
+            android:label="@string/apps_name"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".wallet_history"
+            android:label="Wallet History"
+            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity" />
+        <activity android:name=".adapter_list_transfer_history" />
+        <activity android:name=".adapter_list_transaction_history" />
+        <activity android:name=".adapter_list_topup_history"></activity>
     </application>
 
 </manifest>

@@ -104,10 +104,10 @@ public class MainActivity extends AppCompatActivity {
                         checkCard(MainActivity.this, "https://martpay.000webhostapp.com/gab_select_user.php");
                         fragment = fragmentFund.newInstance();
                         break;
-                    /*case R.id.action_transfer:
-                        fragment = TransferFragment.newInstance();
+                    case R.id.action_wallet_history:
+                        fragment = fragmentWalletHistory.newInstance();
                         break;
-                    case R.id.action_reward:
+                    /*case R.id.action_reward:
                         checkBalance(MainActivity.this, "https://martpay.000webhostapp.com/select_user.php");
                         fragment = RewardFragment.newInstance();
                         break;*/
@@ -255,33 +255,7 @@ public class MainActivity extends AppCompatActivity {
 
                         }
                     }
-                } /*else {
-                    String listID = arr[2];
-                    String date = arr[1];
-                    String seller = arr[4];
-                    double price = Double.parseDouble(arr[3]);
-                    String buyer = username;
-                    if (seller.equals(buyer)) {
-                        Toast.makeText(this, "You cannot buy your own item.", Toast.LENGTH_SHORT).show();
-                    } else if (price > balance) {
-                        Toast.makeText(this, "You cannot afford it.", Toast.LENGTH_SHORT).show();
-                    } else {
-
-                        //String combined = "Sender: " + giver + "\nAmount: RM" + amount + "\n Time: " + date+"\n Receiver " + receiver;
-                        String combined = result.getContents();
-                        Toast.makeText(this, "Scanned: " + combined, Toast.LENGTH_LONG).show();
-                        try {
-                            WalletFragment.allowRefresh = true;
-                            insertTransaction(this, "https://martpay.000webhostapp.com/insert_transaction.php", date, buyer, listID);
-
-                            //end need change de part
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Toast.makeText(getApplicationContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
-                        }
-                    }
-
-                }   */
+                }
 
             }
         } else {

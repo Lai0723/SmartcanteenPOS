@@ -6,13 +6,13 @@ package com.example.lai.smartcanteenpos.database;
 
 public class TopUp {
     private String WalletID;
-    private int CardNumber;
+    //private String CardNumber;
     private double TopUpAmount;
     private String TopUpDateTime;
 
-    public TopUp (String WalletID, int CardNumber, double TopUpAmount, String TopUpDateTime){
+    public TopUp (String WalletID, double TopUpAmount, String TopUpDateTime){
         this.setWalletID(WalletID);
-        this.setCardNumber(CardNumber);
+        //this.setCardNumber(CardNumber);
         this.setTopUpAmount(TopUpAmount);
         this.setTopUpDateTime(TopUpDateTime);
 
@@ -24,14 +24,6 @@ public class TopUp {
 
     public void setWalletID(String walletID) {
         WalletID = walletID;
-    }
-
-    public int getCardNumber() {
-        return CardNumber;
-    }
-
-    public void setCardNumber(int cardNumber) {
-        CardNumber = cardNumber;
     }
 
     public double getTopUpAmount() {
@@ -49,4 +41,6 @@ public class TopUp {
     public void setTopUpDateTime(String topUpDateTime) {
         TopUpDateTime = topUpDateTime;
     }
+
+
 }
