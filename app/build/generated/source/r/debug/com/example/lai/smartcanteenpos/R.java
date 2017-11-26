@@ -4954,17 +4954,18 @@ public final class R {
     public static final int title_notifications=0x7f0f0101;
     public static final int title_order=0x7f0f0102;
     public static final int title_report=0x7f0f0103;
-    public static final int total=0x7f0f0104;
-    public static final int totalPoints=0x7f0f0105;
-    public static final int vegetarianFood=0x7f0f0106;
-    public static final int walletTopupHistoryNavi=0x7f0f0107;
-    public static final int walletTransactionHistoryNavi=0x7f0f0108;
-    public static final int walletTransferHistoryNavi=0x7f0f0109;
-    public static final int walletid=0x7f0f010a;
-    public static final int zxing_app_name=0x7f0f010b;
-    public static final int zxing_button_ok=0x7f0f010c;
-    public static final int zxing_msg_camera_framework_bug=0x7f0f010d;
-    public static final int zxing_msg_default_status=0x7f0f010e;
+    public static final int topup=0x7f0f0104;
+    public static final int total=0x7f0f0105;
+    public static final int totalPoints=0x7f0f0106;
+    public static final int vegetarianFood=0x7f0f0107;
+    public static final int walletTopupHistoryNavi=0x7f0f0108;
+    public static final int walletTransactionHistoryNavi=0x7f0f0109;
+    public static final int walletTransferHistoryNavi=0x7f0f010a;
+    public static final int walletid=0x7f0f010b;
+    public static final int zxing_app_name=0x7f0f010c;
+    public static final int zxing_button_ok=0x7f0f010d;
+    public static final int zxing_msg_camera_framework_bug=0x7f0f010e;
+    public static final int zxing_msg_default_status=0x7f0f010f;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f100000;

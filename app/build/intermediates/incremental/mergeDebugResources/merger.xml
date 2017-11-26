@@ -2203,7 +2203,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
-    </string-array></file><file path="D:\AndroidStudioProjects\SmartcanteenPOS\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </string-array><string name="topup">Top Up Wallet</string></file><file path="D:\AndroidStudioProjects\SmartcanteenPOS\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

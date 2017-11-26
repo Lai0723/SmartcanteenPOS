@@ -143,7 +143,9 @@ public class OrderingFragment extends Fragment {
                     confirmation.show();
                 }
                 else{
-                    editTextAmount.setError("Please top up your wallet for your order.");
+                    buttonOrder.setText(R.string.topup);
+                    Toast.makeText(getActivity(),"You do not have enough balance to make te order. Please top up your wallet first", Toast.LENGTH_LONG).show();
+                    getActivity().finish();
                 }
             }}
         );
