@@ -100,8 +100,7 @@ public class MainActivity extends AppCompatActivity {
                         fragment = fragmentWallet.newInstance();
                         break;
                     case R.id.action_fund:
-                        //checkCard(MainActivity.this, "https://gabriellb-wp14.000webhostapp.com/select_user.php");
-                        checkCard(MainActivity.this, "https://martpay.000webhostapp.com/gab_select_user.php");
+                        //checkCard(MainActivity.this, "https://martpay.000webhostapp.com/gab_select_user.php");
                         fragment = fragmentFund.newInstance();
                         break;
                     case R.id.action_wallet_history:
