@@ -36,4 +36,20 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/ReportPromo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Promotion Applied"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ReportDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discount amount"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 </LinearLayout>

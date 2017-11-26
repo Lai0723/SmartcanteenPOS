@@ -114,9 +114,6 @@
             android:name="com.example.lai.smartcanteenpos.wallet_history"
             android:label="Wallet History"
             android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity" />
-        <activity android:name="com.example.lai.smartcanteenpos.adapter_list_transfer_history" />
-        <activity android:name="com.example.lai.smartcanteenpos.adapter_list_transaction_history" />
-        <activity android:name="com.example.lai.smartcanteenpos.adapter_list_topup_history" />
         <activity
             android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"
             android:theme="@style/bt_three_d_secure_theme" />

@@ -10,15 +10,19 @@ public class Report {
     private String ProdName;
     private int  OrderQuantity;
     private double PayAmount;
+    private int PromotionApplied;
+    private double PriceDifference;
 
 
-    public Report(String OrderID,String ProdName,int  OrderQuantity,Double PayAmount){
+    public Report(String OrderID,String ProdName,int  OrderQuantity,Double PayAmount,int PromotionApplied,Double PriceDifference){
 
 
         this.setOrderID(OrderID);
         this.setProdName(ProdName);
         this.setOrderQuantity(OrderQuantity);
         this.setPayAmount(PayAmount);
+        this.setPromotionApplied(PromotionApplied);
+        this.setPriceDifference(PriceDifference);
 
 
 
@@ -55,5 +59,21 @@ public class Report {
 
     public void setPayAmount(double payAmount) {
         PayAmount = payAmount;
+    }
+
+    public int getPromotionApplied() {
+        return PromotionApplied;
+    }
+
+    public void setPromotionApplied(int promotionApplied) {
+        PromotionApplied = promotionApplied;
+    }
+
+    public double getPriceDifference() {
+        return PriceDifference;
+    }
+
+    public void setPriceDifference(double priceDifference) {
+        PriceDifference = priceDifference;
     }
 }

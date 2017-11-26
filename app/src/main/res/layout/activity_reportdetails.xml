@@ -31,7 +31,7 @@
         android:layout_width="151dp"
         android:layout_height="38dp"
         android:layout_marginBottom="36dp"
-        android:layout_marginStart="224dp"
+        android:layout_marginStart="228dp"
         android:text="@string/Time"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -42,39 +42,65 @@
         android:id="@+id/txtdate"
         android:layout_width="133dp"
         android:layout_height="29dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="44dp"
         android:layout_marginEnd="8dp"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtT"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotal_profit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toEndOf="@+id/textView36" />
 
     <TextView
         android:id="@+id/textView38"
         android:layout_width="129dp"
         android:layout_height="23dp"
-        android:layout_marginBottom="40dp"
-        android:layout_marginStart="224dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="228dp"
         android:text="@string/Total"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView37"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTotal_profit"
+        android:layout_width="125dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="20dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtDiscountAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toEndOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="228dp"
+        android:text="Discounted Amount :"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/txtT"
-        android:layout_width="125dp"
-        android:layout_height="31dp"
-        android:layout_marginBottom="40dp"
+        android:id="@+id/txtDiscountAmount"
+        android:layout_width="130dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="20dp"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
-        app:layout_constraintStart_toEndOf="@+id/textView38" />
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toEndOf="@+id/textView37" />
 
 </android.support.constraint.ConstraintLayout>

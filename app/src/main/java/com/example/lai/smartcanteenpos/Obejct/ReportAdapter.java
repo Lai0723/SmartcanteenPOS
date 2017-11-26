@@ -29,7 +29,7 @@ public class ReportAdapter extends ArrayAdapter<Report> {
 
         View rowView = inflater.inflate(R.layout.reportlist, parent, false);
 
-        TextView OrderID,ProdName,OrderQuantity,PayAmount;
+        TextView OrderID,ProdName,OrderQuantity,PayAmount,PromotionApplied,PriceDifference;
 
 
 
@@ -37,14 +37,23 @@ public class ReportAdapter extends ArrayAdapter<Report> {
         ProdName = (TextView) rowView.findViewById(R.id.ReportIPN);
         OrderQuantity = (TextView) rowView.findViewById(R.id.ReportIOQ);
         PayAmount = (TextView)rowView.findViewById(R.id.ReportIPA);
-
+        PromotionApplied = (TextView)rowView.findViewById(R.id.ReportPromo);
+        PriceDifference = (TextView)rowView.findViewById(R.id.ReportDiscount);
 
 
         OrderID.setText( OrderID.getText() + " : "+ list.getOrderID());
         ProdName.setText( ProdName.getText() + " : " + list.getProdName());
         OrderQuantity.setText(OrderQuantity.getText() + " : "+ list.getOrderQuantity());
-
         PayAmount.setText(PayAmount.getText() + " : " + list.getPayAmount());
+        if(list.getPromotionApplied() == 1){
+
+            PromotionApplied.setText(PromotionApplied.getText() + " : " + "Yes");
+
+        }
+        else{
+            PromotionApplied.setText(PromotionApplied.getText() + " : " + "No");
+        }
+        PriceDifference.setText(PriceDifference.getText() + " : " + list.getPriceDifference());
 
 
 

@@ -47,6 +47,17 @@ public class Product {
 
     }
 
+    public Product (String ProdID, String ProdName,String ProdCat,String ProdDesc,Double Price, String ImageURL){
+        this.setProdName(ProdName);
+        this.setProdCat(ProdCat);
+        this.setProdDesc(ProdDesc);
+        this.setPrice(Price);
+        this.setImageURL(ImageURL);
+        this.setProdID(ProdID);
+
+
+    }
+
 
     public String getProdName() {
         return ProdName;

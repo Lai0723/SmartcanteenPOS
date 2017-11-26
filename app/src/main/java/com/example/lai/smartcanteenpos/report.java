@@ -50,6 +50,7 @@ public class report extends Fragment {
     int day,month,year;
     ProgressDialog progressDialog;
     Double total = 0.00;
+    Double discounted_amount = 0.00;
     String date;
 
 
@@ -89,6 +90,7 @@ public class report extends Fragment {
         btnDailyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 total = 0.00;
+                discounted_amount = 0.00;
                 String dateOfRep= year+"-"+month+"-"+day;
                 String type = "Generate Daily report";
                 report.BackgroundWorker backgroundWorker = new report.BackgroundWorker(v.getContext());
@@ -102,6 +104,7 @@ public class report extends Fragment {
         btnMonthlyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 total = 0.00;
+                discounted_amount = 0.00;
                 String MonthOfRep = month+"";
                 String YearOfRep = year+"";
                 String type = "Generate Monthly report";
@@ -115,6 +118,7 @@ public class report extends Fragment {
         btnYearlyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 total = 0.00;
+                discounted_amount = 0.00;
                 String YearOfRep = year+"";
                 String type = "Generate Yearly report";
                 report.BackgroundWorker backgroundWorker = new report.BackgroundWorker(v.getContext());
@@ -318,21 +322,28 @@ public class report extends Fragment {
                         String ProdName = courseResponse.getString("ProdName");
                         int OrderQuantity = Integer.parseInt(courseResponse.getString("OrderQuantity"));
                         Double PayAmount = Double.parseDouble(courseResponse.getString("PayAmount"));
+                        int PromotionApplied = Integer.parseInt(courseResponse.getString("PromotionApplied"));
+                        Double PriceDifference = Double.parseDouble(courseResponse.getString("PriceDifference"));
 
-                        Report listing = new Report(OrderID, ProdName, OrderQuantity,PayAmount);
+
+
+                        Report listing = new Report(OrderID, ProdName, OrderQuantity,PayAmount,PromotionApplied,PriceDifference);
                         Menu_screen.RList.add(listing);
 
 
                         total = total + PayAmount;
+                        discounted_amount = discounted_amount + PriceDifference;
                     }
 
 
                     Intent intent = new Intent(getActivity(),reportdetails.class);
                     //String date= year+"-"+month+"-"+day;
                     Double profit = total;
+                    Double discount = discounted_amount;
 
                     intent.putExtra("date",date);
                     intent.putExtra("total",profit);
+                    intent.putExtra("discount",discount);
                     startActivity(intent);
 
 
