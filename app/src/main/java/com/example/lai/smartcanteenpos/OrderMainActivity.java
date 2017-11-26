@@ -1,3 +1,7 @@
+/**
+ * Created by Leow on 11/4/2017.
+ * This is the Order Activity that is started when user clicked on the Online Menu button
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.os.Bundle;

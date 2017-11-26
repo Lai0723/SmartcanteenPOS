@@ -1,3 +1,7 @@
+/**
+ * Created by Leow on 11/4/2017.
+ * This is the Ordering Fragement to display the Order Page for user to make online order
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.app.Activity;
@@ -88,6 +92,7 @@ public class OrderingFragment extends Fragment {
         buttonApply = v.findViewById(R.id.buttonApplyCode);
         buttonRemove = v.findViewById(R.id.buttonRemoveCode);
 
+        //Order button that casues discount to be applied and orders to be made
         buttonOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -150,6 +155,7 @@ public class OrderingFragment extends Fragment {
             }}
         );
 
+        //Apply Code button that verifies the code validity and set the condition ticket applied to justify whether the discount will be applied when the user is making the order
         buttonApply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -159,6 +165,7 @@ public class OrderingFragment extends Fragment {
             }
         });
 
+        //Remove code button that resets the code applied and its status so that user can use another code
         buttonRemove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,20 +177,14 @@ public class OrderingFragment extends Fragment {
             }
         });
 
+        //Spinner that allows user to set the order quantity and the TextView will show Original Total Price only
         spinnerOrderQuantity.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 orderQty = Integer.parseInt(parent.getItemAtPosition(position).toString());
                 originalTotal = orderQty * productPrice;
-                if (discountAmount == 0){
-                    textViewTotal.setText(R.string.total);
-                    textViewTotal.setText(textViewTotal.getText().toString() + " " + df2.format(originalTotal));
-                }
-                else{
-                    discountedTotal = originalTotal - discountAmount;
-                    textViewTotal.setText(R.string.total);
-                    textViewTotal.setText(textViewTotal.getText().toString() + " " + df2.format(discountedTotal));
-                }
+                textViewTotal.setText(R.string.total);
+                textViewTotal.setText(textViewTotal.getText().toString() + " " + df2.format(originalTotal));
             }
 
             @Override
@@ -194,6 +195,8 @@ public class OrderingFragment extends Fragment {
         return v;
     }
 
+    //This will be run when button Order is clicked to apply the valid promotion code used by user to update redeem date in RedeemCode table in database currently.
+    //Future work: used it in Redeem Item also
     public void updateRedeemDate(Context context, String url, final String couponCode ) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -248,6 +251,7 @@ public class OrderingFragment extends Fragment {
         }
     }
 
+    //Inserts an order into the Orders table in the database
     public void makeOrder(Context context, String url, final String walletID, final String productID,
                           final String OrderQuantity, final String orderPrice, final String payAmount,
                           final String priceDifference, final String promoApplication) {
@@ -310,6 +314,7 @@ public class OrderingFragment extends Fragment {
         }
     }
 
+    //Check code validity and set the code applied status
     public void checkEligibility(Context context, String url, final String disCode, final String wID){
         //mPostCommentResponse.requestStarted();
         queue = Volley.newRequestQueue(context);
@@ -377,6 +382,7 @@ public class OrderingFragment extends Fragment {
         }
     }
 
+    //initialise view
     public void init(){
         orderQty = 0;
         discountedTotal = 0;

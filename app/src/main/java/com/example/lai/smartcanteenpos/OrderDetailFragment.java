@@ -1,3 +1,8 @@
+/**
+ * Created by Leow on 11/4/2017.
+ * This is the Order Detail Fragment that displays details of an Order History from Order History Fragment.
+ */
+
 package com.example.lai.smartcanteenpos;
 
 import android.app.AlertDialog;
@@ -80,6 +85,7 @@ public class OrderDetailFragment extends Fragment {
                 } });
         }
 
+        //Cancel Order button programming which leads to the selected order's Order Status in Orders table in the database to change to "Cancelled"
         buttonCancelOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -105,6 +111,7 @@ public class OrderDetailFragment extends Fragment {
             }
         });
 
+        //Redeem Order button programming that calls the QR generator for the merchant to scan when the user get the item that he / she ordered
         buttonRedeem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,6 +133,7 @@ public class OrderDetailFragment extends Fragment {
         return v;
     }
 
+    // Volley to change the status of an order when Cancel Button is clicked
     public void updateStatus(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);

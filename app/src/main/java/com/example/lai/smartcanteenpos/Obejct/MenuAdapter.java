@@ -23,6 +23,7 @@ import com.example.lai.smartcanteenpos.R;
 
 /**
  * Created by Leow on 11/4/2017.
+ * This is the Order Menu Adapter to display the gridViewMenu in the OrderMenuFragment
  */
 
 public class MenuAdapter extends ArrayAdapter<Product> {

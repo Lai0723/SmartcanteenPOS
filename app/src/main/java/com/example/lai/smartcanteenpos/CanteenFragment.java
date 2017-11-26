@@ -1,3 +1,8 @@
+/**
+ * Created by Leow on 11/4/2017.
+ * This is the Canteen Fragement to display selection of canteen for user. Currently is hardcoded.
+ * Future work: made it dynamic with the use of Merchants table in database
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.os.Bundle;

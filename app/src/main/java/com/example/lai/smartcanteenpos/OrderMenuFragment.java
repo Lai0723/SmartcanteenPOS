@@ -1,3 +1,7 @@
+/**
+ * Created by Leow on 11/4/2017.
+ * This is the Order Menu Fragment to display the menu about items available in a stall of a canteen.
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.app.AlertDialog;
@@ -93,13 +97,14 @@ public class OrderMenuFragment extends Fragment {
             return v;
     }
 
+    //Load the items into the grid view from Products table in the database
     private void loadListing() {
         final MenuAdapter adapter = new MenuAdapter(getActivity(), R.layout.fragment_order_menu, OrderMainActivity.listMenu);
         gridViewMenu.setAdapter(adapter);
 
     }
 
-
+    //Async task for the loadListing to work with
     private class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;

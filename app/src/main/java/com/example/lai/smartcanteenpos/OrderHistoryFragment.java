@@ -1,3 +1,7 @@
+/**
+ * Created by Leow on 11/4/2017.
+ * This is the Order History Fragement to display list view of orders made by logged in user
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.app.AlertDialog;
@@ -99,13 +103,14 @@ public class OrderHistoryFragment extends Fragment {
         return v;
     }
 
+    //Load the items into the list view from Orders table in the database
     private void loadListing() {
         final OrderHistoryAdapter adapter = new OrderHistoryAdapter(getActivity(), R.layout.fragment_order_menu, OrderMainActivity.listOrder);
         listViewOrderHistory.setAdapter(adapter);
 
     }
 
-
+    //Async task for the loadListing to work with
     private class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;
