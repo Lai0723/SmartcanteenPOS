@@ -108,7 +108,7 @@ public class onSpotTransferScanner extends AppCompatActivity {
 
                     if (giverID.equals(receiverID)) {
                         Toast.makeText(this, "You cannot transfer money to yourself.", Toast.LENGTH_SHORT).show();
-                    } else if (diffSeconds>60) {
+                    } else if (diffSeconds>30) {
                         Toast.makeText(this, "Code expired, generate code again.", Toast.LENGTH_SHORT).show();
                     } else {
                         //String combined = "Sender: " + giver + "\nAmount: RM" + amount + "\n Time: " + date+"\n Receiver " + receiver;
