@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 import com.example.lai.smartcanteenpos.R;
@@ -17,6 +18,7 @@ import com.example.lai.smartcanteenpos.R;
  */
 
 public class OrderHistoryAdapter extends ArrayAdapter<Order> {
+    DecimalFormat df2 = new DecimalFormat("0.00");
 
     public OrderHistoryAdapter(Activity context, int resource, List<Order> list){
         super(context, resource, list);
@@ -43,7 +45,7 @@ public class OrderHistoryAdapter extends ArrayAdapter<Order> {
         textViewProdName.setText(textViewProdName.getText() + " " + list.getProdName());
         textViewOrderDate.setText(textViewOrderDate.getText() + " " + list.getOrderDateTime());
         textViewAmount.setText(textViewAmount.getText() + " " + list.getOrderQuantity());
-        textViewTotal.setText(textViewTotal.getText() + " RM " + list.getPayAmount());
+        textViewTotal.setText(textViewTotal.getText() + " RM " + df2.format(list.getPayAmount()));
         textViewStatus.setText(textViewStatus.getText() + " " + list.getOrderStatus());
 
         return listView;

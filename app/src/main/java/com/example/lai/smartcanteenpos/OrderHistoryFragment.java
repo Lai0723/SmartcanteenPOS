@@ -44,6 +44,7 @@ public class OrderHistoryFragment extends Fragment {
     RequestQueue queue;
     public String walletID = OrderMainActivity.getwID();
 
+
     public OrderHistoryFragment() {
         // Required empty public constructor
     }
@@ -83,7 +84,7 @@ public class OrderHistoryFragment extends Fragment {
                 OrderMainActivity.setProdID(chosenOrder.getProdID()+" ");
                 OrderMainActivity.setProdName(chosenOrder.getProdName());
                 OrderMainActivity.setOrderDateTime(chosenOrder.getOrderDateTime());
-                OrderMainActivity.setOrderAmount(chosenOrder.getOrderQuantity());
+                OrderMainActivity.setOrderQuantity(chosenOrder.getOrderQuantity());
                 OrderMainActivity.setOrderTotal(chosenOrder.getPayAmount());
                 OrderMainActivity.setOrderStatus(chosenOrder.getOrderStatus());
                 OrderMainActivity.setPayDateTime(chosenOrder.getPayDateTime());
@@ -194,16 +195,23 @@ public class OrderHistoryFragment extends Fragment {
                         String orderDateTime = courseResponse.getString("OrderDateTime");
                         int orderQuantity = Integer.parseInt(courseResponse.getString("OrderQuantity"));
                         String orderStatus = courseResponse.getString("OrderStatus");
+                        double originalPrice = Double.parseDouble(courseResponse.getString("OrderPrice"));
                         double payAmount = Double.parseDouble(courseResponse.getString("PayAmount"));
+                        double difference = Double.parseDouble(courseResponse.getString("PriceDifference"));
+                        String promotionApplied = courseResponse.getString("PromotionApplied");
                         String payDateTime = courseResponse.getString("PayDateTime");
                         String prodName = courseResponse.getString("ProdName");
 
                         if (orderStatus == "Accepted" || orderStatus == "Cancelled"){
-                            Order history = new Order(orderID, walletID, prodID, prodName, orderDateTime, orderQuantity, orderStatus, payAmount, null);
+                            Order history = new Order(orderID, walletID, prodID, prodName, orderDateTime,
+                                    orderQuantity, orderStatus, originalPrice, payAmount, difference,
+                                    promotionApplied, null);
                             OrderMainActivity.listOrder.add(history);
                         }
                         else{
-                            Order history = new Order(orderID, walletID, prodID, prodName, orderDateTime, orderQuantity, orderStatus, payAmount, payDateTime);
+                            Order history = new Order(orderID, walletID, prodID, prodName, orderDateTime,
+                                    orderQuantity, orderStatus, originalPrice, payAmount, difference,
+                                    promotionApplied, payDateTime);
                             OrderMainActivity.listOrder.add(history);
                         }
 

@@ -27,4 +27,11 @@
         android:text="@string/price"
         android:textAppearance="@style/TextAppearance.AppCompat" />
 
+    <TextView
+        android:id="@+id/textViewStockQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quantity"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
 </LinearLayout>

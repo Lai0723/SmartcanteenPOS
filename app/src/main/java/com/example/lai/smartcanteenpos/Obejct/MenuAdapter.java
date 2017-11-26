@@ -16,6 +16,7 @@ import android.widget.TextView;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.DecimalFormat;
 import java.util.List;
 
 import com.example.lai.smartcanteenpos.R;
@@ -31,23 +32,25 @@ public class MenuAdapter extends ArrayAdapter<Product> {
 
     public View getView(int position, View convertView, ViewGroup parent) {
         Product grid = getItem(position);
-
+        DecimalFormat df2 = new DecimalFormat("0.00");
         LayoutInflater inflater = (LayoutInflater) getContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         View gridView = inflater.inflate(R.layout.menu_layout, parent, false);
 
-        TextView textViewProductName, textViewPrice;
+        TextView textViewProductName, textViewPrice,textViewQuantity;
         ImageView imageViewProduct;
 
         textViewProductName = gridView.findViewById(R.id.textViewProductName);
         textViewPrice = gridView.findViewById(R.id.textViewPrice);
+        textViewQuantity = gridView.findViewById(R.id.textViewStockQuantity);
         imageViewProduct = gridView.findViewById(R.id.imageViewProduct);
 
         if (grid != null) {
             textViewProductName.setText(textViewProductName.getText() + ":  " + grid.getProdName());
         }
-        textViewPrice.setText( textViewPrice.getText() + ":  RM " + grid.getPrice());
+        textViewPrice.setText( textViewPrice.getText() + ":  RM " + df2.format(grid.getPrice()));
+        textViewQuantity.setText(textViewQuantity.getText() + ": " + grid.getQuantity());
         getImage(grid.getImageURL(), imageViewProduct);
 
         return gridView;

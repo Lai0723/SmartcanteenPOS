@@ -25,11 +25,12 @@ public class Product {
 
 
 
-    public Product (String ProdID, String ProdName,String ProdCat,String ProdDesc,Double Price, String ImageURL){
+    public Product (String ProdID, String ProdName,String ProdCat,String ProdDesc,Double Price, int prodQty, String ImageURL){
         this.setProdName(ProdName);
         this.setProdCat(ProdCat);
         this.setProdDesc(ProdDesc);
         this.setPrice(Price);
+        this.setQuantity(prodQty);
         this.setImageURL(ImageURL);
         this.setProdID(ProdID);
 

@@ -41,28 +41,10 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="18dp"
-            android:text="@string/amount"
+            android:text="@string/ordQty"
             android:textAppearance="@style/TextAppearance.AppCompat"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-        <EditText
-            android:id="@+id/editTextAmount"
-            style="@android:style/Widget.DeviceDefault.EditText"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="84dp"
-            android:layout_marginStart="84dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:inputType="number"
-            android:textAppearance="@style/TextAppearance.AppCompat"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.568"
-            app:layout_constraintStart_toEndOf="@+id/textViewAmount"
-            app:layout_constraintTop_toBottomOf="@+id/textViewPrice" />
 
         <Button
             android:id="@+id/buttonOrder"
@@ -99,27 +81,25 @@
             android:layout_marginRight="8dp"
             android:layout_marginStart="48dp"
             android:layout_marginLeft="48dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:ems="10"
             android:inputType="textCapCharacters"
             android:textAppearance="@style/TextAppearance.AppCompat"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textViewDiscount"
-            app:layout_constraintTop_toBottomOf="@+id/editTextAmount" />
+            app:layout_constraintTop_toBottomOf="@+id/spinnerOrderQty" />
 
         <Button
             android:id="@+id/buttonApplyCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="232dp"
-            android:layout_marginLeft="232dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/applyCode"
             android:textAppearance="@style/TextAppearance.AppCompat"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonRemoveCode"
             app:layout_constraintTop_toBottomOf="@+id/editTextDiscountCode" />
 
         <TextView
@@ -185,6 +165,31 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonApplyCode" />
+
+        <Spinner
+            android:id="@+id/spinnerOrderQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewAmount"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPrice" />
+
+        <Button
+            android:id="@+id/buttonRemoveCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="146dp"
+            android:layout_marginLeft="146dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/removeCode"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDiscountCode" />
 
     </android.support.constraint.ConstraintLayout>
 </FrameLayout>

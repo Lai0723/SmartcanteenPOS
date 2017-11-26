@@ -188,5 +188,15 @@
     <string name="walletTransferHistoryNavi">Transfer</string>
     <string name="walletTransactionHistoryNavi">Online Transaction</string>
     <string name="walletTopupHistoryNavi">Top Up</string>
+    <string name="chkValid">Check Validity</string>
+    <string name="ordQty">Order Quantity:</string>
+    <string name="removeCode">Remove Code</string>
+    <string-array name="qtyOfOrder">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 
 </resources>

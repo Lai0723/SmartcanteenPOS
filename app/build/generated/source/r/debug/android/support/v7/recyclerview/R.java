@@ -86,7 +86,7 @@ public final class R {
         public static final int actions = 0x7f09004b;
         public static final int async = 0x7f090052;
         public static final int blocking = 0x7f090056;
-        public static final int chronometer = 0x7f0900d3;
+        public static final int chronometer = 0x7f0900d4;
         public static final int forever = 0x7f090106;
         public static final int icon = 0x7f09010f;
         public static final int icon_group = 0x7f090110;
@@ -101,10 +101,10 @@ public final class R {
         public static final int notification_main_column_container = 0x7f090144;
         public static final int right_icon = 0x7f090155;
         public static final int right_side = 0x7f090156;
-        public static final int text = 0x7f09018a;
-        public static final int text2 = 0x7f09018b;
-        public static final int time = 0x7f0901c4;
-        public static final int title = 0x7f0901c5;
+        public static final int text = 0x7f09018b;
+        public static final int text2 = 0x7f09018c;
+        public static final int time = 0x7f0901c6;
+        public static final int title = 0x7f0901c7;
     }
     public static final class integer {
         public static final int status_bar_notification_info_maxnum = 0x7f0a000a;
@@ -118,7 +118,7 @@ public final class R {
         public static final int notification_template_part_time = 0x7f0b0080;
     }
     public static final class string {
-        public static final int status_bar_notification_info_overflow = 0x7f0f00f3;
+        public static final int status_bar_notification_info_overflow = 0x7f0f00f6;
     }
     public static final class style {
         public static final int TextAppearance_Compat_Notification = 0x7f100107;

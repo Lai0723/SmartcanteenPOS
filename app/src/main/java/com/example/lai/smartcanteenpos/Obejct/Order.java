@@ -12,7 +12,10 @@ public class Order {
     private String orderDateTime;
     private int orderQuantity;
     private String orderStatus;
+    private double orderPrice;
     private double payAmount;
+    private double priceDifference;
+    private String promotionApplied;
     private String payDateTime;
 
     public Order(){
@@ -20,7 +23,8 @@ public class Order {
     }
 
     public Order(String orderID, String walletID, int prodID, String prodName, String orderDateTime,
-                 int orderQuantity, String orderStatus, double payAmount, String payDateTime){
+                 int orderQuantity, String orderStatus, double orderPrice, double payAmount,
+                 double priceDifference, String promotionApplied, String payDateTime){
         this.setOrderID(orderID);
         this.setWalletID(walletID);
         this.setProdID(prodID);
@@ -28,7 +32,10 @@ public class Order {
         this.setOrderDateTime(orderDateTime);
         this.setOrderQuantity(orderQuantity);
         this.setOrderStatus(orderStatus);
+        this.setOrderPrice(orderPrice);
         this.setPayAmount(payAmount);
+        this.setPriceDifference(priceDifference);
+        this.setPromotionApplied(promotionApplied);
         this.setPayDateTime(payDateTime);
     }
 
@@ -113,5 +120,29 @@ public class Order {
 
     public void setProdName(String prodName) {
         this.prodName = prodName;
+    }
+
+    public double getOrderPrice() {
+        return orderPrice;
+    }
+
+    public void setOrderPrice(double orderPrice) {
+        this.orderPrice = orderPrice;
+    }
+
+    public double getPriceDifference() {
+        return priceDifference;
+    }
+
+    public void setPriceDifference(double priceDifference) {
+        this.priceDifference = priceDifference;
+    }
+
+    public String getPromotionApplied() {
+        return promotionApplied;
+    }
+
+    public void setPromotionApplied(String promotionApplied) {
+        this.promotionApplied = promotionApplied;
     }
 }

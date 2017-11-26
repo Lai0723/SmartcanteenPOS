@@ -97,6 +97,8 @@
         <!-- WJ part -->
         <activity
             android:name="com.example.lai.smartcanteenpos.OrderMainActivity"
+            android:label="Online Menu"
+            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.lai.smartcanteenpos.QRretrieval"

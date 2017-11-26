@@ -68,6 +68,8 @@
         <!-- WJ part -->
         <activity
             android:name=".OrderMainActivity"
+            android:label="Online Menu"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".QRretrieval"
             android:label="Retrieval QR Code"/>

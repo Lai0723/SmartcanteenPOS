@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\c2cfc3c9d99d70b9fd97682d0aad118a\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\3e002d2dff9fd1b09214ea8c2f49a0ae\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endColumns": "65",
+                        "endOffsets": "161"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\5a7bd16dae18b8b9f55cf428c2e27f9a\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2,6,16",
                         "startColumns": "4,4,4",
@@ -23,103 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\3eea2586d92ca2b2498b1926a9bc5f0a\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "234"
-                    },
-                    "to": {
-                        "startLines": "7",
-                        "startColumns": "4",
-                        "startOffsets": "339",
-                        "endLines": "10",
-                        "endColumns": "12",
-                        "endOffsets": "518"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\2c735665521c38ae8e878e7238307c0f\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endColumns": "65",
-                        "endOffsets": "161"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\08320f8845d986671dcbf952d4ee3984\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "166",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "334"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\5df46035daf331135e951e17fd6376de\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "234"
-                    },
-                    "to": {
-                        "startLines": "7",
-                        "startColumns": "4",
-                        "startOffsets": "339",
-                        "endLines": "10",
-                        "endColumns": "12",
-                        "endOffsets": "518"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\0b82a30ebec274b76d466332a2fdfe04\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endColumns": "65",
-                        "endOffsets": "161"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\5cd5a45769aed7c1c458cd01dd9a1067\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\394e09920a7b81b830f542dd528683b4\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -138,22 +59,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\7093867678d03d5c020c2d20b5b37f44\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\4d336194e1293f7c9bb9f425ba9ba754\\res\\values-v16\\values-v16.xml",
                     "from": {
-                        "startLines": "2,6,16",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "100,295,877",
-                        "endLines": "5,15,26",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "290,872,1477"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "234"
                     },
                     "to": {
-                        "startLines": "11,15,25",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "523,718,1300",
-                        "endLines": "14,24,35",
-                        "endColumns": "12,12,12",
-                        "endOffsets": "713,1295,1900"
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "339",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "518"
                     }
                 }
             ]

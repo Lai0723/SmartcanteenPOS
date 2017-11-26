@@ -115,7 +115,7 @@ public class OrderDetailFragment extends Fragment {
                 intent.putExtra("WalletID",OrderMainActivity.getwID());
                 intent.putExtra("ProdName",OrderMainActivity.getProdName());
                 intent.putExtra("OrderDateTime",OrderMainActivity.getOrderDateTime());
-                intent.putExtra("OrderQuantity",OrderMainActivity.getOrderAmount());
+                intent.putExtra("OrderQuantity",OrderMainActivity.getOrderQuantity());
                 intent.putExtra("OrderStatus",OrderMainActivity.getOrderStatus());
                 intent.putExtra("PayAmount", OrderMainActivity.getOrderTotal());
                 intent.putExtra("PayDateTime",OrderMainActivity.getPayDateTime());

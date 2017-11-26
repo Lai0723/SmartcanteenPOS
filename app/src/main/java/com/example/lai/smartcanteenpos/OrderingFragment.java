@@ -1,18 +1,23 @@
 package com.example.lai.smartcanteenpos;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +32,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -36,12 +43,14 @@ public class OrderingFragment extends Fragment {
     String walletID = OrderMainActivity.getwID(), prodID = OrderMainActivity.getProdID();
     String disCode;
     TextView textViewProductName, textViewProductDesc, textViewPrice, textViewTotal;
+    Spinner spinnerOrderQuantity;
     EditText editTextAmount, editTextDiscount;
-    int orderQty = 0;
-    double productPrice, total;
-    Button buttonOrder, buttonApply;
-    static boolean ticketApplied;
+    int orderQty;
+    double productPrice, discountedTotal, originalTotal, difference, totalPayable, discountAmount;
+    Button buttonOrder, buttonApply, buttonRemove;
+    public static boolean ticketApplied;
     RequestQueue queue;
+    DecimalFormat df2 = new DecimalFormat("0.00");
 
 
 
@@ -54,6 +63,7 @@ public class OrderingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        init();
         View v = inflater.inflate(R.layout.fragment_ordering, container, false);
         textViewProductName = v.findViewById(R.id.textViewProductName);
         textViewProductDesc = v.findViewById(R.id.textViewProductDesc);
@@ -61,132 +71,124 @@ public class OrderingFragment extends Fragment {
         textViewTotal = v.findViewById(R.id.textViewTotalPrice);
         textViewProductName.setText(OrderMainActivity.getProdName());
         textViewProductDesc.setText(OrderMainActivity.getProdDesc());
-        textViewPrice.setText(OrderMainActivity.getProdPrice() + "");
-        editTextAmount = v.findViewById(R.id.editTextAmount);
+        textViewPrice.setText(df2.format(OrderMainActivity.getProdPrice()) + "");
         editTextDiscount = v.findViewById(R.id.editTextDiscountCode);
+        spinnerOrderQuantity = v.findViewById(R.id.spinnerOrderQty);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(),
+                R.array.qtyOfOrder, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Apply the adapter to the spinner
+        spinnerOrderQuantity.setAdapter(adapter);
         productPrice = OrderMainActivity.getProdPrice();
-        total = 0;
+
 
         buttonOrder = v.findViewById(R.id.buttonOrder);
         buttonApply = v.findViewById(R.id.buttonApplyCode);
-
-        editTextAmount.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                try{
-                    orderQty = Integer.parseInt(editTextAmount.getText().toString());
-                }
-                catch(Exception e){
-                    editTextAmount.setError("Only integer values are allowed.");
-                }
-                total = orderQty * OrderMainActivity.getProdPrice();
-                textViewTotal.setText(R.string.total);
-                textViewTotal.setText(textViewTotal.getText() + " " + total);
-                editTextDiscount.requestFocus();
-                return true;
-            }
-        });
-
-        editTextDiscount.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if(editTextDiscount.getText().toString().matches(""))
-                    buttonOrder.requestFocus();
-                else
-                    buttonApply.requestFocus();
-                return false;
-            }
-        });
+        buttonRemove = v.findViewById(R.id.buttonRemoveCode);
 
         buttonOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try{
-                    orderQty = Integer.parseInt(editTextAmount.getText().toString());
+                if (ticketApplied && disCode.matches("^10.*")){
+                    discountAmount = 10;
+                    discountedTotal = originalTotal - discountAmount;
+                    if (discountedTotal <= 0.00)
+                        discountedTotal = 0.00;
+                    difference = originalTotal - discountedTotal;
+                    textViewTotal.setText(R.string.total);
+                    textViewTotal.setText(textViewTotal.getText().toString() + " " + df2.format(discountedTotal));
                 }
-                catch(Exception e){
-                    editTextAmount.setError("Only integer values are allowed.");
+                else if (ticketApplied && disCode.matches("^5.*")){
+                    discountAmount = 5;
+                    discountedTotal = originalTotal - discountAmount;
+                    if (discountedTotal <= 0.00)
+                        discountedTotal = 0.00;
+                    difference = originalTotal - discountedTotal;
+                    textViewTotal.setText(R.string.total);
+                    textViewTotal.setText(textViewTotal.getText().toString() + " " + df2.format(discountedTotal));
                 }
-                if (TextUtils.isEmpty(editTextAmount.getText().toString())) {
-                    editTextAmount.setError("Field cannot be empty");
-                }
-                else if (orderQty <= 0){
-                    editTextAmount.setError("Minimum 1 order shall be made to proceed.");
+                textViewTotal.setText(R.string.total);
+                if (difference == 0)
+                    totalPayable = originalTotal;
+                else
+                    totalPayable = discountedTotal;
+                textViewTotal.setText(R.string.total);
+                textViewTotal.setText(textViewTotal.getText().toString() + " " + df2.format(totalPayable));
+                if(OrderMainActivity.getWalletBal() >= totalPayable){
+                    final AlertDialog.Builder confirmation = new AlertDialog.Builder(getContext());
+                    confirmation.setCancelable(false);
+                    confirmation.setTitle("Amount To Be Paid = RM " + df2.format(totalPayable));
+                    confirmation.setMessage("Redeem your order at the canteen stall.");
+                    confirmation.setPositiveButton("Pay",new DialogInterface.OnClickListener(){
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            OrderMainActivity.listOrder = null;
+                            dialog.dismiss();
+                            if(ticketApplied){
+                                updateRedeemDate(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insertRedeemDate.php", disCode);
+                                makeOrder(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insertOrder.php", walletID, prodID, orderQty+ "", originalTotal+"", totalPayable + "", difference+"", "true");
+                            }
+                            else
+                                makeOrder(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insertOrder.php", walletID, prodID, orderQty+ "", originalTotal+"", totalPayable + "", difference+"", "false");
+                        }
+                    });
+                    confirmation.setNegativeButton("Back to Ordering",new DialogInterface.OnClickListener(){
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+                    confirmation.show();
                 }
                 else{
-                    textViewTotal.setText(R.string.total);
-                    textViewTotal.setText( textViewTotal.getText().toString() + " " + total);
-                    if(OrderMainActivity.getWalletBal() >= total){
-                        final AlertDialog.Builder confirmation = new AlertDialog.Builder(getActivity());
-                        confirmation.setCancelable(false);
-                        confirmation.setTitle("Amount To Be Paid = RM " + total);
-                        confirmation.setMessage("Redeem your order at the canteen stall.");
-                        confirmation.setPositiveButton("Pay",new DialogInterface.OnClickListener(){
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                OrderMainActivity.listOrder = null;
-                                dialog.dismiss();
-                                if(ticketApplied)
-                                    updateRedeemDate(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insertRedeemDate.php", disCode);
-                                makeOrder(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insertOrder.php",
-                                        walletID, prodID, orderQty+ "", total + "");
-
-
-                            }
-                        });
-                        confirmation.setNegativeButton("Back to Ordering",new DialogInterface.OnClickListener(){
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        });
-                        confirmation.show();
-                    }
-                    else{
-                        editTextAmount.setError("Please top up your wallet for your order.");
-                    }
+                    editTextAmount.setError("Please top up your wallet for your order.");
                 }
-                }
-            }
+            }}
         );
 
         buttonApply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 editTextDiscount.setError(null);
-                try{
-                    orderQty = Integer.parseInt(editTextAmount.getText().toString());
-                }
-                catch(Exception e){
-                    editTextAmount.setError("Only integer values are allowed.");
-                }
-                if (editTextDiscount.getText().toString().matches("")) {
-                    editTextDiscount.setError("Field cannot be empty");
-                    ticketApplied = false;
-                }
-                else if(!ticketApplied && orderQty == 0){
-                    editTextDiscount.setError("Please check your order amount first.");
-                }
-                else {
-                    editTextDiscount.setError(null);
-                    checkEligibility(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/checkDiscountCode.php", editTextDiscount.getText().toString(), walletID);
-                    disCode = editTextDiscount.getText().toString();
-                    if (ticketApplied && disCode.matches("^10.*")){
-                        total = total - 10;
-                        if (total <= 0.00)
-                            total = 0.00;
-                        textViewTotal.setText(R.string.total + " " + total);
-                    }
-                    else if (ticketApplied && disCode.matches("^5.*")){
-                        total = total - 5;
-                        if (total <= 0.00)
-                            total = 0.00;
-                        textViewTotal.setText(R.string.total + " " + total);
-                    }
-                }
+                checkEligibility(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/checkDiscountCode.php", editTextDiscount.getText().toString(), walletID);
+                disCode = editTextDiscount.getText().toString();
             }
         });
 
+        buttonRemove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ticketApplied = false;
+                disCode = null;
+                editTextDiscount.clearComposingText();
+                textViewTotal.setText(R.string.total);
+                textViewTotal.setText(textViewTotal.getText().toString() + " " + df2.format(originalTotal));
+            }
+        });
+
+        spinnerOrderQuantity.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                orderQty = Integer.parseInt(parent.getItemAtPosition(position).toString());
+                originalTotal = orderQty * productPrice;
+                if (discountAmount == 0){
+                    textViewTotal.setText(R.string.total);
+                    textViewTotal.setText(textViewTotal.getText().toString() + " " + df2.format(originalTotal));
+                }
+                else{
+                    discountedTotal = originalTotal - discountAmount;
+                    textViewTotal.setText(R.string.total);
+                    textViewTotal.setText(textViewTotal.getText().toString() + " " + df2.format(discountedTotal));
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
         return v;
     }
 
@@ -244,7 +246,9 @@ public class OrderingFragment extends Fragment {
         }
     }
 
-    public void makeOrder(Context context, String url, final String walletID, final String productID, final String OrderQuantity, final String PayAmount ) {
+    public void makeOrder(Context context, String url, final String walletID, final String productID,
+                          final String OrderQuantity, final String orderPrice, final String payAmount,
+                          final String priceDifference, final String promoApplication) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
 
@@ -284,7 +288,10 @@ public class OrderingFragment extends Fragment {
                     params.put("WalletID", walletID);
                     params.put("ProductID", productID);
                     params.put("OrderQuantity", OrderQuantity);
-                    params.put("PayAmount", PayAmount);
+                    params.put("OrderPrice",orderPrice);
+                    params.put("PayAmount", payAmount);
+                    params.put("PriceDifference",priceDifference);
+                    params.put("PromoApplication",promoApplication);
                     return params;
                 }
 
@@ -320,20 +327,20 @@ public class OrderingFragment extends Fragment {
                                 String message = jsonObject.getString("message");
                                 if (success == 0) {
                                     Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_LONG).show();
-                                    ticketApplied = true;
+                                    OrderingFragment.ticketApplied = true;
 
                                 } else if (success == 1) {
-                                        Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_SHORT).show();
-                                        ticketApplied = false;
+                                    Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+                                    OrderingFragment.ticketApplied = false;
                                 }
                                 else {
                                     Toast.makeText(getActivity().getApplicationContext(), "err", Toast.LENGTH_SHORT).show();
-                                    ticketApplied = false;
+                                    OrderingFragment.ticketApplied = false;
                                 }
                                 //show error
                                 if (err.length() > 0) {
                                     Toast.makeText(getActivity().getApplicationContext(), err, Toast.LENGTH_LONG).show();
-                                    ticketApplied = false;
+                                    OrderingFragment.ticketApplied = false;
                                 }
 
                             } catch (JSONException e) {
@@ -368,4 +375,14 @@ public class OrderingFragment extends Fragment {
         }
     }
 
+    public void init(){
+        orderQty = 0;
+        discountedTotal = 0;
+        originalTotal = 0;
+        totalPayable = 0;
+        difference = 0;
+        discountAmount = 0;
+        disCode = null;
+        ticketApplied = false;
+    }
 }
