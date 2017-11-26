@@ -4,7 +4,7 @@
     <item
         android:id="@+id/navigation_Wallet"
         android:icon="@drawable/ic_account_balance_wallet_black_24dp"
-        android:title="Wallet &amp; Scanner" />
+        android:title="Wallet" />
 
     <item
         android:id="@+id/navigation_Menu"

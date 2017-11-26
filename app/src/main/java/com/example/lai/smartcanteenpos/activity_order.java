@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -91,6 +92,18 @@ public class activity_order extends Fragment {
                 }
             }
         });
+
+
+        orderlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Order entry = (Order) parent.getItemAtPosition(position);
+
+                OrderID.setText(entry.getOrderID());
+
+            }
+        });
+
 
 
 

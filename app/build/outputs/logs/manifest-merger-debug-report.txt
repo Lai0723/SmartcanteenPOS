@@ -20,8 +20,8 @@ MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\lai\.g
 MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\4962342fc0f01d932395699916f2a8df\AndroidManifest.xml:17:1-55:12
 MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\4a4cc24f6ab8e05a294442a86a55ea7f\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\471a7ce53ee9366e1f226db9590312fb\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:2:1-11:12
 MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\9876ccf5143b92431cbbf3fc10aa4a71\AndroidManifest.xml:2:1-26:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\c4e047ada379b6524319793a21bdb6af\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\744ec762113ce23cf56f3bbff36de5de\AndroidManifest.xml:17:1-28:12
 MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\2b74beb0295166a61d20ec8adb3c29d3\AndroidManifest.xml:2:1-13:12
 MERGED from [com.braintreepayments.api:core:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\core-2.7.3.aar\31c2a918fc2330af6e00f696514f8bf2\AndroidManifest.xml:2:1-11:12
@@ -100,10 +100,10 @@ MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\
 MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\4a4cc24f6ab8e05a294442a86a55ea7f\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\471a7ce53ee9366e1f226db9590312fb\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\471a7ce53ee9366e1f226db9590312fb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:9:5-20
 MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\9876ccf5143b92431cbbf3fc10aa4a71\AndroidManifest.xml:14:5-24:19
 MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\9876ccf5143b92431cbbf3fc10aa4a71\AndroidManifest.xml:14:5-24:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\c4e047ada379b6524319793a21bdb6af\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\c4e047ada379b6524319793a21bdb6af\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\744ec762113ce23cf56f3bbff36de5de\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\744ec762113ce23cf56f3bbff36de5de\AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\d0d1177b844d7f735b7cd537f688e76b\AndroidManifest.xml:22:5-26:19
@@ -294,10 +294,10 @@ MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\
 MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\4a4cc24f6ab8e05a294442a86a55ea7f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\471a7ce53ee9366e1f226db9590312fb\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\471a7ce53ee9366e1f226db9590312fb\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha7] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.0-alpha7.aar\30d9f7f1909320e5188aeee0e69349fb\AndroidManifest.xml:5:5-7:41
 MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\9876ccf5143b92431cbbf3fc10aa4a71\AndroidManifest.xml:7:5-9:41
 MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\9876ccf5143b92431cbbf3fc10aa4a71\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\c4e047ada379b6524319793a21bdb6af\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\c4e047ada379b6524319793a21bdb6af\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\744ec762113ce23cf56f3bbff36de5de\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\744ec762113ce23cf56f3bbff36de5de\AndroidManifest.xml:20:5-44
 MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\2b74beb0295166a61d20ec8adb3c29d3\AndroidManifest.xml:7:5-9:41
