@@ -1,5 +1,7 @@
 package com.example.lai.smartcanteenpos;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -29,6 +31,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import static android.content.Context.CLIPBOARD_SERVICE;
 
 
 public class FragmentHistory extends Fragment {
@@ -70,6 +74,12 @@ public class FragmentHistory extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 History entry = (History) parent.getItemAtPosition(position);
                 downloadListing(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/get_history.php");
+                ClipboardManager myClipboard = (ClipboardManager)getActivity().getSystemService(CLIPBOARD_SERVICE);
+                ClipData myClip;
+                String text = entry.getCouponCode();
+                myClip = ClipData.newPlainText("text", text);
+                myClipboard.setPrimaryClip(myClip);
+                Toast.makeText(getActivity(),"Code copied",Toast.LENGTH_LONG).show();
             }
         });
 
@@ -78,6 +88,12 @@ public class FragmentHistory extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 History_Item entry2 = (History_Item) parent.getItemAtPosition(position);
                 downloadListing_item(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/get_history_item.php");
+                ClipboardManager myClipboard = (ClipboardManager)getActivity().getSystemService(CLIPBOARD_SERVICE);
+                ClipData myClip;
+                String text = entry2.getItemCode();
+                myClip = ClipData.newPlainText("text", text);
+                myClipboard.setPrimaryClip(myClip);
+                Toast.makeText(getActivity(),"Code copied",Toast.LENGTH_LONG).show();
             }
         });
 
