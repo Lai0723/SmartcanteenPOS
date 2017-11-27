@@ -48,31 +48,31 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:launchMode="singleTop"/>
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
         <activity android:name=".changecard" />
         <activity
             android:name=".QRPassword"
             android:label="QR Authentication"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
-            android:launchMode="singleTop">
-        </activity>
-
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".QRTransfer"
             android:label="Transfer QR Code"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.example.lai.smartcanteenpos.QRPassword" />
+            android:parentActivityName=".QRPassword"
+            android:screenOrientation="portrait" />
         <activity android:name=".onSpotTransferScanner" />
-        <activity android:name=".reportdetails"
-            android:screenOrientation="landscape"
-            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
-            android:launchMode="singleTop" />
-        <activity android:name=".reportdetails_transfer"
-            android:screenOrientation="landscape"
-            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
-            android:launchMode="singleTop"/>
+        <activity
+            android:name=".reportdetails"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".reportdetails_transfer"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="landscape" />
 
         <!-- WJ part -->
         <activity
@@ -80,9 +80,14 @@
             android:label="Online Menu"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".QRretrieval"
+        <activity android:name=".OrderHistoryActivity"
+            android:label="Order History"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QRretrieval"
             android:label="Retrieval QR Code"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity android:name=".onlineOrderRetrievalScanner" />
 
         <!-- BS part -->
@@ -95,8 +100,8 @@
         <activity
             android:name=".wallet_history"
             android:label="Wallet History"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

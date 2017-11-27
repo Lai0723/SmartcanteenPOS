@@ -38,7 +38,7 @@ public class OrderDetailFragment extends Fragment {
 
     Button buttonCancelOrder, buttonRedeem;
     TextView textViewOrderID, textViewProductName, textViewPayment, textViewPaymentStatus, textViewOrderDateTime;
-    String orderID = OrderMainActivity.getOrderID();
+    String orderID = OrderHistoryActivity.getOrderID();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,11 +51,11 @@ public class OrderDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_order_detail, container, false);
-        String orderID = OrderMainActivity.getOrderID();
-        String prodName = OrderMainActivity.getProdName();
-        double total = OrderMainActivity.getOrderTotal(), walletBal = OrderMainActivity.getWalletBal();
-        String status = OrderMainActivity.getOrderStatus();
-        String orderDateTime = OrderMainActivity.getOrderDateTime();
+        String orderID = OrderHistoryActivity.getOrderID();
+        String prodName = OrderHistoryActivity.getProdName();
+        double total = OrderHistoryActivity.getOrderTotal(), walletBal = OrderHistoryActivity.getWalletBal();
+        String status = OrderHistoryActivity.getOrderStatus();
+        String orderDateTime = OrderHistoryActivity.getOrderDateTime();
 
         buttonCancelOrder = v.findViewById(R.id.buttonCancelOrder);
         buttonRedeem = v.findViewById(R.id.buttonRedeemOrder);
@@ -106,7 +106,7 @@ public class OrderDetailFragment extends Fragment {
                 Dialog dialog = alertBuilder.create();
                 dialog.show();
                 OrderMenuFragment.allowRefresh = true;
-                OrderMainActivity.listOrder = null;
+                OrderHistoryActivity.listOrder = null;
 
             }
         });
@@ -117,15 +117,15 @@ public class OrderDetailFragment extends Fragment {
             public void onClick(View v) {
                 // add this, your class into the bracket of the intent initialization
                 Intent intent = new Intent(getContext(),QRretrieval.class);
-                intent.putExtra("OrderID", OrderMainActivity.getOrderID());
-                intent.putExtra("ProdID", OrderMainActivity.getProdID());
-                intent.putExtra("WalletID",OrderMainActivity.getwID());
-                intent.putExtra("ProdName",OrderMainActivity.getProdName());
-                intent.putExtra("OrderDateTime",OrderMainActivity.getOrderDateTime());
-                intent.putExtra("OrderQuantity",OrderMainActivity.getOrderQuantity());
-                intent.putExtra("OrderStatus",OrderMainActivity.getOrderStatus());
-                intent.putExtra("PayAmount", OrderMainActivity.getOrderTotal());
-                intent.putExtra("PayDateTime",OrderMainActivity.getPayDateTime());
+                intent.putExtra("OrderID", OrderHistoryActivity.getOrderID());
+                intent.putExtra("ProdID", OrderHistoryActivity.getProdID());
+                intent.putExtra("WalletID",OrderHistoryActivity.getwID());
+                intent.putExtra("ProdName",OrderHistoryActivity.getProdName());
+                intent.putExtra("OrderDateTime",OrderHistoryActivity.getOrderDateTime());
+                intent.putExtra("OrderQuantity",OrderHistoryActivity.getOrderQuantity());
+                intent.putExtra("OrderStatus",OrderHistoryActivity.getOrderStatus());
+                intent.putExtra("PayAmount", OrderHistoryActivity.getOrderTotal());
+                intent.putExtra("PayDateTime",OrderHistoryActivity.getPayDateTime());
                 startActivity(intent);
             }
         });

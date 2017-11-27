@@ -20,12 +20,11 @@ import com.example.lai.smartcanteenpos.Obejct.Product;
 
 public class OrderMainActivity extends AppCompatActivity {
 
-    private static String orderID, canteenName, stallName, walletID, productID, productName, productDesc,
-            orderStatus, orderDateTime, payDateTime;
+    private static String orderID, canteenName, stallName, walletID, productID, productName, productDesc;
     private static int orderQuantity;
-    private static double walletBal, productPrice, payAmount;
+    private static double walletBal, productPrice;
     public static List<Product> listMenu = null;
-    public static List<Order> listOrder = null;
+
 
     private TextView mTextMessage;
 
@@ -47,26 +46,8 @@ public class OrderMainActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frameOrderMain, CanteenFragment.newInstance());
         transaction.commit();
-
-        BottomNavigationView navigation = findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.navigation_order:
-                        CanteenFragment canteenFragment = new CanteenFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frameOrderMain,canteenFragment).commit();
-                        break;
-                    case R.id.navigation_orderHistory:
-                        OrderHistoryFragment orderHistoryFragment = new OrderHistoryFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.frameOrderMain,orderHistoryFragment).commit();
-                        break;
-                }
-                return true;
-            }
-        });
-
-
+        CanteenFragment canteenFragment = new CanteenFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameOrderMain,canteenFragment).commit();
     }
 
     public static String getCanteen() {
@@ -97,14 +78,6 @@ public class OrderMainActivity extends AppCompatActivity {
         productID = prodID;
     }
 
-    public static String getPayDateTime() {
-        return payDateTime;
-    }
-
-    public static void setPayDateTime(String payDT) {
-        payDateTime = payDT;
-    }
-
     public static String getProdName() {
         return productName;
     }
@@ -129,14 +102,6 @@ public class OrderMainActivity extends AppCompatActivity {
         productPrice = prodPrice;
     }
 
-    public static double getOrderTotal() {
-        return payAmount;
-    }
-
-    public static void setOrderTotal(double total) {
-        payAmount = total;
-    }
-
     public static String getOrderID() {
         return orderID;
     }
@@ -145,28 +110,8 @@ public class OrderMainActivity extends AppCompatActivity {
         orderID = oID;
     }
 
-    public static String getOrderStatus() {
-        return orderStatus;
-    }
-
-    public static void setOrderStatus(String orderStat) {
-        orderStatus = orderStat;
-    }
-
-    public static String getOrderDateTime() {
-        return orderDateTime;
-    }
-
-    public static void setOrderDateTime(String orderDT) {
-        orderDateTime = orderDT;
-    }
-
     public static int getOrderQuantity() {
         return orderQuantity;
-    }
-
-    public static void setOrderQuantity(int orderQty) {
-        orderQuantity = orderQty;
     }
 
     public static double getWalletBal(){
@@ -181,15 +126,10 @@ public class OrderMainActivity extends AppCompatActivity {
         productID = null;
         productName = null;
         productDesc = null;
-        orderStatus = null;
-        orderDateTime = null;
-        payDateTime = null;
         orderQuantity = 0;
         walletBal = 0;
         productPrice = 0;
-        payAmount = 0;
         listMenu = null;
-        listOrder = null;
     }
 
 }

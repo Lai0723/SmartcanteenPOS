@@ -46,7 +46,7 @@ public class OrderHistoryFragment extends Fragment {
     ListView listViewOrderHistory;
     ProgressDialog progressDialog;
     RequestQueue queue;
-    public String walletID = OrderMainActivity.getwID();
+    public String walletID = OrderHistoryActivity.getwID();
 
 
     public OrderHistoryFragment() {
@@ -62,13 +62,13 @@ public class OrderHistoryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        OrderMainActivity.listOrder = null;
+        OrderHistoryActivity.listOrder = null;
         View v =  inflater.inflate(R.layout.fragment_order_history, container, false);
         allowRefresh = false;
         listViewOrderHistory = v.findViewById(R.id.listViewOrderHistory);
         progressDialog = new ProgressDialog(v.getContext());
-        if (OrderMainActivity.listOrder == null) {
-            OrderMainActivity.listOrder = new ArrayList<>();
+        if (OrderHistoryActivity.listOrder == null) {
+            OrderHistoryActivity.listOrder = new ArrayList<>();
 
             String type = "retrieveOrderHistory";
             BackgroundWorker backgroundWorker = new BackgroundWorker(v.getContext());
@@ -84,14 +84,14 @@ public class OrderHistoryFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
                 Order chosenOrder = (Order) parent.getItemAtPosition(position);
-                OrderMainActivity.setOrderID(chosenOrder.getOrderID());
-                OrderMainActivity.setProdID(chosenOrder.getProdID()+" ");
-                OrderMainActivity.setProdName(chosenOrder.getProdName());
-                OrderMainActivity.setOrderDateTime(chosenOrder.getOrderDateTime());
-                OrderMainActivity.setOrderQuantity(chosenOrder.getOrderQuantity());
-                OrderMainActivity.setOrderTotal(chosenOrder.getPayAmount());
-                OrderMainActivity.setOrderStatus(chosenOrder.getOrderStatus());
-                OrderMainActivity.setPayDateTime(chosenOrder.getPayDateTime());
+                OrderHistoryActivity.setOrderID(chosenOrder.getOrderID());
+                OrderHistoryActivity.setProdID(chosenOrder.getProdID()+" ");
+                OrderHistoryActivity.setProdName(chosenOrder.getProdName());
+                OrderHistoryActivity.setOrderDateTime(chosenOrder.getOrderDateTime());
+                OrderHistoryActivity.setOrderQuantity(chosenOrder.getOrderQuantity());
+                OrderHistoryActivity.setOrderTotal(chosenOrder.getPayAmount());
+                OrderHistoryActivity.setOrderStatus(chosenOrder.getOrderStatus());
+                OrderHistoryActivity.setPayDateTime(chosenOrder.getPayDateTime());
                 OrderDetailFragment nextFrag= new OrderDetailFragment();
                 getActivity().getSupportFragmentManager().beginTransaction()
                         .replace(R.id.frameOrderMain, nextFrag,"findThisFragment")
@@ -105,7 +105,7 @@ public class OrderHistoryFragment extends Fragment {
 
     //Load the items into the list view from Orders table in the database
     private void loadListing() {
-        final OrderHistoryAdapter adapter = new OrderHistoryAdapter(getActivity(), R.layout.fragment_order_menu, OrderMainActivity.listOrder);
+        final OrderHistoryAdapter adapter = new OrderHistoryAdapter(getActivity(), R.layout.fragment_order_menu, OrderHistoryActivity.listOrder);
         listViewOrderHistory.setAdapter(adapter);
 
     }
@@ -191,7 +191,7 @@ public class OrderHistoryFragment extends Fragment {
                 JSONArray jsonArray = new JSONArray(result);
 
                 try {
-                    OrderMainActivity.listOrder.clear();
+                    OrderHistoryActivity.listOrder.clear();
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject courseResponse= (JSONObject) jsonArray.get(i);
 
@@ -211,13 +211,13 @@ public class OrderHistoryFragment extends Fragment {
                             Order history = new Order(orderID, walletID, prodID, prodName, orderDateTime,
                                     orderQuantity, orderStatus, originalPrice, payAmount, difference,
                                     promotionApplied, null);
-                            OrderMainActivity.listOrder.add(history);
+                            OrderHistoryActivity.listOrder.add(history);
                         }
                         else{
                             Order history = new Order(orderID, walletID, prodID, prodName, orderDateTime,
                                     orderQuantity, orderStatus, originalPrice, payAmount, difference,
                                     promotionApplied, payDateTime);
-                            OrderMainActivity.listOrder.add(history);
+                            OrderHistoryActivity.listOrder.add(history);
                         }
 
                     }

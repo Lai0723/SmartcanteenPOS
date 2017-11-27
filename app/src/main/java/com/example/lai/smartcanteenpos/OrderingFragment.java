@@ -129,7 +129,7 @@ public class OrderingFragment extends Fragment {
                     confirmation.setPositiveButton("Pay",new DialogInterface.OnClickListener(){
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            OrderMainActivity.listOrder = null;
+                            OrderHistoryActivity.listOrder = null;
                             dialog.dismiss();
                             if(ticketApplied){
                                 updateRedeemDate(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insertRedeemDate.php", disCode);

@@ -127,6 +127,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goRedeemOrder(View v){
+        Intent intent = new Intent(this, OrderHistoryActivity.class);
+        intent.putExtra("walletID",walletID);
+        intent.putExtra("balance",balance);
+        startActivity(intent);
+    }
+
     public void goRedeemCoupon(View v){
         Intent intent = new Intent(this,RedeemMainActivity.class);
         intent.putExtra("WalletID",walletID);
