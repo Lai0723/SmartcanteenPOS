@@ -84,15 +84,25 @@
             android:name="com.example.lai.smartcanteenpos.QRPassword"
             android:label="QR Authentication"
             android:launchMode="singleTop"
-            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity" >
+            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.lai.smartcanteenpos.QRTransfer"
             android:label="Transfer QR Code"
-            android:parentActivityName="com.example.lai.smartcanteenpos.QRPassword" />
+            android:parentActivityName="com.example.lai.smartcanteenpos.QRPassword"
+            android:screenOrientation="portrait" />
         <activity android:name="com.example.lai.smartcanteenpos.onSpotTransferScanner" />
-        <activity android:name="com.example.lai.smartcanteenpos.reportdetails" />
-        <activity android:name="com.example.lai.smartcanteenpos.reportdetails_transfer" />
+        <activity
+            android:name="com.example.lai.smartcanteenpos.reportdetails"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.example.lai.smartcanteenpos.reportdetails_transfer"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
+            android:screenOrientation="landscape" />
 
         <!-- WJ part -->
         <activity
@@ -102,7 +112,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.example.lai.smartcanteenpos.QRretrieval"
-            android:label="Retrieval QR Code" />
+            android:label="Retrieval QR Code"
+            android:screenOrientation="portrait" />
         <activity android:name="com.example.lai.smartcanteenpos.onlineOrderRetrievalScanner" />
 
         <!-- BS part -->
@@ -115,7 +126,8 @@
         <activity
             android:name="com.example.lai.smartcanteenpos.wallet_history"
             android:label="Wallet History"
-            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity" />
+            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"
             android:theme="@style/bt_three_d_secure_theme" />

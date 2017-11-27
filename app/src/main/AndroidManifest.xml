@@ -54,16 +54,25 @@
         <activity
             android:name=".QRPassword"
             android:label="QR Authentication"
+            android:screenOrientation="portrait"
             android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
             android:launchMode="singleTop">
         </activity>
+
         <activity
             android:name=".QRTransfer"
             android:label="Transfer QR Code"
+            android:screenOrientation="portrait"
             android:parentActivityName="com.example.lai.smartcanteenpos.QRPassword" />
         <activity android:name=".onSpotTransferScanner" />
-        <activity android:name=".reportdetails" />
-        <activity android:name=".reportdetails_transfer" />
+        <activity android:name=".reportdetails"
+            android:screenOrientation="landscape"
+            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".reportdetails_transfer"
+            android:screenOrientation="landscape"
+            android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
+            android:launchMode="singleTop"/>
 
         <!-- WJ part -->
         <activity
@@ -72,7 +81,8 @@
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".QRretrieval"
-            android:label="Retrieval QR Code"/>
+            android:label="Retrieval QR Code"
+            android:screenOrientation="portrait"/>
         <activity android:name=".onlineOrderRetrievalScanner" />
 
         <!-- BS part -->
@@ -85,6 +95,7 @@
         <activity
             android:name=".wallet_history"
             android:label="Wallet History"
+            android:screenOrientation="portrait"
             android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity" />
     </application>
 
