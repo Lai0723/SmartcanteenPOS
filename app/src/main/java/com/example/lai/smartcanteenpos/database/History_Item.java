@@ -1,5 +1,9 @@
 package com.example.lai.smartcanteenpos.database;
 
+/**
+ * Created by Boon Seng
+ */
+
 public class History_Item {
 
     private  int RedeemItemID;

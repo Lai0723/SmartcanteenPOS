@@ -32,7 +32,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * Created by Boon Seng
+ */
 
 public class FragmentItem extends Fragment implements View.OnClickListener{
 
@@ -165,7 +167,7 @@ public class FragmentItem extends Fragment implements View.OnClickListener{
                         String desc = "RM 10 Reload Card";
                         update(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
                         insert(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption_item.php",itCode,desc);
-                        Toast.makeText(getContext(), "Successfully Redeemed!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(), "Success! RM 10 Reload Card is added into your EWallet", Toast.LENGTH_LONG).show();
                     } catch (Exception e) {
                         e.printStackTrace();
                         Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -183,7 +185,7 @@ public class FragmentItem extends Fragment implements View.OnClickListener{
                         String desc = "RM 10 Gift Card";
                         update(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
                         insert(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption_item.php",itCode,desc);
-                        Toast.makeText(getContext(), "Successfully Redeemed!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(), "Success! RM 10 Gift Card is added into your EWallet", Toast.LENGTH_LONG).show();
                     } catch (Exception e) {
                         e.printStackTrace();
                         Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();

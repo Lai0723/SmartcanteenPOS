@@ -18,6 +18,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 
+/**
+ * Created by Boon Seng
+ */
 
 public class HistoryAdapter extends ArrayAdapter<History>{
     public HistoryAdapter(Activity context, int resource, List<History> list) {

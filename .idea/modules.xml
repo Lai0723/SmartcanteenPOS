@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SmartcanteenPOS.iml" filepath="$PROJECT_DIR$/SmartcanteenPOS.iml" />
+      <module fileurl="file://C:\Users\A45VD\Desktop\SmartcanteenPOS\SmartcanteenPOS.iml" filepath="C:\Users\A45VD\Desktop\SmartcanteenPOS\SmartcanteenPOS.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

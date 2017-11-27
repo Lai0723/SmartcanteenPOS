@@ -1,6 +1,5 @@
 package com.example.lai.smartcanteenpos;
 
-
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -24,6 +23,9 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Created by Boon Seng
+ */
 
 public class FragmentHome extends Fragment {
 

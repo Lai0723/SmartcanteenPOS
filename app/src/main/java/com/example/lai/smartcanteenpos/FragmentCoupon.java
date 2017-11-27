@@ -39,6 +39,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TimeZone;
 
+/**
+ * Created by Boon Seng
+ */
 
 public class FragmentCoupon extends Fragment implements View.OnClickListener{
 
@@ -171,7 +174,7 @@ public class FragmentCoupon extends Fragment implements View.OnClickListener{
                         String Description = "RM 5 discount";
                         update(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
                         insert(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php",CouponCode,Description);
-                        Toast.makeText(getContext(), "Successfully Redeemed!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(), "Success! RM 5 Discount Code is added into your EWallet", Toast.LENGTH_LONG).show();
                     } catch (Exception e) {
                         e.printStackTrace();
                         Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -189,7 +192,7 @@ public class FragmentCoupon extends Fragment implements View.OnClickListener{
                         String Description = "RM 10 discount";
                         update(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
                         insert(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php", CouponCode, Description);
-                        Toast.makeText(getContext(), "Successfully Redeemed!", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getContext(), "Success! RM 10 Discount Code is added into your EWallet", Toast.LENGTH_LONG).show();
                     } catch (Exception e) {
                         e.printStackTrace();
                         Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();

@@ -34,6 +34,9 @@ import java.util.List;
 
 import static android.content.Context.CLIPBOARD_SERVICE;
 
+/**
+ * Created by Boon Seng
+ */
 
 public class FragmentHistory extends Fragment {
     public static boolean allowRefresh;

@@ -80,6 +80,8 @@
             android:name=".RedeemMainActivity"
             android:label="@string/apps_name"
             android:parentActivityName=".MainActivity" />
+        <!-- End -->
+
         <activity
             android:name=".wallet_history"
             android:label="Wallet History"
