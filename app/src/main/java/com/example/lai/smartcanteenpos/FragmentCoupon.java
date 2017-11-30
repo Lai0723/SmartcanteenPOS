@@ -1,5 +1,6 @@
 package com.example.lai.smartcanteenpos;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 
@@ -15,8 +16,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.android.volley.Response;
-
-import android.support.v7.app.AlertDialog;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -162,43 +161,80 @@ public class FragmentCoupon extends Fragment implements View.OnClickListener{
         SimpleDateFormat sdf = new SimpleDateFormat("yyMMddHHmmss");
         //sdf.setTimeZone(TimeZone.getDefault());
         //String currentDateandTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-        String currentDateandTime = sdf.format(new Date());
+        final String currentDateandTime = sdf.format(new Date());
 
 
         switch (v.getId()) {
             case R.id.btn1:
-                if (RedeemMainActivity.LoyaltyPoint >= 500){
-                    RedeemMainActivity.LoyaltyPoint -= 500;
-                    try {
-                        String CouponCode = "5" + currentDateandTime + RedeemMainActivity.WalletID;
-                        String Description = "RM 5 discount";
-                        update(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
-                        insert(getContext() , "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php",CouponCode,Description);
-                        Toast.makeText(getContext(), "Success! RM 5 Discount Code is added into your EWallet", Toast.LENGTH_LONG).show();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
-                    }
-                }else{
-                    Toast.makeText(getActivity(), "Not enough points", Toast.LENGTH_SHORT).show();
+                try {
+                    final android.app.AlertDialog.Builder confirmation = new android.app.AlertDialog.Builder(getContext());
+                    confirmation.setCancelable(false);
+                    confirmation.setTitle("<!> Confirmation Message");
+                    confirmation.setMessage("Do you want to redeem RM 5 discount code?");
+                    confirmation.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                            if (RedeemMainActivity.LoyaltyPoint >= 500) {
+                                RedeemMainActivity.LoyaltyPoint -= 500;
+                                String CouponCode = "5" + currentDateandTime + RedeemMainActivity.WalletID;
+                                String Description = "RM 5 discount";
+                                update(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
+                                insert(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php", CouponCode, Description);
+                                Toast.makeText(getContext(), "Success! RM 5 Discount Code is added into your EWallet", Toast.LENGTH_LONG).show();
+
+                            } else {
+                                Toast.makeText(getActivity(), "Not enough points", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                    confirmation.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+                    confirmation.show();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
                 break;
 
             case R.id.btn2:
-                if (RedeemMainActivity.LoyaltyPoint >= 1000) {
-                    RedeemMainActivity.LoyaltyPoint -= 1000;
-                    try {
-                        String CouponCode = "10" + currentDateandTime  + RedeemMainActivity.WalletID;
-                        String Description = "RM 10 discount";
-                        update(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
-                        insert(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php", CouponCode, Description);
-                        Toast.makeText(getContext(), "Success! RM 10 Discount Code is added into your EWallet", Toast.LENGTH_LONG).show();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
-                    }
-                } else {
-                    Toast.makeText(getActivity(), "Not enough points", Toast.LENGTH_SHORT).show();
+                try {
+                    final android.app.AlertDialog.Builder confirmation = new android.app.AlertDialog.Builder(getContext());
+                    confirmation.setCancelable(false);
+                    confirmation.setTitle("<!> Confirmation Message");
+                    confirmation.setMessage("Do you want to redeem RM 10 discount code?");
+                    confirmation.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    });
+                    confirmation.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                            if (RedeemMainActivity.LoyaltyPoint >= 1000) {
+                                RedeemMainActivity.LoyaltyPoint -= 1000;
+                                String CouponCode = "10" + currentDateandTime + RedeemMainActivity.WalletID;
+                                String Description = "RM 10 discount";
+                                update(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/update_point.php");
+                                insert(getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/insert_redemption.php", CouponCode, Description);
+                                Toast.makeText(getContext(), "Success! RM 10 Discount Code is added into your EWallet", Toast.LENGTH_LONG).show();
+                            } else {
+                                Toast.makeText(getActivity(), "Not enough points", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+
+                    confirmation.show();
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Toast.makeText(getContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
                 break;
             default:

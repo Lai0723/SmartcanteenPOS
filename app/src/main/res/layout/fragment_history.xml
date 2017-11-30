@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent">
 
     <android.support.constraint.ConstraintLayout
@@ -13,11 +13,8 @@
 
         <ListView
             android:id="@+id/lvHistory"
-            android:layout_width="366dp"
-            android:layout_height="220dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="0.92"
             android:divider="@android:drawable/bottom_bar"
             android:dividerHeight="1dp"
@@ -29,11 +26,8 @@
 
         <ListView
             android:id="@+id/lvHistory_item"
-            android:layout_width="366dp"
-            android:layout_height="220dp"
-            android:layout_marginBottom="16dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="0.92"
             android:divider="@android:drawable/bottom_bar"
             android:dividerHeight="1dp"
@@ -52,6 +46,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
             android:text="@string/historyTitle"
             android:textColor="@android:color/black"
             android:textSize="14sp"
