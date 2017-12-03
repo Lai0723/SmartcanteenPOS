@@ -31,6 +31,21 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
