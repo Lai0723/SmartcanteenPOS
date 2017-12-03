@@ -5,8 +5,10 @@
 
     <TextView
         android:id="@+id/POID"
-        android:layout_width="wrap_content"
+
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
         android:layout_weight="1"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -14,8 +16,9 @@
 
     <TextView
         android:id="@+id/Name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
         android:layout_weight="1"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -23,8 +26,9 @@
 
     <TextView
         android:id="@+id/Supplier"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
         android:layout_weight="1"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -32,8 +36,9 @@
 
     <TextView
         android:id="@+id/PurchaseQuan"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="end"
         android:layout_weight="1"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -41,17 +46,19 @@
 
     <TextView
         android:id="@+id/PurchaseFee"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="end"
         android:layout_weight="1"
-        android:textAlignment="textEnd"
+        android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/PurchaseDate"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="start"
         android:layout_weight="1"
         android:textAlignment="center"
         android:textSize="18sp"

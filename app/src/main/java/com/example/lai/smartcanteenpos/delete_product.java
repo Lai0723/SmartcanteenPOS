@@ -85,14 +85,6 @@ public class delete_product extends Fragment {
                             }
         });
 
-
-
-
-
-
-
-
-
         return v;
     }
 

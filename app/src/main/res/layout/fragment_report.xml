@@ -8,12 +8,13 @@
     <!-- TODO: Update blank fragment layout -->
     <Button
         android:id="@+id/btnDailyReport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="229dp"
+        android:layout_height="57dp"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/Daily_report"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnMonthlyReport"
         app:layout_constraintHorizontal_bias="0.523"
@@ -21,21 +22,23 @@
 
     <Button
         android:id="@+id/btnMonthlyReport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="223dp"
+        android:layout_height="55dp"
         android:layout_marginBottom="24dp"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="60dp"
         android:text="@string/Monthly_Report"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnYearlyReport" />
 
     <Button
         android:id="@+id/btnYearlyReport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="208dp"
+        android:layout_height="55dp"
         android:layout_marginBottom="24dp"
-        android:layout_marginEnd="132dp"
+        android:layout_marginEnd="88dp"
         android:text="@string/Yearly_Report"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

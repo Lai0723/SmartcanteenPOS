@@ -373,11 +373,10 @@ public class MenuFragment extends Fragment   {
                         String ProdCat = courseResponse.getString("ProdCat");
                         String ProdDesc = courseResponse.getString("ProdDesc");
                         double ProdPrice = Double.parseDouble(courseResponse.getString("ProdPrice"));
-                        int ProdQty = Integer.parseInt(courseResponse.getString("ProdQty"));
                         String ImageURL = courseResponse.getString("url");
 
 
-                        Product listing = new Product(ProdID, ProdName, ProdCat, ProdDesc, ProdPrice,ProdQty, ImageURL);
+                        Product listing = new Product(ProdID, ProdName, ProdCat, ProdDesc, ProdPrice,ImageURL);
                         Menu_screen.lList.add(listing);
 
                     }

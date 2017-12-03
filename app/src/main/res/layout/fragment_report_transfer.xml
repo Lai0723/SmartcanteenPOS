@@ -36,33 +36,36 @@
 
     <Button
         android:id="@+id/btnTDailyReport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="233dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/Daily_report"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnTMonthlyReport"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnTMonthlyReport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="172dp"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="44dp"
         android:text="@string/Monthly_Report"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnTYearlyReport" />
 
     <Button
         android:id="@+id/btnTYearlyReport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="238dp"
+        android:layout_height="58dp"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="96dp"
         android:text="@string/Yearly_Report"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </android.support.constraint.ConstraintLayout>

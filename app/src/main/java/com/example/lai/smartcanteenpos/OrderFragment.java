@@ -37,8 +37,12 @@ public class OrderFragment extends Fragment {
         TabLayout tabLayout = (TabLayout) v.findViewById(R.id.tab);
         tabLayout.setupWithViewPager(mViewPager);
 
+
         tabLayout.getTabAt(0).setText("Order");
-        tabLayout.getTabAt(1).setText("Payment");
+        tabLayout.getTabAt(1).setText("Accepted Order");
+        tabLayout.getTabAt(2).setText("Completed Order");
+        tabLayout.getTabAt(3).setText("Payment");
+
         return v;
     }
 
@@ -47,7 +51,10 @@ public class OrderFragment extends Fragment {
 
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new activity_order(),"Order");
+        adapter.addFragment(new acceptedOrder(),"Accepted Order");
+        adapter.addFragment(new completedOrder(),"Completed Order");
         adapter.addFragment(new activity_payment(),"Payment");
+
         viewPager.setOffscreenPageLimit(2);
         viewPager.setAdapter(adapter);
     }

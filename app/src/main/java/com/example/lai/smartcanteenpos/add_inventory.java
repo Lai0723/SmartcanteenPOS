@@ -40,12 +40,6 @@ public class add_inventory extends Fragment {
     public ProgressDialog progressDialog;
 
 
-
-    public add_inventory() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -56,9 +50,18 @@ public class add_inventory extends Fragment {
         txtInQuantity = (EditText)v.findViewById(R.id.txtInQuan);
         txtPOID = (EditText)v.findViewById(R.id.txtPOID);
         txtInFee = (EditText)v.findViewById(R.id.txtInFee) ;
-
         btnISubmit = (Button)v.findViewById(R.id.btnISubmit);
 
+        Bundle bundle = getArguments();
+        if(bundle != null){
+            String ProdID = bundle.getString("ProdID");
+            String PurchaseQuantity = bundle.getString("PurchaseQuantity");
+            String PurchseOrderID = bundle.getString("PurchseOrderID");
+            txtInID.setText(ProdID.toString());
+            txtInQuantity.setText(PurchaseQuantity.toString());
+            txtPOID.setText(PurchseOrderID.toString());
+
+        }
 
         btnISubmit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -96,9 +99,7 @@ public class add_inventory extends Fragment {
 
                     product.setProdID(txtInID.getText().toString());
                     product.setQuantity(Integer.parseInt(txtInQuantity.getText().toString()));
-
                     purchase.setPOID(txtPOID.getText().toString());
-
                     purchase.setFee(Double.parseDouble(txtInFee.getText().toString()));
 
 

@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -58,9 +59,25 @@ public class View_Purchase_Order extends Fragment {
 
         POlist = (ListView)v.findViewById(R.id.POlist);
         btnPOcancel = (Button)v.findViewById(R.id.btnPOcancel);
-
-
         progressDialog = new ProgressDialog(v.getContext());
+
+
+        POlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Purchase_order entry = (Purchase_order) parent.getItemAtPosition(position);
+
+                add_inventory fragment = new add_inventory();
+                Bundle bundle = new Bundle();
+                bundle.putString("ProdID",entry.getProdID());
+                bundle.putString("PurchaseQuantity",entry.getPurchaseQuantity());
+                bundle.putString("PurchseOrderID",entry.getPOID());
+                fragment.setArguments(bundle);
+
+
+            }
+        });
+
         btnPOcancel.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 

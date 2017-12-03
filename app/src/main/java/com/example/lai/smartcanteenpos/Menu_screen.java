@@ -37,6 +37,7 @@ public class Menu_screen extends AppCompatActivity {
     public static List<Inventory> SList = null;
     public static List<Purchase_order>OList = null;
     public static List<Order>ORDERList = null;
+
     public static List<Menu> MList = null;
     public static List<Report> RList = null;
     public static List<Report_Transaction> RTList = null;

@@ -4,7 +4,6 @@ package com.example.lai.smartcanteenpos;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -116,7 +115,7 @@ public class activity_payment extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 //set spinner selected item color
-                ((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
+                //((TextView) parent.getChildAt(0)).setTextColor(Color.BLACK);
             }
 
             @Override

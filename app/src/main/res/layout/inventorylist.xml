@@ -10,28 +10,30 @@
 
         <TextView
             android:id="@+id/PID"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_gravity="start"
             android:textAlignment="center"
             android:textSize="36sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/PName"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_gravity="start"
             android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceSmall"
             android:textSize="36sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/PQuantity"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_gravity="end"
             android:textAlignment="center"
             android:textSize="36sp"
             android:textStyle="bold" />

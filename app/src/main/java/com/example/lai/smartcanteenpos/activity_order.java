@@ -122,7 +122,7 @@ public class activity_order extends Fragment {
 
 
                     AcceptOrder(getView().getContext(), " https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/approved%20order.php");
-
+                    Menu_screen.ORDERList = null;
                     refreshList(v);
                 }
             }
@@ -169,14 +169,15 @@ public class activity_order extends Fragment {
 
     private void refreshList(View v){
         activity_order.allowRefresh = true;
-        Menu_screen.ORDERList = null;
+        if(Menu_screen.ORDERList == null) {
 
-        Menu_screen.ORDERList = new ArrayList<>();
+            Menu_screen.ORDERList = new ArrayList<>();
 
-        String type = "retrieveOrder";
-        MercName = Login.LOGGED_IN_USER;
-        activity_order.BackgroundWorker backgroundWorker = new activity_order.BackgroundWorker(v.getContext());
-        backgroundWorker.execute(type,  MercName);
+            String type = "retrieveOrder";
+            MercName = Login.LOGGED_IN_USER;
+            activity_order.BackgroundWorker backgroundWorker = new activity_order.BackgroundWorker(v.getContext());
+            backgroundWorker.execute(type, MercName);
+        }
     }
 
 
