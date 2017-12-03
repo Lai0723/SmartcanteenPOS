@@ -55,7 +55,7 @@ public class wallet_history extends AppCompatActivity {
         //downloadTransfer(getApplicationContext(), URL_Transfer_History);
 
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_main_wallet_history, fragment_wallet_transfer_history.newInstance());
+        transaction.replace(R.id.frame_main_wallet_history, fragment_wallet_history_type_selection.newInstance());
         transaction.commit();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

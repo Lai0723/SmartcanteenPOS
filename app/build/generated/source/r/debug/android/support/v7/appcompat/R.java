@@ -680,9 +680,9 @@ public final class R {
         public static final int titleDividerNoCustom = 0x7f0901cc;
         public static final int title_template = 0x7f0901cd;
         public static final int topPanel = 0x7f0901cf;
-        public static final int uniform = 0x7f09022d;
-        public static final int up = 0x7f09022e;
-        public static final int wrap_content = 0x7f090235;
+        public static final int uniform = 0x7f09022e;
+        public static final int up = 0x7f09022f;
+        public static final int wrap_content = 0x7f090236;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur = 0x7f0a0000;
@@ -719,26 +719,26 @@ public final class R {
         public static final int abc_search_dropdown_item_icons_2line = 0x7f0b0018;
         public static final int abc_search_view = 0x7f0b0019;
         public static final int abc_select_dialog_material = 0x7f0b001a;
-        public static final int notification_action = 0x7f0b0073;
-        public static final int notification_action_tombstone = 0x7f0b0074;
-        public static final int notification_media_action = 0x7f0b0075;
-        public static final int notification_media_cancel_action = 0x7f0b0076;
-        public static final int notification_template_big_media = 0x7f0b0077;
-        public static final int notification_template_big_media_custom = 0x7f0b0078;
-        public static final int notification_template_big_media_narrow = 0x7f0b0079;
-        public static final int notification_template_big_media_narrow_custom = 0x7f0b007a;
-        public static final int notification_template_custom_big = 0x7f0b007b;
-        public static final int notification_template_icon_group = 0x7f0b007c;
-        public static final int notification_template_lines_media = 0x7f0b007d;
-        public static final int notification_template_media = 0x7f0b007e;
-        public static final int notification_template_media_custom = 0x7f0b007f;
-        public static final int notification_template_part_chronometer = 0x7f0b0080;
-        public static final int notification_template_part_time = 0x7f0b0081;
-        public static final int select_dialog_item_material = 0x7f0b0087;
-        public static final int select_dialog_multichoice_material = 0x7f0b0088;
-        public static final int select_dialog_singlechoice_material = 0x7f0b0089;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0b008a;
-        public static final int tooltip = 0x7f0b008b;
+        public static final int notification_action = 0x7f0b0074;
+        public static final int notification_action_tombstone = 0x7f0b0075;
+        public static final int notification_media_action = 0x7f0b0076;
+        public static final int notification_media_cancel_action = 0x7f0b0077;
+        public static final int notification_template_big_media = 0x7f0b0078;
+        public static final int notification_template_big_media_custom = 0x7f0b0079;
+        public static final int notification_template_big_media_narrow = 0x7f0b007a;
+        public static final int notification_template_big_media_narrow_custom = 0x7f0b007b;
+        public static final int notification_template_custom_big = 0x7f0b007c;
+        public static final int notification_template_icon_group = 0x7f0b007d;
+        public static final int notification_template_lines_media = 0x7f0b007e;
+        public static final int notification_template_media = 0x7f0b007f;
+        public static final int notification_template_media_custom = 0x7f0b0080;
+        public static final int notification_template_part_chronometer = 0x7f0b0081;
+        public static final int notification_template_part_time = 0x7f0b0082;
+        public static final int select_dialog_item_material = 0x7f0b0088;
+        public static final int select_dialog_multichoice_material = 0x7f0b0089;
+        public static final int select_dialog_singlechoice_material = 0x7f0b008a;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0b008b;
+        public static final int tooltip = 0x7f0b008c;
     }
     public static final class string {
         public static final int abc_action_bar_home_description = 0x7f0f0038;
