@@ -82,19 +82,22 @@ public class FragmentHistory extends Fragment {
                              Bundle savedInstanceState) {
         final View rootView = inflater.inflate(R.layout.fragment_history, container, false);
         allowRefresh = false;
+        progressDialog = new ProgressDialog(rootView.getContext());
+        if (!progressDialog.isShowing()) ;
+        progressDialog.setMessage("Retrieving Redeem History");
+        progressDialog.show();
         lvHistory = (ListView) rootView.findViewById(R.id.lvHistory);
         HistoryList = new ArrayList<>();
         lvHistory_item = (ListView) rootView.findViewById(R.id.lvHistory_item);
         HistoryList2 = new ArrayList<>();
-        progressDialog = new ProgressDialog(rootView.getContext());
         downloadListing(getActivity().getApplicationContext(), GET_HISTORY_URL);
         downloadListing_item(getActivity().getApplicationContext(), GET_HISTORY_URL_item);
 
         if (HistoryList == null) {
             HistoryList = new ArrayList<>();
             String type = "retrieveRedeemCodeHistory";
-            BackgroundWorker backgroundWorker = new BackgroundWorker(rootView.getContext());
-            backgroundWorker.execute(type,  RedeemCodeID);
+/*            BackgroundWorker backgroundWorker = new BackgroundWorker(rootView.getContext());
+            backgroundWorker.execute(type,  RedeemCodeID);*/
 
         } else {
             loadListing();
@@ -103,10 +106,11 @@ public class FragmentHistory extends Fragment {
         if (HistoryList2 == null) {
             HistoryList2 = new ArrayList<>();
             String type = "retrieveRedeemItemHistory";
-            BackgroundWorker backgroundWorker = new BackgroundWorker(rootView.getContext());
-            backgroundWorker.execute(type,  RedeemItemID);
+/*            BackgroundWorker backgroundWorker = new BackgroundWorker(rootView.getContext());
+            backgroundWorker.execute(type,  RedeemItemID);*/
 
         } else {
+
             loadListing();
         }
 
@@ -114,7 +118,7 @@ public class FragmentHistory extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 History entry = (History) parent.getItemAtPosition(position);
-//                downloadListing(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/get_history.php");
+               downloadListing(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/get_history.php");
                 ClipboardManager myClipboard = (ClipboardManager)getActivity().getSystemService(CLIPBOARD_SERVICE);
                 ClipData myClip;
                 String text = entry.getCouponCode();
@@ -122,8 +126,8 @@ public class FragmentHistory extends Fragment {
                 myClipboard.setPrimaryClip(myClip);
                 Toast.makeText(getActivity(),"Code copied",Toast.LENGTH_LONG).show();
                 String type = "retrieveRedeemCodeHistory";
-                BackgroundWorker backgroundWorker = new BackgroundWorker(rootView.getContext());
-                backgroundWorker.execute(type, RedeemCodeID);
+/*                BackgroundWorker backgroundWorker = new BackgroundWorker(rootView.getContext());
+                backgroundWorker.execute(type, RedeemCodeID);*/
             }
         });
 
@@ -131,7 +135,7 @@ public class FragmentHistory extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 History_Item entry2 = (History_Item) parent.getItemAtPosition(position);
-                //downloadListing_item(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/get_history_item.php");
+                downloadListing_item(getActivity(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/get_history_item.php");
                 ClipboardManager myClipboard = (ClipboardManager)getActivity().getSystemService(CLIPBOARD_SERVICE);
                 ClipData myClip;
                 String text = entry2.getItemCode();
@@ -139,8 +143,8 @@ public class FragmentHistory extends Fragment {
                 myClipboard.setPrimaryClip(myClip);
                 Toast.makeText(getActivity(),"Code copied",Toast.LENGTH_LONG).show();
                 String type = "retrieveRedeemItemHistory";
-                BackgroundWorker2 backgroundWorker2 = new BackgroundWorker2(rootView.getContext());
-                backgroundWorker2.execute(type, RedeemItemID);
+/*                BackgroundWorker2 backgroundWorker2 = new BackgroundWorker2(rootView.getContext());
+                backgroundWorker2.execute(type, RedeemItemID);*/
             }
         });
 
@@ -238,6 +242,8 @@ public class FragmentHistory extends Fragment {
     }
 
     private void loadListing() {
+        if (progressDialog.isShowing())
+            progressDialog.dismiss();
         final HistoryAdapter historyAdapter = new HistoryAdapter(getActivity(), R.layout.fragment_history, HistoryList);
         lvHistory.setAdapter(historyAdapter);
         final History_ItemAdapter history_itemAdapter = new History_ItemAdapter(getActivity(), R.layout.fragment_history, HistoryList2);
@@ -245,7 +251,7 @@ public class FragmentHistory extends Fragment {
         //Toast.makeText(getApplicationContext(), "Count :" + TransactionList.size(), Toast.LENGTH_LONG).show();
     }
 
-    private class BackgroundWorker extends AsyncTask<String, Void, String> {
+/*    private class BackgroundWorker extends AsyncTask<String, Void, String> {
         Context context;
         AlertDialog alertDialog;
 
@@ -463,7 +469,7 @@ public class FragmentHistory extends Fragment {
             super.onProgressUpdate(values);
         }
 
-    }
+    }*/
 
     @Override
     public void onResume() {
