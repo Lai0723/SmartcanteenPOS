@@ -18,6 +18,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.lai.smartcanteenpos.database.Orders;
+import com.example.lai.smartcanteenpos.database.TopUp;
 import com.example.lai.smartcanteenpos.database.Transfer;
 
 import org.json.JSONArray;
@@ -33,8 +35,14 @@ public class wallet_history extends AppCompatActivity {
     String walletID = MainActivity.walletID;
     static String dateOfWalletHistory;
 
-    ListView lvTransferHistory;
-    List<Transfer> listTransfer;
+    public static List<Transfer> listTransfer;
+    public static List<Orders> listTransaction;
+    public static List<TopUp> listTopup;
+
+    public static double topupTotal;
+    public static double transactionTotal;
+    public static double transferTotal;
+
 
     private static String URL_Transfer_History = "https://martpay.000webhostapp.com/gab_select_transfer.php";
 
@@ -44,6 +52,13 @@ public class wallet_history extends AppCompatActivity {
         setContentView(R.layout.activity_wallet_history);
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.walletHistoryNavi);
+
+        //initiate Lists
+        listTransfer=null;
+        listTransaction=null;
+        listTopup=null;
+
+
 
         Bundle extras = getIntent().getExtras();
         if (extras == null) {

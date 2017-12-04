@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SmartcanteenPOS.iml" filepath="$PROJECT_DIR$/SmartcanteenPOS.iml" />
-      <module fileurl="file://D:\AndroidStudioProjects\SmartcanteenPOS\SmartcanteenPOS12.iml" filepath="D:\AndroidStudioProjects\SmartcanteenPOS\SmartcanteenPOS12.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

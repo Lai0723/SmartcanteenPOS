@@ -40,10 +40,10 @@ import java.util.Map;
 public class fragment_wallet_transaction_history extends Fragment {
 
     ListView lvTransactionHistory;
-    List<Orders> listTransaction;
+    //List<Orders> listTransaction;
     TextView tvTransactionTotal;
 
-    double transactionTotal;
+    //double transactionTotal;
 
     private static String URL_Transaction_History = "https://martpay.000webhostapp.com/gab_select_transaction.php";
 
@@ -61,8 +61,7 @@ public class fragment_wallet_transaction_history extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        listTransaction = new ArrayList<>();
-        transactionTotal = 0;
+
 
         View view = inflater.inflate(R.layout.fragment_wallet_transaction_history, container, false);
 
@@ -71,8 +70,14 @@ public class fragment_wallet_transaction_history extends Fragment {
         if (!isConnected()) {
             Toast.makeText(getContext(), "No network", Toast.LENGTH_LONG).show();
         }
+        if(wallet_history.listTransaction==null){
+            wallet_history.listTransaction = new ArrayList<>();
+            wallet_history.transactionTotal = 0;
+            downloadTransaction(getContext(), URL_Transaction_History);
+        }else{
+            loadTransaction();
+        }
 
-        downloadTransaction(getContext(), URL_Transaction_History);
 
         return view;
     }
@@ -92,7 +97,7 @@ public class fragment_wallet_transaction_history extends Fragment {
                             try {
                                 JSONArray j = new JSONArray(response);
                                 try {
-                                    listTransaction.clear();
+                                    wallet_history.listTransaction.clear();
                                     for (int i = 0; i < j.length(); i++) {
                                         JSONObject transactionResponse = (JSONObject) j.get(i);
                                         /*int TransferID = transferResponse.getInt("TransferID");
@@ -109,8 +114,8 @@ public class fragment_wallet_transaction_history extends Fragment {
                                         Double PayAmount = transactionResponse.getDouble("PayAmount");
 
                                         Orders orders = new Orders(OrderID, ProdID, OrderQuantity, OrderDateTime, PayDateTime,PayAmount );
-                                        listTransaction.add(orders);
-                                        transactionTotal = transactionTotal + PayAmount;
+                                        wallet_history.listTransaction.add(orders);
+                                        wallet_history.transactionTotal = wallet_history.transactionTotal + PayAmount;
                                     }
                                     loadTransaction();
 
@@ -151,9 +156,9 @@ public class fragment_wallet_transaction_history extends Fragment {
     }
 
     private void loadTransaction() {
-        final adapter_list_transaction_history adapter = new adapter_list_transaction_history(getContext(), R.layout.fragment_wallet_transaction_history, listTransaction);
+        final adapter_list_transaction_history adapter = new adapter_list_transaction_history(getContext(), R.layout.fragment_wallet_transaction_history, wallet_history.listTransaction);
         lvTransactionHistory.setAdapter(adapter);
-        tvTransactionTotal.setText("Online Spent Total: " + String.format("RM %.2f", transactionTotal));
+        tvTransactionTotal.setText("Online Spent Total: " + String.format("RM %.2f", wallet_history.transactionTotal));
         //Toast.makeText(getApplicationContext(), "Count :" + TList.size(), Toast.LENGTH_LONG).show();
     }
 

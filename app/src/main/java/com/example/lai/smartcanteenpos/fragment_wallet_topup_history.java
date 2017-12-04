@@ -40,10 +40,10 @@ import java.util.Map;
 public class fragment_wallet_topup_history extends Fragment {
 
     ListView lvTopupHistory;
-    List<TopUp> listTopup;
+    //List<TopUp> listTopup;
     TextView tvTopupTotal;
 
-    double topupTotal;
+    //double topupTotal;
 
     private static String URL_Topup_History = "https://martpay.000webhostapp.com/gab_select_topup.php";
 
@@ -61,8 +61,6 @@ public class fragment_wallet_topup_history extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        listTopup = new ArrayList<>();
-        topupTotal =0;
         View view = inflater.inflate(R.layout.fragment_wallet_topup_history, container, false);
 
         tvTopupTotal = view.findViewById(R.id.tvTopupTotal);
@@ -71,8 +69,13 @@ public class fragment_wallet_topup_history extends Fragment {
             Toast.makeText(getContext(), "No network", Toast.LENGTH_LONG).show();
         }
 
-        downloadTopup(getContext(), URL_Topup_History);
-
+        if(wallet_history.listTopup==null) {
+            wallet_history.topupTotal =0;
+            wallet_history.listTopup = new ArrayList<>();
+            downloadTopup(getContext(), URL_Topup_History);
+        }else{
+            loadTopup();
+        }
         return view;
     }
 
@@ -91,7 +94,7 @@ public class fragment_wallet_topup_history extends Fragment {
                             try {
                                 JSONArray j = new JSONArray(response);
                                 try {
-                                    listTopup.clear();
+                                    wallet_history.listTopup.clear();
                                     for (int i = 0; i < j.length(); i++) {
                                         JSONObject topupResponse = (JSONObject) j.get(i);
                                         String WalletID = topupResponse.getString("WalletID");
@@ -100,8 +103,8 @@ public class fragment_wallet_topup_history extends Fragment {
                                         String TopUpDateTime = topupResponse.getString("TopUpDateTime");
 
                                         TopUp topup = new TopUp(WalletID, TopUpAmount, TopUpDateTime);
-                                        listTopup.add(topup);
-                                        topupTotal = topupTotal + TopUpAmount;
+                                        wallet_history.listTopup.add(topup);
+                                        wallet_history.topupTotal = wallet_history.topupTotal + TopUpAmount;
                                     }
                                     loadTopup();
 
@@ -142,9 +145,9 @@ public class fragment_wallet_topup_history extends Fragment {
     }
 
     private void loadTopup() {
-        final adapter_list_topup_history adapter = new adapter_list_topup_history(getContext(), R.layout.fragment_wallet_topup_history, listTopup);
+        final adapter_list_topup_history adapter = new adapter_list_topup_history(getContext(), R.layout.fragment_wallet_topup_history, wallet_history.listTopup);
         lvTopupHistory.setAdapter(adapter);
-        tvTopupTotal.setText("Top Up Total: " + String.format("RM %.2f", topupTotal));
+        tvTopupTotal.setText("Top Up Total: " + String.format("RM %.2f", wallet_history.topupTotal));
         //Toast.makeText(getApplicationContext(), "Count :" + TList.size(), Toast.LENGTH_LONG).show();
     }
 
