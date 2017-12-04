@@ -40,6 +40,7 @@ public class add_inventory extends Fragment {
     public ProgressDialog progressDialog;
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -52,16 +53,14 @@ public class add_inventory extends Fragment {
         txtInFee = (EditText)v.findViewById(R.id.txtInFee) ;
         btnISubmit = (Button)v.findViewById(R.id.btnISubmit);
 
-        Bundle bundle = getArguments();
-        if(bundle != null){
-            String ProdID = bundle.getString("ProdID");
-            String PurchaseQuantity = bundle.getString("PurchaseQuantity");
-            String PurchseOrderID = bundle.getString("PurchseOrderID");
-            txtInID.setText(ProdID.toString());
-            txtInQuantity.setText(PurchaseQuantity.toString());
-            txtPOID.setText(PurchseOrderID.toString());
 
-        }
+
+
+            txtInID.setText(View_Purchase_Order.ProdID.toString());
+            txtInQuantity.setText(View_Purchase_Order.PurchaseQuantity.toString());
+            txtPOID.setText(View_Purchase_Order.PurchseOrderID.toString());
+
+
 
         btnISubmit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

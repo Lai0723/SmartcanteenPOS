@@ -3,6 +3,7 @@ package com.example.lai.smartcanteenpos;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -43,6 +44,7 @@ public class View_Purchase_Order extends Fragment {
     String MercName;
     ProgressDialog progressDialog;
     Button btnPOcancel;
+    public static String ProdID,PurchaseQuantity,PurchseOrderID;
 
     public View_Purchase_Order() {
         // Required empty public constructor
@@ -67,13 +69,18 @@ public class View_Purchase_Order extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Purchase_order entry = (Purchase_order) parent.getItemAtPosition(position);
 
-                add_inventory fragment = new add_inventory();
-                Bundle bundle = new Bundle();
+
+                /*Bundle bundle = new Bundle();
                 bundle.putString("ProdID",entry.getProdID());
                 bundle.putString("PurchaseQuantity",entry.getPurchaseQuantity());
                 bundle.putString("PurchseOrderID",entry.getPOID());
-                fragment.setArguments(bundle);
+                fragment.setArguments(bundle);*/
 
+                ProdID = entry.getProdID();
+                PurchaseQuantity = entry.getPurchaseQuantity();
+                PurchseOrderID = entry.getPOID();
+
+                Toast.makeText(getView().getContext(), "Inventory info copied" , Toast.LENGTH_LONG).show();
 
             }
         });

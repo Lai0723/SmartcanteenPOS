@@ -86,8 +86,8 @@
 
     <Button
         android:id="@+id/btnISubmit"
-        android:layout_width="219dp"
-        android:layout_height="54dp"
+        android:layout_width="207dp"
+        android:layout_height="41dp"
         android:layout_marginLeft="247dp"
         android:layout_marginTop="8dp"
         android:text="@string/Submit"
@@ -98,8 +98,8 @@
 
     <Button
         android:id="@+id/btnIcancel"
-        android:layout_width="243dp"
-        android:layout_height="56dp"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
         android:layout_marginBottom="4dp"
         android:layout_marginRight="160dp"
         android:text="@string/Cancel"
