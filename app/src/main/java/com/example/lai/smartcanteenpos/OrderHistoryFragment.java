@@ -94,7 +94,7 @@ public class OrderHistoryFragment extends Fragment {
                 OrderHistoryActivity.setPayDateTime(chosenOrder.getPayDateTime());
                 OrderDetailFragment nextFrag= new OrderDetailFragment();
                 getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.frameOrderMain, nextFrag,"findThisFragment")
+                        .replace(R.id.frameOrderHistory, nextFrag,"findThisFragment")
                         .addToBackStack(null)
                         .commit();
             }

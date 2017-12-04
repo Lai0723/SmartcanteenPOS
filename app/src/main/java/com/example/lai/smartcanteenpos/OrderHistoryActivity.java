@@ -28,9 +28,6 @@ public class OrderHistoryActivity extends AppCompatActivity {
         }
         walletID = extras.getString("walletID");
         walletBal = extras.getDouble("balance");
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frameOrderHistory, CanteenFragment.newInstance());
-        transaction.commit();
         OrderHistoryFragment orderHistoryFragment = new OrderHistoryFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.frameOrderHistory,orderHistoryFragment).commit();
     }

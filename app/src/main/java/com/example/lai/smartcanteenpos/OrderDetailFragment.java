@@ -198,4 +198,9 @@ public class OrderDetailFragment extends Fragment {
         }
 
     }
+
+    public static OrderDetailFragment newInstance() {
+        OrderDetailFragment fragment = new OrderDetailFragment();
+        return fragment;
+    }
 }
