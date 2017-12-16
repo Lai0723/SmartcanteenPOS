@@ -321,13 +321,14 @@ public class report extends Fragment {
                         String OrderID = courseResponse.getString("OrderID");
                         String ProdName = courseResponse.getString("ProdName");
                         int OrderQuantity = Integer.parseInt(courseResponse.getString("OrderQuantity"));
+                        Double OrderPrice = Double.parseDouble(courseResponse.getString("PayAmount"));
                         Double PayAmount = Double.parseDouble(courseResponse.getString("PayAmount"));
                         int PromotionApplied = Integer.parseInt(courseResponse.getString("PromotionApplied"));
                         Double PriceDifference = Double.parseDouble(courseResponse.getString("PriceDifference"));
 
 
 
-                        Report listing = new Report(OrderID, ProdName, OrderQuantity,PayAmount,PromotionApplied,PriceDifference);
+                        Report listing = new Report(OrderID, ProdName, OrderQuantity,OrderPrice,PayAmount,PromotionApplied,PriceDifference);
                         Menu_screen.RList.add(listing);
 
 

@@ -14,7 +14,7 @@
         android:layout_marginBottom="28dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="188dp"
-        android:text="@string/Time"
+        android:text="Time :"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView11"

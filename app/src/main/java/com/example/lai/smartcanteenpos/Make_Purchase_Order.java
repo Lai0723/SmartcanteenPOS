@@ -65,12 +65,12 @@ public class Make_Purchase_Order extends Fragment {
 
         btnPsubmit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                String PName = txtPID.getText().toString();
+                String PID = txtPID.getText().toString();
                 String PSup =  txtPSup.getText().toString();
                 String PQ = txtPQ.getText().toString();
 
 
-                if (TextUtils.isEmpty(PName)) {
+                if (TextUtils.isEmpty(PID)) {
                     txtPID.setError("Field cannot be empty");
                 }
 

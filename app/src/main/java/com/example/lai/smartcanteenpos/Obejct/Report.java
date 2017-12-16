@@ -12,14 +12,17 @@ public class Report {
     private double PayAmount;
     private int PromotionApplied;
     private double PriceDifference;
+    private double OrderPrice;
 
 
-    public Report(String OrderID,String ProdName,int  OrderQuantity,Double PayAmount,int PromotionApplied,Double PriceDifference){
+
+    public Report(String OrderID,String ProdName,int  OrderQuantity,Double OrderPrice,Double PayAmount,int PromotionApplied,Double PriceDifference){
 
 
         this.setOrderID(OrderID);
         this.setProdName(ProdName);
         this.setOrderQuantity(OrderQuantity);
+        this.setOrderPrice(OrderPrice);
         this.setPayAmount(PayAmount);
         this.setPromotionApplied(PromotionApplied);
         this.setPriceDifference(PriceDifference);
@@ -75,5 +78,13 @@ public class Report {
 
     public void setPriceDifference(double priceDifference) {
         PriceDifference = priceDifference;
+    }
+
+    public double getOrderPrice() {
+        return OrderPrice;
+    }
+
+    public void setOrderPrice(double orderPrice) {
+        OrderPrice = orderPrice;
     }
 }

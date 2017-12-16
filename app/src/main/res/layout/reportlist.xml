@@ -29,10 +29,18 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/ReportPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Price"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/ReportIPA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Amount"
+        android:text="Pay Amount"
         android:textSize="18sp"
         android:textStyle="bold" />
 

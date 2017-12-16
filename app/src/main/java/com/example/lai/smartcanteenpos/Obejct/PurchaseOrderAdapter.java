@@ -42,7 +42,7 @@ public class PurchaseOrderAdapter extends ArrayAdapter<Purchase_order> {
 
 
         POID.setText( POID.getText() + ""+ list.getPOID());
-        Name.setText( Name.getText() + "" + list.getProdID());
+        Name.setText( Name.getText() + "" + list.getProdName());
         Supplier.setText(Supplier.getText() + ""+ list.getSupplierName());
         PurchaseQuan.setText(PurchaseQuan.getText() + "" + list.getPurchaseQuantity());
         PurchaseFee.setText(PurchaseFee.getText() + "" + list.getFee());

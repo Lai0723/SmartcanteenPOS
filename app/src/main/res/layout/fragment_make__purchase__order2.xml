@@ -26,15 +26,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="251dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="108dp"
-        android:text="@string/Product_name"
+        android:text="Product ID"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.259"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/txtPID"
-        android:layout_marginRight="8dp"
-        app:layout_constraintHorizontal_bias="0.259" />
+        app:layout_constraintRight_toLeftOf="@+id/txtProdName"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView21"

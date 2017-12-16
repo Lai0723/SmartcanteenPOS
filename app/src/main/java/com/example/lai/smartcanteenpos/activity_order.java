@@ -122,6 +122,7 @@ public class activity_order extends Fragment {
 
 
                     AcceptOrder(getView().getContext(), " https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/approved%20order.php");
+                    activity_order.allowRefresh = true;
                     Menu_screen.ORDERList = null;
                     refreshList(v);
                 }

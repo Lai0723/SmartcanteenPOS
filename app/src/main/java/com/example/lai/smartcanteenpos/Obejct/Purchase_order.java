@@ -8,8 +8,8 @@ import java.util.Date;
 
 public class Purchase_order {
     private String POID;
-
     private String ProdID;
+    private String ProdName;
     private String PurchaseQuantity;
     private String SupplierName;
     private double fee;
@@ -24,7 +24,7 @@ public Purchase_order(){
     public Purchase_order (String POID,String ProdID, String SupplierName,String PurchaseQuantity,double fee,Date purchaseDate){
 
         this.setPOID(POID);
-        this.setProdID(ProdID);
+        this.setProdName(ProdID);
         this.setSupplierName(SupplierName);
         this.setPurchaseQuantity(PurchaseQuantity);
         this.setFee(fee);
@@ -33,10 +33,10 @@ public Purchase_order(){
 
     }
 
-    public Purchase_order (String POID,String ProdID, String SupplierName,String PurchaseQuantity,double fee,String retrieveDate){
+    public Purchase_order (String POID,String ProdName, String SupplierName,String PurchaseQuantity,double fee,String retrieveDate){
 
         this.setPOID(POID);
-        this.setProdID(ProdID);
+        this.setProdName(ProdName);
         this.setSupplierName(SupplierName);
         this.setPurchaseQuantity(PurchaseQuantity);
         this.setFee(fee);
@@ -46,12 +46,12 @@ public Purchase_order(){
     }
 
 
-    public String getProdID() {
-        return ProdID;
+    public String getProdName() {
+        return ProdName;
     }
 
-    public void setProdID(String prodID) {
-        ProdID = prodID;
+    public void setProdName(String prodID) {
+        ProdName = prodID;
     }
 
     public String getPurchaseQuantity() {
@@ -108,5 +108,13 @@ public Purchase_order(){
 
     public void setRetrieveDate(String retrieveDate) {
         this.retrieveDate = retrieveDate;
+    }
+
+    public String getProdID() {
+        return ProdID;
+    }
+
+    public void setProdID(String prodID) {
+        ProdID = prodID;
     }
 }

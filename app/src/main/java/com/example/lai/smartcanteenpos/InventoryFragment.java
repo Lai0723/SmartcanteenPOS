@@ -46,7 +46,7 @@ public class InventoryFragment extends Fragment {
     RequestQueue queue;
     String MercName;
     ProgressDialog progressDialog;
-    Button btnadd,btnpurchase,btnview;
+    Button btnpurchase,btnview;
 
 
     @Override
@@ -68,22 +68,13 @@ public class InventoryFragment extends Fragment {
         InventoryList = (ListView)v.findViewById(R.id.InventoryList);
 
 
-        btnadd = (Button)v.findViewById(R.id.btnaddI);
+
         btnpurchase = (Button)v.findViewById(R.id.btnPurchase);
         btnview = (Button)v.findViewById(R.id.btnView);
 
 
         progressDialog = new ProgressDialog(v.getContext());
-        btnadd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                add_inventory nextFrag= new add_inventory();
-                getActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.content, nextFrag,"findThisFragment")
-                        .addToBackStack(null)
-                        .commit();
-            }
-        });
+
 
         btnpurchase.setOnClickListener(new View.OnClickListener() {
             @Override

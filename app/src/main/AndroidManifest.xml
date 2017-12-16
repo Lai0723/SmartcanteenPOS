@@ -21,7 +21,8 @@
         <activity
             android:name=".Menu_screen"
             android:screenOrientation="landscape" />
-        <activity android:name=".Register" />
+        <activity android:name=".Register"
+            android:screenOrientation="landscape" />
 
         <!-- Gab part -->
         <activity android:name=".login_type_select">

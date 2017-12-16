@@ -43,7 +43,7 @@
     <string name="Login">Login</string>
     <string name="greeting">Welcome to Smart Canteen POS system</string>
     <string name="Edit">Edit</string>
-    <string name="Product_name">"Product ID "</string>
+    <string name="Product_name">Product Name</string>
     <string name="Accept">Accept</string>
     <string name="Decline">Decline</string>
     <string name="OrderID">"Order ID "</string>

@@ -56,7 +56,7 @@ public class add_inventory extends Fragment {
 
 
 
-            txtInID.setText(View_Purchase_Order.ProdID.toString());
+            txtInID.setText(View_Purchase_Order.ProdName.toString());
             txtInQuantity.setText(View_Purchase_Order.PurchaseQuantity.toString());
             txtPOID.setText(View_Purchase_Order.PurchseOrderID.toString());
 

@@ -47,7 +47,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/Wallet_ID"
-        android:inputType="number"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/txtCompanyName"
         app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintLeft_toLeftOf="parent"

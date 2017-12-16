@@ -9,11 +9,11 @@
 
     <Button
         android:id="@+id/UpdateItem"
-        android:layout_width="190dp"
+        android:layout_width="204dp"
         android:layout_height="57dp"
         android:layout_marginBottom="16dp"
         android:layout_marginLeft="144dp"
-        android:text="Update Item Detail"
+        android:text="Update product detail"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/AddItem" />
 
@@ -24,7 +24,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="67dp"
-        android:text="Delete Item"
+        android:text="Delete product"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.673"
         app:layout_constraintLeft_toRightOf="@+id/UpdateItem"
@@ -36,7 +36,7 @@
         android:layout_height="65dp"
         android:layout_marginBottom="16dp"
         android:layout_marginLeft="92dp"
-        android:text="Add New Item"
+        android:text="Add New Product"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
 

@@ -50,7 +50,9 @@
         <activity
             android:name="com.example.lai.smartcanteenpos.Menu_screen"
             android:screenOrientation="landscape" />
-        <activity android:name="com.example.lai.smartcanteenpos.Register" />
+        <activity
+            android:name="com.example.lai.smartcanteenpos.Register"
+            android:screenOrientation="landscape" />
 
         <!-- Gab part -->
         <activity android:name="com.example.lai.smartcanteenpos.login_type_select" >

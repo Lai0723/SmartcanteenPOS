@@ -1,480 +1,482 @@
 -- Merging decision tree log ---
 data
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:43:17-69
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:44:17-69
 	android:scheme
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:43:23-66
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:44:23-66
 manifest
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-107:12
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\c180f4b5a5b8a54df421fb9dd2dcd6cb\AndroidManifest.xml:2:1-11:12
-MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\5df781cde18325d4145f8cf7f926bfd0\AndroidManifest.xml:2:1-16:12
-MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:2:1-29:12
-MERGED from [com.braintreepayments:card-form:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\card-form-3.1.0.aar\c42db570c025d5913145c87bceb076c1\AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\4b5cbc9f23558bde07c0bc53c86a6ed7\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\c8d5ac1c9212bb78115be3e0dd3c130d\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\0579ef7c9f37394b41ce14cbbb068495\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\820ef83ba532f7a0c4631e49bd6ad320\AndroidManifest.xml:17:1-28:12
-MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:17:1-55:12
-MERGED from [com.android.support:transition:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\c4f6f73f56dde518e6283cb10d34dfe5\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\1d195c1c7f60901acc90a7887d1621c1\AndroidManifest.xml:17:1-31:12
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:2:1-26:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\33d06ea8862b1f6ab21a9003ee74e140\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\0f6e5d886b3b33f063feb10e9ac2b434\AndroidManifest.xml:17:1-28:12
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\b976a5587c1ec7296aebef0672eab886\AndroidManifest.xml:2:1-13:12
-MERGED from [com.braintreepayments.api:core:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\core-2.7.3.aar\2707805f819a00ea8377a7ead035bef0\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\a4140d572a9104f42503dd18f4db13ae\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\303dc6a1b2ab480adfbcc058426fca39\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\d7496eeb83aaf06d09a45d41816031c0\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\92e94be0dc709e026fd32279e9417408\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\af4ec09d19c26139ee297b8edbf47ff9\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\943afe55072dc96343e76ef8131eb6f0\AndroidManifest.xml:17:1-31:12
-MERGED from [com.braintreepayments:browser-switch:0.1.4] C:\Users\User\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.4.aar\0f358366c732ef3fd2d98d85ed899b4d\AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\0d4fcfde8aac831296dc2cdd6fd2561d\AndroidManifest.xml:16:1-19:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-107:12
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-107:12
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:1-108:12
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\474f3b5fbb561b71ba82580af59b5fa9\AndroidManifest.xml:2:1-11:12
+MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\4ed42858498feb60db16784ad2278a4f\AndroidManifest.xml:2:1-16:12
+MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:2:1-29:12
+MERGED from [com.braintreepayments:card-form:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\card-form-3.1.0.aar\750ed122b01b811bff075ada8c66ad1b\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:design:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\2bd75150941a3a51cdfa5d8000661e72\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\fdd7fd5ed9d05452c4efbc7c20b1cfcd\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\94e22fe3f52ffa0ae486865911e68baa\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\bbe089622b360edc4040d1a7380ac483\AndroidManifest.xml:17:1-28:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:17:1-55:12
+MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\f4f1251d0723b1143f2f031fa75af855\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\376dea113c1b493f8dbd89a5aca979cb\AndroidManifest.xml:17:1-31:12
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:2:1-26:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\788102ed96760cae5750607b74d38627\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\75a89bfeb01e8a7b59d6c601e5f5c1aa\AndroidManifest.xml:17:1-28:12
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\c3fcd29e2e7c399fa201927d460920db\AndroidManifest.xml:2:1-13:12
+MERGED from [com.braintreepayments.api:core:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\core-2.7.3.aar\8d1cf1dcef4a725f759b0519e71c23b1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\09d4a46c6c244ce60b639175d897e183\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\2392a9c7881e29d561f08664d65a642f\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\44dd941fafae08fa3ef575f935e84bbf\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\c898ed85fd79feef5ce2c97d77a1e9fe\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\cda0a26befb81ab98aac168f9260b7c0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ee0e7a090bf97d02033fae00ad0c7680\AndroidManifest.xml:17:1-31:12
+MERGED from [com.braintreepayments:browser-switch:0.1.4] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.4.aar\baf0a2aef05fc7578453af8f69ef5072\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\d067e1e43e9d9f51425c31a5f702b832\AndroidManifest.xml:16:1-19:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:1-108:12
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:1-108:12
 	package
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:3:5-46
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-107:12
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:1-108:12
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:1-107:12
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:1-108:12
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:5:5-79
-MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:12:5-79
-MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:12:5-79
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:11:5-79
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:11:5-79
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:5:5-79
+MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:12:5-79
+MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:12:5-79
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:11:5-79
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:5:22-76
 uses-permission#android.permission.INTERNET
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:6:5-67
-MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:13:5-67
-MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:13:5-67
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:12:5-67
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:12:5-67
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\b976a5587c1ec7296aebef0672eab886\AndroidManifest.xml:11:5-67
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\b976a5587c1ec7296aebef0672eab886\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:13:5-67
+MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:13:5-67
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:12:5-67
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:12:5-67
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\c3fcd29e2e7c399fa201927d460920db\AndroidManifest.xml:11:5-67
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\c3fcd29e2e7c399fa201927d460920db\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:7:5-81
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:7:22-78
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.CAMERA
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:8:5-65
-MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:21:5-65
-MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:21:5-65
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:8:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:21:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:21:5-65
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:8:22-62
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:8:22-62
 application
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:10:5-105:19
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\c180f4b5a5b8a54df421fb9dd2dcd6cb\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\c180f4b5a5b8a54df421fb9dd2dcd6cb\AndroidManifest.xml:9:5-20
-MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\5df781cde18325d4145f8cf7f926bfd0\AndroidManifest.xml:11:5-14:19
-MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\5df781cde18325d4145f8cf7f926bfd0\AndroidManifest.xml:11:5-14:19
-MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:15:5-27:19
-MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:15:5-27:19
-MERGED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\4b5cbc9f23558bde07c0bc53c86a6ed7\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\4b5cbc9f23558bde07c0bc53c86a6ed7\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\c8d5ac1c9212bb78115be3e0dd3c130d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\c8d5ac1c9212bb78115be3e0dd3c130d\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\0579ef7c9f37394b41ce14cbbb068495\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\0579ef7c9f37394b41ce14cbbb068495\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\820ef83ba532f7a0c4631e49bd6ad320\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\820ef83ba532f7a0c4631e49bd6ad320\AndroidManifest.xml:22:5-26:19
-MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:45:5-53:19
-MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:45:5-53:19
-MERGED from [com.android.support:transition:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\c4f6f73f56dde518e6283cb10d34dfe5\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\c4f6f73f56dde518e6283cb10d34dfe5\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\1d195c1c7f60901acc90a7887d1621c1\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\1d195c1c7f60901acc90a7887d1621c1\AndroidManifest.xml:25:5-29:19
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:14:5-24:19
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:14:5-24:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\33d06ea8862b1f6ab21a9003ee74e140\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\33d06ea8862b1f6ab21a9003ee74e140\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\0f6e5d886b3b33f063feb10e9ac2b434\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\0f6e5d886b3b33f063feb10e9ac2b434\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\a4140d572a9104f42503dd18f4db13ae\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\a4140d572a9104f42503dd18f4db13ae\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\303dc6a1b2ab480adfbcc058426fca39\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\303dc6a1b2ab480adfbcc058426fca39\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\d7496eeb83aaf06d09a45d41816031c0\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\d7496eeb83aaf06d09a45d41816031c0\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\92e94be0dc709e026fd32279e9417408\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\92e94be0dc709e026fd32279e9417408\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\af4ec09d19c26139ee297b8edbf47ff9\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\af4ec09d19c26139ee297b8edbf47ff9\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\943afe55072dc96343e76ef8131eb6f0\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\943afe55072dc96343e76ef8131eb6f0\AndroidManifest.xml:25:5-29:19
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:10:5-106:19
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\474f3b5fbb561b71ba82580af59b5fa9\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\474f3b5fbb561b71ba82580af59b5fa9\AndroidManifest.xml:9:5-20
+MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\4ed42858498feb60db16784ad2278a4f\AndroidManifest.xml:11:5-14:19
+MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\4ed42858498feb60db16784ad2278a4f\AndroidManifest.xml:11:5-14:19
+MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:15:5-27:19
+MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:15:5-27:19
+MERGED from [com.android.support:design:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\2bd75150941a3a51cdfa5d8000661e72\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\2bd75150941a3a51cdfa5d8000661e72\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\fdd7fd5ed9d05452c4efbc7c20b1cfcd\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\fdd7fd5ed9d05452c4efbc7c20b1cfcd\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\94e22fe3f52ffa0ae486865911e68baa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\94e22fe3f52ffa0ae486865911e68baa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\bbe089622b360edc4040d1a7380ac483\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\bbe089622b360edc4040d1a7380ac483\AndroidManifest.xml:22:5-26:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:45:5-53:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:45:5-53:19
+MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\f4f1251d0723b1143f2f031fa75af855\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\f4f1251d0723b1143f2f031fa75af855\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\376dea113c1b493f8dbd89a5aca979cb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\376dea113c1b493f8dbd89a5aca979cb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:14:5-24:19
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:14:5-24:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\788102ed96760cae5750607b74d38627\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\788102ed96760cae5750607b74d38627\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\75a89bfeb01e8a7b59d6c601e5f5c1aa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\75a89bfeb01e8a7b59d6c601e5f5c1aa\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\09d4a46c6c244ce60b639175d897e183\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\09d4a46c6c244ce60b639175d897e183\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\2392a9c7881e29d561f08664d65a642f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\2392a9c7881e29d561f08664d65a642f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\44dd941fafae08fa3ef575f935e84bbf\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\44dd941fafae08fa3ef575f935e84bbf\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\c898ed85fd79feef5ce2c97d77a1e9fe\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\c898ed85fd79feef5ce2c97d77a1e9fe\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\cda0a26befb81ab98aac168f9260b7c0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\cda0a26befb81ab98aac168f9260b7c0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ee0e7a090bf97d02033fae00ad0c7680\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ee0e7a090bf97d02033fae00ad0c7680\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:13:9-41
 	tools:ignore
-		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:17:9-39
+		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:17:9-39
 	android:roundIcon
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:14:9-54
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:12:9-43
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:16:9-40
 activity#com.example.lai.smartcanteenpos.Login
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:17:9-20:53
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:17:9-20:53
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:20:13-50
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:20:13-50
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:19:13-45
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:19:13-45
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:18:13-34
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:18:13-34
 activity#com.example.lai.smartcanteenpos.Menu_screen
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:21:9-23:53
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:21:9-23:53
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:23:13-50
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:23:13-50
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:22:13-40
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:22:13-40
 activity#com.example.lai.smartcanteenpos.Register
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:24:9-46
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:24:9-25:53
+	android:screenOrientation
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:25:13-50
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:24:19-43
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:24:19-43
 activity#com.example.lai.smartcanteenpos.login_type_select
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:27:9-33:20
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:28:9-34:20
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:27:19-52
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:28:19-52
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:32:27-74
 activity#com.braintreepayments.api.BraintreeBrowserSwitchActivity
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:34:9-45:20
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:35:9-46:20
 	android:launchMode
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:36:13-44
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:37:13-44
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:35:13-84
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:36:13-84
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:37:13-44:29
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:38:13-45:29
 action#android.intent.action.VIEW
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:38:17-69
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:38:25-66
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:40:17-76
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:41:17-76
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:40:27-73
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:41:27-73
 category#android.intent.category.BROWSABLE
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:41:17-78
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:42:17-78
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:41:27-75
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:42:27-75
 activity#com.example.lai.smartcanteenpos.studLogin
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:46:9-48:52
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:47:9-49:52
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:48:13-49
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:49:13-49
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:47:13-38
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:48:13-38
 activity#com.example.lai.smartcanteenpos.MainActivity
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:49:9-52:52
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:50:9-53:52
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:52:13-49
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:53:13-49
 	android:launchMode
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:51:13-43
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:52:13-43
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:50:13-41
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:51:13-41
 activity#com.example.lai.smartcanteenpos.changecard
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:53:9-48
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:54:9-48
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:53:19-45
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:54:19-45
 activity#com.example.lai.smartcanteenpos.QRPassword
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:54:9-59:61
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:55:9-60:61
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:59:13-49
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:60:13-49
 	android:parentActivityName
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:58:13-55
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:59:13-55
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:56:13-46
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:57:13-46
 	android:launchMode
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:57:13-43
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:58:13-43
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:55:13-39
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:56:13-39
 activity#com.example.lai.smartcanteenpos.QRTransfer
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:60:9-64:52
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:61:9-65:52
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:64:13-49
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:65:13-49
 	android:parentActivityName
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:63:13-53
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:64:13-53
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:62:13-45
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:63:13-45
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:61:13-39
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:62:13-39
 activity#com.example.lai.smartcanteenpos.onSpotTransferScanner
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:65:9-59
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:66:9-59
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:65:19-56
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:66:19-56
 activity#com.example.lai.smartcanteenpos.reportdetails
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:66:9-70:53
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:67:9-71:53
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:70:13-50
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:71:13-50
 	android:parentActivityName
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:69:13-55
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:70:13-55
 	android:launchMode
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:68:13-43
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:69:13-43
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:67:13-42
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:68:13-42
 activity#com.example.lai.smartcanteenpos.reportdetails_transfer
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:71:9-75:53
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:72:9-76:53
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:75:13-50
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:76:13-50
 	android:parentActivityName
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:74:13-55
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:75:13-55
 	android:launchMode
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:73:13-43
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:74:13-43
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:72:13-51
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:73:13-51
 activity#com.example.lai.smartcanteenpos.OrderMainActivity
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:78:9-82:52
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:79:9-83:52
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:82:13-49
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:83:13-49
 	android:parentActivityName
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:81:13-55
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:82:13-55
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:80:13-40
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:81:13-40
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:79:13-46
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:80:13-46
 activity#com.example.lai.smartcanteenpos.OrderHistoryActivity
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:83:9-86:52
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:84:9-87:52
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:86:13-49
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:87:13-49
 	android:parentActivityName
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:85:13-55
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:86:13-55
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:84:13-42
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:85:13-42
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:83:19-55
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:84:19-55
 activity#com.example.lai.smartcanteenpos.QRretrieval
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:87:9-90:52
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:88:9-91:52
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:90:13-49
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:91:13-49
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:89:13-46
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:90:13-46
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:88:13-40
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:89:13-40
 activity#com.example.lai.smartcanteenpos.onlineOrderRetrievalScanner
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:91:9-65
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:92:9-65
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:91:19-62
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:92:19-62
 activity#com.example.lai.smartcanteenpos.RedeemMainActivity
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:94:9-97:58
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:95:9-98:58
 	android:parentActivityName
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:97:13-55
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:98:13-55
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:96:13-46
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:97:13-46
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:95:13-47
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:96:13-47
 activity#com.example.lai.smartcanteenpos.wallet_history
-ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:100:9-104:52
+ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:101:9-105:52
 	android:screenOrientation
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:104:13-49
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:105:13-49
 	android:parentActivityName
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:103:13-55
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:104:13-55
 	android:label
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:102:13-43
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:103:13-43
 	android:name
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml:101:13-43
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml:102:13-43
 uses-sdk
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\c180f4b5a5b8a54df421fb9dd2dcd6cb\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\c180f4b5a5b8a54df421fb9dd2dcd6cb\AndroidManifest.xml:7:5-43
-MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\5df781cde18325d4145f8cf7f926bfd0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\5df781cde18325d4145f8cf7f926bfd0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:8:5-10:41
-MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:8:5-10:41
-MERGED from [com.braintreepayments:card-form:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\card-form-3.1.0.aar\c42db570c025d5913145c87bceb076c1\AndroidManifest.xml:8:5-10:41
-MERGED from [com.braintreepayments:card-form:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\card-form-3.1.0.aar\c42db570c025d5913145c87bceb076c1\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\4b5cbc9f23558bde07c0bc53c86a6ed7\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\4b5cbc9f23558bde07c0bc53c86a6ed7\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\c8d5ac1c9212bb78115be3e0dd3c130d\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\c8d5ac1c9212bb78115be3e0dd3c130d\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\0579ef7c9f37394b41ce14cbbb068495\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\0579ef7c9f37394b41ce14cbbb068495\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\820ef83ba532f7a0c4631e49bd6ad320\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\820ef83ba532f7a0c4631e49bd6ad320\AndroidManifest.xml:20:5-44
-MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:19:5-43
-MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:19:5-43
-MERGED from [com.android.support:transition:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\c4f6f73f56dde518e6283cb10d34dfe5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\c4f6f73f56dde518e6283cb10d34dfe5\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\1d195c1c7f60901acc90a7887d1621c1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\1d195c1c7f60901acc90a7887d1621c1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\33d06ea8862b1f6ab21a9003ee74e140\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\User\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\33d06ea8862b1f6ab21a9003ee74e140\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\0f6e5d886b3b33f063feb10e9ac2b434\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\0f6e5d886b3b33f063feb10e9ac2b434\AndroidManifest.xml:20:5-44
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\b976a5587c1ec7296aebef0672eab886\AndroidManifest.xml:7:5-9:41
-MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\b976a5587c1ec7296aebef0672eab886\AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:core:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\core-2.7.3.aar\2707805f819a00ea8377a7ead035bef0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.braintreepayments.api:core:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\core-2.7.3.aar\2707805f819a00ea8377a7ead035bef0\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\a4140d572a9104f42503dd18f4db13ae\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\a4140d572a9104f42503dd18f4db13ae\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\303dc6a1b2ab480adfbcc058426fca39\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\303dc6a1b2ab480adfbcc058426fca39\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\d7496eeb83aaf06d09a45d41816031c0\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\d7496eeb83aaf06d09a45d41816031c0\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\92e94be0dc709e026fd32279e9417408\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\92e94be0dc709e026fd32279e9417408\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\af4ec09d19c26139ee297b8edbf47ff9\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\af4ec09d19c26139ee297b8edbf47ff9\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\943afe55072dc96343e76ef8131eb6f0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\943afe55072dc96343e76ef8131eb6f0\AndroidManifest.xml:21:5-23:58
-MERGED from [com.braintreepayments:browser-switch:0.1.4] C:\Users\User\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.4.aar\0f358366c732ef3fd2d98d85ed899b4d\AndroidManifest.xml:8:5-10:41
-MERGED from [com.braintreepayments:browser-switch:0.1.4] C:\Users\User\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.4.aar\0f358366c732ef3fd2d98d85ed899b4d\AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\0d4fcfde8aac831296dc2cdd6fd2561d\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\User\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\0d4fcfde8aac831296dc2cdd6fd2561d\AndroidManifest.xml:18:5-42
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\474f3b5fbb561b71ba82580af59b5fa9\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\474f3b5fbb561b71ba82580af59b5fa9\AndroidManifest.xml:7:5-43
+MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\4ed42858498feb60db16784ad2278a4f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.dinuscxj:circleprogressbar:1.1.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\circleprogressbar-1.1.1.aar\4ed42858498feb60db16784ad2278a4f\AndroidManifest.xml:7:5-9:41
+MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:8:5-10:41
+MERGED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:8:5-10:41
+MERGED from [com.braintreepayments:card-form:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\card-form-3.1.0.aar\750ed122b01b811bff075ada8c66ad1b\AndroidManifest.xml:8:5-10:41
+MERGED from [com.braintreepayments:card-form:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\card-form-3.1.0.aar\750ed122b01b811bff075ada8c66ad1b\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:design:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\2bd75150941a3a51cdfa5d8000661e72\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\2bd75150941a3a51cdfa5d8000661e72\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\fdd7fd5ed9d05452c4efbc7c20b1cfcd\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\fdd7fd5ed9d05452c4efbc7c20b1cfcd\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\94e22fe3f52ffa0ae486865911e68baa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\94e22fe3f52ffa0ae486865911e68baa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\bbe089622b360edc4040d1a7380ac483\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\bbe089622b360edc4040d1a7380ac483\AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:19:5-43
+MERGED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\f4f1251d0723b1143f2f031fa75af855\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\f4f1251d0723b1143f2f031fa75af855\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\376dea113c1b493f8dbd89a5aca979cb\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\376dea113c1b493f8dbd89a5aca979cb\AndroidManifest.xml:21:5-23:54
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:7:5-9:41
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\788102ed96760cae5750607b74d38627\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\788102ed96760cae5750607b74d38627\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\75a89bfeb01e8a7b59d6c601e5f5c1aa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\75a89bfeb01e8a7b59d6c601e5f5c1aa\AndroidManifest.xml:20:5-44
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\c3fcd29e2e7c399fa201927d460920db\AndroidManifest.xml:7:5-9:41
+MERGED from [com.paypal.android.sdk:paypal-one-touch:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\paypal-one-touch-2.7.3.aar\c3fcd29e2e7c399fa201927d460920db\AndroidManifest.xml:7:5-9:41
+MERGED from [com.braintreepayments.api:core:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\core-2.7.3.aar\8d1cf1dcef4a725f759b0519e71c23b1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.braintreepayments.api:core:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\core-2.7.3.aar\8d1cf1dcef4a725f759b0519e71c23b1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\09d4a46c6c244ce60b639175d897e183\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\09d4a46c6c244ce60b639175d897e183\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\2392a9c7881e29d561f08664d65a642f\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\2392a9c7881e29d561f08664d65a642f\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\44dd941fafae08fa3ef575f935e84bbf\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\44dd941fafae08fa3ef575f935e84bbf\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\c898ed85fd79feef5ce2c97d77a1e9fe\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\c898ed85fd79feef5ce2c97d77a1e9fe\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\cda0a26befb81ab98aac168f9260b7c0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\cda0a26befb81ab98aac168f9260b7c0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ee0e7a090bf97d02033fae00ad0c7680\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ee0e7a090bf97d02033fae00ad0c7680\AndroidManifest.xml:21:5-23:58
+MERGED from [com.braintreepayments:browser-switch:0.1.4] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.4.aar\baf0a2aef05fc7578453af8f69ef5072\AndroidManifest.xml:8:5-10:41
+MERGED from [com.braintreepayments:browser-switch:0.1.4] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\browser-switch-0.1.4.aar\baf0a2aef05fc7578453af8f69ef5072\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\d067e1e43e9d9f51425c31a5f702b832\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\d067e1e43e9d9f51425c31a5f702b832\AndroidManifest.xml:18:5-42
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\4b5cbc9f23558bde07c0bc53c86a6ed7\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\2bd75150941a3a51cdfa5d8000661e72\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		ADDED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
-		INJECTED from D:\ANDROID\FYP\(All) SmartcanteenPOS\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lai\Desktop\SmartcanteenPOS14\app\src\main\AndroidManifest.xml
 activity#com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity
-ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:18:9-20:62
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:21:9-103
-MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:21:9-103
+ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:18:9-20:62
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:21:9-103
+MERGED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:21:9-103
 	android:theme
-		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:20:13-59
+		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:20:13-59
 	android:name
-		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:19:13-94
+		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:19:13-94
 activity#com.braintreepayments.api.dropin.DropInActivity
-ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:21:9-23:64
+ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:21:9-23:64
 	android:theme
-		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:23:13-61
+		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:23:13-61
 	android:name
-		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:22:13-75
+		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:22:13-75
 activity#com.braintreepayments.api.dropin.AddCardActivity
-ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:24:9-26:65
+ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:24:9-26:65
 	android:theme
-		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:26:13-62
+		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:26:13-62
 	android:name
-		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\d15e4d577cecea6dc9bfd2a618b6de8c\AndroidManifest.xml:25:13-76
+		ADDED from [com.braintreepayments.api:drop-in:3.1.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\drop-in-3.1.0.aar\401d39d735bc13f5fc34c666cabb5eec\AndroidManifest.xml:25:13-76
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\4b5cbc9f23558bde07c0bc53c86a6ed7\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\c8d5ac1c9212bb78115be3e0dd3c130d\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\c8d5ac1c9212bb78115be3e0dd3c130d\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\0579ef7c9f37394b41ce14cbbb068495\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\0579ef7c9f37394b41ce14cbbb068495\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\820ef83ba532f7a0c4631e49bd6ad320\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\820ef83ba532f7a0c4631e49bd6ad320\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\c4f6f73f56dde518e6283cb10d34dfe5\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\c4f6f73f56dde518e6283cb10d34dfe5\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\1d195c1c7f60901acc90a7887d1621c1\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\1d195c1c7f60901acc90a7887d1621c1\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\0f6e5d886b3b33f063feb10e9ac2b434\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\0f6e5d886b3b33f063feb10e9ac2b434\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\a4140d572a9104f42503dd18f4db13ae\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\a4140d572a9104f42503dd18f4db13ae\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\303dc6a1b2ab480adfbcc058426fca39\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\303dc6a1b2ab480adfbcc058426fca39\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\d7496eeb83aaf06d09a45d41816031c0\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\d7496eeb83aaf06d09a45d41816031c0\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\92e94be0dc709e026fd32279e9417408\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\92e94be0dc709e026fd32279e9417408\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\af4ec09d19c26139ee297b8edbf47ff9\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\af4ec09d19c26139ee297b8edbf47ff9\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\943afe55072dc96343e76ef8131eb6f0\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\943afe55072dc96343e76ef8131eb6f0\AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:design:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\2bd75150941a3a51cdfa5d8000661e72\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\fdd7fd5ed9d05452c4efbc7c20b1cfcd\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\fdd7fd5ed9d05452c4efbc7c20b1cfcd\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\94e22fe3f52ffa0ae486865911e68baa\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\94e22fe3f52ffa0ae486865911e68baa\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\bbe089622b360edc4040d1a7380ac483\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\bbe089622b360edc4040d1a7380ac483\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\f4f1251d0723b1143f2f031fa75af855\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\transition-26.0.0.aar\f4f1251d0723b1143f2f031fa75af855\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\376dea113c1b493f8dbd89a5aca979cb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\376dea113c1b493f8dbd89a5aca979cb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\75a89bfeb01e8a7b59d6c601e5f5c1aa\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0.aar\75a89bfeb01e8a7b59d6c601e5f5c1aa\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\09d4a46c6c244ce60b639175d897e183\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.0.0.aar\09d4a46c6c244ce60b639175d897e183\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\2392a9c7881e29d561f08664d65a642f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\2392a9c7881e29d561f08664d65a642f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\44dd941fafae08fa3ef575f935e84bbf\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\44dd941fafae08fa3ef575f935e84bbf\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\c898ed85fd79feef5ce2c97d77a1e9fe\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\c898ed85fd79feef5ce2c97d77a1e9fe\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\cda0a26befb81ab98aac168f9260b7c0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\cda0a26befb81ab98aac168f9260b7c0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ee0e7a090bf97d02033fae00ad0c7680\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ee0e7a090bf97d02033fae00ad0c7680\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\4b5cbc9f23558bde07c0bc53c86a6ed7\AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:design:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\2bd75150941a3a51cdfa5d8000661e72\AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:design:26.0.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\4b5cbc9f23558bde07c0bc53c86a6ed7\AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:design:26.0.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\design-26.0.0.aar\2bd75150941a3a51cdfa5d8000661e72\AndroidManifest.xml:27:13-51
 uses-feature#android.hardware.camera
-ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:24:5-26:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:24:5-26:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:26:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:26:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:25:9-47
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:25:9-47
 uses-feature#android.hardware.camera.front
-ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:27:5-29:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:27:5-29:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:29:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:29:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:28:9-53
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:28:9-53
 uses-feature#android.hardware.camera.autofocus
-ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:32:5-34:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:32:5-34:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:34:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:34:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:33:9-57
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:33:9-57
 uses-feature#android.hardware.camera.flash
-ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:35:5-37:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:35:5-37:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:37:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:37:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:36:9-53
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:36:9-53
 uses-feature#android.hardware.screen.landscape
-ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:38:5-40:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:38:5-40:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:40:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:40:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:39:9-57
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:39:9-57
 uses-feature#android.hardware.wifi
-ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:41:5-43:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:41:5-43:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:43:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:43:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:42:9-45
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:42:9-45
 activity#com.journeyapps.barcodescanner.CaptureActivity
-ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:46:9-52:63
+ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:46:9-52:63
 	android:screenOrientation
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:49:13-56
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:49:13-56
 	android:clearTaskOnLaunch
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:48:13-45
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:48:13-45
 	android:stateNotNeeded
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:50:13-42
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:50:13-42
 	android:windowSoftInputMode
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:52:13-60
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:52:13-60
 	android:theme
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:51:13-54
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:51:13-54
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\User\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\0359d57a21dc58ddd7205c45c0c64c7e\AndroidManifest.xml:47:13-74
+		ADDED from [com.journeyapps:zxing-android-embedded:3.5.0] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\zxing-android-embedded-3.5.0.aar\7382f1ef1d9b0f5dfbb19796f71002cb\AndroidManifest.xml:47:13-74
 activity#com.braintreepayments.api.AndroidPayActivity
-ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:15:9-17:62
+ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:15:9-17:62
 	android:theme
-		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:17:13-59
+		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:17:13-59
 	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:16:13-72
+		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:16:13-72
 activity#com.braintreepayments.api.GooglePaymentActivity
-ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:18:9-20:62
+ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:18:9-20:62
 	android:theme
-		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:20:13-59
+		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:20:13-59
 	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:19:13-75
+		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:19:13-75
 service#com.braintreepayments.api.internal.AnalyticsIntentService
-ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:23:9-93
+ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:23:9-93
 	android:name
-		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\User\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\b39b528e3bc0ad256a62c1cc8e5e0615\AndroidManifest.xml:23:18-90
+		ADDED from [com.braintreepayments.api:braintree:2.7.3] C:\Users\lai\.gradle\caches\transforms-1\files-1.1\braintree-2.7.3.aar\3d95ed1c991b4524b836a9fe5ef90f57\AndroidManifest.xml:23:18-90

@@ -3,7 +3,6 @@ package com.example.lai.smartcanteenpos;
 
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -44,7 +43,7 @@ public class View_Purchase_Order extends Fragment {
     String MercName;
     ProgressDialog progressDialog;
     Button btnPOcancel;
-    public static String ProdID,PurchaseQuantity,PurchseOrderID;
+    public static String ProdName,PurchaseQuantity,PurchseOrderID;
 
     public View_Purchase_Order() {
         // Required empty public constructor
@@ -69,18 +68,15 @@ public class View_Purchase_Order extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Purchase_order entry = (Purchase_order) parent.getItemAtPosition(position);
 
-
-                /*Bundle bundle = new Bundle();
-                bundle.putString("ProdID",entry.getProdID());
-                bundle.putString("PurchaseQuantity",entry.getPurchaseQuantity());
-                bundle.putString("PurchseOrderID",entry.getPOID());
-                fragment.setArguments(bundle);*/
-
-                ProdID = entry.getProdID();
+                ProdName = entry.getProdName();
                 PurchaseQuantity = entry.getPurchaseQuantity();
                 PurchseOrderID = entry.getPOID();
 
-                Toast.makeText(getView().getContext(), "Inventory info copied" , Toast.LENGTH_LONG).show();
+                add_inventory nextFrag= new add_inventory();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.content, nextFrag,"findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
 
             }
         });
@@ -203,7 +199,7 @@ public class View_Purchase_Order extends Fragment {
                         JSONObject courseResponse = (JSONObject) jsonArray.get(i);
 
                         String POID = courseResponse.getString("POID");
-                        String ProdID = courseResponse.getString("ProdName");
+                        String ProdName = courseResponse.getString("ProdName");
 
                         String SupplierName = courseResponse.getString("SupplierName");
                         String PurchaseQuantity= courseResponse.getString("PurchaseQuantity");
@@ -213,7 +209,7 @@ public class View_Purchase_Order extends Fragment {
 
 
 
-                        Purchase_order listing = new Purchase_order(POID,ProdID,SupplierName,PurchaseQuantity,Fee,retrieveDate);
+                        Purchase_order listing = new Purchase_order(POID,ProdName,SupplierName,PurchaseQuantity,Fee,retrieveDate);
                         Menu_screen.OList.add(listing);
 
                     }
