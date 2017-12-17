@@ -50,7 +50,7 @@ import java.util.List;
 import static android.content.Context.CLIPBOARD_SERVICE;
 
 /**
- * Created by Boon Seng
+ * Created by Lim Boon Seng,RSD3 on 20/10/2017
  */
 
 public class FragmentHistory extends Fragment {

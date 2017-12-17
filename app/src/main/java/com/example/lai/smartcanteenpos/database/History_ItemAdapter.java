@@ -12,7 +12,7 @@ import com.example.lai.smartcanteenpos.R;
 import java.util.List;
 
 /**
- * Created by Boon Seng
+ * Created by Lim Boon Seng,RSD3 on 13/10/2017
  */
 
 public class History_ItemAdapter extends ArrayAdapter<History_Item> {

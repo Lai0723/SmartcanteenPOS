@@ -18,8 +18,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 
-/**
- * Created by Boon Seng
+/*
+ * Created by Lim Boon Seng,RSD3 on 13/10/2017
  */
 
 public class HistoryAdapter extends ArrayAdapter<History>{

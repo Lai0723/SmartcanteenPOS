@@ -1,7 +1,7 @@
 package com.example.lai.smartcanteenpos.database;
 
 /**
- * Created by Boon Seng
+ * Created by Lim Boon Seng,RSD3 on 13/10/2017
  */
 
 public class History {

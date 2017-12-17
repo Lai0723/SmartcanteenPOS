@@ -39,7 +39,7 @@ import java.util.Map;
 import java.util.TimeZone;
 
 /**
- * Created by Boon Seng
+ * Created by Lim Boon Seng,RSD3 on 20/10/2017
  */
 
 public class FragmentCoupon extends Fragment implements View.OnClickListener{

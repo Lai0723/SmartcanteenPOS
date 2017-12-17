@@ -116,6 +116,8 @@
     <string name="discountTitle">Discount Coupons</string>v
     <string name="itemTitle">Items</string>
     <string name="historyTitle">History (*To copy a code, please tap on the selected row!)</string>
+    <string name="historyTitle_Disc">Discount Code History </string>
+    <string name="historyTitle_Item">Item History </string>
     <string name="redeemName">Title</string>
     <string name="redeemPointRequire">Point Required</string>
     <string name="redeemAvailability">Availability</string>
