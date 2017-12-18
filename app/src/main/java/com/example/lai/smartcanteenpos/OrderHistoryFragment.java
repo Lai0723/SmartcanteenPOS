@@ -1,6 +1,6 @@
 /**
- * Created by Leow on 11/4/2017.
- * This is the Order History Fragement to display list view of orders made by logged in user
+ * Created by Leow Wei Jian, RSD3 (September 2015 Intake) on 11/4/2017.
+ * This is the Order History Fragment to display list view of orders made by logged in user
  */
 package com.example.lai.smartcanteenpos;
 

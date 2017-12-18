@@ -1,6 +1,6 @@
 /**
- * Created by Leow on 11/4/2017.
- * This is the Canteen Fragement to display selection of canteen stalls for user based on user's canteen selection. Currently is hardcoded.
+ * Created by Leow Wei Jian, RSD3 (September 2015 Intake) on 11/4/2017.
+ * This is the Canteen Fragement to display selection of canteen stalls for user based on user's canteen selection in CanteenFragment. Currently is hardcoded.
  * Future work: made it dynamic with the use of Merchants table in database
  */
 package com.example.lai.smartcanteenpos;

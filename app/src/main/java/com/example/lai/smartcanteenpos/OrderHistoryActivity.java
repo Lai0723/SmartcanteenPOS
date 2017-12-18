@@ -1,3 +1,8 @@
+/**
+ * Created by Leow Wei Jian, RSD3 (September 2015 Intake) on 11/4/2017.
+ * This is the Order History Activity to display Order History list when Redeem My Order button is clicked in MainActivity
+ * Future work: use SQLite for offline database, use MQTT for notification of accepted to completed order and pending to cancelled order
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.support.v4.app.FragmentTransaction;

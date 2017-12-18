@@ -1,6 +1,6 @@
 /**
- * Created by Leow on 11/4/2017.
- * This is the Order Menu Fragment to display the menu about items available in a stall of a canteen.
+ * Created by Leow Wei Jian, RSD3 (September 2015 Intake) on 11/4/2017.
+ * This is the Order Menu Fragment to display the menu about items available in a stall of a canteen after selection is made in StallFragment
  */
 package com.example.lai.smartcanteenpos;
 

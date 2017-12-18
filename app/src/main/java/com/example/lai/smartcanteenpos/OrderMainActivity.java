@@ -1,6 +1,6 @@
 /**
- * Created by Leow on 11/4/2017.
- * This is the Order Activity that is started when user clicked on the Online Menu button
+ * Created by Leow Wei Jian, RSD3 (September 2015 Intake) on 11/4/2017.
+ * This is the Order Activity that is started when user clicked on the Online Menu button in Main Activity
  */
 package com.example.lai.smartcanteenpos;
 

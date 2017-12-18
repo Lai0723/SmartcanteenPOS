@@ -1,6 +1,6 @@
 /**
- * Created by Leow on 11/4/2017.
- * This is the Ordering Fragement to display the Order Page for user to make online order
+ * Created by Leow Wei Jian, RSD3 (September 2015 Intake) on 11/4/2017.
+ * This is the Ordering Fragement to display the Order Page for user to make online order after selected item in the OrderMenuFragment
  */
 package com.example.lai.smartcanteenpos;
 

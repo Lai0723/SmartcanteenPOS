@@ -1,6 +1,6 @@
 /**
- * Created by Leow on 11/4/2017.
- * This is the Order Detail Fragment that displays details of an Order History from Order History Fragment.
+ * Created by Leow Wei Jian, RSD3 (September 2015 Intake) on 11/4/2017.
+ * This is the Order Detail Fragment that displays details of selected listViewOrderHistory item from OrderHistoryFragment.
  */
 
 package com.example.lai.smartcanteenpos;
@@ -70,6 +70,9 @@ public class OrderDetailFragment extends Fragment {
         textViewPayment.setText(total + " ");
         textViewOrderDateTime.setText(orderDateTime);
         textViewPaymentStatus.setText(status);
+
+        //Displays Redeem Order button when the selected Order status is "Accepted"
+        //and Cancel Order button when the selected Order status is "Pending"
         if (status.matches("Accepted") && walletBal > total) {
             getActivity().runOnUiThread(new Runnable(){
                 @Override
@@ -115,7 +118,6 @@ public class OrderDetailFragment extends Fragment {
         buttonRedeem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // add this, your class into the bracket of the intent initialization
                 Intent intent = new Intent(getContext(),QRretrieval.class);
                 intent.putExtra("OrderID", OrderHistoryActivity.getOrderID());
                 intent.putExtra("ProdID", OrderHistoryActivity.getProdID());

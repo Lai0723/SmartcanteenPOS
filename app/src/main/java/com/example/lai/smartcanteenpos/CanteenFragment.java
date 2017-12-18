@@ -1,5 +1,5 @@
 /**
- * Created by Leow on 11/4/2017.
+ * Created by Leow Wei Jian, RSD3 (September 2015 Intake) on 11/4/2017.
  * This is the Canteen Fragement to display selection of canteen for user. Currently is hardcoded.
  * Future work: made it dynamic with the use of Merchants table in database
  */
@@ -82,6 +82,7 @@ public class CanteenFragment extends Fragment {
         return v;
     }
 
+    //Method for OrderMainActivity to call this fragment
     public static CanteenFragment newInstance() {
         CanteenFragment fragment = new CanteenFragment();
         return fragment;
