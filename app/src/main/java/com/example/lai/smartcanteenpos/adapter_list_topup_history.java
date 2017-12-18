@@ -16,6 +16,10 @@ import com.example.lai.smartcanteenpos.database.TopUp;
 
 import java.util.List;
 
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
+
 public class adapter_list_topup_history extends ArrayAdapter<TopUp> {
 
     public adapter_list_topup_history(@NonNull Context context, int resource, @NonNull List<TopUp> objects) {

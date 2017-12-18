@@ -51,7 +51,6 @@
             android:name=".MainActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait" />
-        <activity android:name=".changecard" />
         <activity
             android:name=".QRPassword"
             android:label="QR Authentication"

@@ -33,8 +33,6 @@ public class fragmentFund extends Fragment {
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_fund, container, false);
 
         View view =  inflater.inflate(R.layout.fragment_fund, container, false);
 
@@ -43,8 +41,9 @@ public class fragmentFund extends Fragment {
         tuValue = 5;
         tvTopUpValue.setText("RM " + String.valueOf(tuValue));
 
-        //pDialog = new ProgressDialog(this);
 
+
+        //Get top up value from seekbar
         sbTopUpValue.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar sb, int progress, boolean fromUser) {

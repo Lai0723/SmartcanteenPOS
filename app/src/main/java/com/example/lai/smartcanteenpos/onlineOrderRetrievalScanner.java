@@ -26,7 +26,9 @@ import org.json.JSONObject;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 public class onlineOrderRetrievalScanner extends AppCompatActivity {
 
     TextView tvOrderID, tvWalletID, tvProdID, tvProdName, tvOrderDateTime, tvQuantity, tvStatus;
@@ -55,16 +57,14 @@ public class onlineOrderRetrievalScanner extends AppCompatActivity {
 
     }
 
+    //Activate QR scanner
     public void startRetrievalScan() {
         new IntentIntegrator(this).initiateScan(); // `this` is the current Activity
     }
 
+    //Decode result from scanned QR code
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        /*if (requestCode == TOP_UP_REQUEST) {
-            if (resultCode == RESULT_OK) {
 
-            }
-        } else { */
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if (result != null) {
             if (result.getContents() == null) {
@@ -94,17 +94,19 @@ public class onlineOrderRetrievalScanner extends AppCompatActivity {
         }
     }
 
+    //Button to confirm retrieval  completed and update order status
     public void btnRetrievalCompleteClick(View view){
         updateOrderStatus(this, "https://martpay.000webhostapp.com/gab_update_order_status.php", OrderID, StatusCompleted);
     }
 
-
+    //Button to click when order cannot be retrieve yet (Does not update order status)
     public void btnProcessing (View view){
 
         finish();
 
     }
 
+    //Show information of scanned retrieval QR code
     public void showRetrievalSuccess(){
         tvOrderID.setText("Order ID: "+OrderID);
         tvWalletID.setText("From: "+WalletID);
@@ -115,6 +117,7 @@ public class onlineOrderRetrievalScanner extends AppCompatActivity {
         tvStatus.setText("Status: "+OrderStatus);
     }
 
+    //Information to show when scanning cancelled by merchant
     public void showRetrievalCancelled(){
         tvOrderID.setText("Order ID: "+cancel);
         tvWalletID.setText("From: "+cancel);

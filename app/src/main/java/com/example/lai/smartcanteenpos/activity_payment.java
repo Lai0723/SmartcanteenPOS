@@ -189,6 +189,7 @@ public class activity_payment extends Fragment {
                 totalToPass = Double.toString(total);
                 idToPass= purchasedID;
 
+                //Passing total purchase amount to QR scanner
                 ttlPurchaseAmt = totalToPass;
                 Intent intent = new Intent(v.getContext(), onSpotTransferScanner.class);
                 intent.putExtra("ttlPurchaseAmt", totalToPass);

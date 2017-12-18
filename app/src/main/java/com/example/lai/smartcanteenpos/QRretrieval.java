@@ -7,7 +7,9 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import net.glxn.qrgen.android.QRCode;
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 public class QRretrieval extends AppCompatActivity {
 
     String OrderID, ProdID, WalletID, ProdName, OrderDateTime,  OrderStatus, PayDateTime;
@@ -41,6 +43,7 @@ public class QRretrieval extends AppCompatActivity {
 
     }
 
+    //Generate QR code for online order retrieval
     public void generateQRretrieval(){
         //get date time
         java.util.Date dt = new java.util.Date();

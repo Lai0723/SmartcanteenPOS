@@ -32,11 +32,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 
 /**
  * A simple {@link Fragment} subclass.
  */
+
 public class fragment_wallet_topup_history extends Fragment {
 
     ListView lvTopupHistory;
@@ -79,6 +82,7 @@ public class fragment_wallet_topup_history extends Fragment {
         return view;
     }
 
+    //Retrieve top up records from database
     public void downloadTopup(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -144,13 +148,15 @@ public class fragment_wallet_topup_history extends Fragment {
         }
     }
 
+    //Load top up records to adapter for display
     private void loadTopup() {
         final adapter_list_topup_history adapter = new adapter_list_topup_history(getContext(), R.layout.fragment_wallet_topup_history, wallet_history.listTopup);
         lvTopupHistory.setAdapter(adapter);
         tvTopupTotal.setText("Top Up Total: " + String.format("RM %.2f", wallet_history.topupTotal));
-        //Toast.makeText(getApplicationContext(), "Count :" + TList.size(), Toast.LENGTH_LONG).show();
+
     }
 
+    //Check whether device connected to internet
     private boolean isConnected() {
         ConnectivityManager cm =
                 (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);

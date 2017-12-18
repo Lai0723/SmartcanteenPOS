@@ -12,7 +12,9 @@ import android.widget.TextView;
 
 import com.example.lai.smartcanteenpos.Obejct.Menu;
 
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 /**
  * A simple {@link Fragment} subclass.
  */

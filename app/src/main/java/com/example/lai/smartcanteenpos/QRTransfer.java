@@ -14,7 +14,9 @@ import android.widget.Toast;
 import net.glxn.qrgen.android.QRCode;
 //import com.google.zxing.qrcode.encoder.QRCode;
 
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 public class QRTransfer extends AppCompatActivity {
 
     static String giverID;
@@ -55,7 +57,7 @@ public class QRTransfer extends AppCompatActivity {
         lpTimer.setMax(millisToChange/millisToUpdate);
         lpTimer.setProgress(0);
 
-
+        //Timer to refresh QR code
         new CountDownTimer(millisToChange, millisToUpdate) {
 
             public void onTick(long millisUntilFinished) {
@@ -65,7 +67,6 @@ public class QRTransfer extends AppCompatActivity {
             }
 
             public void onFinish() {
-                //tvTimer.setText("done!");
                 this.start();
                 generateQR();
             }
@@ -75,6 +76,7 @@ public class QRTransfer extends AppCompatActivity {
 
     }
 
+    //Generate QR code for on spot transfer
     public void generateQR(){
         //get date time
         java.util.Date dt = new java.util.Date();

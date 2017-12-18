@@ -16,6 +16,9 @@ import com.example.lai.smartcanteenpos.database.Transfer;
 
 import java.util.List;
 
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 public class adapter_list_transfer_history extends ArrayAdapter <Transfer> {
 
     public adapter_list_transfer_history(@NonNull Context context, int resource, @NonNull List<Transfer> objects) {

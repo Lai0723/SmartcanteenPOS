@@ -13212,10 +13212,6 @@
         "source": "D:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\src\\main\\res\\layout\\fragment_wallet_history_type_selection.xml"
     },
     {
-        "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_fund.xml.flat",
-        "source": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\src\\main\\res\\layout\\activity_add_fund.xml"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\color\\abc_primary_text_material_light.xml"
     },
@@ -14026,10 +14022,6 @@
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_changecard.xml.flat",
-        "source": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\src\\main\\res\\layout\\fragment_changecard.xml"
     },
     {
         "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -17110,10 +17102,6 @@
     {
         "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0.aar\\4b5cbc9f23558bde07c0bc53c86a6ed7\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
-    },
-    {
-        "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_changecard.xml.flat",
-        "source": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\src\\main\\res\\layout\\activity_changecard.xml"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_bt_ic_android_pay.png.flat",

@@ -33,7 +33,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -82,6 +84,7 @@ public class fragment_wallet_transaction_history extends Fragment {
         return view;
     }
 
+    //Retrieve transaction records from database
     public void downloadTransaction(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -155,13 +158,15 @@ public class fragment_wallet_transaction_history extends Fragment {
         }
     }
 
+    //Load transaction records into adapter for display
     private void loadTransaction() {
         final adapter_list_transaction_history adapter = new adapter_list_transaction_history(getContext(), R.layout.fragment_wallet_transaction_history, wallet_history.listTransaction);
         lvTransactionHistory.setAdapter(adapter);
         tvTransactionTotal.setText("Online Spent Total: " + String.format("RM %.2f", wallet_history.transactionTotal));
-        //Toast.makeText(getApplicationContext(), "Count :" + TList.size(), Toast.LENGTH_LONG).show();
+
     }
 
+    //Check whether device connected to internet
     private boolean isConnected() {
         ConnectivityManager cm =
                 (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);

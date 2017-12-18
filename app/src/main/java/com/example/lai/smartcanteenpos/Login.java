@@ -57,25 +57,6 @@ public class Login extends AppCompatActivity {
         pDialog = new ProgressDialog(this);
     }
 
-    public void ClickLogin(View v) {
-
-        username = txtUserName.getText().toString();
-        String password = txtPass.getText().toString();
-        String type = "login";
-
-
-        if (txtUserName.getText().toString() == " " || txtPass.getText().toString() == " ") {
-            Toast.makeText(getApplicationContext(), "Please fill in username and password", Toast.LENGTH_LONG).show();
-
-        }
-
-        progressDialog = new ProgressDialog(this);
-
-        // execute backgroudWorker class to check whether the user is exist in database or not
-        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-        backgroundWorker.execute(type, username, password);
-
-    }
 
     // when register button was clicked
     protected void ClickRegister(View v) {
@@ -86,131 +67,7 @@ public class Login extends AppCompatActivity {
 
     }
 
-    // To check the login status
-    private class BackgroundWorker extends AsyncTask<String, Void, String> {
-
-        Context context;
-        AlertDialog alertDialog;
-
-
-        public BackgroundWorker(Context context) {
-            this.context = context;
-        }
-
-        @Override
-        protected String doInBackground(String... params) {
-            String type = params[0];
-            String loginURL = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/login_merchants.php";
-            //String loginURL = "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/test_merc_login.php";
-
-            // if the type of the task = login
-            if (type == "login") {
-
-                String userName = params[1];
-                String password = params[2];
-
-                try {
-
-                    //establish httpUrlConnection with POST method
-                    URL url = new URL(loginURL);
-                    HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-                    httpURLConnection.setRequestMethod("POST");
-                    httpURLConnection.setDoOutput(true);
-                    httpURLConnection.setDoInput(true);
-
-                    //set output stream
-                    OutputStream outputStream = httpURLConnection.getOutputStream();
-                    BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
-                    String post_data = URLEncoder.encode("MercName", "UTF-8") + "=" + URLEncoder.encode(userName, "UTF-8") + "&"
-                            + URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
-
-                    bufferedWriter.write(post_data);
-                    bufferedWriter.flush();
-                    bufferedWriter.close();
-                    outputStream.close();
-
-                    // read the data
-                    InputStream inputStream = httpURLConnection.getInputStream();
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
-                    String result = "";
-                    String line = "";
-
-                    while ((line = bufferedReader.readLine()) != null) {
-                        result += line;
-                    }
-                    bufferedReader.close();
-                    inputStream.close();
-                    httpURLConnection.disconnect();
-                    return result;
-
-
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-            }
-            return null;
-        }
-
-        @Override
-        protected void onPreExecute() {
-
-            // create an dialog and set it's title
-            alertDialog = new AlertDialog.Builder(context).create();
-            alertDialog.setTitle("Login Status");
-
-            if (!progressDialog.isShowing()) ;
-            progressDialog.setMessage("Logging in");
-            progressDialog.show();
-
-
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-            // if login failed
-            if (result.equals("login not success")) {
-
-                if (progressDialog.isShowing())
-                    progressDialog.dismiss();
-
-                alertDialog.setMessage("Login failed. Please check your username and password");
-                alertDialog.show();
-            }
-            //else allow user to login
-            else {
-                if (progressDialog.isShowing())
-                    progressDialog.dismiss();
-
-
-                /*JSONObject jsonObject;
-                jsonObject = new JSONObject();
-                try {
-                    WalletID = jsonObject.getString("WalletID");
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }*/
-
-                Intent intent = new Intent(Login.this, Menu_screen.class);
-                LOGGED_IN_USER = username;
-                //intent.putExtra("WalletID",WalletID);
-                startActivity(intent);
-            }
-
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {
-            super.onProgressUpdate(values);
-        }
-
-
-    }
-
-
-
+    //Merchant login input validation
     public void test_merc_login(View view) {
         //String LoginPassword = etLoginPassword.getText().toString();
         //String WalletID = etLoginWalletID.getText().toString();
@@ -224,12 +81,11 @@ public class Login extends AppCompatActivity {
         else if(password.matches("")){
             Toast.makeText(this, "Please fill in password.", Toast.LENGTH_SHORT).show();
         }
-        //checkUser(this, "https://gabriellb-wp14.000webhostapp.com/select_user.php", WalletID,LoginPassword);
-        //checkUser(this, "https://martpay.000webhostapp.com/gab_select_user.php", WalletID,LoginPassword);
         checkUser(this, "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/test_merc_login.php", MercName,password);
 
     }
 
+    //Find merchant from database and retrieve relevant information
     public void checkUser(Context context, String url, final String MercName, final String password) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -273,7 +129,6 @@ public class Login extends AppCompatActivity {
                                         err += "Password is incorrect.";
                                     }
                                 } else if (success == 2) {
-                                    //Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
                                     err+="Wallet not found.";
                                     if (pDialog.isShowing())
                                         pDialog.dismiss();

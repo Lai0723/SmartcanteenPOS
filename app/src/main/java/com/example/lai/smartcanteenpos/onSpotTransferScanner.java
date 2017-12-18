@@ -26,9 +26,12 @@ import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 public class onSpotTransferScanner extends AppCompatActivity {
 
-    String ttlPurchaseAmt, giverID,purchasedIDGet;
+    String ttlPurchaseAmt, giverID, purchasedIDGet;
     String[] purchasedID;
     double balanceToCheck, balance, showTtl;
     TextView tvTransferStatus, tvTransferFrom, tvTransferTo, tvTransferAmount;
@@ -45,31 +48,28 @@ public class onSpotTransferScanner extends AppCompatActivity {
         }
         ttlPurchaseAmt = extras.getString("ttlPurchaseAmt");
         purchasedIDGet = extras.getString("purchasedID");
-        purchasedID= purchasedIDGet.split(";;");
+        purchasedID = purchasedIDGet.split(";;");
 
         showTtl = Double.parseDouble(ttlPurchaseAmt);
 
-        tvTransferStatus = (TextView)findViewById(R.id.tvTransferStatus);
-        tvTransferFrom=(TextView)findViewById(R.id.tvTransferFrom);
-        tvTransferTo=(TextView)findViewById(R.id.tvTransferTo);
-        tvTransferAmount=(TextView)findViewById(R.id.tvTransferAmount);
+        tvTransferStatus = (TextView) findViewById(R.id.tvTransferStatus);
+        tvTransferFrom = (TextView) findViewById(R.id.tvTransferFrom);
+        tvTransferTo = (TextView) findViewById(R.id.tvTransferTo);
+        tvTransferAmount = (TextView) findViewById(R.id.tvTransferAmount);
 
         startScan();
 
     }
 
+    //Activate on spot transfer QR scanner
     public void startScan() {
         new IntentIntegrator(this).initiateScan(); // `this` is the current Activity
     }
 
-    // Get the results:
+    // Decode information from scanned QR code and insert new transfer record and show transfer result on screen
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        /*if (requestCode == TOP_UP_REQUEST) {
-            if (resultCode == RESULT_OK) {
 
-            }
-        } else { */
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if (result != null) {
             if (result.getContents() == null) {
@@ -108,22 +108,17 @@ public class onSpotTransferScanner extends AppCompatActivity {
 
                     if (giverID.equals(receiverID)) {
                         Toast.makeText(this, "You cannot transfer money to yourself.", Toast.LENGTH_SHORT).show();
-                    } else if (diffSeconds>30) {
+                    } else if (diffSeconds > 30) {
                         Toast.makeText(this, "Code expired, generate code again.", Toast.LENGTH_SHORT).show();
                     } else {
-                        //String combined = "Sender: " + giver + "\nAmount: RM" + amount + "\n Time: " + date+"\n Receiver " + receiver;
-                        //Toast.makeText(this, "Scanned: " + combined, Toast.LENGTH_LONG).show();
-
-                        //double balanceToCheck, ttlPurchaseAmt, transferAmount;
                         balanceToCheck = Double.parseDouble(balanceToChk);
                         Double ttlPurchaseAmount = Double.parseDouble(ttlPurchaseAmt);
                         if (balanceToCheck > ttlPurchaseAmount) {
-                            //Double.toString(ttlPurchaseAmt);
                             try {
                                 insertTransfer(this, "https://martpay.000webhostapp.com/gab_insert_transfer.php", giverID, ttlPurchaseAmt, date, receiverID);
                                 fragmentMerc_wallet.allowRefresh = true;
-                                for (String productID: purchasedID) {
-                                    updateInventory(this, "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/payment_update_inventory.php",productID);
+                                for (String productID : purchasedID) {
+                                    updateInventory(this, "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/payment_update_inventory.php", productID);
                                 }
                                 showStatusSuccess();
                                 InventoryFragment.allowRefresh = true;
@@ -138,42 +133,14 @@ public class onSpotTransferScanner extends AppCompatActivity {
 
                         }
                     }
-                } /*else {
-                    String listID = arr[2];
-                    String date = arr[1];
-                    String seller = arr[4];
-                    double price = Double.parseDouble(arr[3]);
-                    String buyer = username;
-                    if (seller.equals(buyer)) {
-                        Toast.makeText(this, "You cannot buy your own item.", Toast.LENGTH_SHORT).show();
-                    } else if (price > balance) {
-                        Toast.makeText(this, "You cannot afford it.", Toast.LENGTH_SHORT).show();
-                    } else {
-
-                        //String combined = "Sender: " + giver + "\nAmount: RM" + amount + "\n Time: " + date+"\n Receiver " + receiver;
-                        String combined = result.getContents();
-                        Toast.makeText(this, "Scanned: " + combined, Toast.LENGTH_LONG).show();
-                        try {
-                            WalletFragment.allowRefresh = true;
-                            insertTransaction(this, "https://martpay.000webhostapp.com/insert_transaction.php", date, buyer, listID);
-
-                            //end need change de part
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Toast.makeText(getApplicationContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
-                        }
-                    }
-
-                }   */
+                }
 
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data);
         }
-        //closing of ELSE }
 
     }
-
 
 
     public void insertTransfer(Context context, String url, final String giverID, final String ttlPurchaseAmt, final String date, final String receiverID) {
@@ -292,16 +259,18 @@ public class onSpotTransferScanner extends AppCompatActivity {
         }
     }
 
+    //Show success transfer result
     public void showStatusSuccess() {
         tvTransferStatus.setText("Transfer Successful!");
-        tvTransferFrom.setText("From: "+ giverID);
-        tvTransferTo.setText("To: "+Menu_screen.Merc_WalletID);
-        tvTransferAmount.setText("Amount: RM"+ showTtl);
-        tvTransferAmount.setText("Amount: "+ String.format("RM %.2f" ,showTtl));
+        tvTransferFrom.setText("From: " + giverID);
+        tvTransferTo.setText("To: " + Menu_screen.Merc_WalletID);
+        tvTransferAmount.setText("Amount: RM" + showTtl);
+        tvTransferAmount.setText("Amount: " + String.format("RM %.2f", showTtl));
 
     }
 
-    public void showStatusCancelled(){
+    //Show cancelled transfer information
+    public void showStatusCancelled() {
         tvTransferStatus.setText("Transfer Cancelled!");
         tvTransferFrom.setText("From: NONE");
         tvTransferTo.setText("To: NONE");

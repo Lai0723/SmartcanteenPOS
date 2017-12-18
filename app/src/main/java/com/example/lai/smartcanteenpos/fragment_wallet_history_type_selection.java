@@ -7,11 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 
 /**
  * A simple {@link Fragment} subclass.
  */
+//Default fragment when user enter student wallet history
 public class fragment_wallet_history_type_selection extends Fragment {
 
     TextView tvSelectType;

@@ -37,7 +37,9 @@ import org.json.JSONObject;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 public class MainActivity extends AppCompatActivity {
     public static String walletID;
     public static double balance;
@@ -51,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
     double balanceToCheck, transferAmount;
     String ttlPurchaseAmt = "5.0";
     public ProgressDialog pDialog;
-    //Card cardToSave;
     java.util.Date dt;
     java.text.SimpleDateFormat sdf;
     String topUpDateTime;
@@ -106,10 +107,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.action_wallet_history:
                         fragment = fragmentWalletHistory.newInstance();
                         break;
-                    /*case R.id.action_reward:
-                        checkBalance(MainActivity.this, "https://martpay.000webhostapp.com/select_user.php");
-                        fragment = RewardFragment.newInstance();
-                        break;*/
                 }
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frame_main, fragment);
@@ -141,36 +138,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goChangeCard(View v) {
-        Intent intent = new Intent(this, changecard.class);
-        startActivity(intent);
-        /*FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_main, fragmentChangeCard.newInstance());
-        transaction.commit();*/
-    }
-
-    //Confirm bind/change card
-    public void onConfirmClick2(View v) {
-        //View view =  inflater.inflate(R.layout.fragment_changecard, container, false);
-        //CardInputWidget mCardInputWidget = (CardInputWidget) findViewById(R.id.card_input_widget2);
-        //cardToSave = mCardInputWidget.getCard();
-
-        /*if (cardToSave != null) {
-            //updateCurrentCard = cardToSave.getNumber();
-            TextView textView2 = (TextView) findViewById(R.id.textView2);
-            textView2.setText(updateCurrentCard);
-        }*/
 
 
-    }
 
-    //For Cancel button in change card UI
-    public void goAddFund(View v) {
-
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_main, fragmentFund.newInstance());
-        transaction.commit();
-    }
 
     /*
 
@@ -187,18 +157,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //For QR testing
     public void startScan(View view) {
         new IntentIntegrator(this).initiateScan(); // `this` is the current Activity
     }
 
-    // Get the results:
+    // Get the results from scanned QR code
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        /*if (requestCode == TOP_UP_REQUEST) {
-            if (resultCode == RESULT_OK) {
 
-            }
-        } else { */
         IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
         if (result != null) {
             if (result.getContents() == null) {
@@ -239,14 +206,9 @@ public class MainActivity extends AppCompatActivity {
                     } else if (diffSeconds>60) {
                         Toast.makeText(this, "Code expired, generate code again.", Toast.LENGTH_SHORT).show();
                     } else {
-                        //String combined = "Sender: " + giver + "\nAmount: RM" + amount + "\n Time: " + date+"\n Receiver " + receiver;
-                        //Toast.makeText(this, "Scanned: " + combined, Toast.LENGTH_LONG).show();
-
-                        //double balanceToCheck, ttlPurchaseAmt, transferAmount;
                         balanceToCheck = Double.parseDouble(balanceToChk);
                         Double ttlPurchaseAmount = Double.parseDouble(ttlPurchaseAmt);
                         if (balanceToCheck > ttlPurchaseAmount) {
-                            //Double.toString(ttlPurchaseAmt);
                             try {
                                 fragmentWallet.allowRefresh = true;
                                 insertTransfer(this, "https://martpay.000webhostapp.com/gab_insert_transfer.php", giverID, ttlPurchaseAmt, date, receiverID);
@@ -267,7 +229,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             super.onActivityResult(requestCode, resultCode, data);
         }
-        //closing of ELSE }
         if (requestCode == BT_REQUEST_CODE) {
             if (resultCode == Activity.RESULT_OK) {
                 DropInResult resultBT = data.getParcelableExtra(DropInResult.EXTRA_DROP_IN_RESULT);
@@ -291,6 +252,7 @@ public class MainActivity extends AppCompatActivity {
         Add fund part
 
     */
+    //Add fund button activate braintree payment widget
     public void clickAddFund(View v) {
 
         dt = new java.util.Date();
@@ -305,6 +267,7 @@ public class MainActivity extends AppCompatActivity {
         onBraintreeSubmit(v);
     }
 
+    //insert top up record into database after user entered testing payment card info
     public void insertTopUp(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -370,6 +333,7 @@ public class MainActivity extends AppCompatActivity {
 
     */
 
+    //Insert on spot transfer record into database
     public void insertTransfer(Context context, String url, final String giverID, final String ttlPurchaseAmt, final String date, final String receiverID) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -431,7 +395,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    //Check wallet balance
     public void checkBalance(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -504,92 +468,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void checkCard(Context context, String url) {
-        //mPostCommentResponse.requestStarted();
-        RequestQueue queue = Volley.newRequestQueue(context);
-
-        //Send data
-        try {
-            StringRequest postRequest = new StringRequest(
-                    Request.Method.POST,
-                    url,
-                    new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-                            JSONObject jsonObject;
-                            try {
-                                String err = "";
-                                jsonObject = new JSONObject(response);
-                                int success = jsonObject.getInt("success");
-                                String message = jsonObject.getString("message");
-                                if (success == 0) {
-                                    Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
-
-                                } else if (success == 1) {
-                                    //balance = jsonObject.getDouble("Balance");
-                                    //loyaltyPoint = jsonObject.getInt("LoyaltyPoint");
-                                    //Toast.makeText(getApplicationContext(), "Balance loaded", Toast.LENGTH_LONG).show();
-                                    tvBalance = (TextView) findViewById(R.id.tvMercBalance);
-                                    TextView tvCardType = (TextView) findViewById(R.id.tvCardType);
-                                    TextView tvCardEnding = (TextView) findViewById(R.id.tvCardEnding);
-                                    //if (tvBalance != null)
-                                    //tvBalance.setText(String.format("RM %.2f", MainActivity.balance));
-                                    if (tvCardType != null)
-                                        tvCardType.setText(tvCardType.getText().toString() + MainActivity.currentCardType);
-                                    if (tvCardEnding != null)
-                                        tvCardEnding.setText(tvCardEnding.getText().toString() + MainActivity.currentCard);
-                                } else if (success == 2) {
-                                    //Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
-                                    err += "Wallet not found.";
-
-                                } else {
-                                    Toast.makeText(getApplicationContext(), "err", Toast.LENGTH_SHORT).show();
-
-                                }
-                                //show error
-                                if (err.length() > 0) {
-                                    Toast.makeText(getApplicationContext(), err, Toast.LENGTH_LONG).show();
-                                }
-
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    },
-                    new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                            Toast.makeText(getApplicationContext(), "Error. " + error.toString(), Toast.LENGTH_LONG).show();
-                        }
-                    }) {
-                @Override
-                protected Map<String, String> getParams() {
-                    Map<String, String> params = new HashMap<>();
-                    params.put("WalletID", walletID);
-                    return params;
-                }
-
-                @Override
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    Map<String, String> params = new HashMap<>();
-                    params.put("Content-Type", "application/x-www-form-urlencoded");
-                    return params;
-                }
-            };
-            queue.add(postRequest);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        if (currentCard.matches("TBD")) {
-            Toast.makeText(this, "Please bind a card to wallet.", Toast.LENGTH_LONG).show();
-            /*FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(R.id.frame_main, fragmentChangeCard.newInstance());
-            transaction.commit();*/
-        }
-
-    }
-
+    //Braintree payment widget
     public void onBraintreeSubmit(View v) {
         DropInRequest dropInRequest = new DropInRequest()
                 .clientToken("eyJ2ZXJzaW9uIjoyLCJhdXRob3JpemF0aW9uRmluZ2VycHJpbnQiOiIxZjYxNjBhYjMwNjkwZDhhYjBhNzY3ZGFjOTI1ZjM4MzRlNGUzMmFiNmZmOWVkZDY3Yzg2OTA0NDAwYWI0NmJjfGNyZWF0ZWRfYXQ9MjAxNy0xMS0xNlQwNzoxMjo0Ni43ODA1MTk0OTMrMDAwMFx1MDAyNm1lcmNoYW50X2lkPTM0OHBrOWNnZjNiZ3l3MmJcdTAwMjZwdWJsaWNfa2V5PTJuMjQ3ZHY4OWJxOXZtcHIiLCJjb25maWdVcmwiOiJodHRwczovL2FwaS5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tOjQ0My9tZXJjaGFudHMvMzQ4cGs5Y2dmM2JneXcyYi9jbGllbnRfYXBpL3YxL2NvbmZpZ3VyYXRpb24iLCJjaGFsbGVuZ2VzIjpbXSwiZW52aXJvbm1lbnQiOiJzYW5kYm94IiwiY2xpZW50QXBpVXJsIjoiaHR0cHM6Ly9hcGkuc2FuZGJveC5icmFpbnRyZWVnYXRld2F5LmNvbTo0NDMvbWVyY2hhbnRzLzM0OHBrOWNnZjNiZ3l3MmIvY2xpZW50X2FwaSIsImFzc2V0c1VybCI6Imh0dHBzOi8vYXNzZXRzLmJyYWludHJlZWdhdGV3YXkuY29tIiwiYXV0aFVybCI6Imh0dHBzOi8vYXV0aC52ZW5tby5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tIiwiYW5hbHl0aWNzIjp7InVybCI6Imh0dHBzOi8vY2xpZW50LWFuYWx5dGljcy5zYW5kYm94LmJyYWludHJlZWdhdGV3YXkuY29tLzM0OHBrOWNnZjNiZ3l3MmIifSwidGhyZWVEU2VjdXJlRW5hYmxlZCI6dHJ1ZSwicGF5cGFsRW5hYmxlZCI6dHJ1ZSwicGF5cGFsIjp7ImRpc3BsYXlOYW1lIjoiQWNtZSBXaWRnZXRzLCBMdGQuIChTYW5kYm94KSIsImNsaWVudElkIjpudWxsLCJwcml2YWN5VXJsIjoiaHR0cDovL2V4YW1wbGUuY29tL3BwIiwidXNlckFncmVlbWVudFVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbS90b3MiLCJiYXNlVXJsIjoiaHR0cHM6Ly9hc3NldHMuYnJhaW50cmVlZ2F0ZXdheS5jb20iLCJhc3NldHNVcmwiOiJodHRwczovL2NoZWNrb3V0LnBheXBhbC5jb20iLCJkaXJlY3RCYXNlVXJsIjpudWxsLCJhbGxvd0h0dHAiOnRydWUsImVudmlyb25tZW50Tm9OZXR3b3JrIjp0cnVlLCJlbnZpcm9ubWVudCI6Im9mZmxpbmUiLCJ1bnZldHRlZE1lcmNoYW50IjpmYWxzZSwiYnJhaW50cmVlQ2xpZW50SWQiOiJtYXN0ZXJjbGllbnQzIiwiYmlsbGluZ0FncmVlbWVudHNFbmFibGVkIjp0cnVlLCJtZXJjaGFudEFjY291bnRJZCI6ImFjbWV3aWRnZXRzbHRkc2FuZGJveCIsImN1cnJlbmN5SXNvQ29kZSI6IlVTRCJ9LCJtZXJjaGFudElkIjoiMzQ4cGs5Y2dmM2JneXcyYiIsInZlbm1vIjoib2ZmIn0=");

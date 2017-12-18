@@ -13,7 +13,9 @@ import android.widget.DatePicker;
 import java.util.Calendar;
 import java.util.Date;
 
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -62,6 +64,7 @@ public class fragmentWalletHistory extends Fragment {
 
         btnChkWalletHistory = inflatedView.findViewById(R.id.btnChkWalletHistory);
 
+        //Pass date information to wallet history activity to retrieve history records of that day
         btnChkWalletHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -8,7 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 public class QRPassword extends AppCompatActivity {
 
     static String giverID, passedQRpw, inputQRpw;
@@ -37,12 +39,12 @@ public class QRPassword extends AppCompatActivity {
 
     }
 
+    //Check password to show QR code and pass needed information to QR activity to generate QR code for on spot transfer
     public void onProceedClick(View v){
 
         inputQRpw = etQRpw.getText().toString();
         if (inputQRpw.equals(passedQRpw) ){
 
-            //Toast.makeText(this, "Pw match", Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(this, QRTransfer.class);
             intent.putExtra("giverID",giverID);

@@ -29,7 +29,9 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 public class wallet_history extends AppCompatActivity {
 
     String walletID = MainActivity.walletID;

@@ -22,7 +22,9 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * Created by Gabriel Lai Bihsyan
+ */
 public class studLogin extends AppCompatActivity {
     EditText etLoginWalletID, etLoginPassword;
     private ProgressDialog pDialog;
@@ -45,6 +47,7 @@ public class studLogin extends AppCompatActivity {
         pDialog = new ProgressDialog(this);
     }
 
+    //Input validation
     public void login(View view) {
         String LoginPassword = etLoginPassword.getText().toString();
         String WalletID = etLoginWalletID.getText().toString();
@@ -59,6 +62,7 @@ public class studLogin extends AppCompatActivity {
 
     }
 
+    //Get student information from database
     public void checkUser(Context context, String url, final String WalletID, final String LoginPassword) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
