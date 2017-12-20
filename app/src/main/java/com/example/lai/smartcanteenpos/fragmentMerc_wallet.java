@@ -10,10 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.lai.smartcanteenpos.Obejct.Menu;
-
 /**
- * Created by Gabriel Lai Bihsyan
+ * Created by lai wei chun
  */
 /**
  * A simple {@link Fragment} subclass.
@@ -43,6 +41,7 @@ public class fragmentMerc_wallet extends Fragment {
         tvTestWalletID.setText(Menu_screen.Merc_WalletID);
         allowRefresh=false;
 
+        //button to scan qr code to perform online order retrieval
         btnOrdRtvScanner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

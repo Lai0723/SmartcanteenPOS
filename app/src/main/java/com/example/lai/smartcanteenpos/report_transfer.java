@@ -36,8 +36,10 @@ import java.util.Date;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ *Created by lai wei chun
  */
+
+//transaction report
 public class report_transfer extends Fragment {
 
     DatePicker datePicker;
@@ -46,12 +48,8 @@ public class report_transfer extends Fragment {
     ProgressDialog progressDialog;
     Double total = 0.00;
     String date;
-
     String MercName = Login.LOGGED_IN_USER;
 
-    public report_transfer() {
-        // Required empty public constructor
-    }
 
 
     @Override
@@ -65,7 +63,12 @@ public class report_transfer extends Fragment {
         datePicker.setMaxDate(new Date().getTime());
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
+        btnTDailyReport = (Button) v.findViewById(R.id.btnTDailyReport);
+        btnTMonthlyReport = (Button) v.findViewById(R.id.btnTMonthlyReport);
+        btnTYearlyReport = (Button) v.findViewById(R.id.btnTYearlyReport);
 
+
+        //set the info from the date picker to variable
         datePicker.init(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH),new DatePicker.OnDateChangedListener() {
 
             @Override
@@ -76,15 +79,12 @@ public class report_transfer extends Fragment {
             }
         });
 
-
         day = calendar.get(Calendar.DAY_OF_MONTH);
         month = calendar.get(Calendar.MONTH)+1;
         year = calendar.get(Calendar.YEAR);
 
-        btnTDailyReport = (Button) v.findViewById(R.id.btnTDailyReport);
-        btnTMonthlyReport = (Button) v.findViewById(R.id.btnTMonthlyReport);
-        btnTYearlyReport = (Button) v.findViewById(R.id.btnTYearlyReport);
 
+        //to generate transaction daily report
         btnTDailyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 total = 0.00;
@@ -98,6 +98,7 @@ public class report_transfer extends Fragment {
             }
         });
 
+        //to generate transaction monthly report
         btnTMonthlyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 total = 0.00;
@@ -111,6 +112,7 @@ public class report_transfer extends Fragment {
             }
         });
 
+        //to generate transaction yearly report
         btnTYearlyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 total = 0.00;
@@ -129,6 +131,8 @@ public class report_transfer extends Fragment {
         return v;
     }
 
+
+    //get transaction report info
     private class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;
@@ -325,9 +329,8 @@ public class report_transfer extends Fragment {
                         total = total + TransferAmount;
                     }
 
-
+                    //past info the reportdetail_transfer to display the info
                     Intent intent = new Intent(getActivity(),reportdetails_transfer.class);
-                    //String date= year+"-"+month+"-"+day;
                     Double profit = total;
 
                     intent.putExtra("date",date);
@@ -337,10 +340,6 @@ public class report_transfer extends Fragment {
 
                     if (progressDialog.isShowing())
                         progressDialog.dismiss();
-
-
-
-
 
 
                 } catch (Exception e) {

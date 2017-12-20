@@ -104,6 +104,7 @@ public class activity_payment extends Fragment {
         ItemInCart.setText(Integer.toString(Cart));
         Total.setText("RM 0");
 
+        // set the info in to the product category spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
                 R.array.foodCategory, android.R.layout.simple_spinner_item);
 
@@ -124,6 +125,7 @@ public class activity_payment extends Fragment {
             }
         });
 
+        //allow user to search the list after key in the name and press the button
         btnSearchName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -135,6 +137,7 @@ public class activity_payment extends Fragment {
             }
         });
 
+        //allow user to search the list by cateory and press the button
         btnSearchCat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -147,7 +150,7 @@ public class activity_payment extends Fragment {
         });
 
 
-
+       // add product into cart after press on the product in the list, calculate the total and update the database
         Menulist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -176,7 +179,7 @@ public class activity_payment extends Fragment {
             }
         });
 
-
+        // to scan QR code to perform payment
         btnTotal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -184,8 +187,6 @@ public class activity_payment extends Fragment {
                 double total = calcTotal();
 
 
-                //Total.setText(Double.toString(total));
-                //totalToPass = Total.getText().toString();
                 totalToPass = Double.toString(total);
                 idToPass= purchasedID;
 
@@ -213,6 +214,7 @@ public class activity_payment extends Fragment {
         return v;
     }
 
+    //method to calculate product total price
     private double calcTotal(){
 
         int j = 0;
@@ -231,7 +233,7 @@ public class activity_payment extends Fragment {
 
     }
 
-
+    // to get the product info from database
     public class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;
@@ -449,7 +451,7 @@ public class activity_payment extends Fragment {
 
     }
 
-
+    //load product info into the adapter
     private void loadListing() {
         final MAdapter adapter = new MAdapter(getActivity(), R.layout.fragment_activity_payment, Menu_screen.MList);
         Menulist.setAdapter(adapter);

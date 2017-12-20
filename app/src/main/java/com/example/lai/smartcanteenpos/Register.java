@@ -24,6 +24,10 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+//Created by lai wei chun
+
+//register screen for merchants
+
 public class Register extends AppCompatActivity {
 
     EditText txtWid,txtCName,txtpass,txtcontact,txtaddr,txtssm;
@@ -52,6 +56,7 @@ public class Register extends AppCompatActivity {
         final String addr = txtaddr.getText().toString();
         final String ssm = txtssm.getText().toString();
 
+        //prevent the field to be empty
         if(TextUtils.isEmpty(wid)){
             txtWid.setError("Field cannot be empty");
         }
@@ -77,6 +82,7 @@ public class Register extends AppCompatActivity {
             txtssm.setError("Field cannot be empty");
         }
 
+        //set the info into object
         if(!TextUtils.isEmpty(wid) && !TextUtils.isEmpty(CompanyName) && !TextUtils.isEmpty(contact) && !TextUtils.isEmpty(addr) && !TextUtils.isEmpty(ssm)){
 
             User user = new User();

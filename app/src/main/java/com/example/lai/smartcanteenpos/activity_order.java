@@ -83,30 +83,23 @@ public class activity_order extends Fragment {
 
         progressDialog = new ProgressDialog(v.getContext());
 
-        OrderID.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                if(hasFocus && first){
-                    first=false;
-                    refreshList(v);
-                }
-            }
-        });
 
-
+        // to click on the order list item and display the order id in the order edit text
         orderlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Order entry = (Order) parent.getItemAtPosition(position);
 
                 OrderID.setText(entry.getOrderID());
+                activity_order.allowRefresh = false;
+
 
             }
         });
 
 
 
-
+        // to refresh the order status of the pending order to accepted
         btnOrderAccept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,13 +116,22 @@ public class activity_order extends Fragment {
 
                     AcceptOrder(getView().getContext(), " https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/approved%20order.php");
                     activity_order.allowRefresh = true;
-                    Menu_screen.ORDERList = null;
-                    refreshList(v);
+                        Menu_screen.ORDERList = null;
+                    Menu_screen.ORDERList = new ArrayList<>();
+
+                    String type = "retrieveOrder";
+                    MercName = Login.LOGGED_IN_USER;
+                    activity_order.BackgroundWorker backgroundWorker = new activity_order.BackgroundWorker(v.getContext());
+                    backgroundWorker.execute(type,  MercName);
+
+
                 }
+
+
             }
         });
 
-
+        //to refresh the order status of the pending order to decline
         btnOrderDecline.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -145,15 +147,23 @@ public class activity_order extends Fragment {
                     DeclineOrder(getView().getContext(), "https://leowwj-wa15.000webhostapp.com/smart%20canteen%20system/declined%20order.php");
                     activity_order.allowRefresh = true;
                     Menu_screen.ORDERList = null;
-                    refreshList(v);
+                    Menu_screen.ORDERList = new ArrayList<>();
+
+                    String type = "retrieveOrder";
+                    MercName = Login.LOGGED_IN_USER;
+                    activity_order.BackgroundWorker backgroundWorker = new activity_order.BackgroundWorker(v.getContext());
+                    backgroundWorker.execute(type,  MercName);
+
                 }
+
+
             }
         });
 
 
 
 
-
+        // check if the list is null then refresh the list
         if (Menu_screen.ORDERList == null) {
             Menu_screen.ORDERList = new ArrayList<>();
 
@@ -168,20 +178,9 @@ public class activity_order extends Fragment {
         return v;
     }
 
-    private void refreshList(View v){
-        activity_order.allowRefresh = true;
-        if(Menu_screen.ORDERList == null) {
-
-            Menu_screen.ORDERList = new ArrayList<>();
-
-            String type = "retrieveOrder";
-            MercName = Login.LOGGED_IN_USER;
-            activity_order.BackgroundWorker backgroundWorker = new activity_order.BackgroundWorker(v.getContext());
-            backgroundWorker.execute(type, MercName);
-        }
-    }
 
 
+    //to get the pending order detail from database
     private class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;
@@ -270,7 +269,6 @@ public class activity_order extends Fragment {
                         String ProdName = courseResponse.getString("ProdName");
                         int OrderQuantity = Integer.parseInt(courseResponse.getString("OrderQuantity"));
                         String OrderDateTime = courseResponse.getString("OrderDateTime");
-                        //Date OrderDateTime = new SimpleDateFormat("dd-MM-yyyy").parse(ODate);
                         String OrderStatus = courseResponse.getString("OrderStatus");
 
 
@@ -305,7 +303,7 @@ public class activity_order extends Fragment {
     }
 
 
-
+// load the pending order detail into the order list
     private void loadListing() {
         final Order_Adapter adapter = new Order_Adapter(getActivity(), R.layout.fragment_activity_order, Menu_screen.ORDERList);
         orderlist.setAdapter(adapter);
@@ -314,7 +312,7 @@ public class activity_order extends Fragment {
 
 
 
-
+// method to update order status to decline
     public void DeclineOrder(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);
@@ -381,6 +379,7 @@ public class activity_order extends Fragment {
 
     }
 
+    //method to update order status to accepted
     public void AcceptOrder(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);

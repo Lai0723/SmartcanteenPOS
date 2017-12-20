@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by lai wei chun
  */
 public class acceptedOrder extends Fragment {
 
@@ -57,6 +57,7 @@ public class acceptedOrder extends Fragment {
         refreshButton = (Button)v.findViewById(R.id.refreshButton);
         progressDialog = new ProgressDialog(v.getContext());
 
+        //check the list, if null reload the list
         if (Menu_screen.ORDERList == null) {
             Menu_screen.ORDERList = new ArrayList<>();
 
@@ -69,6 +70,7 @@ public class acceptedOrder extends Fragment {
             loadListing();
         }
 
+        //refresh button to refresh the accepted order list
         refreshButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,6 +90,7 @@ public class acceptedOrder extends Fragment {
         return v;
     }
 
+    //to get accepted order info from the database
     private class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;
@@ -211,7 +214,7 @@ public class acceptedOrder extends Fragment {
     }
 
 
-
+    //load the accepted order info to the adapter
     private void loadListing() {
         final Order_Adapter adapter = new Order_Adapter(getActivity(), R.layout.fragment_activity_order, Menu_screen.ORDERList);
         acceptedOrder.setAdapter(adapter);

@@ -57,12 +57,11 @@ public class View_Purchase_Order extends Fragment {
         View v = inflater.inflate(R.layout.fragment_view__purchase__order, container, false);
 
         allowRefresh = false;
-
         POlist = (ListView)v.findViewById(R.id.POlist);
         btnPOcancel = (Button)v.findViewById(R.id.btnPOcancel);
         progressDialog = new ProgressDialog(v.getContext());
 
-
+        //set listener to indicate the which purchase order user click on the list
         POlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -81,6 +80,7 @@ public class View_Purchase_Order extends Fragment {
             }
         });
 
+        //go back to inventory screen
         btnPOcancel.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -93,7 +93,7 @@ public class View_Purchase_Order extends Fragment {
 
         });
 
-
+        //check the purchase order list if null refresh
         if (Menu_screen.OList == null) {
             Menu_screen.OList = new ArrayList<>();
             String type = "retrievePurchaseOrder";
@@ -107,13 +107,14 @@ public class View_Purchase_Order extends Fragment {
         return v;
     }
 
+    //load the list
     private void loadListing() {
         final PurchaseOrderAdapter adapter = new PurchaseOrderAdapter(getActivity(), R.layout.fragment_view__purchase__order, Menu_screen.OList);
         POlist.setAdapter(adapter);
 
     }
 
-
+    //get the purchase order info
     private class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;

@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created lai wei chun
  */
 public class completedOrder extends Fragment {
 

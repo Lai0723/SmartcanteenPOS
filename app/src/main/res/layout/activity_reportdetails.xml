@@ -28,54 +28,55 @@
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="151dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="85dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="228dp"
         android:text="Time :"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintEnd_toStartOf="@+id/txtdate"
+        app:layout_constraintHorizontal_bias="0.919"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtdate"
         android:layout_width="133dp"
         android:layout_height="29dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="384dp"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtTotal_profit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toEndOf="@+id/textView36" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView38"
-        android:layout_width="129dp"
-        android:layout_height="23dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="80dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="228dp"
         android:text="@string/Total"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView37"
+        app:layout_constraintEnd_toStartOf="@+id/txtTotal_profit"
+        app:layout_constraintHorizontal_bias="0.863"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/txtTotal_profit"
         android:layout_width="125dp"
         android:layout_height="31dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="388dp"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtDiscountAmount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView38" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView37"

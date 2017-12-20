@@ -33,7 +33,7 @@ import java.util.Map;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by lai wei chun
  */
 public class Make_Purchase_Order extends Fragment {
 
@@ -42,11 +42,6 @@ public class Make_Purchase_Order extends Fragment {
     Button btnPsubmit,btnPcancel;
     public ProgressDialog progressDialog;
 
-
-
-    public Make_Purchase_Order() {
-        // Required empty public constructor
-    }
 
 
     @Override
@@ -58,11 +53,10 @@ public class Make_Purchase_Order extends Fragment {
         txtPID = (EditText)v.findViewById(R.id.txtPID);
         txtPSup = (EditText)v.findViewById(R.id.txtPSup);
         txtPQ = (EditText)v.findViewById(R.id.txtPQ);
-
-
-
         btnPsubmit = (Button)v.findViewById(R.id.btnPsubmit);
+        btnPcancel = (Button)v.findViewById(R.id.btnPcancel);
 
+        //check the field to prevent it to be empty and send it to database
         btnPsubmit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String PID = txtPID.getText().toString();
@@ -101,11 +95,6 @@ public class Make_Purchase_Order extends Fragment {
                     Double fee = 0.00;
                     purchase.setFee(fee);
 
-
-
-
-
-
                     progressDialog = new ProgressDialog(getView().getContext());
 
                     try {
@@ -116,11 +105,12 @@ public class Make_Purchase_Order extends Fragment {
                     }
 
                 }
+
             }
 
         });
 
-        btnPcancel = (Button)v.findViewById(R.id.btnPcancel);
+       //go back to inventory screen
         btnPcancel.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -137,6 +127,7 @@ public class Make_Purchase_Order extends Fragment {
 }
 
 
+    // send data to database to make purchase order record
     public void makeServiceCall(Context context, String url, final  Purchase_order purchase) {
         RequestQueue queue = Volley.newRequestQueue(context);
 

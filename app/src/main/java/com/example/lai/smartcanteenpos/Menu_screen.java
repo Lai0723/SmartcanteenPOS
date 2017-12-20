@@ -32,15 +32,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Menu_screen extends AppCompatActivity {
-    public static List<Product> lList = null;
-    public static List<Inventory> SList = null;
-    public static List<Purchase_order>OList = null;
-    public static List<Order>ORDERList = null;
+//Created by lai wei chun
 
-    public static List<Menu> MList = null;
-    public static List<Report> RList = null;
-    public static List<Report_Transaction> RTList = null;
+public class Menu_screen extends AppCompatActivity {
+    public static List<Product> lList = null; // List for the product in  menu activity
+    public static List<Inventory> SList = null;// List for the product in  inventory activity
+    public static List<Purchase_order>OList = null;// List for the purchase order in  view purchase order button
+    public static List<Order>ORDERList = null;//List for the order in  order activity
+
+    public static List<Menu> MList = null;// List for the product in payment tabs of order activity
+    public static List<Report> RList = null;//List for the report detail in online order report
+    public static List<Report_Transaction> RTList = null;//List for the report detail in transaction report
 
     static String Merc_WalletID;
     public static double balance;
@@ -75,7 +77,8 @@ public class Menu_screen extends AppCompatActivity {
                     OrderFragment o = new OrderFragment();
                     getSupportFragmentManager().beginTransaction().replace(R.id.content,o).commit();
                     activity_payment.allowRefresh = true;
-
+                    activity_order.allowRefresh = false;
+                    Menu_screen.ORDERList = null;
                     Menu_screen.MList = null;
                     break;
 
@@ -93,7 +96,7 @@ public class Menu_screen extends AppCompatActivity {
 
                     break;
             }
-            return false;
+            return true;
         }
 
     };
@@ -121,6 +124,7 @@ public class Menu_screen extends AppCompatActivity {
 
     }
 
+    //get wallet balance info from the database
     public void checkBalance(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);

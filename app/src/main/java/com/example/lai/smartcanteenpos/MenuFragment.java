@@ -42,7 +42,7 @@ import java.util.ArrayList;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by lai wei chun
  */
 public class MenuFragment extends Fragment   {
     Spinner Spinner;
@@ -50,12 +50,10 @@ public class MenuFragment extends Fragment   {
     public static boolean allowRefresh;
     public static final String TAG = "com.example.user.myApp";
     EditText searchProduct;
-
     ListView menulistview;
     String MercName;
     ProgressDialog progressDialog;
     RequestQueue queue;
-
     String ProdName,ProdCat;
 
 
@@ -70,8 +68,6 @@ public class MenuFragment extends Fragment   {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
-
         View v = inflater.inflate(R.layout.fragment_menu, container, false);
         allowRefresh = false;
         menulistview = (ListView)v.findViewById(R.id.menulistview);
@@ -85,6 +81,7 @@ public class MenuFragment extends Fragment   {
 
         progressDialog = new ProgressDialog(v.getContext());
 
+        //set the info to spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
                 R.array.foodCategory, android.R.layout.simple_spinner_item);
 
@@ -92,6 +89,7 @@ public class MenuFragment extends Fragment   {
 
         Spinner.setAdapter(adapter);
 
+        //set listener to indicate which item user choose
         Spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -105,6 +103,7 @@ public class MenuFragment extends Fragment   {
             }
         });
 
+        //for user search the list by name
         NameSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -116,6 +115,7 @@ public class MenuFragment extends Fragment   {
             }
         });
 
+        //for user search the list by category
         CatSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -127,7 +127,7 @@ public class MenuFragment extends Fragment   {
             }
         });
 
-
+        //bring to add product screen
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -139,6 +139,7 @@ public class MenuFragment extends Fragment   {
             }
         });
 
+        //bring to update product detail screen
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -150,6 +151,7 @@ public class MenuFragment extends Fragment   {
             }
         });
 
+        //bring to the delete product screen
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -161,6 +163,8 @@ public class MenuFragment extends Fragment   {
             }
         });
 
+
+        //check if the menu list is null, refresh it
         if (Menu_screen.lList == null) {
             Menu_screen.lList = new ArrayList<>();
 
@@ -181,14 +185,14 @@ public class MenuFragment extends Fragment   {
 
     }
 
-
+    //load the list
     private void loadListing() {
         final ProductAdapter adapter = new ProductAdapter(getActivity(), R.layout.fragment_menu, Menu_screen.lList);
         menulistview.setAdapter(adapter);
 
     }
 
-
+    //get product info in the database and load to list
     private class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;
@@ -405,12 +409,6 @@ public class MenuFragment extends Fragment   {
 
     }
 
-    public void onDestroyView() {
-        super.onDestroyView();
-        if (queue != null) {
-            queue.cancelAll(TAG);
-        }
-    }
 
 
 

@@ -52,7 +52,7 @@ public class delete_product extends Fragment {
         btncancel = (Button) v.findViewById(R.id.btncancel);
         ProdID = (EditText)v.findViewById(R.id.txtdeleteName);
 
-
+        //go back to the menu screen
         btncancel.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 MenuFragment nextFrag= new MenuFragment();
@@ -65,6 +65,7 @@ public class delete_product extends Fragment {
 
         });
 
+        //check the field to prevent it to be empty and send the info delete product method
         btndelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,7 +89,7 @@ public class delete_product extends Fragment {
         return v;
     }
 
-
+    //send the product id to the database to perform delete process
     public void DeleteProduct(Context context, String url) {
         //mPostCommentResponse.requestStarted();
         RequestQueue queue = Volley.newRequestQueue(context);

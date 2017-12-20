@@ -60,7 +60,7 @@ import static android.app.Activity.RESULT_OK;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by lai wei chun
  */
 public class update_menu extends Fragment {
 
@@ -77,10 +77,6 @@ public class update_menu extends Fragment {
     ProgressDialog progressDialog;
     TextView editName,editPrice,editDesc,editCat;
 
-
-    public update_menu() {
-        // Required empty public constructor
-    }
 
 
     @Override
@@ -321,7 +317,7 @@ public class update_menu extends Fragment {
 
             });
 
-
+            //search and display the info of the product id
             btnSearch.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     String ProdID = txtProdID.getText().toString();
@@ -334,6 +330,7 @@ public class update_menu extends Fragment {
 
             });
 
+        //go back to menu screen
         btncancel.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 MenuFragment nextFrag= new MenuFragment();
@@ -680,6 +677,7 @@ public class update_menu extends Fragment {
     }
 
 
+    //get the info from the database about the product id
     private class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;
@@ -747,10 +745,7 @@ public class update_menu extends Fragment {
 
         @Override
         protected void onPreExecute() {
-/*
-            if (!progressDialog.isShowing()) ;
-            progressDialog.setMessage("Retrieving Product");
-            progressDialog.show();*/
+
 
 
         }

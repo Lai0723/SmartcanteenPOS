@@ -17,6 +17,7 @@ import java.util.List;
  * Created by lai on 7/11/2017.
  */
 
+//adapter for the payment tab list
 public class MAdapter extends ArrayAdapter<Menu> {
 
     public MAdapter(Activity context, int resource, List<Menu> list) {

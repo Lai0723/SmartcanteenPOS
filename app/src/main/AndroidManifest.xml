@@ -16,13 +16,15 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".Login"
-            android:label="@string/app_name"
+            android:label="POS system"
             android:screenOrientation="landscape" />
         <activity
             android:name=".Menu_screen"
+            android:label="POS system"
             android:screenOrientation="landscape" />
         <activity android:name=".Register"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            android:label="POS system"/>
 
         <!-- Gab part -->
         <activity android:name=".login_type_select">
@@ -61,16 +63,18 @@
             android:name=".QRTransfer"
             android:label="Transfer QR Code"
             android:parentActivityName=".QRPassword"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
         <activity android:name=".onSpotTransferScanner" />
         <activity
             android:name=".reportdetails"
             android:launchMode="singleTop"
+            android:label="POS system"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".reportdetails_transfer"
             android:launchMode="singleTop"
+            android:label="POS system"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="landscape" />
 
@@ -87,7 +91,7 @@
         <activity
             android:name=".QRretrieval"
             android:label="Retrieval QR Code"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
         <activity android:name=".onlineOrderRetrievalScanner" />
 
         <!-- BS part -->

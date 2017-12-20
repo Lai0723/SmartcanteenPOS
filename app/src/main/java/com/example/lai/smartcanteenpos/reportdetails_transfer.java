@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import com.example.lai.smartcanteenpos.Obejct.ReportAdapter_Transaction;
 
+//Created by lai wei chun
+
+//display transaction report info
 public class reportdetails_transfer extends Activity {
 
     ListView TransactionReportList;

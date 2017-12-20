@@ -16,9 +16,10 @@ import java.util.Map;
 import javax.net.ssl.HttpsURLConnection;
 
 /**
- * Created by lai on 13/10/2017.
+ * Created by lai wei chun on 13/10/2017.
  */
 
+//to establish connection with the database
 public class RequestHandler {
 
     public String sendGetRequest(String uri) {

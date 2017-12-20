@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import com.example.lai.smartcanteenpos.Obejct.ReportAdapter;
 
+//Created by lai wei chun
+
+//display online order report info
 public class reportdetails extends Activity {
 
     ListView reportList;
@@ -20,13 +23,12 @@ public class reportdetails extends Activity {
         setContentView(R.layout.activity_reportdetails);
 
         reportList = (ListView)this.findViewById(R.id.reportlist);
-
-        final ReportAdapter adapter = new ReportAdapter(this, R.layout.activity_reportdetails, Menu_screen.RList);
-        reportList.setAdapter(adapter);
-
         txtdate = (TextView) this.findViewById(R.id.txtdate);
         txtTotal = (TextView)this.findViewById(R.id.txtTotal_profit);
         txtDiscount = (TextView)this.findViewById(R.id.txtDiscountAmount);
+
+        final ReportAdapter adapter = new ReportAdapter(this, R.layout.activity_reportdetails, Menu_screen.RList);
+        reportList.setAdapter(adapter);
 
 
         Bundle extras = getIntent().getExtras();

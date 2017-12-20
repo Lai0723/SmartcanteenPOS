@@ -41,16 +41,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.lai.smartcanteenpos.Login"
-            android:label="@string/app_name"
+            android:label="POS system"
             android:screenOrientation="landscape" />
         <activity
             android:name="com.example.lai.smartcanteenpos.Menu_screen"
+            android:label="POS system"
             android:screenOrientation="landscape" />
         <activity
             android:name="com.example.lai.smartcanteenpos.Register"
+            android:label="POS system"
             android:screenOrientation="landscape" />
 
         <!-- Gab part -->
@@ -90,15 +93,17 @@
             android:name="com.example.lai.smartcanteenpos.QRTransfer"
             android:label="Transfer QR Code"
             android:parentActivityName="com.example.lai.smartcanteenpos.QRPassword"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
         <activity android:name="com.example.lai.smartcanteenpos.onSpotTransferScanner" />
         <activity
             android:name="com.example.lai.smartcanteenpos.reportdetails"
+            android:label="POS system"
             android:launchMode="singleTop"
             android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name="com.example.lai.smartcanteenpos.reportdetails_transfer"
+            android:label="POS system"
             android:launchMode="singleTop"
             android:parentActivityName="com.example.lai.smartcanteenpos.MainActivity"
             android:screenOrientation="landscape" />
@@ -117,7 +122,7 @@
         <activity
             android:name="com.example.lai.smartcanteenpos.QRretrieval"
             android:label="Retrieval QR Code"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="landscape" />
         <activity android:name="com.example.lai.smartcanteenpos.onlineOrderRetrievalScanner" />
 
         <!-- BS part -->

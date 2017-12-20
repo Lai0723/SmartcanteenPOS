@@ -31,7 +31,7 @@ import java.util.Map;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by lai wei chun
  */
 public class add_inventory extends Fragment {
 
@@ -61,7 +61,7 @@ public class add_inventory extends Fragment {
             txtPOID.setText(View_Purchase_Order.PurchseOrderID.toString());
 
 
-
+        // check the edit text to prevent it be empty and send the info the backgound worker
         btnISubmit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String ProductID = txtInID.getText().toString();
@@ -115,9 +115,13 @@ public class add_inventory extends Fragment {
                     }
 
                 }
+
+
             }
 
         });
+
+        // go back to the inventory main screen
 
         btnIcancel = (Button)v.findViewById(R.id.btnIcancel);
         btnIcancel.setOnClickListener(new View.OnClickListener() {
@@ -136,6 +140,7 @@ public class add_inventory extends Fragment {
     }
 
 
+    //send the inventory to database to update the product quantity
     public void makeServiceCall1(Context context, String url, final  Product product) {
         RequestQueue queue = Volley.newRequestQueue(context);
 

@@ -68,7 +68,8 @@ public class add_product extends Fragment {
         btnUpload = (Button) v.findViewById(R.id.btnUpload);
         btnsubmit = (Button) v.findViewById(R.id.btnsubmit);
         btncancel = (Button) v.findViewById(R.id.btncancel);
-
+        imageView = (ImageView) v.findViewById(R.id.imageView);
+        //set the product category into the spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
                 R.array.foodCategory, android.R.layout.simple_spinner_item);
 
@@ -76,6 +77,7 @@ public class add_product extends Fragment {
 
         spinnerCat.setAdapter(adapter);
 
+        //set listener to indicate the which item choose by the user
         spinnerCat.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -89,8 +91,8 @@ public class add_product extends Fragment {
             }
         });
 
-        imageView = (ImageView) v.findViewById(R.id.imageView);
 
+        //allow the user to upload image
         btnUpload.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 showFileChooser();
@@ -98,6 +100,7 @@ public class add_product extends Fragment {
 
         });
 
+        //send the product info to add in to the database
         btnsubmit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 uploadClick();
@@ -105,6 +108,7 @@ public class add_product extends Fragment {
 
         });
 
+        // go back to the menu screen
         btncancel.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 MenuFragment nextFrag= new MenuFragment();
@@ -120,7 +124,7 @@ public class add_product extends Fragment {
         return v;
     }
 
-
+//method to upload product info to add in the database
     public void uploadClick() {
         String ProdName = txtProdName.getText().toString();
         String ProdDesc = txtDesc.getText().toString();
@@ -154,6 +158,7 @@ public class add_product extends Fragment {
         }
     }
 
+    //display image in the device for user to choose to upload
     private void showFileChooser() {
         Intent intent = new Intent();
         intent.setType("image/*");
@@ -161,6 +166,7 @@ public class add_product extends Fragment {
         startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
     }
 
+    //upload the info to the database
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -235,6 +241,12 @@ public class add_product extends Fragment {
         }
         UploadImage ui = new UploadImage();
         ui.execute(bitmap);
+
+        MenuFragment nextFrag= new MenuFragment();
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.content, nextFrag,"findThisFragment")
+                .addToBackStack(null)
+                .commit();
 
     }
 

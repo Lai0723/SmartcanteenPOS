@@ -36,14 +36,12 @@ import java.util.Date;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by lai wei chun
  */
+
+//online order report
 public class report extends Fragment {
 
-
-    public report() {
-        // Required empty public constructor
-    }
 
     DatePicker datePicker;
     private Button btnDailyReport, btnMonthlyReport, btnYearlyReport;
@@ -52,8 +50,6 @@ public class report extends Fragment {
     Double total = 0.00;
     Double discounted_amount = 0.00;
     String date;
-
-
     String MercName = Login.LOGGED_IN_USER;
 
 
@@ -62,13 +58,17 @@ public class report extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_report, container, false);
-
         progressDialog = new ProgressDialog(v.getContext());
         datePicker = (DatePicker) v.findViewById(R.id.datePicker);
         datePicker.setMaxDate(new Date().getTime());
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
 
+        btnDailyReport = (Button) v.findViewById(R.id.btnDailyReport);
+        btnMonthlyReport = (Button) v.findViewById(R.id.btnMonthlyReport);
+        btnYearlyReport = (Button) v.findViewById(R.id.btnYearlyReport);
+
+        //set the info from the date picker to variable
         datePicker.init(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH),new DatePicker.OnDateChangedListener() {
 
             @Override
@@ -83,10 +83,8 @@ public class report extends Fragment {
         month = calendar.get(Calendar.MONTH)+1;
         year = calendar.get(Calendar.YEAR);
 
-        btnDailyReport = (Button) v.findViewById(R.id.btnDailyReport);
-        btnMonthlyReport = (Button) v.findViewById(R.id.btnMonthlyReport);
-        btnYearlyReport = (Button) v.findViewById(R.id.btnYearlyReport);
 
+        //to generate online order daily report
         btnDailyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 total = 0.00;
@@ -101,6 +99,7 @@ public class report extends Fragment {
             }
         });
 
+        //to generate online order monthly report
         btnMonthlyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 total = 0.00;
@@ -115,6 +114,7 @@ public class report extends Fragment {
             }
         });
 
+        //to generate online order yearly report
         btnYearlyReport.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 total = 0.00;
@@ -134,6 +134,7 @@ public class report extends Fragment {
         return v;
     }
 
+    //get online order report info
     private class BackgroundWorker extends AsyncTask<String, Void, String> {
 
         Context context;
@@ -338,10 +339,10 @@ public class report extends Fragment {
 
 
                     Intent intent = new Intent(getActivity(),reportdetails.class);
-                    //String date= year+"-"+month+"-"+day;
                     Double profit = total;
                     Double discount = discounted_amount;
 
+                    //past info the reportdetail to display the info
                     intent.putExtra("date",date);
                     intent.putExtra("total",profit);
                     intent.putExtra("discount",discount);
