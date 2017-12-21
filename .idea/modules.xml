@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SmartcanteenPOS.iml" filepath="$PROJECT_DIR$/SmartcanteenPOS.iml" />
       <module fileurl="file://D:\ANDROID\FYP\SmartcanteenPOS\SmartcanteenPOS15.iml" filepath="D:\ANDROID\FYP\SmartcanteenPOS\SmartcanteenPOS15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartcanteenPOS16.iml" filepath="$PROJECT_DIR$/SmartcanteenPOS16.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

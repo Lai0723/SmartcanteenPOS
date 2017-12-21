@@ -273,6 +273,74 @@
             ]
         },
         {
+            "outputFile": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\401d39d735bc13f5fc34c666cabb5eec\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,131,202,264,325",
+                        "endColumns": "75,70,61,60,59",
+                        "endOffsets": "126,197,259,320,380"
+                    },
+                    "to": {
+                        "startLines": "6,7,11,12,13",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "328,404,685,747,808",
+                        "endColumns": "75,70,61,60,59",
+                        "endOffsets": "399,470,742,803,863"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\750ed122b01b811bff075ada8c66ad1b\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,192",
+                        "endColumns": "63,72,72",
+                        "endOffsets": "114,187,260"
+                    },
+                    "to": {
+                        "startLines": "8,9,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "475,539,612",
+                        "endColumns": "63,72,72",
+                        "endOffsets": "534,607,680"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0.aar\\2bd75150941a3a51cdfa5d8000661e72\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "232"
+                    },
+                    "to": {
+                        "startLines": "14",
+                        "startColumns": "4",
+                        "startOffsets": "868",
+                        "endLines": "17",
+                        "endColumns": "12",
+                        "endOffsets": "1045"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {

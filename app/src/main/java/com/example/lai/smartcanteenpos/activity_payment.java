@@ -42,7 +42,7 @@ import static com.example.lai.smartcanteenpos.R.id.menulistview;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class activity_payment extends Fragment {
     Spinner menuspinner;

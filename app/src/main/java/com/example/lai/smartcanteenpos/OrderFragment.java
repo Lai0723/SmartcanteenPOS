@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class OrderFragment extends Fragment {
 
