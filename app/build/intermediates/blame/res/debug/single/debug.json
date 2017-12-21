@@ -84,12 +84,12 @@
         "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\4a0885c399179eb205f2e7104b5760cd\\res\\drawable-mdpi-v4\\bt_ic_diners_club.png"
     },
     {
-        "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\12409dd72daa8c4ac37153c21dfaed47\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_bt_ic_maestro.png.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\750ed122b01b811bff075ada8c66ad1b\\res\\drawable-xhdpi-v4\\bt_ic_maestro.png"
+    },
+    {
+        "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\12409dd72daa8c4ac37153c21dfaed47\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -132,24 +132,24 @@
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\12409dd72daa8c4ac37153c21dfaed47\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_reportdetails.xml.flat",
         "source": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\src\\main\\res\\layout\\activity_reportdetails.xml"
+    },
+    {
+        "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\12409dd72daa8c4ac37153c21dfaed47\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_text_input_password_icon.xml.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0.aar\\2bd75150941a3a51cdfa5d8000661e72\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\d90d28182672162b17b5712730646e5c\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS15\\app\\build\\intermediates\\res\\merged\\debug\\menu_bt_card_io.xml.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\401d39d735bc13f5fc34c666cabb5eec\\res\\menu\\bt_card_io.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\d90d28182672162b17b5712730646e5c\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS15\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_bt_ic_postal_code_dark.png.flat",
@@ -188,16 +188,16 @@
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+        "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_discount_coupon.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\src\\main\\res\\layout\\fragment_discount_coupon.xml"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_bt_ic_vaulted_maestro.png.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\401d39d735bc13f5fc34c666cabb5eec\\res\\drawable-xxhdpi-v4\\bt_ic_vaulted_maestro.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_discount_coupon.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\src\\main\\res\\layout\\fragment_discount_coupon.xml"
+        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -224,12 +224,12 @@
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_bt_ic_sms_code_dark.png.flat",
-        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\401d39d735bc13f5fc34c666cabb5eec\\res\\drawable-mdpi-v4\\bt_ic_sms_code_dark.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\d90d28182672162b17b5712730646e5c\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_bt_ic_sms_code_dark.png.flat",
+        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\401d39d735bc13f5fc34c666cabb5eec\\res\\drawable-mdpi-v4\\bt_ic_sms_code_dark.png"
     },
     {
         "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -264,12 +264,12 @@
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\build\\intermediates\\res\\merged\\debug\\drawable_seekbar_style.xml.flat",
@@ -280,28 +280,28 @@
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\750ed122b01b811bff075ada8c66ad1b\\res\\drawable-xhdpi-v4\\bt_ic_postal_code.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_bt_ic_vaulted_unionpay.png.flat",
-        "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\cf6b4981b542c16cce1049342a1a086d\\res\\drawable-xxxhdpi-v4\\bt_ic_vaulted_unionpay.png"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0.aar\\2bd75150941a3a51cdfa5d8000661e72\\res\\drawable-hdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+        "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_bt_ic_vaulted_unionpay.png.flat",
+        "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\cf6b4981b542c16cce1049342a1a086d\\res\\drawable-xxxhdpi-v4\\bt_ic_vaulted_unionpay.png"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_bt_ic_postal_code_dark.png.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\card-form-3.1.0.aar\\750ed122b01b811bff075ada8c66ad1b\\res\\drawable-hdpi-v4\\bt_ic_postal_code_dark.png"
     },
     {
-        "merged": "D:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
-        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\color-v23\\abc_color_highlight_material.xml"
+        "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "D:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
+        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
         "merged": "D:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_bt_ic_vaulted_unknown.png.flat",
@@ -312,12 +312,12 @@
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\401d39d735bc13f5fc34c666cabb5eec\\res\\drawable-mdpi-v4\\bt_ic_vaulted_unionpay.png"
     },
     {
-        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.0.0.aar\\ee0e7a090bf97d02033fae00ad0c7680\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_bt_ic_vaulted_amex.png.flat",
@@ -352,24 +352,24 @@
         "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0.aar\\4b5cbc9f23558bde07c0bc53c86a6ed7\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "D:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\12409dd72daa8c4ac37153c21dfaed47\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+        "merged": "D:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
+        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
         "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_light.xml.flat",
         "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
-        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\12409dd72daa8c4ac37153c21dfaed47\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
@@ -380,12 +380,12 @@
         "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\d90d28182672162b17b5712730646e5c\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS15\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
@@ -428,12 +428,12 @@
         "source": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS15\\app\\src\\main\\res\\layout\\fragment_activity_order.xml"
     },
     {
-        "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_bt_ic_vaulted_maestro.png.flat",
-        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\d15e4d577cecea6dc9bfd2a618b6de8c\\res\\drawable-xxhdpi-v4\\bt_ic_vaulted_maestro.png"
-    },
-    {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS14\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_edittext.xml.flat",
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\color\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "D:\\ANDROID\\FYP\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_bt_ic_vaulted_maestro.png.flat",
+        "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\d15e4d577cecea6dc9bfd2a618b6de8c\\res\\drawable-xxhdpi-v4\\bt_ic_vaulted_maestro.png"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_bt_ic_camera_dark.png.flat",
@@ -444,16 +444,16 @@
         "source": "C:\\Users\\User\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\c8d5ac1c9212bb78115be3e0dd3c130d\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_gift_card.xml.flat",
-        "source": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\src\\main\\res\\drawable\\ic_gift_card.xml"
+        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_wallet.xml.flat",
+        "source": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\src\\main\\res\\layout\\fragment_wallet.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_bottom_navigation_item_background.xml.flat",
         "source": "C:\\Users\\Leow\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0.aar\\3cea401bc7f624435c49f5dc046b2834\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
-        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_wallet.xml.flat",
-        "source": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\src\\main\\res\\layout\\fragment_wallet.xml"
+        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_gift_card.xml.flat",
+        "source": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\src\\main\\res\\drawable\\ic_gift_card.xml"
     },
     {
         "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS16\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -464,16 +464,16 @@
         "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\fdd7fd5ed9d05452c4efbc7c20b1cfcd\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\menu_bt_card_io.xml.flat",
-        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\401d39d735bc13f5fc34c666cabb5eec\\res\\menu\\bt_card_io.xml"
+        "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\12409dd72daa8c4ac37153c21dfaed47\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
         "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.0.0.aar\\6aee9a1aaace1dc7c6827f1421016bef\\res\\layout\\design_navigation_menu.xml"
     },
     {
-        "merged": "C:\\Users\\A45VD\\Desktop\\SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\A45VD\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0.aar\\12409dd72daa8c4ac37153c21dfaed47\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+        "merged": "C:\\Users\\lai\\Desktop\\SmartcanteenPOS12\\app\\build\\intermediates\\res\\merged\\debug\\menu_bt_card_io.xml.flat",
+        "source": "C:\\Users\\lai\\.gradle\\caches\\transforms-1\\files-1.1\\drop-in-3.1.0.aar\\401d39d735bc13f5fc34c666cabb5eec\\res\\menu\\bt_card_io.xml"
     },
     {
         "merged": "D:\\ANDROID\\FYP\\(All) SmartcanteenPOS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",

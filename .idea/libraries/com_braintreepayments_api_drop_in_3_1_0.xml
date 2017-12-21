@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.braintreepayments.api:drop-in-3.1.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/drop-in-3.1.0.aar/401d39d735bc13f5fc34c666cabb5eec/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/drop-in-3.1.0.aar/401d39d735bc13f5fc34c666cabb5eec/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/drop-in-3.1.0.aar/d15e4d577cecea6dc9bfd2a618b6de8c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/drop-in-3.1.0.aar/d15e4d577cecea6dc9bfd2a618b6de8c/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
