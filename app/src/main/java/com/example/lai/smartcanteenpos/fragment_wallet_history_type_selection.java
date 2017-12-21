@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 
@@ -7,9 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-/**
- * Created by Gabriel Lai Bihsyan
- */
+
 
 /**
  * A simple {@link Fragment} subclass.

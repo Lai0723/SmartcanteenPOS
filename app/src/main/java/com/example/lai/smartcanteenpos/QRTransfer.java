@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.graphics.Bitmap;
@@ -12,11 +15,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import net.glxn.qrgen.android.QRCode;
-//import com.google.zxing.qrcode.encoder.QRCode;
 
-/**
- * Created by Gabriel Lai Bihsyan
- */
+
+
 public class QRTransfer extends AppCompatActivity {
 
     static String giverID;

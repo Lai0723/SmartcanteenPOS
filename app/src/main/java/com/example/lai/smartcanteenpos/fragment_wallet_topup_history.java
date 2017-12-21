@@ -1,3 +1,7 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
+
 package com.example.lai.smartcanteenpos;
 
 
@@ -32,9 +36,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-/**
- * Created by Gabriel Lai Bihsyan
- */
 
 /**
  * A simple {@link Fragment} subclass.

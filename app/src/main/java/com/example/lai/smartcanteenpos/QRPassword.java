@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.content.Intent;
@@ -8,9 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-/**
- * Created by Gabriel Lai Bihsyan
- */
+
 public class QRPassword extends AppCompatActivity {
 
     static String giverID, passedQRpw, inputQRpw;

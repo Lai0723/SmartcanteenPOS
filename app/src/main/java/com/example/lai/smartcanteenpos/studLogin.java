@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.app.ProgressDialog;
@@ -22,9 +25,7 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
-/**
- * Created by Gabriel Lai Bihsyan
- */
+
 public class studLogin extends AppCompatActivity {
     EditText etLoginWalletID, etLoginPassword;
     private ProgressDialog pDialog;

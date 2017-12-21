@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.app.Activity;
@@ -37,9 +40,7 @@ import org.json.JSONObject;
 import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
-/**
- * Created by Gabriel Lai Bihsyan
- */
+
 public class MainActivity extends AppCompatActivity {
     public static String walletID;
     public static double balance;

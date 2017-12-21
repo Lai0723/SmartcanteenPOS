@@ -1,12 +1,13 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-/**
- * Created by Gabriel Lai Bihsyan
- */
+
 public class login_type_select extends AppCompatActivity {
 
     @Override

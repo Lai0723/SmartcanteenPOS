@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.content.Context;
@@ -16,9 +19,6 @@ import com.example.lai.smartcanteenpos.database.TopUp;
 
 import java.util.List;
 
-/**
- * Created by Gabriel Lai Bihsyan
- */
 
 public class adapter_list_topup_history extends ArrayAdapter<TopUp> {
 

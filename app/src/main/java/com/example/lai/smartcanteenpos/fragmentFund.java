@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017 on 11/10/2017.
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.app.ProgressDialog;
@@ -9,9 +12,7 @@ import android.view.ViewGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-/**
- * Created by Gabb on 11/10/2017.
- */
+
 
 public class fragmentFund extends Fragment {
 

@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.graphics.Bitmap;
@@ -7,9 +10,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import net.glxn.qrgen.android.QRCode;
-/**
- * Created by Gabriel Lai Bihsyan
- */
+
 public class QRretrieval extends AppCompatActivity {
 
     String OrderID, ProdID, WalletID, ProdName, OrderDateTime,  OrderStatus, PayDateTime;

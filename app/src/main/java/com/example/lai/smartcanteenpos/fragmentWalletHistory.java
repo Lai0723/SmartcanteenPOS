@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 
@@ -13,9 +16,7 @@ import android.widget.DatePicker;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Created by Gabriel Lai Bihsyan
- */
+
 /**
  * A simple {@link Fragment} subclass.
  */

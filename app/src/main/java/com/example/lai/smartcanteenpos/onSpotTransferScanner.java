@@ -1,3 +1,6 @@
+/**
+ * Created by Gabriel Lai Bihsyan, RSD, Year 2017
+ */
 package com.example.lai.smartcanteenpos;
 
 import android.content.Context;
@@ -25,9 +28,7 @@ import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by lai wei chun
- */
+
 public class onSpotTransferScanner extends AppCompatActivity {
 
     String ttlPurchaseAmt, giverID, purchasedIDGet;
