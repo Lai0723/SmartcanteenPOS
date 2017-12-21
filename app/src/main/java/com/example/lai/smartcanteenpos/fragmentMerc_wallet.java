@@ -11,10 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
- * Created by lai wei chun
- */
-/**
- * A simple {@link Fragment} subclass.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class fragmentMerc_wallet extends Fragment {
 

@@ -32,7 +32,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-//Created by lai wei chun
+/**
+ * Created by Lai Wei Chun, RSD3, 2017
+ */
 
 public class Menu_screen extends AppCompatActivity {
     public static List<Product> lList = null; // List for the product in  menu activity

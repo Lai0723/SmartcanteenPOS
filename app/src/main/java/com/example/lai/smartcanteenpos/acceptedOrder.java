@@ -34,7 +34,7 @@ import java.util.ArrayList;
 
 
 /**
- * Created by lai wei chun
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class acceptedOrder extends Fragment {
 

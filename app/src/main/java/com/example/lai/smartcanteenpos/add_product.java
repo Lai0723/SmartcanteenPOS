@@ -32,7 +32,7 @@ import static android.app.Activity.RESULT_OK;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class add_product extends Fragment {
 

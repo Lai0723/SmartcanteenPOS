@@ -24,7 +24,9 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-//Created by lai wei chun
+/**
+ * Created by Lai Wei Chun, RSD3, 2017
+ */
 
 //register screen for merchants
 

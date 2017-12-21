@@ -32,9 +32,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
-
 /**
- * Created lai wei chun
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class completedOrder extends Fragment {
 

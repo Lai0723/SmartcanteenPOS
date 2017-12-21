@@ -14,9 +14,8 @@ import com.example.lai.smartcanteenpos.R;
 import java.util.List;
 
 /**
- * Created by lai on 7/11/2017.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
-
 //adapter for the payment tab list
 public class MAdapter extends ArrayAdapter<Menu> {
 

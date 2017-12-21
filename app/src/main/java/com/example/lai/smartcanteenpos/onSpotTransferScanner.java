@@ -28,7 +28,9 @@ import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * Created by Lai Wei Chun, RSD3, 2017
+ */
 public class onSpotTransferScanner extends AppCompatActivity {
 
     String ttlPurchaseAmt, giverID, purchasedIDGet;

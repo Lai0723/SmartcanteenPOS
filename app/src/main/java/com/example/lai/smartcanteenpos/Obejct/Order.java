@@ -1,7 +1,7 @@
 package com.example.lai.smartcanteenpos.Obejct;
 
 /**
- * Created by Leow and Lai on 11/1/2017.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 
 public class Order {

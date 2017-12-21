@@ -31,7 +31,7 @@ import java.util.Map;
 
 
 /**
- * Created by lai wei chun
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class add_inventory extends Fragment {
 

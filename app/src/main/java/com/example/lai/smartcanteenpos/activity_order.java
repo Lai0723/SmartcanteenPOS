@@ -47,7 +47,7 @@ import java.util.Map;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class activity_order extends Fragment {
 

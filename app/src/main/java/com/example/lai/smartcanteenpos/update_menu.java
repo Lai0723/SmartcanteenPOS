@@ -60,7 +60,7 @@ import static android.app.Activity.RESULT_OK;
 
 
 /**
- * Created by lai wei chun
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class update_menu extends Fragment {
 

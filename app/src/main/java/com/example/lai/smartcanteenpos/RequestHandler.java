@@ -16,7 +16,7 @@ import java.util.Map;
 import javax.net.ssl.HttpsURLConnection;
 
 /**
- * Created by lai wei chun on 13/10/2017.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 
 //to establish connection with the database

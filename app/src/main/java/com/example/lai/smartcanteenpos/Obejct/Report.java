@@ -1,7 +1,7 @@
 package com.example.lai.smartcanteenpos.Obejct;
 
 /**
- * Created by lai on 13/11/2017.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 
 public class Report {
