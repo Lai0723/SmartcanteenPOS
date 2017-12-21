@@ -21,7 +21,7 @@ import java.net.URL;
 import java.util.List;
 
 /**
- * Created by lai on 14/10/2017.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 
 public class ProductAdapter extends ArrayAdapter<Product>{

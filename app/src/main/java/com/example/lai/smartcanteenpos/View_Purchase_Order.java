@@ -35,7 +35,7 @@ import java.util.ArrayList;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 public class View_Purchase_Order extends Fragment {
     public static boolean allowRefresh;

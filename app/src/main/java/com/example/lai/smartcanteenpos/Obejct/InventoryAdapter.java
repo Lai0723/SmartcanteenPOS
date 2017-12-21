@@ -14,7 +14,7 @@ import com.example.lai.smartcanteenpos.R;
 import java.util.List;
 
 /**
- * Created by lai on 14/10/2017.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 
 public class InventoryAdapter extends ArrayAdapter<Inventory> {

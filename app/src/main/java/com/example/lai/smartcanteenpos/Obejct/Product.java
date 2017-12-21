@@ -1,9 +1,8 @@
 package com.example.lai.smartcanteenpos.Obejct;
 
 /**
- * Created by lai on 12/10/2017.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
-
 public class Product {
 
     private String ProdID;

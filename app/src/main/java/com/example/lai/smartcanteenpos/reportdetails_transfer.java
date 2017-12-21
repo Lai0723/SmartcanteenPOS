@@ -7,7 +7,9 @@ import android.widget.TextView;
 
 import com.example.lai.smartcanteenpos.Obejct.ReportAdapter_Transaction;
 
-//Created by lai wei chun
+/**
+ * Created by Lai Wei Chun, RSD3, 2017
+ */
 
 //display transaction report info
 public class reportdetails_transfer extends Activity {

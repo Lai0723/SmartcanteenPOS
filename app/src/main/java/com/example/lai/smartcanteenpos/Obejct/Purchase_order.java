@@ -3,7 +3,7 @@ package com.example.lai.smartcanteenpos.Obejct;
 import java.util.Date;
 
 /**
- * Created by lai on 17/10/2017.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 
 public class Purchase_order {

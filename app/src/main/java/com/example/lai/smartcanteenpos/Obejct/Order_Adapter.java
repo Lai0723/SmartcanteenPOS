@@ -13,7 +13,7 @@ import com.example.lai.smartcanteenpos.R;
 import java.util.List;
 
 /**
- * Created by lai on 19/10/2017.
+ * Created by Lai Wei Chun, RSD3, 2017
  */
 
 public class Order_Adapter extends ArrayAdapter<Order> {
