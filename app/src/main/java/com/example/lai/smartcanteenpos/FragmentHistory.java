@@ -51,6 +51,9 @@ import static android.content.Context.CLIPBOARD_SERVICE;
 
 /**
  * Created by Lim Boon Seng,RSD3 on 20/10/2017
+ * Comment: This fragment display history lists for discount code history and item history
+ *          For Discount Code History List, this is where you can find the discount code
+ *          and by tapping once, the code is copied
  */
 
 public class FragmentHistory extends Fragment {

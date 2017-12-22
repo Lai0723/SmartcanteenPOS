@@ -30,6 +30,8 @@ import java.util.Map;
 
 /**
  * Created by Lim Boon Seng,RSD3 on 13/10/2017
+ * Comment: This is the Loyalty Point Redemption Main activity which is called after user tap on "Redeem" button
+ *          in the Smart Canteen's Main Activity
  */
 
 public class RedeemMainActivity extends AppCompatActivity {

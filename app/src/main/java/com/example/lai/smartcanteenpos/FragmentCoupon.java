@@ -40,6 +40,8 @@ import java.util.TimeZone;
 
 /**
  * Created by Lim Boon Seng,RSD3 on 20/10/2017
+ * Comment: This fragment displays the discount coupon for redemption
+ *          After redeemed, the discount code will be generated and displayed in FragmentHistory
  */
 
 public class FragmentCoupon extends Fragment implements View.OnClickListener{

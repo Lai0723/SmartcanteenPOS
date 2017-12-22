@@ -25,6 +25,7 @@ import java.util.Map;
 
 /**
  * Created by Lim Boon Seng,RSD3 on 20/10/2017
+ * Comment: This fragment represents the Loyalty Point Redemption Main Page
  */
 
 public class FragmentHome extends Fragment {

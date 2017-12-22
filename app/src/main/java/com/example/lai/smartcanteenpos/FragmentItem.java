@@ -35,6 +35,7 @@ import java.util.Map;
 
 /**
  * Created by Lim Boon Seng,RSD3 on 20/10/2017
+ * Comment: This fragment shows the item for redemption like gift card or reload card
  */
 
 public class FragmentItem extends Fragment implements View.OnClickListener{
